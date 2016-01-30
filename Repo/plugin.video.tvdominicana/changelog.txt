@@ -1,0 +1,35 @@
+[B]v0.0.3[/B]
+Added Channels: 
+     - Digital 15
+     - Dominican York TV
+	 - Mia TV
+	 - Musa Vision
+	 - Peravia Vision
+	 - Romana TV
+	 - Tele Micro
+	 - Tele Medios
+	 - Valle Vision
+	 - Yuna Vision
+	 
+[B]v0.0.2[/B]
+Added Channels: 
+     - Antena Latina
+     - Cer TV
+     - COlor Vision
+     - Micro Vision
+     - Tele Antillas
+     - Tele Futuro
+     - Tele Nord 8 
+     - Tele Nord 10
+     - Tele Nord 12
+     - Tele Nord 14
+     - Tele Sistema
+     - Tele Universo
+
+[B]v0.0.1[/B]
+Initial Release
+Included Channels: 
+     - CDN
+     - CDN 2
+     - CDN FM
+     - CDN AM

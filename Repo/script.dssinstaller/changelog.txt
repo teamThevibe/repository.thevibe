@@ -1,0 +1,18 @@
+v1.0.5
+Bug fixes
+
+v1.0.4
+Bug fixes
+
+v1.0.3
+Bug fixes
+
+v1.0.2
+Bug fixes
+
+v1.0.1
+Update knop toegevoegd
+
+v1.0.0
+DOKI Installer release
+

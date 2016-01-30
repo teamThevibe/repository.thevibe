@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.nana10.video" name="נענע 10" version="1.0.10" provider-name="sbentin">
+  <requires>
+    <import addon="xbmc.python" version="2.0" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="10tv.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <minversion>31632</minversion>
+    <summary lang="en">Watch 10tv video contents.</summary>
+    <summary lang="he">צפה בתוכניות מאפליקציית אנדרויד של ערוץ 10</summary>
+    <description lang="en">Watch contents from 10tv android application.</description>
+    <description lang="he">צפה במגוון התוכניות והסדרות הניתנות לצפיה מהפלאגין של ערוץ 10 לאנדרויד</description>
+    <disclaimer>This addon parse Channel 10's android application, you should check Channel 10's TOS before you using. It's as is</disclaimer>
+    <supportedcontent>
+      <content>tvshows</content>
+      <content>episodes</content>
+      <content>movies</content>
+    </supportedcontent>
+  </extension>
+</addon>

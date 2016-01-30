@@ -1,0 +1,20 @@
+[B]Version 0.0.8[/B]
+- 
+
+[B]Version 0.0.7[/B]
+- 
+
+[B]Version 0.0.6[/B]
+- added mr t
+
+[B]Version 0.0.5[/B]
+- added The hitch hikers guide to the galaxy
+
+[B]Version 0.0.4[/B]
+- more shows added
+
+[B]Version 0.0.2[/B]
+- more shows added
+
+[B]Version 0.0.1[/B]
+- Initial version 

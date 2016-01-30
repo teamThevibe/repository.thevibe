@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<addon id="plugin.video.netmov" version="1.0.6" name="NETMOV" provider-name="Mucky Duck">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.urlresolver" version="2.1.2" />
+    <import addon="repository.mdrepo" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Enjoy Movies And TV Shows From http://netmov.tv/</summary>
+    <description>Movies And TV Shows From http://netmov.tv/</description>
+    <platform>all</platform>
+  </extension>
+</addon>

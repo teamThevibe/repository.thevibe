@@ -1,0 +1,40 @@
+[B]V2.3.9[/B]
+- polposition toegevoegd in hoofdmenu
+- Wedstrijdschema aangepast voor laden poleposition
+
+
+[B]V2.3.8[/B]
+- polposition toegevoegd in test omgeving
+
+[B]V2.3.7[/B]
+- update bvls
+
+[B]V2.3.6[/B]
+- update janlul auto search.
+- jan lul remove stream 7/8
+
+
+[B]V2.3.5[/B]
+- update stv auto search.
+
+
+[B]V2.2.5[/B]
+- diverse streams updates
+- schoonmaak
+
+[B]V2.2.4[/B]
+- Dazsport 3 is terug
+
+
+
+[B]V2.2.1[/B]
+-micast.tv ip decoder veranderd van php naar python
+- In volgende versie moeten bronnen automatische gevonde worden zonde exterene xml file
+
+
+[B]v2.1.9[/B]
+- buitenlandse sport verwijder 
+- autoupdate verbeterd
+
+[B]v2.1.8[/B]
+-automatisch zoeken naar janlul verwijderd werdt te traag wanneer site traag werd

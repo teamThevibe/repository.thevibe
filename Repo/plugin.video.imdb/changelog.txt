@@ -1,0 +1,2 @@
+Version 1.0.1 Adding support to list and watchlist
+Version 1.0.0 First version

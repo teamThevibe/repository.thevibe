@@ -1,0 +1,12 @@
+Castaway by natko1412
+==================================
+v0.0.7 [18-Jan-2016]
+-improve atdhe regex
+-fix on-demand
+-add lmshows.com
+-add nba.com
+-enable autoplay on VK links (quality can be set in settings)
+-move zonasports.in to LiveTV section
+
+v0.0.6
+-initial repo release

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.sport5.video" name="ספורט 5" version="1.0.1" provider-name="sbentin">
+  <requires>
+    <import addon="xbmc.python" version="2.0" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="sport5.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <minversion>31632</minversion>
+    <summary lang="en">Watch Channel Sport 5 video contents.</summary>
+    <summary lang="he">צפה במידע VOD מאתר ספורט 5</summary>
+    <description lang="en">Watch Sport Channel 5 contents.</description>
+    <description lang="he">צפה במגוון תוכניות וקטעי ספורט מאתר www.sport5.co.il</description>
+    <disclaimer>This addon parse sport5's site, you should check Sport 5's TOS before your using. It's as is</disclaimer>
+    <supportedcontent>
+      <content>tvshows</content>
+      <content>episodes</content>
+      <content>movies</content>
+    </supportedcontent>
+  </extension>
+</addon>

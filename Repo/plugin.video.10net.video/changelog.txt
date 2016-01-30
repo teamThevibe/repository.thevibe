@@ -1,0 +1,8 @@
+[B]Version 1.0.3[/B]
+- Fixed movie playing. Megavideo working, videoBB movies work but not always on first click, you may have to click more then once.
+
+[B]Version 1.0.2[/B]
+- Fixed cache to work as float
+
+[B]Version 1.0.1[/B]
+- Added setting for how long to hold the cache

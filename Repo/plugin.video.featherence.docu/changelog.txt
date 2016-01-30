@@ -1,0 +1,36 @@
+------------------------
+WIP (WORK IN PROGRESS)--
+------------------------
+- Add description to buttons.
+- Add fanarts to buttons.
+- Add thumbnails to buttons.
+- Add multi languages support.
+
+------------------------
+Featherence Docu v0.1.6 (21-01-16)
+------------------------
+- Added about us section with useful information and contact tools.
+- Added next page button to some categories.
+- Added search history.
+- Beta stage.
+- Major update of random play button.
+- Minor bugs fix.
+- My docu button now support adding favourites items as well.
+- TV mode now occur also inside container.
+- *Update saving/loading script to include local media when sharing.
+*Previous backups will not work!
+
+------------------------
+Featherence Docu v0.1.5 (02-01-16)
+------------------------
+- Beta stage.
+
+------------------------
+Featherence Docu v0.1.1-4 (17-12-15)
+------------------------
+- Alpha stage.
+
+------------------------
+Featherence Docu v0.1.0 (10-12-15)
+------------------------
+- First release.

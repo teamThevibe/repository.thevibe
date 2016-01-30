@@ -1,15 +1,15 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.p2p-streams" name="p2p-streams" version="1.2.0" provider-name="enen92,fightnight">
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.p2p-streams" name="p2p-streams" version="1.2.0b" provider-name="enen92,fightnight">
   <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.beautifulsoup" version="3.0.8"/>
-    <import addon="script.module.simplejson"/>
-    <import addon="script.module.pytz"/>
-    <import addon="script.module.requests"/>
-    <import addon="script.module.mechanize" version="0.2.6"/>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.beautifulsoup" version="3.0.8" />
+    <import addon="script.module.simplejson" />
+    <import addon="script.module.pytz" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.mechanize" version="0.2.6" />
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video</provides>
+    <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary>SopCast and AceStream</summary>

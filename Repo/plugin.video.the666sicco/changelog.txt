@@ -1,0 +1,58 @@
+[B]v0.0.1[/B]
+Initial Release
+
+[B]v0.0.2[/B]
+Added all the sections available.
+
+[B]v0.0.3[/B]
+Minor bug fixes
+Added GA
+
+[B]v0.0.4[/B]
+Added support for My Watch History
+
+[B]v0.0.5[/B]
+Moved watch history to module
+
+[B]v0.0.6[/B]
+Added support for play-back-engine
+
+[B]v0.0.7[/B]
+Fixed bug with play-back-engine
+
+[B]v0.0.8[/B]
+Switched to Universal Watch History and Playback Engine
+
+[B]v0.0.9[/B]
+Adf.ly url update
+
+[B]v0.1.0[/B]
+Adf.ly url update
+
+[B]v0.1.1[/B]
+Adf.ly url update
+
+[B]v0.1.2[/B]
+Removed GA
+
+[B]v0.1.3[/B]
+Wesite changed to - http://endoto.5gbfree.com/
+
+[B]v0.1.4[/B]
+Fixed encoding errors
+
+[B]v0.1.5[/B]
+Website source selection setting
+Changing name of the addon to Motor Sports (Replays)
+
+[B]v0.1.6[/B]
+NA
+
+[B]v0.1.7[/B]
+Removed Ads
+
+[B]v0.1.8[/B]
+Website Changes
+
+[B]v0.1.8[/B]
+New Website Source

@@ -1,8 +1,4 @@
-[b]1.0.4[/b]
-- new icon
-- series category added
-
-[b]1.0.3[/b]
+[b]1.0.1[/b]
 - romanian added
 - italian added
 

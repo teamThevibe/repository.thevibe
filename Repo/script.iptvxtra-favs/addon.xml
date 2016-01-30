@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.iptvxtra-favs" name="IPTVxtra Favourites" version="1.0" provider-name="IPTVxtra Team">
+	<requires>
+		<import addon="xbmc.python" version="2.12.0"/>
+	</requires>
+	<extension point="xbmc.python.library" library="default.py"/>
+	<extension point="xbmc.addon.metadata">
+		<summary>Favoriten-Skript</summary>
+		<description>Benötigt Skin-Support um korrekt genutzt zu werden</description>
+		<language></language>
+		<platform>all</platform>
+	</extension>
+</addon>

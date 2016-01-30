@@ -1,13 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="program.plexus" name="Plexus" version="0.1.4" provider-name="enen92, TV ADDONS">
   <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.requests"/>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.requests" />
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>executable</provides>
+    <provides>executable</provides>
   </extension>
-  
   <extension point="xbmc.addon.metadata">
     <summary>SopCast and AceStream for Kodi</summary>
     <description lang="en">Plexus - Any complex structure containing an intricate network of parts. Plexus brings native peer-to-peer support (AceStream and SopCast) for Kodi Entertainment Center for several platforms.[CR][CR]Documentation: (missing)</description>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.program.teamexpatwizard" name="[COLOR green]Team eXpat[/COLOR] [COLOR gold]AIO Wizard[/COLOR]" version="3.0.9" provider-name="[COLOR blue][B]AMO[/B][/COLOR][COLOR green]box[/COLOR]">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.addon.common" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">[COLOR green]Team eXpat[/COLOR] AIO Wizard</summary>
+    <description lang="en">[COLOR green]Team eXpat[/COLOR] AIO Wizard provides easy access to [COLOR green]Team eXpat[/COLOR] Builds and Various [COLOR red][B]Maintenance[/B][/COLOR] and [COLOR blue][B]Development[/B][/COLOR] functions</description>
+    <platform>all</platform>
+  </extension>
+</addon>

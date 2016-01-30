@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<addon id="plugin.video.bmovies" name="B-Movies" version="0.1.4" provider-name="[COLOR blue]X[/COLOR]unity[COLOR blue]T[/COLOR]alk">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.t0mm0.common" version="0.0.1" />
+    <import addon="script.module.metahandler" version="1.0.2" />
+    <import addon="script.common.plugin.cache" version="0.9.1" />
+    <import addon="script.module.universal" version="0.0.1" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">B-Movies (bmovies.com)</summary>
+    <description lang="en">Stream free b-movies to watch online.</description>
+    <platform>all</platform>
+  </extension>
+</addon>

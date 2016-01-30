@@ -1,0 +1,6 @@
+----------1.0.3----------
+	-Fixed the pseudo auto loading problem.
+----------1.0.1----------
+	-Fixed a bug which loads channels out of the addon.
+----------1.0.0----------
+	-Initial release.

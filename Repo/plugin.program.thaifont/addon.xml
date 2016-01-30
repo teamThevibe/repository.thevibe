@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<addon id="plugin.program.thaifont" name="Thaifont to XBMC and Kodi" version="1.0" provider-name="IPTVxtra">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Copy Thaifont</summary>
+    <language>
+    </language>
+    <description>How To - Thaifont
+	
+nach der Installation klicke auf das Addon,
+eine neue arial.ttf wird in das User-Verzeichnis:
+.xbmc/media/font kopiert
+
+danach gehst du auf: SYSTEM - DARSTELLUNG - SKIN
+hier findest du die Einstellung Schriftarten 
+und dies änderst du auf "Arial basiert"
+
+jetzt ist die Schriftart Systemweit etwas anders, 
+aber beim Aufrufen von einem Addon das Thaischrift verwendet, 
+ist diese auch (ohne Hieroglyphen) zu sehen. 
+
+Theoretisch kannst du dieses Addon auch wieder deinstallieren 
+und die Thaischrift bleibt erhalten. 
+
+</description>
+    <website>http://www.iptvxtra.net</website>
+    <platform>all</platform>
+  </extension>
+</addon>

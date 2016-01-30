@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.10net.video" name="סרטים בצפיה ישירה" version="1.0.3" provider-name="sbentin">
+  <requires>
+    <import addon="xbmc.python" version="2.0" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="10net.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <minversion>31632</minversion>
+    <summary lang="en">Watch Movies with hebrew subtitles from MegaVideo contents.</summary>
+    <summary lang="he">צפה/י בסרטים עם תרגום מהרשת</summary>
+    <description lang="en">Watch Megavideo movies. Movies are with Hebrew subtitles. Most movies play for 72 minutes and stop, in the future premium megavideo users can watch the entire movie</description>
+    <description lang="he">צפה במגוון סרטים בתרגום עברי מאתר מגהוידאו. רב הסרטים יפעלו למשך 72 דקות ויעצרו. בעתיד תתווסף תמיכה למשתמשי פריום שיוכלו לצפות בכל הסרט</description>
+    <disclaimer>This plugin plays free movies from megavideo. Information is taken from 10net is the property of 10net. The plugin is not responsible for the content nor for the movie content. Use and Play movies using this plugin at your own discretion. No support is offered</disclaimer>
+    <supportedcontent>
+      <content>movies</content>
+    </supportedcontent>
+  </extension>
+</addon>

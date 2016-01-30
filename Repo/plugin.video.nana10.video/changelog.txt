@@ -1,0 +1,32 @@
+[B]Version 1.0.10[/B]
+- Fixed hebrew encoding problem
+
+[B]Version 1.0.9[/B]
+- Fixed plugin name
+
+[B]Version 1.0.8[/B]
+- Changed the plugin to work with channel 10's Android application
+
+[B]Version 1.0.7[/B]
+- Fixed video links changes on Nana10 site
+
+[B]Version 1.0.6[/B]
+- Fixed changes in regexp for some of the shows
+
+[B]Version 1.0.5[/B]
+- Fixed string concatination in DEBUG mode in common
+
+[B]Version 1.0.4[/B]
+- Adapted plugin to the current version fixed use of plugin path
+- Added debug setting
+
+[B]Version 1.0.3[/B]
+- Fixed problem with the new series page changes at nana
+- Moved the images to repository so download will be easier and faster
+
+[B]Version 1.0.2[/B]
+- Fixed cache setting to work as float
+
+[B]Version 1.0.1[/B]
+- Added an image for featured shows
+- Added setting for how long to hold the cache

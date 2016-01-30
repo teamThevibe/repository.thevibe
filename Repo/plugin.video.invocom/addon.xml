@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.invocom" name="indecentes-voisines.com" version="1.0.2" provider-name="PUR3">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="de">indecentes-voisines.com</summary>
+    <summary lang="en">indecentes-voisines.com</summary>
+    <description lang="de">Trailer von indecentes-voisines.com</description>
+    <description lang="en">Trailer content from indecentes-voisines.com</description>
+  </extension>
+</addon>

@@ -1,0 +1,30 @@
+1.0.1
+Fixed movie and tv links
+
+1.0.0
+Fixed movie listings
+
+0.6.5
+Fixed movie links
+
+0.6.4
+Fixed dead links
+Fixed issue where playlist not cleared
+Added TV Series
+
+0.6.3
+Added art for Knowledge menu
+Fixed next page errors
+
+0.6.1
+Art updated by Chistara
+Music art added
+Favourite Artists option added to Music Videos
+Code tweaks
+Movie meta enabled
+
+0.6.0
+Added music videos
+
+0.5.6
+Initial Release

@@ -1,0 +1,26 @@
+Version 2.3
+- YouTube gefixt
+
+Version 2.0
+- den Streams kann ein http-Header zugefügt werden
+- Fehler bei Settingsaufruf 'kann nicht abgespielt werden' beseitigt
+- interne Links bei m3u8 Dateien können extrahiert und verwendet werden
+- Settings Eintrag kann wahlweise an den Anfang oder ans Ende der Liste gesetzt werden
+
+Version 1.3
+- im Code xbmcPlayer.stop eingefügt
+
+Version 1.1
+- YouTube Links koennen jetzt eingefuegt werden (http://www.youtube.com/watch?v=C1p8HlgoRHE)
+  Bilddatei muss nicht ausgefuellt sein, es wird automatisch das Bild von YouTube gesetzt.
+- Liste auf vorerst 40 Eintraege erhoeht, 10 waren doch etwas zu wenig :-)
+
+Version 1.0
+  In den Settings kannst du 10 verschiedene Eintraege zu Mediendateien verlinken.
+
+  akzeptiert werden:
+  Livestreams, Videostreams oder Radiostreams aus dem Internet
+  und lokale Mediendateien auf deiner Festplatte
+
+  Icon Dateien:
+  Lokal oder aus dem Internet

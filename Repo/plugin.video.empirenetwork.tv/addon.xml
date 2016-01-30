@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.empirenetwork.tv" name="Sports Mafia" version="2.5.5" provider-name="xunitytalk.com">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.t0mm0.common" version="1.1.0" />
+    <import addon="script.module.requests" version="2.3.0" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Sports Mafia</summary>
+    <description lang="en">Watch sports streams from Sports Mafia.[CR]Subscription required, visit [COLOR blue]http://www.sportsmafia.tv/[/COLOR][CR][COLOR gold]EmpireNetwork.TV has moved to SportsMafia.TV[/COLOR]</description>
+    <platform>all</platform>
+    <language>
+    </language>
+    <license>
+    </license>
+    <forum>
+    </forum>
+    <website>
+    </website>
+    <source>
+    </source>
+    <email>
+    </email>
+  </extension>
+</addon>

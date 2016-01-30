@@ -1,11 +1,8 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.kodisraelnature"
-	name="HD תוכניות טבע"
-	version="1.11"
-	provider-name="kodisrael.co.il">
+<addon id="plugin.video.kodisraelnature" name="HD תוכניות טבע" version="1.11" provider-name="kodisrael.co.il">
   <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="plugin.video.youtube" version="3.0.0"/>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="plugin.video.youtube" version="3.0.0" />
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
     <provides>video</provides>
