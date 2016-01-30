@@ -1,0 +1,11 @@
+[B]Version 1.0.4[/B]
+- Fixed for yet another hiding level of smil data
+
+[B]Version 1.0.3[/B]
+- Fixed for new video player
+
+[B]Version 1.0.2[/B]
+- Fixed new video player used
+
+[B]Version 1.0.1[/B]
+- Fixed string concatination on DEBUG in common

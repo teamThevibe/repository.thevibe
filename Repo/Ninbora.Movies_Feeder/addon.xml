@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="Ninbora.Movies_Feeder" name="Ninbora.Movies_Feeder" version="1.4.6" provider-name="Donatello">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="main.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.service" library="service.py" start="startup"></extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Feed movies to Kodi from several sources</summary>
+    <summary lang="he">מזין סרטים לקודי ממספר ממקורות נערך ע"י דונטלו Donatello and Hybridmag  תודה רבה רבה להיברידמאג שעזר לי לפתור את הבעיה של משיכת הסרטים אתה תותח על !!"</summary>
+    <website>http://donatellokodi.blogspot.co.il</website>
+    <platform>all</platform>
+  </extension>
+</addon>

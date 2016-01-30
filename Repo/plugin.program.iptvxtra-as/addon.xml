@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<addon id="plugin.program.iptvxtra-as" name="IPTVxtra easy AS" version="1.0" provider-name="IPTVxtra">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en">IPTVxtra Team</summary>
+        <language></language>
+			<description>IPTVxtra easy AS
+
+hier kannst du eine kleine optimierte advancedsettings.xml in dein System integrieren
+
+Achtung, eine bestehende AS wird überschrieben, ohne Nachfrage !
+
+Nach der Installation findest du unter Programme, das IPTVxtra-easy-AS Symbol, beim klick darauf werden die Settings geöffnet.
+Erst dort findest du den Button um die AS in dein System zu kopieren, danach musst du Kodi einmal neu starten, erst dann ist die AS aktiv.
+</description>
+	<website>http://www.iptvxtra.net</website>
+    <platform>all</platform>
+    </extension>
+</addon>
