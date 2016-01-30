@@ -1,0 +1,17 @@
+[B]Version 1.0.6[/B]
+- Fixed subcenter zip extraction
+
+[B]Version 1.0.5[/B]
+- Fixed idx file extraction
+
+[B]Version 1.0.4[/B]
+- Added support for rar files
+
+[B]Version 1.0.3[/B]
+- Fixed problem with selection
+
+[B]Version 1.0.2[/B]
+- Fixed import problem
+
+[B]Version 1.0.1[/B]
+- Added more debug messages

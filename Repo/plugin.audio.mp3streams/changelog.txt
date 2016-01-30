@@ -1,3 +1,6 @@
+1.1.9
+Fixed compilations
+
 1.1.8
 Fixed billboard charts
 

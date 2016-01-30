@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.AbeksisWizard" name="Abeksis Wizard" version="1.0.1" provider-name="Abkesis">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Abeksis Wizard</summary>
+    <description lang="en">Easy Install With KODI. All in one-click installation ,Skin ,Addons ,movies and mor. The Skin is Eminence 2 He By Abeksis</description>
+    <description lang="he">התקנת קודי בקליק. תהליך זה של התקנה קודי, יאפשר לכם להנות מכל הטוב שיש בקודי, ללא הצורך בלהתעסק בהגדרות ודברים שלא רובנו מכירים. כל מה שיהיה עליכם זה להתקין ולהנות. 
+
+	    
+קבוצת הפייסבוק שלנו לתמיכה ושאלות מעולם הקודי:
+[COLOR blue][B]KodiSupportil [/B][/COLOR]
+    </description>
+    <disclaimer lang="en">Visit Abeksis.com for more info.</disclaimer>
+    <disclaimer lang="he">בקרו אותנו בקבוצת הפייסבוק שלו KodiSuuportil</disclaimer>
+    <source>http://abeksis.com</source>
+    <website>http://abeksis.com</website>
+    <platform>all</platform>
+  </extension>
+</addon>

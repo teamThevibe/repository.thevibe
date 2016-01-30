@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.hebrew.subtitles" name="Hebrew Subtitles" version="1.0.6" provider-name="sbentin">
+  <requires>
+    <import addon="xbmc.python" version="2.0"/>
+  </requires>
+  <extension point="xbmc.python.subtitles" library="default.py" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Hebrew Subtitles</summary>
+    <summary lang="he">כתוביות בעברית</summary> 
+    <description lang="en">Search and download subtitles from www.sratim.co.il, www.subscenter.co.il. To use the button on OSD you need to activate it and path set to XBMC Subtitles under System-> Skin-> Addon Scripts</description>
+    <description lang="he">מחפש כתוביות באתרים של סרטים, סאבססנטר. כדי להפעיל יש להגדיר שימוש ב Skin ע"י הפעלה של System-> Skin-> Addon Scripts</description>
+    <platform>all</platform>
+  </extension>
+</addon>

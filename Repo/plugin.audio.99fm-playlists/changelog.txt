@@ -1,3 +1,6 @@
+v0.2.4
+- Azam - Song icon added
+
 v0.2.3
 - Azam - Music discovery
 
