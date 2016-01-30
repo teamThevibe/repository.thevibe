@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.sdarot.video" name="סדרות בצפיה ישירה" version="1.0.1" provider-name="sbentin">
+    <requires>
+        <import addon="xbmc.python" version="2.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="sdarot.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <minversion>31632</minversion>
+        <summary lang="en">Watch online series with Hebrew translation from Sdarot.org.</summary>
+        <summary lang="he">צפייה ישירה בסדרות עם תרגום בעברית</summary>
+        <description lang="en">Watch online series with Hebrew translation from Sdarot.org.</description>
+        <description lang="he">צפייה ישירה בסדרות עם תרגום בעברית</description>
+        <disclaimer>This addon parse sport5's site, you should check Sport 5's TOS before your using. It's as is</disclaimer>
+        <supportedcontent>
+          <content>tvshows</content>
+          <content>episodes</content>
+        </supportedcontent>	
+    </extension>
+</addon>

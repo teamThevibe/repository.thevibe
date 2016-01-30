@@ -1,0 +1,10 @@
+[B]Version 1.0.4[/B]
+- New version, applicaster based.
+[B]Version 1.0.3[/B]
+- changes at website.
+[B]Version 1.0.2[/B]
+- fix some Gibberish
+[B]Version 1.0.1[/B]
+- repo check
+[B]Version 1.0.0[/B]
+- Initial release

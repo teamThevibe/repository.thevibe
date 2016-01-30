@@ -1,0 +1,6 @@
+[b]1.0.1[/b]
+- romanian added
+- italian added
+
+[b]1.0.1[/b]
+- categories added

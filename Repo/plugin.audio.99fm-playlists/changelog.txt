@@ -1,0 +1,19 @@
+v0.2.3
+- Azam - Music discovery
+
+v0.2.1
+- Reformatting
+
+v0.1.9
+- Bugfixes
+
+v0.1.6
+- Bugfixes
+- Favorites playlists category
+
+v0.1.0
+- Bugfixes
+- Add more playlists
+
+v0.0.1
+- Initial version

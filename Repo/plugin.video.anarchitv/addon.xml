@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.anarchitv"
+       name="[COLOR yellow]AnarchiTV[/COLOR]"
+       version="1.0.3"
+       provider-name="kodi senyor">
+  <requires>
+    <import addon="script.module.urlresolver" optional="true"/>   
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>AnarchiTV</summary>
+    <description>
+	[COLOR yellow]http://kodi-senyor.co.il and http://anarchitv.co/[/COLOR] AnarchiTV Live tv channels
+    </description>
+	<license>http://www.gnu.org/licenses/</license>
+    <website>http://kodi-senyor.co.il</website>
+    <email></email>
+    <platform>all</platform>
+  </extension>
+</addon>

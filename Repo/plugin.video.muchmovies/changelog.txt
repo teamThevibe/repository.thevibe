@@ -1,0 +1,24 @@
+v1.0.9
+Fixed Serch Error
+
+v1.0.8
+Added Code For The Collective
+
+v1.0.5
+Quick Fix
+
+v1.0.4
+Added Metadata
+
+
+v1.0.2
+Added Add To Library
+
+v1.0.1
+Added Back To Main Menu
+Added Sort Order Change In Addon Settings
+Default Sort Order is "Release Date"
+Added Play Trailer
+
+v1.0.0
+Initial Release
