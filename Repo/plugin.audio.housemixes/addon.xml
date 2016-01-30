@@ -7,8 +7,8 @@
         <provides>audio</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="en"></summary>
-    <description lang="en"></description>
+    <summary lang="en"/>
+    <description lang="en"/>
     <platform>all</platform>
   </extension>
 </addon>
