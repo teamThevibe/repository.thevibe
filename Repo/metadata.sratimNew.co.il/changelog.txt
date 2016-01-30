@@ -1,0 +1,10 @@
+[B]Version 1.0.3[/B]
+- fixed original english title
+- fixed trailers fetch
+
+[B]Version 1.0.2[/B]
+- Added support for IMDB thumb and actor details
+- Fixed Thumb image on Sratim
+
+[B]Version 1.0.1[/B]
+- Fixed Regular expression for title search

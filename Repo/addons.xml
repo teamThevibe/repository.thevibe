@@ -1,5 +1,67 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
+<addon id="context.extendedinfo.dialog" name="ExtendedInfo Script - Open dialog" version="1.0.0" provider-name="phil65">
+  <requires>
+    <import addon="xbmc.python" version="2.20.0"/>
+    <import addon="script.extendedinfo" version="2.0.6"/>
+  </requires>
+  <extension point="kodi.context.item" library="addon.py">
+    <item>
+      <label>32000</label>
+      <visible>StringCompare(ListItem.dbtype,movie) | StringCompare(ListItem.dbtype,tvshow) | StringCompare(ListItem.dbtype,season) | StringCompare(ListItem.dbtype,actor) | StringCompare(ListItem.dbtype,director)</visible>
+    </item>
+  </extension>
+  <extension point="kodi.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Open ExtendedInfo dialog from context menu in library</summary>
+    <description lang="en">Open ExtendedInfo dialog from context menu in library. Needs script.extendedinfo installed and activated. Available for movies, tv shows and seasons currently.</description>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+    <forum></forum>
+    <source></source>
+  </extension>
+</addon>
+
+<addon id="context.extendedinfo.ratemedia" name="ExtendedInfo Script - Rate media items" version="0.9.0" provider-name="phil65">
+  <requires>
+    <import addon="xbmc.python" version="2.20.0"/>
+    <import addon="script.extendedinfo" version="2.0.7"/>
+  </requires>
+  <extension point="kodi.context.item" library="addon.py">
+    <item>
+      <label>32000</label>
+      <visible>StringCompare(ListItem.dbtype,movie) | StringCompare(ListItem.dbtype,tvshow) | StringCompare(ListItem.dbtype,episode)</visible>
+    </item>
+  </extension>
+  <extension point="kodi.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Rate media at TheMovieDB from context menu in library</summary>
+    <description lang="en">Rate media at TheMovieDB from context menu in library. Needs script.extendedinfo installed and activated. Available for movies, tv shows and episodes currently.</description>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+    <forum></forum>
+    <source></source>
+  </extension>
+</addon>
+
+<addon id="context.mysubscriptions" name="My Subscriptions" version="1.0.5" provider-name="kinkin">
+  <requires>
+    <import addon="xbmc.python" version="2.20.0"/>
+    <import addon="script.module.requests" version="1.1.0"/>
+    <import addon="script.module.urlresolver" version="1.0.0"/>
+  </requires>
+    <extension point="kodi.context.item" library="addon.py">
+    <provides>executable</provides>
+      <item>
+        <label>Select Alternative Addon</label>
+        <visible>StringCompare(ListItem.dbtype,movie) | StringCompare(ListItem.dbtype,episode)</visible>
+      </item>
+    </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Library streams with a choice</summary>
+    <description>Add movies and shows to your library from any addon.....Use the context menu to Select Alternative Addon</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="context.pseudotv.live.export" name="PseudoTV Live Export" version="1.0.6" provider-name="Lunatixz">
   <requires>
     <import addon="xbmc.python" version="2.20.0"/>
@@ -28,6 +90,27 @@
     <website>www.pseudotvlive.com</website>
     <forum>http://forum.kodi.tv/showthread.php?tid=233143</forum>
   </extension>
+</addon>
+
+<!--suppress ALL -->
+<addon id="context.salts.tools" version="0.0.4" name="SALTS Context Tools" provider-name="tknorris">
+    <requires>
+        <import addon="xbmc.python" version="2.2.0"/>
+        <import addon="plugin.video.salts" version="1.0.65"/>
+    </requires>
+    <extension point="kodi.context.item" library="default.py">
+      <item>
+        <label>SALTS Tools...</label>
+        <visible>StringCompare(ListItem.dbtype,movie) | StringCompare(ListItem.dbtype,tvshow) | StringCompare(ListItem.dbtype,season) | StringCompare(ListItem.dbtype,episode)</visible>
+      </item>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Library Context Menu Tools for SALTS</summary>
+        <description>This addon provides context menu items for the SALTS addon</description>
+        <platform>all</platform>
+        <website>http://tvaddons.ag/</website>
+		<forum>http://forums.tvaddons.ag/forums/180-TKNORRIS-RELEASE-REPOSITORY</forum>
+	</extension>
 </addon>
 
 <addon id="metadata.album.universal"
@@ -273,6 +356,72 @@
   </extension>
 </addon>
 
+<addon id="metadata.common.movieposterdb.com"
+       name="MoviePosterDB Scraper Library"
+        version="1.1.2"
+       provider-name="XBMC Foundation">
+  <requires>
+    <import addon="xbmc.metadata" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.metadata.scraper.library"
+             library="movieposterdb.xml"/>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">MoviePosterDB Scraper Library</summary>
+    <summary lang="hu">MoviePosterDB leolvasó-könyvtár</summary>
+    <summary lang="kr">MoviePosterDB 스크래퍼 라이브러리</summary>
+    <summary lang="pl">Scraper plakatów MoviePosterDB</summary>
+    <summary lang="pt">Posters de filmes MoviePosterDB </summary>
+    <summary lang="se">MoviePosterDB Skrapbibliotek</summary>
+    <description lang="en">Download Movie Posters From MoviePosterDB</description>
+    <description lang="hu">Film információk letöltése a MoviePosterDB webhelyről</description>
+    <description lang="kr">MoviePosterDB 에서 포스터 다운로드</description>
+    <description lang="pl">Pobieraj plakaty filmów z www.movieposterdb.com</description>
+    <description lang="pt">Descarregar posters de filmes de www.movieposterdb.com</description>
+    <description lang="se">Ladda ner filminformation från MoviePostersDB.</description>
+  </extension>
+</addon>
+
+<addon id="metadata.common.themoviedb.org"
+       name="The Movie Database Scraper Library"
+       version="2.13.1"
+       provider-name="XBMC Foundation">
+  <requires>
+    <import addon="xbmc.metadata" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.metadata.scraper.library"
+             library="tmdb.xml"/>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="bg">Библиотека за сваляне на инф. от TMDb</summary>
+    <summary lang="en">TMDb Scraper Library</summary>
+    <summary lang="es">Scraper de peliculas de TMDb</summary>
+    <summary lang="fi">TMDb elokuvatietojen lataajan kirjasto</summary>
+    <summary lang="fr">Scraper TMDb</summary>
+    <summary lang="hu">TMDb leolvasó-könyvtár</summary>
+    <summary lang="nl">TMDb-scraperfuncties</summary>
+    <summary lang="pl">Scraper biblioteki TMDb</summary>
+    <summary lang="pt">Scraper de filmes TMDb</summary>
+    <summary lang="ro">Bibliotecă catalog TMDb</summary>
+    <summary lang="ru">Обработчик для TMDb</summary>
+    <summary lang="se">Skrapebibliotek för TMDb</summary>
+    <summary lang="zh">TMDb刮削器代码库</summary>
+    <description lang="bg">Сваля миниатюри и fanarts от www.themoviedb.org</description>
+    <description lang="en">Download thumbs and fanarts from www.themoviedb.org</description>
+    <description lang="es">Descarga posters y fanart de www.themoviedb.org</description>
+    <description lang="fi">Lataa pienoiskuvia ja fanitaidetta www.themoviedb.org -sivustolta</description>
+    <description lang="fr">Télécharge vignettes et backdrops depuis www.themoviedb.org</description>
+    <description lang="hu">Bélyeg- és fanartképek letöltése a www.themoviedb.org webhelyről</description>
+    <description lang="nl">Miniaturen en fanart ophalen van www.themoviedb.org</description>
+    <description lang="pl">Pobieraj ikony i fanarty z www.themoviedb.org</description>
+    <description lang="pt">Descarregar informação de filmes de www.themoviedb.org</description>
+    <description lang="ro">Descărcați miniaturi și imagini realizate de fani de pe www.themoviedb.org</description>
+    <description lang="ru">Загружать миниатюры и фанарт с www.themoviedb.org</description>
+    <description lang="se">Ladda ner miniatyrer och fanart från www.themoviedb.org</description>
+    <description lang="zh">从www.themoviedb.org下载海报和同人画</description>
+  </extension>
+</addon>
+
 <addon id="metadata.hebmovies.wiz" name="HebMovies TheWiz" version="1.1.9" provider-name="TheWiz, CaTz">
     <requires>
         <import addon="xbmc.metadata" version="1.0"/>
@@ -459,9 +608,25 @@
   </extension>
 </addon>
 
+<addon id="metadata.sratimNew.co.il" name="סרטים" version="1.0.3" provider-name="sbentin">
+	<requires>
+		<import addon="xbmc.metadata" version="1.0" />
+		<import addon="metadata.common.themoviedb.org" version="1.0.7" />
+		<import addon="metadata.common.imdb.com" version="2.1.3" />
+	</requires>
+	<extension point="xbmc.metadata.scraper.movies" language="he" library="Sratim.xml" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Yes another Sratim Site Movie Scraper</summary>
+		<summary lang="he">עוד סקרייפר לסרטים מאתר סרטים</summary>
+		<description lang="he">www.sratim.co.il הורדת מידע סרטים מאתר. הסקרפר כולל יותר אפשרויות בחירה להורדה של fanart מאתר גוגל, כמו גם קדימונים ומידע על שחקנים. ניתן להגדיר את הבחירות בהגדרות הסקרפר.</description>
+		<description lang="en">Download Movie information from www.sratim.co.il. This scraper includes choice option to download fanart images from google as well as actor details and trailers. You can define these options on the scraper settings page.</description>
+		<disclaimer>The scrpaer gets information from sratim site and google. It bares no responsibility for the content of the information</disclaimer>
+	</extension>
+</addon>
+
 <addon id="metadata.themoviedb.org"
        name="The Movie Database"
-       version="3.8.5"
+       version="3.8.7"
        provider-name="XBMC Foundation">
   <requires>
     <import addon="xbmc.metadata" version="2.1.0"/>
@@ -581,6 +746,36 @@
     <email></email>
     <source></source>
   </extension>
+</addon>
+
+<addon id="metadata.themusicvideodb.org" name="The MusicVideoDB MQ" version="3.0.8" provider-name="Team XBMC / MarcosQui">
+  <requires>
+    <import addon="xbmc.metadata" version="1.0"/>
+    <import addon="metadata.common.themoviedb.org" version="2.1.2"/>
+    <import addon="metadata.common.imdb.com" version="2.1.9"/>
+  </requires>
+  <extension point="xbmc.metadata.scraper.musicvideos" language="en" library="tmvdb.xml"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">TMVDB MQ MusicVideos Scraper</summary>
+    <summary lang="pt">Scraper de Videos Musicais TMVDB MQ</summary>
+    <description lang="en">themoviedb.org is a free and open media database. It's completely user driven by people like you. TMVDB is currently used by millions of people every month and with their powerful API, it is also used by many popular media centers like XBMC to retrieve Movie Metadata, Posters and Fanart to enrich the user's experience.</description>
+    <description lang="pt">O themoviedb.org é uma base de dados de mídia livre e aberta. É completamente atualizado por pessoas como você e usado por milhões todos os meses. Com o poderoso motor de busca disponível se tornou o favorito de muitos softwares media center, como o popular XBMC, para obter informação, posters e fanart que enriquecem a experiência do usuário.</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="metadata.torec.net" name="טורק" version="1.0.2" provider-name="Shai Bentin">
+	<requires>
+		<import addon="xbmc.metadata" version="1.0" />
+		<import addon="metadata.common.themoviedb.org" version="1.0.7" />
+	</requires>
+	<extension point="xbmc.metadata.scraper.movies" language="he" library="torec.xml" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Torec Movie Scraper</summary>
+		<summary lang="he">סקרייפר סרטים מאתר טורק</summary>
+		<description lang="he">www.torec.net הורדת מידע סרטים מאתר</description>
+		<description lang="en">Download Movie information from www.torec.net</description>
+	</extension>
 </addon>
 
 <addon id="metadata.tvdb.com"
@@ -920,6 +1115,28 @@
   </extension>
 </addon>
 
+<addon id="network.openvpn"
+       name="openvpn"
+       version="6.0.0"
+       provider-name="Stefan Saraev (seo at irc.freenode.net)">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="default.py">
+    <provides></provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>openvpn: a full featured SSL VPN software solution that integrates OpenVPN server capabilities.</summary>
+    <description>
+openvpn binary is installed as /storage/.kodi/addons/network.openvpn/bin/openvpn
+    </description>
+    <disclaimer>
+this is an unofficial addon. please don't ask for support in openelec forum / irc channel
+    </disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="Ninbora.Movies_Feeder" name="Ninbora.Movies_Feeder" version="1.4.6" provider-name="Donatello">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -932,6 +1149,22 @@
     <summary lang="en">Feed movies to Kodi from several sources</summary>
     <summary lang="he">מזין סרטים לקודי ממספר ממקורות נערך ע"י דונטלו Donatello and Hybridmag  תודה רבה רבה להיברידמאג שעזר לי לפתור את הבעיה של משיכת הסרטים אתה תותח על !!"</summary>
     <website>http://donatellokodi.blogspot.co.il</website>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="Ninbora.Series_Feeder" name="Ninbora.Series_Feeder" version="1.4.6" provider-name="Donatello">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="main.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.service" library="service.py" start="startup"></extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Feed series to Kodi from several sources</summary>
+    <summary lang="he">מזין סדרות לקודי ממספר מקורות נערך ע"י דונטלו המון תודה להיבריד מאג על העזרה בתיקון הבעיה Donatello and Hybridmag"</summary>
+    <website>https://donatelokodi.blogspot.co.il</website>
     <platform>all</platform>
   </extension>
 </addon>
@@ -1673,6 +1906,84 @@ Musikrichtung: Psychedelic und Progressive Rock
 		</extension>
 	</addon>
 
+	<addon
+        id="plugin.audio.roughtempo"
+        name="Rough Tempo"
+        version="0.0.8"
+        provider-name="@TheYid009">
+		<requires>
+			<import addon="xbmc.python"             	version="2.1.0"/>
+			<import addon="xbmc.addon"              	version="12.1.0"/>
+		</requires>
+		<extension point="xbmc.python.pluginsource" library="default.py">
+			<provides>audio</provides>
+		</extension>
+		<extension point="xbmc.addon.metadata">
+			<summary lang="en">Rough Tempo, WINNER OF BEST RADIO STATION - THE DRUM AND BASS AWARDS 2014 (Live video streaming)</summary>
+			<description lang="en">www.roughtempo.com Over 120 Hours a week of LIVE DJs from the UK and Worldwide with Multiple Cams, Chat and Huge name Special Guests Weekly.. [CR] PREVIOUS SPECIAL GUESTS INCLUDE: TC - ORIGINAL SIN - HEIST - KRAFTY KUTS - MODESTEP - DARREN STYLES - GAMMER - HAMILTON - LOGAN D - SDC - AYAH MARAR - APHRODITE - KENNY KEN - SLIPMATT - ELLIS DEE - RAGGA TWINS - BROCKIE - JUMPING JACK FROST - DEVIOUS D and MANY MORE!!</description>
+			<disclaimer lang="en">All streams and content is owned by Rough Tempo... Addon code provided by atb a member from xbmchub forum and reworked by TheYid's REPO</disclaimer>
+			<platform>all</platform>
+			<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+			<language>en</language>
+			<forum></forum>
+			<website>www.roughtempo.com</website>
+			<email>@ThYid009</email>
+			<source>www.roughtempo.com</source>
+		</extension>
+	</addon>
+
+<addon id="plugin.audio.spreaker" name="Spreaker" version="1.0.4" provider-name="MetalKettle">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>audio</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en"></summary>
+    <description lang="en"></description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.audio.sradio.ru"
+       name="SRADIO.RU"
+       version="0.0.2"
+       provider-name="HD-Lab Team">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>audio</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary>SRADIO.RU: слушайте FM и интернет радио со всего мира</summary>
+    <description>SRADIO.RU: слушайте FM и интернет радио со всего мира</description>
+  </extension>
+</addon>
+
+<addon id="plugin.audio.stepashka.com"
+       name="audio.stepashka.com"
+       version="0.0.3"
+       provider-name="akgdrg">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.module.beautifulsoup"/>
+
+    </requires>
+    <extension point="xbmc.python.pluginsource" provides="audio" library="default.py">
+        <provides>audio</provides>
+    </extension>
+
+    <extension point="xbmc.addon.metadata">
+        <summary>Аудиоархивы stepashka.com</summary>
+        <description>Аудиоархивы stepashka.com</description>
+        <platform>all</platform>
+    </extension>
+</addon>
+
 <addon id="plugin.audio.svobodanews.ru"
        name="Svobodanews"
        version="1.0.7"
@@ -2194,6 +2505,21 @@ Erst dort findest du den Button um die AS in dein System zu kopieren, danach mus
   <extension point="xbmc.addon.metadata">
     <summary lang="en">Before you waste one entire second even considering mixing, creating, or otherwise implementing the instructions in these files, be aware that people have died from some of these very texts</summary>
     <description lang="en">Before you waste one entire second even considering mixing, creating, or otherwise implementing the instructions in these files, be aware that people have died from some of these very texts </description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.program.KodiBuildsIL" name="Kodi Builds IL wizard" version="1.0.0" provider-name="kodi senyor">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Kodi Builds IL Wizard</summary>
+    <description lang="en">Kodi Builds IL kodi builds</description>
+	<description lang="he">Kodi Builds IL בילדים מוכנים לקודי</description>
     <platform>all</platform>
   </extension>
 </addon>
@@ -14662,18 +14988,18 @@ Créditos: Cristi - Atlanta (xsopcast plugin); NouisMons (acestream engine plugi
 	</extension>
 </addon>
 
-<addon id="repository.thevibe" name="TheVibe Team Repository" version="2.5" provider-name="TheVibe Team">
-    <extension point="xbmc.addon.repository" name=".TheVibe Repository ">
-        <info compressed="false">http://repo.the-vibe.co.il/Repo/addons.xml</info>
-        <checksum>http://repo.the-vibe.co.il/Repo/addons.xml.md5</checksum>
-        <datadir zip="true">http://repo.the-vibe.co.il/Repo</datadir>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary>TheVibe Team Repository</summary>
-        <description>heVibe Team Repository</description>
-        <description>heVibe Team Repository</description>
-        <platform>all</platform>
-    </extension>
+<addon id="repository.thevibe" name="TheVibe Team Repository" version="3.1.1" provider-name="TheVibe Team">
+  <extension point="xbmc.addon.repository" name=".TheVibe Repository ">
+    <info compressed="false">http://repo.the-vibe.co.il/Repo/addons.xml</info>
+    <checksum>http://repo.the-vibe.co.il/Repo/addons.xml.md5</checksum>
+    <datadir zip="true">http://repo.the-vibe.co.il/Get</datadir>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>TheVibe Team Repository</summary>
+    <description>TheVibe Team Repository</description>
+    <platform>all</platform>
+    <website>http://www.the-vibe.co.il</website>
+  </extension>
 </addon>
 
 <addon id="repository.TheWiz" name="TheWiz Hebrew Repository" version="2.2.1" provider-name="TheWiz">
@@ -15157,9 +15483,9 @@ If for any reason the check of a successful wake-up via ping is not possible or 
   </extension>
 </addon>
 
-<addon id="script.artworkorganizer" name="Artwork Organizer" version="3.0.4" provider-name="ronie">
+<addon id="script.artworkorganizer" name="Artwork Organizer" version="3.0.5" provider-name="ronie">
 	<requires>
-		<import addon="xbmc.python" version="2.12.0"/>
+		<import addon="xbmc.python" version="2.19.0"/>
 		<import addon="script.module.simplejson" version="3.3.0"/>
 	</requires>
 	<extension point="xbmc.python.script" library="default.py">
@@ -15174,7 +15500,7 @@ If for any reason the check of a successful wake-up via ping is not possible or 
 		<summary lang="en">Copies your fanart and thumbs into a separate directories</summary>
 		<summary lang="en_US">Copies your fanart and thumbs into a separate directories</summary>
 		<summary lang="es">Copia tu Fanart y Miniaturas en carpetas independientes</summary>
-		<summary lang="fr">Copie de vos fanart et vignettes dans des répertoires distincts</summary>
+		<summary lang="fr">Copie les fanarts et miniatures dans des dossiers distincts</summary>
 		<summary lang="fr_CA">Copie vos fanarts et imagettes dans des répertoires distincts</summary>
 		<summary lang="gl">Copia o teu fanart e miniaturas en cartafoles separados</summary>
 		<summary lang="he">העתקת פאנארט ותמונות הממוזערות אל תיקיות נפרדות</summary>
@@ -15201,7 +15527,7 @@ If for any reason the check of a successful wake-up via ping is not possible or 
 		<description lang="en_NZ">This script can be used to copy your movie, tvshow, artist and album fanart and thumbs into a separate directories.</description>
 		<description lang="en_US">This script can be used to copy your movie, tvshow, artist and album fanart and thumbs into a separate directories.</description>
 		<description lang="es">Este script te permite copiar tu fanart y miniaturas de películas, programas de tv e intérpretes en carpetas independientes.</description>
-		<description lang="fr">Ce script peut être utilisé pour copier vos film, séries tv, artiste et album fanart et vignettes dans des répertoires distincts.</description>
+		<description lang="fr">Ce script peut être utilisé pour copier les fanart et miniatures de films, séries TV, artistes et albums dans des dossiers distincts.</description>
 		<description lang="fr_CA">Ce script peut être utilisé pour copier les fanarts et imagettes de vos films, séries télé, artistes et albums dans des répertoires distincts.</description>
 		<description lang="gl">Este script pode usarse para copiar o fanart e as miniaturas do teu filme, serie, artista ou álbum en cartafoles separados.</description>
 		<description lang="he">סקריפט זה יכול לשמש להעתקת פאנארט ותמונות ממוזערות של סרט, סדרה, אמן ואלבום אל תיקיות נפרדות.</description>
@@ -15451,19 +15777,23 @@ If for any reason the check of a successful wake-up via ping is not possible or 
   </extension>
 </addon>
 
-<addon id="script.extendedinfo" name="ExtendedInfo Script" version="3.1.2" provider-name="phil65">
+<addon id="script.extendedinfo" name="ExtendedInfo Script" version="4.0.1" provider-name="phil65">
 	<requires>
-		<import addon="xbmc.python" version="2.1.0"/>
+		<import addon="xbmc.python" version="2.24.0"/>
 		<import addon="script.module.simplejson" version="2.0.10"/>
 		<import addon="script.module.youtube.dl" version="14.519.1"/>
-<!-- 		<import addon="script.module.buggalo" version="1.1.6"/>-->
+		<import addon="resource.images.studios.white" version="0.0.5"/>
+		<import addon="script.module.autocompletion" version="1.0.0"/>
+		<import addon="script.module.actionhandler" version="1.0.1"/>
+		<import addon="script.module.t9.search" version="1.0.0"/>
+		<!-- 		<import addon="script.module.buggalo" version="1.1.6"/>-->
 		<import addon="script.module.pil" version="1.1.7"/>
 	</requires>
-	<extension point="xbmc.python.script"           library="default.py">
+	<extension point="xbmc.python.script" library="default.py">
 		<provides>executable</provides>
 	</extension>
-	<extension point="xbmc.python.library"          library="default.py" />
-	<extension point="xbmc.python.pluginsource"     library="plugin.py">
+	<extension point="xbmc.python.library" library="default.py" />
+	<extension point="xbmc.python.pluginsource" library="plugin.py">
 		<provides>video</provides>
 	</extension>
 	<extension point="xbmc.addon.metadata">

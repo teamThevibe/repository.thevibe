@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="Ninbora.Series_Feeder" name="Ninbora.Series_Feeder" version="1.4.6" provider-name="Donatello">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="main.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.service" library="service.py" start="startup"></extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Feed series to Kodi from several sources</summary>
+    <summary lang="he">מזין סדרות לקודי ממספר מקורות נערך ע"י דונטלו המון תודה להיבריד מאג על העזרה בתיקון הבעיה Donatello and Hybridmag"</summary>
+    <website>https://donatelokodi.blogspot.co.il</website>
+    <platform>all</platform>
+  </extension>
+</addon>

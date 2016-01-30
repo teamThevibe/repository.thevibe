@@ -1,8 +1,16 @@
-v3.1.2
-- fixes for LastFM and Youtube API
-- misc fixes
+v4.0.1
+- RottenTomatoes poster fix
+- kodi python api dependency bump
 
-v3.1.1
+v4.0.0 (for Kodi Jarvis)
+ - API change: remove all "movie." and "actor." prefixes in dialogs
+ - use new textviewer method instead of own windowXML class
+ - use new image resource add-ons
+ - make use of ActionHandler module
+ - fixes for LastFM and Youtube API
+ - misc fixes
+
+ v3.1.1
 - hebrew fix for keyboard
 - more minor bugfixes
 - url-quote login data for TMDB
