@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.audio.antennebayern" name="Antenne Bayern" version="2.0" provider-name="IPTVxtra Team">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>audio</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>IPTVxtra Team</summary>
+    <description>Addon für Radio Antenne Bayern von IPTVxtra.net
+	
+	Antenne Bayern - das Original
+	Rock Antenne, Oldies but Goldies,
+	Chillout, Schlagersahne, Hits für Kids,
+	80er Kulthits, Classic Rock Live,
+	Top 40, Lovesongs, Black Beatz
+	
+	http://www.IPTVxtra.net</description>
+	<website>http://www.iptvxtra.net</website>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+

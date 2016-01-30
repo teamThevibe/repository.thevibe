@@ -961,6 +961,26 @@
   </extension>
 </addon>
 
+<addon id="plugin.audio.101.ru"
+       name="101.RU"
+       version="1.0.9"
+       provider-name="HD-Lab Team">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>audio</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Internet radio station 101.RU</summary>
+    <summary lang="ru">Интернет-радиостанция 101.RU</summary>
+    <description lang="en">Listen to radio with only the best site http://www.101.ru</description>
+    <description lang="ru">Слушайте только лучшие радиоканалы с сайта http://www.101.ru</description>
+  </extension>
+</addon>
+
 <addon id="plugin.audio.99fm-playlists"
        name="99FM Playlists"
        version="0.2.4"
@@ -991,6 +1011,192 @@
         <email>nir@nirelbaz.com</email>
     </extension>
 </addon>
+
+<addon id="plugin.audio.akado.radio"
+       name="akado.radio"
+       version="1.0.5"
+       provider-name="HD-Lab Team">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>audio</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary>АКАДО.Радио</summary>
+    <description>АКАДО.Радио</description>
+  </extension>
+</addon>
+
+<addon id="plugin.audio.antennebayern" name="Antenne Bayern" version="2.0" provider-name="IPTVxtra Team">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>audio</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>IPTVxtra Team</summary>
+    <description>Addon für Radio Antenne Bayern von IPTVxtra.net
+
+	Antenne Bayern - das Original
+	Rock Antenne, Oldies but Goldies,
+	Chillout, Schlagersahne, Hits für Kids,
+	80er Kulthits, Classic Rock Live,
+	Top 40, Lovesongs, Black Beatz
+
+	http://www.IPTVxtra.net</description>
+	<website>http://www.iptvxtra.net</website>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.audio.asbook.ru"
+       name="[COLOR FF00FF00]Аудиокниги ([/COLOR][COLOR FFFFF000]asbook.ru[/COLOR][COLOR FF00FF00])[/COLOR]"
+       version="1.0.10"
+       provider-name="Silen">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+             provides="audio"
+             library="default.py">
+    <provides>audio</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>my-hit.ru</summary>
+    <description>[COLOR FFFFF000]ASBOOK.RU[/COLOR] - слушайте аудиокниги онлайн совершенно бесплатно.
+</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.audio.ballermann" name="Radio Ballermann" version="2.0" provider-name="IPTVxtra Team">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>audio</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>IPTVxtra Team</summary>
+    <description>Addon für Radio Ballermann von IPTVxtra.net
+
+	Radio Ballermann - das Original
+	Radio Ballermann - Country Hits
+	Radio Ballermann - Party Hits
+	Radio Ballermann - Top 100
+
+
+	http://www.IPTVxtra.net</description>
+	<website>http://www.iptvxtra.net</website>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.audio.binaural"
+       name="Bin@ural"
+       version="1.0.0a"
+       provider-name="Kinkin, art by Christara">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.module.requests" version="1.1.0"/>
+        <import addon="script.module.t0mm0.common" version="1.1.0"/>
+        <import addon="plugin.video.youtube"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource"
+               	library="default.py">
+        <provides>audio video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary>Audio and Video Music Streaming</summary>
+        <description>Browse and stream your favourite songs and albums and videos</description>
+    </extension>
+
+</addon>
+
+<addon id="plugin.audio.boilerroom" name="Boiler Room" version="1.0.8" provider-name="MetalKettle">
+  <requires>
+    <import addon="script.module.simplejson" version="3.3.0"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.t0mm0.common" version="2.0.0"/>
+    <import addon="plugin.video.youtube" version="3.0.0"/>
+    <import addon="script.module.urlresolver"  version="2.1.2"/>
+    <import addon="script.common.plugin.cache" version="2.5.2"/>
+    <import addon="script.module.metahandler" version="2.5.1"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>audio</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en"></summary>
+    <description lang="en"></description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.audio.CannaPower" name="CannaPower" version="1.0.1" provider-name="skatulskijean">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>audio</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform><language>de</language><license>GPL 2.0</license>
+   		<summary lang="de">CannaPower</summary>
+		<description lang="en">
+			CannaPower streams music-charts and Year-Charts from your Country.
+		</description>
+	</extension>
+</addon>
+
+	<addon
+        id="plugin.audio.DejaVu"
+        name="DejaVu FM"
+        version="0.0.2"
+        provider-name="TheYid">
+		<requires>
+			<import addon="xbmc.python"             	version="2.1.0"/>
+			<import addon="xbmc.addon"              	version="12.1.0"/>
+		</requires>
+		<extension point="xbmc.python.pluginsource" library="default.py">
+			<provides>audio</provides>
+		</extension>
+		<extension point="xbmc.addon.metadata">
+			<summary lang="en">DejaVu FM</summary>
+			<description lang="en">Listen to DejaVu FM; London's finest underground radio station</description>
+			<disclaimer lang="en">DejaVu.co.uk</disclaimer>
+			<platform>all</platform>
+			<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+			<language>en</language>
+			<forum></forum>
+			<website></website>
+			<email></email>
+			<source></source>
+		</extension>
+	</addon>
+
+	<addon id="plugin.audio.DnB-Sets" version="1.0.2" name="DnB-Sets" provider-name="Mucky_Duck">
+		<requires>
+			<import addon="xbmc.python"   version="2.1.0"/>
+            <import addon="script.module.t0mm0.common" version="2.0.0"/>
+        </requires>
+		<extension point="xbmc.python.pluginsource" library="default.py">
+			<provides>audio</provides>
+		</extension>
+		<extension point="xbmc.addon.metadata">
+			<summary lang="en">Welcome to dnb-sets.de - the Drum'n'Bass mix search engine! - See more at: http://www.dnb-sets.de</summary>
+			<description lang="en">dnb-sets.de is a search engine like Google or Yahoo which looks through various websites for independent DJ-sets and mixes.</description>
+			<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon</disclaimer>
+			<platform>all</platform>
+			<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+			<language>en</language>
+		</extension>
+	</addon>
 
 	<addon
         id="plugin.audio.freekfmlive"
@@ -1046,24 +1252,28 @@
         <provides>audio</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="en"/>
-    <description lang="en"/>
+    <summary lang="en"></summary>
+    <description lang="en"></description>
     <platform>all</platform>
   </extension>
 </addon>
 
-<addon id="plugin.audio.jango" name="Jango" version="0.8.6" provider-name="kinkin, art by jokster">
+<addon id="plugin.audio.jango"
+       name="Jango"
+       version="0.8.6"
+       provider-name="kinkin, art by jokster">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
         <import addon="script.module.t0mm0.common" version="1.1.0"/>
         <import addon="script.module.requests" version="1.1.0"/>
     </requires>
 
-    <extension point="xbmc.python.pluginsource" library="default.py">
+    <extension point="xbmc.python.pluginsource"
+               	library="default.py">
         <provides>audio</provides>
     </extension>
 
-	<extension point="xbmc.service" library="playerMP3.py" start="startup"/>
+	<extension point="xbmc.service" library="playerMP3.py" start="startup" />
 
     <extension point="xbmc.addon.metadata">
         <platform>all</platform>
@@ -1073,7 +1283,11 @@
 
 </addon>
 
-<addon id="plugin.audio.kodcast" name="Kodcast" version="0.0.1" provider-name="Nir Elbaz">
+<addon
+  id="plugin.audio.kodcast"
+  name="Kodcast"
+  version="0.0.4"
+  provider-name="Nir Elbaz">
     <requires>
         <import addon="xbmc.python" version="2.20.0"/>
         <import addon="script.module.requests" version="2.8.1"/>
@@ -1085,8 +1299,11 @@
     </extension>
     <extension point="xbmc.addon.metadata">
         <summary lang="en">Listen to the best podcasts in Israel</summary>
+        <summary lang="he">האזן לפודקאסטים הטובים ביותר בעברית</summary>
         <description lang="en">Listen to hundreds of Israel's finest podcasts: radio stations, lectures, interviews and more!</description>
+        <description lang="he">האזן למאות מהפודקאסטים הטובים ביותר בישראל: תחנות ותוכניות רדיו, הרצאות בנושאים מגוונים, ראיונות עם אישים מרתקים ועוד!</description>
         <disclaimer lang="en">All content in this plugin is served as is from iCast website and is an -unofficial- extension of this website.</disclaimer>
+        <disclaimer lang="he">כל המדיה הזמינה מתוסף זה מוגשת כמו שהיא מאתר iCast. תוסף זה אינו תוסף רישמי של האתר.</disclaimer>
         <language>he</language>
         <platform>all</platform>
         <license>GNU GENERAL PUBLIC LICENSE Version 2, June 1991</license>
@@ -1094,6 +1311,33 @@
         <email>nir@nirelbaz.com</email>
     </extension>
 </addon>
+
+	<addon
+        id="plugin.audio.koollondon"
+        name="koollondon"
+        version="9.4.8"
+        provider-name="@TheYid009">
+		<requires>
+			<import addon="xbmc.python"             	version="2.1.0"/>
+			<import addon="xbmc.addon"              	version="12.1.0"/>
+                     <import addon="script.module.TheYid.common" version="0.1.1"/>
+		</requires>
+		<extension point="xbmc.python.pluginsource" library="default.py">
+			<provides>audio</provides>
+		</extension>
+		<extension point="xbmc.addon.metadata">
+			<summary lang="en">koollondon</summary>
+			<description lang="en">Listen to Kool london 94.6 fm 22 years and still going drum n bass jungle old skool</description>
+			<disclaimer lang="en">All streams and content is owned by koollondon... Addon code provided by atb a member from xbmchub forum and reworked by TheYid's REPO</disclaimer>
+			<platform>all</platform>
+			<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+			<language>en</language>
+			<forum>www.koollondon.com</forum>
+			<website>www.koollondon.com</website>
+			<email>@ThYid009</email>
+			<source>www.koollondon.com</source>
+		</extension>
+	</addon>
 
 <addon id="plugin.audio.krautrock" name="Krautrock Radio" version="1.2" provider-name="IPTVxtra Team">
   <requires>
@@ -1116,6 +1360,38 @@ Musikrichtung: Psychedelic und Progressive Rock
   </extension>
 </addon>
 
+<addon id="plugin.audio.lastvk" name="Last.VK" version="3.1.1" provider-name="HAL9000">
+  <requires>
+    <import addon="xbmc.python" version="2.14.0"/>
+    <import addon="script.module.xbmcup" version="0.1.1"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" provides="audio" library="default.py">
+    <provides>audio</provides>
+  </extension>
+  <extension point="xbmc.service" library="service.py" start="login"/>
+  <extension point="xbmc.addon.metadata">
+    <summary>LastFM + VK.com</summary>
+    <description>Навигатор по сайту LastFM с возможностью прослушивания музыки в VK.com</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.audio.lovifm" name="Lovi.fm" version="0.1.0" provider-name="HAL9000">
+    <requires>
+        <import addon="xbmc.python" version="2.14.0"/>
+        <import addon="script.module.xbmcup" version="0.1.1"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" provides="audio" library="main.py">
+        <provides>audio</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Lovi.fm</summary>
+        <description lang="en">Lovi.fm radio for Kodi</description>
+        <description lang="ru">Радио Lovi.fm для Kodi</description>
+        <platform>all</platform>
+    </extension>
+</addon>
+
 	<addon id="plugin.audio.MD3-Audio" version="1.0.2" name="MD3 Audio" provider-name="Mucky Duck">
 		<requires>
 			<import addon="xbmc.python"   version="2.1.0"/>
@@ -1134,6 +1410,24 @@ Musikrichtung: Psychedelic und Progressive Rock
 			<language>en</language>
 		</extension>
 	</addon>
+
+<addon id="plugin.audio.moskva.fm"
+       name="MOSKVA.FM"
+       version="1.1.0"
+       provider-name="TDW">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>audio</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary>MOSKVA.FM - песни на радио Москвы</summary>
+    <description>Слушайте радио Москвы. На сегодня в активе проекта MOSKVA.FM 53 радиостанций Москвы!</description>
+  </extension>
+</addon>
 
 <addon id="plugin.audio.mp3streams" name="MP3 Streams" version="1.1.9" provider-name="kinkin, spoyser, art by Marquerite">
     <requires>
@@ -1157,7 +1451,23 @@ Musikrichtung: Psychedelic und Progressive Rock
 
 </addon>
 
-<addon id="plugin.audio.musicbox" name="Music Box" version="0.1.2" provider-name="techdealer">
+<addon id="plugin.audio.mp3tales.ru" name="Аудиосказки" version="1.0.1" provider-name="HD-Lab Team">
+  <requires><import addon="xbmc.python" version="2.1.0"/></requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>audio</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary>Аудиосказки из вашего детства</summary>
+    <description>Многие помнят пластинки, вырезанные из журналов и купленные в магазине фирмы "Мелодия", проигрыватель с трескучей иголкой. И этот особенный звук. Звук детства. Каждая сказка - целое музыкальное театрализованное представление с актерам, но без кукол. Если пластинки и могли остаться в пыльном шкафу, то проигрыватель - уже редкость. Но теперь сказки доступны для всех. Для взрослых, чтобы вспомнить детство, и сказки для детей.
+На этом сайте вы можете бесплатно послушать аудиосказки онлайн. На сайте собрана коллекция аудиосказок советских времен и не только. Все они оцифрованы с советских детских грампластинок и кассет.
+Для вашего удобства коллекция детских сказок на сайте представлена в виде каталога с названием и описанием сказки, отсортированного в алфавитном порядке. Вы также можете использовать поиск по каталогу аудиосказок. Ко многим сказкам прилагаются обложки от пластинок.
+Для всех аудиосказок доступна возможность онлайн прослушивания прямо на сайте!
+Все размещенные на этом сайте аудиозаписи предназначены исключительно для ознакомительного прослушивания; после прослушивания рекомендуется купить лицензионный продукт во избежание нарушения авторских прав производителя и смежных прав.</description>
+  </extension>
+</addon>
+
+<addon id="plugin.audio.musicbox" name="Music Box" version="0.1.2i" provider-name="techdealer">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
 	<import addon="script.module.simple.downloader" version="1.9.4"/>
@@ -1176,6 +1486,192 @@ Musikrichtung: Psychedelic und Progressive Rock
     <platform>all</platform>
   </extension>
 </addon>
+
+	<addon id="plugin.audio.oldskool" version="1.0.2" name="Old Skool" provider-name="Mucky Duck">
+		<requires>
+			<import addon="xbmc.python"   version="2.1.0"/>
+            <import addon="script.module.t0mm0.common" version="2.0.0"/>
+			<import addon="repository.mdrepo"/>
+        </requires>
+		<extension point="xbmc.python.pluginsource" library="default.py">
+			<provides>audio</provides>
+		</extension>
+		<extension point="xbmc.addon.metadata">
+			<summary lang="en">Old Tape Packs And Various Other Music Found On The Web</summary>
+			<description lang="en">oldskool tape packs</description>
+			<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon</disclaimer>
+			<platform>all</platform>
+			<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+			<language>en</language>
+		</extension>
+	</addon>
+
+<addon id="plugin.audio.online.fm"
+       name="online.fm"
+       version="1.0.8"
+       provider-name="HD-Lab Team">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>audio</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary>Слушай радио Online.FM: rock, jazz, house music, rnb, relax music, шансон, trance. FM радио: ХитФМ, Kiss fm, Radio Rocks, NRJ радио - online.fm</summary>
+    <description>Online.FM - слушай радио онлайн. Русский рок, Украинский поп и рок, Trance, Party, Disco, RnB, Latino, Classic rock, House, Relax, Jazz, Шансон, музыка фестиваля Sziget и еще 40 радио каналов. Слушай FM радио: ХитФМ, Kiss fm, Radio Rocks, NRJ радио</description>
+  </extension>
+</addon>
+
+<addon id="plugin.audio.pearljamlive"
+       name="Pearl Jam Live"
+       version="1.0.8"
+       provider-name="Kinkin">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="plugin.video.youtube"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource"
+               	library="default.py">
+        <provides>audio video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary>A Pearl Jam fan addon!</summary>
+        <description>Listen to Pearl Jam concert bootlegs as far back as 1990</description>
+    </extension>
+
+</addon>
+
+<addon id="plugin.audio.radio7ulm" name="Radio 7 aus Ulm" version="2.0" provider-name="IPTVxtra Team">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>audio</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>IPTVxtra Team</summary>
+    <description>Addon für Radio 7 Ulm von IPTVxtra.net
+
+	http://www.IPTVxtra.net</description>
+	<website>http://www.iptvxtra.net</website>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.audio.radioreference"
+  name="Broadcastify"
+  version="1.1.6"
+  provider-name="www.tvaddons.ag">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>audio</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Broadcastify</summary>
+    <description lang="en">The worlds largest source of Public Safety, Aircraft, Rail and Marine Radio Live Audio Streams</description>
+    <platform>all</platform>
+    <forum>http://forums.tvaddons.ag/forums/112-BROADCASTIFY-FOR-KODI</forum>
+    <website>http://www.tvaddons.ag/</website>
+  </extension>
+</addon>
+
+<addon id="plugin.audio.radiostyle.ru"
+       name="RadioStyle"
+       version="1.0.6"
+       provider-name="HD-Lab Team">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>audio</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary>Интернет-радиостанция http://www.radiostyle.ru/</summary>
+    <description>RadioStyle.ru предлагает Вам услуги по созданию собственной Интернет-радиостанции, либо ретрансляции FM станции в сети Интернет. Для использования нашего сервиса Вам не потребуются особые знания, поскольку мы имеем удобную панель управления, подробные инструкции, и мы предоставляем поддержку всем нашим клиентам.
+Пользователям уже надоел обычный статический контент сайтов, посетителя больше не удивишь хорошим текстом и красивыми картинками. Медиа-контент сайта - аудио и видеоинформация, в особенности живое вещание - вот что привлекает посетителя. Аудио и видео трансляция в сети Интернет - это будущее, которое уже сейчас доступно всем желающим благодаря нашему сервису!
+Музыканты при помощи нашего сервиса могут вещать в Интернет своё творчество. Возможны живые концерты в прямом эфире! Фан-клубы музыкальных групп просто обязаны иметь собственную радиостанцию, в эфире которой будет звучать их любимая группа.
+Мы можем часами объяснять все преимущества нашего сервиса - проще один раз попробовать. После регистрации Вы можете в течении 24 часов абсолютно БЕСПЛАТНО пользоваться нашим сервисом!</description>
+  </extension>
+</addon>
+
+<addon id="plugin.audio.radiothai" name="Radio Thailand" version="2.0" provider-name="IPTVxtra Team">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>audio</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>IPTVxtra Team</summary>
+    <description>Addon für Radiosender aus Thailand
+
+	http://www.IPTVxtra.net</description>
+	<platform>all</platform>
+  </extension>
+</addon>
+
+	<addon
+        id="plugin.audio.raveplayer"
+        name="Rave player"
+        version="2.0.1"
+        provider-name="@TheYid009">
+		<requires>
+			<import addon="xbmc.python"             	version="2.1.0"/>
+			<import addon="xbmc.addon"              	version="12.1.0"/>
+                     <import addon="script.module.TheYid.common" version="0.1.1"/>
+                     <import addon="script.module.urlresolver"  version="2.0.9"/>
+                     <import addon="script.module.simplejson" version="3.3.0"/>
+		</requires>
+		<extension point="xbmc.python.pluginsource" library="default.py">
+			<provides>audio</provides>
+		</extension>
+		<extension point="xbmc.addon.metadata">
+			<summary lang="en">No1 for oldskool Stream 1000s and 1000s of Dj sets, mixtapes and ravepacks from over 30 sites all in one place so OiOi lets get xbmc raving to the sound of the oldskool</summary>
+			<description lang="en">Stream oldskool rave tape packs, oldskool pirate radio sets, podcasts, mixtapes and live radio audio and video streaming.[CR] Acid house, hardcore, jungle, drum n bass, house n garage, grime and much more from 1988 to present day for your raving needs and now with Rave and pirate radio Documentaries videos.... [CR] This [COLOR lime]SUPER ADDON[/COLOR] is brought to you by [COLOR blue]TheYids REPO[/COLOR][CR] [COLOR gold][B]For more info please read the changelog.txt[/B][/COLOR][CR] for downloading use Dreamcatcher you can get it from The[COLOR tan]Highways[/COLOR] REPO.. [CR][COLOR red] * [/COLOR]= work still to be done. </description>
+			<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon</disclaimer>
+			<platform>all</platform>
+			<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+			<language>en</language>
+			<forum>www.xbmchub.com</forum>
+			<website>raveplayer</website>
+			<email>@ThYid009</email>
+			<source>TheYidsREPO</source>
+		</extension>
+	</addon>
+
+	<addon
+        id="plugin.audio.rinsefmplayer"
+        name="Rinse FM"
+        version="1.0.9"
+        provider-name="@TheYid009">
+		<requires>
+			<import addon="xbmc.python"             	version="2.1.0"/>
+			<import addon="xbmc.addon"              	version="12.1.0"/>
+                     <import addon="script.module.TheYid.common" version="0.1.1"/>
+		</requires>
+		<extension point="xbmc.python.pluginsource" library="default.py">
+			<provides>audio</provides>
+		</extension>
+		<extension point="xbmc.addon.metadata">
+			<summary lang="en">Rinse FM player Lock in LIVE: 106.8 FM in London or http://radio.rinse.fm/ - find out who's playing right now here: http://rinse.fm/player/Studio.  Call or SMS: +44 (0)7539 863 117. BBM instant messaging: 21FF5BFF</summary>
+			<description lang="en">Rinse has dominated Londons radio airwaves for over a decade as a hub of the capitals thriving urban music community From Dubstep to Grime to House and everything in between Rinse has championed Londons diverse cultural needs reaching massively under represented communities with grass roots music... Tweet us at @rinsefm</description>
+			<disclaimer lang="en">All streams and content is owned by Rinse FM...</disclaimer>
+			<platform>all</platform>
+			<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+			<language>en</language>
+			<forum>www.xbmchub.com</forum>
+			<website>http://rinse.fm/</website>
+			<email>@ThYid009</email>
+			<source>http://rinse.fm/</source>
+		</extension>
+	</addon>
 
 	<addon
         id="plugin.audio.ts5player"
@@ -2705,7 +3201,7 @@ Donatello donations: http://donatellokodi.blogspot.co.il/2015/10/blog-post.html
   </extension>
 </addon>
 
-<addon id="plugin.video.kmediatorrent" name="KMediaTorrent" version="2.3.8.7" provider-name="jmarth">
+<addon id="plugin.video.kmediatorrent" name="KMediaTorrent" version="10.1.3" provider-name="jmarth">
     <requires>
         <import addon="xbmc.python" version="2.14.0"/>
         <import addon="script.module.requests" version="2.3.5"/>
@@ -3505,7 +4001,7 @@ Donatello donations: http://donatellokodi.blogspot.co.il/2015/10/blog-post.html
     </extension>
 </addon>
 
-<addon id="plugin.video.pulsar" name="Pulsar" version="0.7.1" provider-name="steeve, i96751414">
+<addon id="plugin.video.pulsar" name="Pulsar" version="0.6.2" provider-name="steeve-i96751414">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
     </requires>
@@ -3518,11 +4014,11 @@ Donatello donations: http://donatellokodi.blogspot.co.il/2015/10/blog-post.html
     <extension point="xbmc.addon.metadata">
         <platform>all</platform>
         <language>en</language>
-        <website><![CDATA[https://github.com/i96751414/plugin.video.pulsar]]></website>
+        <website><![CDATA[https://github.com/steeve/plugin.video.pulsar]]></website>
         <forum><![CDATA[http://forum.xbmc.org/showthread.php?tid=200957]]></forum>
-        <source><![CDATA[https://github.com/i96751414/plugin.video.pulsar]]></source>
+        <source><![CDATA[https://github.com/steeve/plugin.video.pulsar]]></source>
         <language>en</language>
-        <license><![CDATA[Non commercial. See https://github.com/i96751414/plugin.video.pulsar/blob/master/LICENSE]]></license>
+        <license><![CDATA[Non commercial. See https://github.com/steeve/plugin.video.pulsar/blob/master/LICENSE]]></license>
         <summary><![CDATA[Pulsar: Universal streaming]]></summary>
         <description><![CDATA[Follow @pulsarhq on Twitter]]></description>
     </extension>
@@ -6731,6 +7227,20 @@ level.</description>
   </extension>
 </addon>
 
+<addon id="script.pftvso.themepak" version="0.0.2" name="ProjectFreeTV.so Themepak" provider-name="natko1412">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+    </requires>
+    <extension point="xbmc.python.script" library="default.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Themes for the ProjectFreeTV.so Addon</summary>
+        <description>Themes for ProjectFreeTV.so are maintained separately to make addon updates easier and faster.</description>
+        <platform>all</platform>
+    </extension>
+</addon>
+
 <addon id="script.pseudotv.live" version="10.7.0d" name="PseudoTV Live" provider-name="Lunatixz">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
@@ -6755,7 +7265,7 @@ level.</description>
         <import addon="script.module.pil" version="0.0.1" optional="true"/>
         <import addon="script.skin.helper.service" version="0.0.43" optional="true"/>
         <import addon="context.pseudotv.live.export" version="1.0.4" optional="true"/>
-	<import addon="repository.lunatixz" version="1.0" optional="false"/>
+	<import addon="repository.lunatixz" version="1.0" optional="true"/>
     </requires>
     <extension point="xbmc.python.script" library="default.py">
         <provides>Programs</provides>
@@ -7020,6 +7530,20 @@ level.</description>
     <forum></forum>
     <website></website>
   </extension>
+</addon>
+
+<addon id="script.salts.themepak" version="0.0.8" name="SALTS Themepak" provider-name="tknorris">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+    </requires>
+    <extension point="xbmc.python.script" library="default.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Themes for the SALTS Addon</summary>
+        <description>Themes for SALTS are maintained separately to make distribution of the the addon itself easier/faster.</description>
+        <platform>all</platform>
+    </extension>
 </addon>
 
 <addon id="script.search.play2pulsar" name="Pulsar [COLOR FFF35C9F]Search+Play2PULSAR[/COLOR]" version="0.1.7" provider-name="mancuniancol">
@@ -8337,92 +8861,6 @@ Ett stort tack till alla som bidragit till detta plugin! Se loggen för tillägg
     </extension>
 </addon>
 
-<addon id="skin.amberXunityMod" version="99.99.99.1" name="Amber = Xunity Mod" provider-name="Pecinko">
-  <requires>
-    <import addon="xbmc.gui" version="4.0.0"/>
-    <import addon="script.favourites" version="3.2.0"/>
-	<import addon="service.skin.widgets" version="0.0.27"/>
-  </requires>
-  <extension
-    point="xbmc.gui.skin"
-    defaultthemename="Textures.xbt"
-    debugging="false">
-    <res width="1920" height="1080" aspect="16:9" default="true" folder="1080i" />
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <description>No bloatware, just your media with easy to navigate interface.[CR]Uses some textures from Mediastream and Aeon skin.</description>
-  </extension>
-</addon>
-
-<addon
-  id="skin.ccm.helix"
-  version="3.0.15"
-  name="CCM Helix"
-  provider-name="Mudislander">
-  <requires>
-    <import addon="xbmc.gui" version="5.3.0"/>
-	<import addon="script.favourites" version="6.0.1"/>
-	<import addon="service.skin.widgets" version="0.0.29"/>
-	<import addon="service.library.data.provider" version="0.0.4"/>
-	<import addon="script.randomandlastitems" version="2.2.0"/>
-  </requires>
-  <extension
-    point="xbmc.gui.skin"
-    debugging="false"
-    effectslowdown="0.75">
-    <res width="1280" height="720" aspect="16:9" default="true" folder="720p" />
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="de">Mudislanders MOD des Confluence-Skins ursprünglich von Jezz_X.</summary>
-    <summary lang="en">Mudislander's MOD of Confluence skin originally by Jezz_X.</summary>
-    <summary lang="en_US">Mudislander's MOD of Confluence skin originally by Jezz_X.</summary>
-    <summary lang="fr_CA">La modification par Mudislander de l'habillage Confluence de Jezz_X.</summary>
-    <summary lang="lt">Mudislander'io modifikuota Confluence teminė išvaizda, kurią sukūrė Jezz_X.</summary>
-    <summary lang="nl">Mudislander's MOD van de Confluence skin van origine door Jezz_X.</summary>
-    <summary lang="pl">Modyfikacja skóry Confluence, oryginalnie stworzonej przez Jezz_X, autorstwa Mudislandera.</summary>
-    <summary lang="pt_BR">Modificação do Mudislander da skin Confluence originalmente por Jezz_X.</summary>
-    <summary lang="sv">Mudislander's MOD av Confluence temat, orginal av Jezz_X.</summary>
-    <description lang="en">CCM is Mudislander's MOD of Confluence to enable a greater degree of user customisation to the default skin.</description>
-    <description lang="en_US">CCM is Mudislander's MOD of Confluence to enable a greater degree of user customization to the default skin.</description>
-    <description lang="fr_CA">CCM est la modification par Mudislander de Confluence pour permettre un niveau plus élevé de personnalisation par l'utilisateur de l'habillage original.</description>
-    <description lang="lt">CCM yar Mudislander'io modifikuota Confluence tam, kad numatytąją teminę išvaizdą būtų galima geriau pritaikyti pagal vartotojo poreikius.</description>
-    <description lang="nl">CCM is Mudislander's MOD van confluence om een grotere aanpassingsmogelijkheid te geven ten opzichten van de standaard skin.</description>
-    <description lang="pl">CCM jest modyfikacją skóry Confluence autorstwa Mudislandera, której celem jest dostarczenie użytkownikom większych możliwości personalizacji w stosunku do oryginalnej skóry.</description>
-    <description lang="pt_BR">CCM é uma modificação do Mudislander da Confluence para permitir um maior grau de personalização do usuário para a skin padrão.</description>
-    <description lang="sv">CCM är Mudislander's MOD av Confluence för att underlätta användaranpassning av standard temat.</description>
-    <disclaimer lang="be">You break it - You get to keep the pieces</disclaimer>
-    <disclaimer lang="da">Du smadrer det - Du får lov at beholde stumperne</disclaimer>
-    <disclaimer lang="de">Was man kaputt macht darf man behalten</disclaimer>
-    <disclaimer lang="el">You break it - You get to keep the pieces</disclaimer>
-    <disclaimer lang="en">You break it - You get to keep the pieces</disclaimer>
-    <disclaimer lang="en_NZ">You break it - You get to keep the pieces</disclaimer>
-    <disclaimer lang="en_US">You break it - You get to keep the pieces</disclaimer>
-    <disclaimer lang="es">Tu lo rompes-tu tienes que guardar los trozos</disclaimer>
-    <disclaimer lang="fr">Vous le cassez, vous assumez!</disclaimer>
-    <disclaimer lang="fr_CA">Vous le brisez - Vous gardez les morceaux</disclaimer>
-    <disclaimer lang="gl">Rompeuno - Terá que gardar as pezas</disclaimer>
-    <disclaimer lang="he">אם הרסתם זאת - הפרס שלכם הוא להשאר עם התקלות</disclaimer>
-    <disclaimer lang="hr">Razbite ga - I možete zadržati komadiće</disclaimer>
-    <disclaimer lang="hu">Állj meg - nyisd ki a gyöngyök ládáját. </disclaimer>
-    <disclaimer lang="is">Ef þú brýtur það, þá máttu halda brotunum</disclaimer>
-    <disclaimer lang="it">Chi rompe... I cocci sono suoi</disclaimer>
-    <disclaimer lang="lt">You break it - You get to keep the pieces</disclaimer>
-    <disclaimer lang="ms">Anda leraikannya - Anda perlu kekalkan cebisannya</disclaimer>
-    <disclaimer lang="nl">You break it - You get to keep the pieces</disclaimer>
-    <disclaimer lang="no">Hvis du ødelegger får du beholde bitene.</disclaimer>
-    <disclaimer lang="pl">Zepsułeś - Pozbieraj kawałki</disclaimer>
-    <disclaimer lang="pt">Se estragar - Tem de ficar com as peças</disclaimer>
-    <disclaimer lang="pt_BR">Se quebrar - Você começa a manter as peças</disclaimer>
-    <disclaimer lang="ru">Сломал - сохрани обломки</disclaimer>
-    <disclaimer lang="sv">Om du har sönder det - Får du behålla bitarna</disclaimer>
-    <disclaimer lang="th">คุณแยกมัน - คุณต้องเก็บส่วนต่างๆไว้</disclaimer>
-    <disclaimer lang="zh">自己打破的碎片自己收拾</disclaimer>
-    <disclaimer lang="zh_TW">You break it - You get to keep the pieces</disclaimer>
-    <platform>all</platform>
-  </extension>
-</addon>
-
 <addon
     id="skin.eminence.zeev"
     version="1.5.9"
@@ -8518,6 +8956,436 @@ Ett stort tack till alla som bidragit till detta plugin! Se loggen för tillägg
 	</extension>
 </addon>
 
+<addon id='torrenter.searcher.BTDigg' version='1.0.1'
+     name='Torrenter Searcher: BTDigg' provider-name='DiMartino'>
+  <requires>
+    <import addon='xbmc.python' version='2.1.0'/>
+  </requires>
+  <extension point="xbmc.python.script" library="__init__.py">
+    <provides>executable</provides>
+  </extension>
+      <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang='en'>Torrenter v2 Searcher module for BTDigg.Org.
+        </summary>
+        <description lang='en'>Torrenter v2 Searcher module for BTDigg.Org.
+        </description>
+        <disclaimer lang='en'>GNU GPLv3 http://www.gnu.org/licenses/</disclaimer>
+        <summary lang='ru'>Серчер трекера BTDigg.Org для плагина Torrenter v2.
+        </summary>
+        <description lang='ru'>Серчер трекера BTDigg.Org для плагина Torrenter v2.
+        </description>
+        <disclaimer lang='ru'>GNU GPLv3 http://www.gnu.org/licenses/</disclaimer>
+    </extension>
+  <extension point='xbmc.python.module'/>
+</addon>
+
+<addon id='torrenter.searcher.Cpasbien' version='1.0.4' name='Torrenter Searcher: Cpasbien' provider-name='bisnn, DiMartino'>
+  <requires>
+    <import addon='xbmc.python' version='2.1.0'/>
+  </requires>
+  <extension point="xbmc.python.script" library="__init__.py">
+    <provides>executable</provides>
+  </extension>
+      <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang='en'>Torrenter v2 Searcher module for Cpasbien.pw (french).
+        </summary>
+        <description lang='en'>Torrenter v2 Searcher module for Cpasbien.pw (french).
+        </description>
+        <disclaimer lang='en'>GNU GPLv3 http://www.gnu.org/licenses/</disclaimer>
+        <summary lang='ru'>Серчер трекерa Cpasbien.pw (французский) для плагина Torrenter v2.
+        </summary>
+        <description lang='ru'>Серчер трекера Cpasbien.pw (французский) для плагина Torrenter v2.
+        </description>
+        <disclaimer lang='ru'>GNU GPLv3 http://www.gnu.org/licenses/</disclaimer>
+    </extension>
+  <extension point='xbmc.python.module'/>
+</addon>
+
+<addon id='torrenter.searcher.ExtraTorrent' version='1.0.1'
+     name='Torrenter Searcher: ExtraTorrent' provider-name='DiMartino'>
+  <requires>
+    <import addon='xbmc.python' version='2.1.0'/>
+  </requires>
+  <extension point="xbmc.python.script" library="__init__.py">
+    <provides>executable</provides>
+  </extension>
+      <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang='en'>Torrenter v2 Searcher module for ExtraTorrent.CC.
+        </summary>
+        <description lang='en'>Torrenter v2 Searcher module for ExtraTorrent.CC.
+        </description>
+        <disclaimer lang='en'>GNU GPLv3 http://www.gnu.org/licenses/</disclaimer>
+        <summary lang='ru'>Серчер трекера ExtraTorrent.CC для плагина Torrenter v2.
+        </summary>
+        <description lang='ru'>Серчер трекера ExtraTorrent.CC для плагина Torrenter v2.
+        </description>
+        <disclaimer lang='ru'>GNU GPLv3 http://www.gnu.org/licenses/</disclaimer>
+    </extension>
+  <extension point='xbmc.python.module'/>
+</addon>
+
+<addon id='torrenter.searcher.EZTV' version='1.0.2'
+     name='Torrenter Searcher: EZTV' provider-name='DiMartino'>
+  <requires>
+    <import addon='xbmc.python' version='2.1.0'/>
+  </requires>
+  <extension point="xbmc.python.script" library="__init__.py">
+    <provides>executable</provides>
+  </extension>
+      <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang='en'>Torrenter v2 Searcher module for EZTV.IT.
+        </summary>
+        <description lang='en'>Torrenter v2 Searcher module for EZTV.IT.
+        </description>
+        <disclaimer lang='en'>GNU GPLv3 http://www.gnu.org/licenses/</disclaimer>
+        <summary lang='ru'>Серчер трекера EZTV.IT для плагина Torrenter v2.
+        </summary>
+        <description lang='ru'>Серчер трекера EZTV.IT для плагина Torrenter v2.
+        </description>
+        <disclaimer lang='ru'>GNU GPLv3 http://www.gnu.org/licenses/</disclaimer>
+    </extension>
+  <extension point='xbmc.python.module'/>
+</addon>
+
+<addon id='torrenter.searcher.KickAssSo' version='1.0.2'
+     name='Torrenter Searcher: KickAssSo' provider-name='DiMartino'>
+  <requires>
+    <import addon='xbmc.python' version='2.1.0'/>
+  </requires>
+  <extension point="xbmc.python.script" library="__init__.py">
+    <provides>executable</provides>
+  </extension>
+      <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang='en'>Torrenter v2 Searcher module for KickAss.So.
+        </summary>
+        <description lang='en'>Torrenter v2 Searcher module for KickAss.So.
+        </description>
+        <disclaimer lang='en'>GNU GPLv3 http://www.gnu.org/licenses/</disclaimer>
+        <summary lang='ru'>Серчер трекера KickAss.So для плагина Torrenter v2.
+        </summary>
+        <description lang='ru'>Серчер трекера KickAss.So для плагина Torrenter v2.
+        </description>
+        <disclaimer lang='ru'>GNU GPLv3 http://www.gnu.org/licenses/</disclaimer>
+    </extension>
+  <extension point='xbmc.python.module'/>
+</addon>
+
+<addon id='torrenter.searcher.KinoZalTV' version='1.0.2'
+     name='Torrenter Searcher: KinoZalTV' provider-name='DiMartino'>
+  <requires>
+    <import addon='xbmc.python' version='2.1.0'/>
+  </requires>
+  <extension point="xbmc.python.script" library="__init__.py">
+    <provides>executable</provides>
+  </extension>
+      <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang='en'>Torrenter v2 Searcher module for KinoZal.TV.
+        </summary>
+        <description lang='en'>Torrenter v2 Searcher module for KinoZal.TV.
+        </description>
+        <disclaimer lang='en'>GNU GPLv3 http://www.gnu.org/licenses/</disclaimer>
+        <summary lang='ru'>Серчер трекера KinoZal.TV для плагина Torrenter v2.
+        </summary>
+        <description lang='ru'>Серчер трекера KinoZal.TV для плагина Torrenter v2.
+        </description>
+        <disclaimer lang='ru'>GNU GPLv3 http://www.gnu.org/licenses/</disclaimer>
+    </extension>
+  <extension point='xbmc.python.module'/>
+</addon>
+
+<addon id='torrenter.searcher.MagnetDL' version='1.0.0'
+     name='Torrenter Searcher: MagnetDL' provider-name='DiMartino'>
+  <requires>
+    <import addon='xbmc.python' version='2.1.0'/>
+  </requires>
+  <extension point="xbmc.python.script" library="__init__.py">
+    <provides>executable</provides>
+  </extension>
+      <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang='en'>Torrenter v2 Searcher module for MagnetDL.com.
+        </summary>
+        <description lang='en'>Torrenter v2 Searcher module for MagnetDL.com.
+        </description>
+        <disclaimer lang='en'>GNU GPLv3 http://www.gnu.org/licenses/</disclaimer>
+        <summary lang='ru'>Серчер трекера MagnetDL.com для плагина Torrenter v2.
+        </summary>
+        <description lang='ru'>Серчер трекера MagnetDL.com для плагина Torrenter v2.
+        </description>
+        <disclaimer lang='ru'>GNU GPLv3 http://www.gnu.org/licenses/</disclaimer>
+    </extension>
+  <extension point='xbmc.python.module'/>
+</addon>
+
+<addon id='torrenter.searcher.MegaTorrent' version='1.0.2' name='Torrenter Searcher: MegaTorrent (Slow)' provider-name='bisnn, DiMartino'>
+  <requires>
+    <import addon='xbmc.python' version='2.19.0'/>
+  </requires>
+  <extension point="xbmc.python.script" library="__init__.py">
+    <provides>executable</provides>
+  </extension>
+      <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang='en'>Torrenter v2 Searcher module for Megatorrent.biz (french).
+        </summary>
+        <description lang='en'>Torrenter v2 Searcher module for Megatorrent.biz (french).
+        </description>
+        <disclaimer lang='en'>GNU GPLv3 http://www.gnu.org/licenses/</disclaimer>
+        <summary lang='ru'>Серчер трекерa Megatorrent.biz (французский) для плагина Torrenter v2.
+        </summary>
+        <description lang='ru'>Серчер трекера Megatorrent.biz (французский) для плагина Torrenter v2.
+        </description>
+        <disclaimer lang='ru'>GNU GPLv3 http://www.gnu.org/licenses/</disclaimer>
+    </extension>
+  <extension point='xbmc.python.module'/>
+</addon>
+
+<addon id='torrenter.searcher.Monova' version='1.0.0'
+     name='Torrenter Searcher: Monova' provider-name='DiMartino'>
+  <requires>
+    <import addon='xbmc.python' version='2.1.0'/>
+  </requires>
+  <extension point="xbmc.python.script" library="__init__.py">
+    <provides>executable</provides>
+  </extension>
+      <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang='en'>Torrenter v2 Searcher module for Monova.org.
+        </summary>
+        <description lang='en'>Torrenter v2 Searcher module for Monova.org.
+        </description>
+        <disclaimer lang='en'>GNU GPLv3 http://www.gnu.org/licenses/</disclaimer>
+        <summary lang='ru'>Серчер трекера Monova.org для плагина Torrenter v2.
+        </summary>
+        <description lang='ru'>Серчер трекера Monova.org для плагина Torrenter v2.
+        </description>
+        <disclaimer lang='ru'>GNU GPLv3 http://www.gnu.org/licenses/</disclaimer>
+    </extension>
+  <extension point='xbmc.python.module'/>
+</addon>
+
+<addon id='torrenter.searcher.NNMClubRu' version='1.0.2'
+     name='Torrenter Searcher: NNMClubRu' provider-name='DiMartino'>
+  <requires>
+    <import addon='xbmc.python' version='2.1.0'/>
+  </requires>
+  <extension point="xbmc.python.script" library="__init__.py">
+    <provides>executable</provides>
+  </extension>
+      <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang='en'>Torrenter v2 Searcher module for NNMClub.Me.
+        </summary>
+        <description lang='en'>Torrenter v2 Searcher module for NNMClub.Me.
+        </description>
+        <disclaimer lang='en'>GNU GPLv3 http://www.gnu.org/licenses/</disclaimer>
+        <summary lang='ru'>Серчер трекера NNMClub.Me для плагина Torrenter v2.
+        </summary>
+        <description lang='ru'>Серчер трекера NNMClub.Me для плагина Torrenter v2.
+        </description>
+        <disclaimer lang='ru'>GNU GPLv3 http://www.gnu.org/licenses/</disclaimer>
+    </extension>
+  <extension point='xbmc.python.module'/>
+</addon>
+
+<addon id='torrenter.searcher.Nyaa' version='1.0.1'
+     name='Torrenter Searcher: Nyaa' provider-name='DiMartino'>
+  <requires>
+    <import addon='xbmc.python' version='2.1.0'/>
+  </requires>
+  <extension point="xbmc.python.script" library="__init__.py">
+    <provides>executable</provides>
+  </extension>
+      <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang='en'>Torrenter v2 Searcher module for Nyaa.Se.
+        </summary>
+        <description lang='en'>Torrenter v2 Searcher module for Nyaa.Se.
+        </description>
+        <disclaimer lang='en'>GNU GPLv3 http://www.gnu.org/licenses/</disclaimer>
+        <summary lang='ru'>Серчер трекера Nyaa.Se для плагина Torrenter v2.
+        </summary>
+        <description lang='ru'>Серчер трекера Nyaa.Se для плагина Torrenter v2.
+        </description>
+        <disclaimer lang='ru'>GNU GPLv3 http://www.gnu.org/licenses/</disclaimer>
+    </extension>
+  <extension point='xbmc.python.module'/>
+</addon>
+
+<addon id='torrenter.searcher.PornoLabNet' version='1.0.2'
+     name='Torrenter Searcher: PornoLabNet' provider-name='DiMartino'>
+  <requires>
+    <import addon='xbmc.python' version='2.1.0'/>
+  </requires>
+  <extension point="xbmc.python.script" library="__init__.py">
+    <provides>executable</provides>
+  </extension>
+      <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang='en'>Torrenter v2 Searcher module for PornoLab.Net.
+        </summary>
+        <description lang='en'>Torrenter v2 Searcher module for PornoLab.Net.
+        </description>
+        <disclaimer lang='en'>GNU GPLv3 http://www.gnu.org/licenses/</disclaimer>
+        <summary lang='ru'>Серчер трекера PornoLab.Net для плагина Torrenter v2.
+        </summary>
+        <description lang='ru'>Серчер трекера PornoLab.Net для плагина Torrenter v2.
+        </description>
+        <disclaimer lang='ru'>GNU GPLv3 http://www.gnu.org/licenses/</disclaimer>
+    </extension>
+  <extension point='xbmc.python.module'/>
+</addon>
+
+<addon id='torrenter.searcher.RiperAM' version='1.0.2'
+     name='Torrenter Searcher: RiperAM' provider-name='DiMartino'>
+  <requires>
+    <import addon='xbmc.python' version='2.1.0'/>
+  </requires>
+  <extension point="xbmc.python.script" library="__init__.py">
+    <provides>executable</provides>
+  </extension>
+      <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang='en'>Torrenter v2 Searcher module for Riper.AM.
+        </summary>
+        <description lang='en'>Torrenter v2 Searcher module for Riper.AM.
+        </description>
+        <disclaimer lang='en'>GNU GPLv3 http://www.gnu.org/licenses/</disclaimer>
+        <summary lang='ru'>Серчер трекера Riper.AM для плагина Torrenter v2.
+        </summary>
+        <description lang='ru'>Серчер трекера Riper.AM для плагина Torrenter v2.
+        </description>
+        <disclaimer lang='ru'>GNU GPLv3 http://www.gnu.org/licenses/</disclaimer>
+    </extension>
+  <extension point='xbmc.python.module'/>
+</addon>
+
+<addon id='torrenter.searcher.RuTorOrg' version='1.0.2'
+     name='Torrenter Searcher: RuTorOrg' provider-name='DiMartino'>
+  <requires>
+    <import addon='xbmc.python' version='2.1.0'/>
+  </requires>
+  <extension point="xbmc.python.script" library="__init__.py">
+    <provides>executable</provides>
+  </extension>
+      <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang='en'>Torrenter v2 Searcher module for RuTor.Org.
+        </summary>
+        <description lang='en'>Torrenter v2 Searcher module for RuTor.Org.
+        </description>
+        <disclaimer lang='en'>GNU GPLv3 http://www.gnu.org/licenses/</disclaimer>
+        <summary lang='ru'>Серчер трекера RuTor.Org для плагина Torrenter v2.
+        </summary>
+        <description lang='ru'>Серчер трекера RuTor.Org для плагина Torrenter v2.
+        </description>
+        <disclaimer lang='ru'>GNU GPLv3 http://www.gnu.org/licenses/</disclaimer>
+    </extension>
+  <extension point='xbmc.python.module'/>
+</addon>
+
+<addon id='torrenter.searcher.RuTrackerMusic' version='1.0.1'
+     name='Torrenter Searcher: RuTrackerMusic' provider-name='DiMartino'>
+  <requires>
+    <import addon='xbmc.python' version='2.1.0'/>
+  </requires>
+  <extension point="xbmc.python.script" library="__init__.py">
+    <provides>executable</provides>
+  </extension>
+      <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang='en'>Torrenter v2 Searcher module for RuTracker.Org (music only).
+        </summary>
+        <description lang='en'>Torrenter v2 Searcher module for RuTracker.Org (music only).
+        </description>
+        <disclaimer lang='en'>GNU GPLv3 http://www.gnu.org/licenses/</disclaimer>
+        <summary lang='ru'>Серчер трекера RuTracker.Org (только музыка) для плагина Torrenter v2.
+        </summary>
+        <description lang='ru'>Серчер трекера RuTracker.Org (только музыка) для плагина Torrenter v2.
+        </description>
+        <disclaimer lang='ru'>GNU GPLv3 http://www.gnu.org/licenses/</disclaimer>
+    </extension>
+  <extension point='xbmc.python.module'/>
+</addon>
+
+<addon id='torrenter.searcher.RuTrackerOrg' version='1.0.4'
+     name='Torrenter Searcher: RuTrackerOrg' provider-name='DiMartino'>
+  <requires>
+    <import addon='xbmc.python' version='2.1.0'/>
+  </requires>
+  <extension point="xbmc.python.script" library="__init__.py">
+    <provides>executable</provides>
+  </extension>
+      <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang='en'>Torrenter v2 Searcher module for RuTracker.Org.
+        </summary>
+        <description lang='en'>Torrenter v2 Searcher module for RuTracker.Org.
+        </description>
+        <disclaimer lang='en'>GNU GPLv3 http://www.gnu.org/licenses/</disclaimer>
+        <summary lang='ru'>Серчер трекера RuTracker.Org для плагина Torrenter v2.
+        </summary>
+        <description lang='ru'>Серчер трекера RuTracker.Org для плагина Torrenter v2.
+        </description>
+        <disclaimer lang='ru'>GNU GPLv3 http://www.gnu.org/licenses/</disclaimer>
+    </extension>
+  <extension point='xbmc.python.module'/>
+</addon>
+
+<addon id='torrenter.searcher.T411FR' version='1.0.2a'
+     name='Torrenter Searcher: T411FR' provider-name='DiMartino'>
+  <requires>
+    <import addon='xbmc.python' version='2.1.0'/>
+  </requires>
+  <extension point="xbmc.python.script" library="__init__.py">
+    <provides>executable</provides>
+  </extension>
+      <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang='en'>Torrenter v2 Searcher module for T411.FR.
+        </summary>
+        <description lang='en'>Torrenter v2 Searcher module for T411.FR.
+        </description>
+        <disclaimer lang='en'>GNU GPLv3 http://www.gnu.org/licenses/</disclaimer>
+        <summary lang='ru'>Серчер трекера T411.FR для плагина Torrenter v2.
+        </summary>
+        <description lang='ru'>Серчер трекера T411.FR для плагина Torrenter v2.
+        </description>
+        <disclaimer lang='ru'>GNU GPLv3 http://www.gnu.org/licenses/</disclaimer>
+    </extension>
+  <extension point='xbmc.python.module'/>
+</addon>
+
+<addon id='torrenter.searcher.TFileME' version='1.0.3'
+     name='Torrenter Searcher: TFileME' provider-name='DiMartino'>
+  <requires>
+    <import addon='xbmc.python' version='2.1.0'/>
+  </requires>
+  <extension point="xbmc.python.script" library="__init__.py">
+    <provides>executable</provides>
+  </extension>
+      <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang='en'>Torrenter v2 Searcher module for TFile.Me.
+        </summary>
+        <description lang='en'>Torrenter v2 Searcher module for TFile.Me.
+        </description>
+        <disclaimer lang='en'>GNU GPLv3 http://www.gnu.org/licenses/</disclaimer>
+        <summary lang='ru'>Серчер трекера TFile.Me для плагина Torrenter v2.
+        </summary>
+        <description lang='ru'>Серчер трекера TFile.Me для плагина Torrenter v2.
+        </description>
+        <disclaimer lang='ru'>GNU GPLv3 http://www.gnu.org/licenses/</disclaimer>
+    </extension>
+  <extension point='xbmc.python.module'/>
+</addon>
+
 <addon id='torrenter.searcher.ThePirateBay' version='1.0.1'
      name='Torrenter Searcher: ThePirateBay' provider-name='DiMartino'>
   <requires>
@@ -8540,5 +9408,310 @@ Ett stort tack till alla som bidragit till detta plugin! Se loggen för tillägg
         <disclaimer lang='ru'>GNU GPLv3 http://www.gnu.org/licenses/</disclaimer>
     </extension>
   <extension point='xbmc.python.module'/>
+</addon>
+
+<addon id='torrenter.searcher.torrentHound' version='1.0.0'
+     name='Torrenter Searcher: torrentHound' provider-name='DiMartino'>
+  <requires>
+    <import addon='xbmc.python' version='2.1.0'/>
+  </requires>
+  <extension point="xbmc.python.script" library="__init__.py">
+    <provides>executable</provides>
+  </extension>
+      <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang='en'>Torrenter v2 Searcher module for torrentHound.com.
+        </summary>
+        <description lang='en'>Torrenter v2 Searcher module for torrentHound.com.
+        </description>
+        <disclaimer lang='en'>GNU GPLv3 http://www.gnu.org/licenses/</disclaimer>
+        <summary lang='ru'>Серчер трекера torrentHound.com для плагина Torrenter v2.
+        </summary>
+        <description lang='ru'>Серчер трекера torrentHound.com для плагина Torrenter v2.
+        </description>
+        <disclaimer lang='ru'>GNU GPLv3 http://www.gnu.org/licenses/</disclaimer>
+    </extension>
+  <extension point='xbmc.python.module'/>
+</addon>
+
+<addon id='torrenter.searcher.TorrentsIIID' version='1.0.0'
+     name='Torrenter Searcher: TorrentsIIID' provider-name='DiMartino'>
+  <requires>
+    <import addon='xbmc.python' version='2.1.0'/>
+  </requires>
+  <extension point="xbmc.python.script" library="__init__.py">
+    <provides>executable</provides>
+  </extension>
+      <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang='en'>Torrenter v2 Searcher module for Torrents3d.Ru.
+        </summary>
+        <description lang='en'>Torrenter v2 Searcher module for Torrents3d.Ru.
+        </description>
+        <disclaimer lang='en'>GNU GPLv3 http://www.gnu.org/licenses/</disclaimer>
+        <summary lang='ru'>Серчер трекера Torrents3d.Ru для плагина Torrenter v2.
+        </summary>
+        <description lang='ru'>Серчер трекера Torrents3d.Ru для плагина Torrenter v2.
+        </description>
+        <disclaimer lang='ru'>GNU GPLv3 http://www.gnu.org/licenses/</disclaimer>
+    </extension>
+  <extension point='xbmc.python.module'/>
+</addon>
+
+<addon id='torrenter.searcher.Torrentz' version='1.0.0'
+     name='Torrenter Searcher: Torrentz' provider-name='DiMartino'>
+  <requires>
+    <import addon='xbmc.python' version='2.1.0'/>
+  </requires>
+  <extension point="xbmc.python.script" library="__init__.py">
+    <provides>executable</provides>
+  </extension>
+      <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang='en'>Torrenter v2 Searcher module for Torrentz.eu.
+        </summary>
+        <description lang='en'>Torrenter v2 Searcher module for Torrentz.eu.
+        </description>
+        <disclaimer lang='en'>GNU GPLv3 http://www.gnu.org/licenses/</disclaimer>
+        <summary lang='ru'>Серчер трекера Torrentz.eu для плагина Torrenter v2.
+        </summary>
+        <description lang='ru'>Серчер трекера Torrentz.eu для плагина Torrenter v2.
+        </description>
+        <disclaimer lang='ru'>GNU GPLv3 http://www.gnu.org/licenses/</disclaimer>
+    </extension>
+  <extension point='xbmc.python.module'/>
+</addon>
+
+<addon
+  id="weather.metoffice"
+  version="1.0.0"
+  name="Met Office"
+  provider-name="powlo">
+  <requires>
+	<import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.pytz" version="2014.2"/>
+  </requires>
+  <extension point="xbmc.python.weather" library="src/metoffice/default.py"/>
+  <extension point="xbmc.addon.metadata">
+	<summary lang="en">Weather forecast from the Met Office.</summary>
+	<description lang="en">Weather forecast provided by Met Office (http://www.metoffice.gov.uk/)</description>
+	<platform>all</platform>
+    <language>en</language>
+    <license>GNU GPL v2</license>
+    <forum>http://forum.xbmc.org/showthread.php?tid=166362</forum>
+    <website>http://www.metoffice.gov.uk/datapoint/</website>
+    <source>https://github.com/powlo/weather.metoffice</source>
+    <email></email>
+    <disclaimer lang="en">In using this addon you agree to the terms and conditions specified under the Met Office Datapoint terms and conditions. http://www.metoffice.gov.uk/datapoint/terms-conditions. Data provided by Met Office Datapoint is covered by the Open Government License. http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/. Use at your own risk. The authors accept no liability.</disclaimer>
+  </extension>
+</addon>
+
+<addon id="weather.openweathermap" name="Open Weather Map" version="1.0.0.2" provider-name="bitboy">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+		<import addon="script.module.simplejson" version="2.0.10"/>
+		<import addon="script.module.pil" version="1.1.7"/>
+	</requires>
+	<extension point="xbmc.python.weather" library="default.py"/>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Weather forecast from Open Weather Map</summary>
+        <summary lang="de">Wetter Vorhersage von Open Weather Map</summary>
+        <summary lang="pl">Prognoza pogody serwisu Open Weather Map</summary>
+		<description lang="en">Weather information provided by Open Weather Map (http://openweathermap.org/) under CC-BY-SA 2.0. Fanart image by Jessie Eastland, taken from: http://commons.wikimedia.org/wiki/File:Pale_Joshua.jpg. Icon by Everaldo Coelho, taken from https://www.iconfinder.com/icons/18095/clouds_sun_weather_icon#size=256</description>
+        <description lang="de">Wetter Information angeboten von Open Weather Map (http://openweathermap.org/) lizensiert unter CC-BY-SA 2.0. Fanart von Jessie Eastland, http://commons.wikimedia.org/wiki/File:Pale_Joshua.jpg. Icon von Everaldo Coelho, https://www.iconfinder.com/icons/18095/clouds_sun_weather_icon#size=256</description>
+		<description lang="pl">Prognozę pogody dostarcza serwis Open Weather Map (http://openweathermap.org/) na licencji CC-BY-SA 2.0. Tło - http://commons.wikimedia.org/wiki/File:Pale_Joshua.jpg. Ikona - https://www.iconfinder.com/icons/18095/clouds_sun_weather_icon#size=256</description>
+		<disclaimer lang="en">This is free software and provided "as is".</disclaimer>
+        <disclaimer lang="de">Dies ist freie Software und angeboten "wie sie ist".</disclaimer>
+   		<disclaimer lang="pl">Jest to wolne oprogramowanie i dostarczane "tak jak jest".</disclaimer>
+		<language></language>
+		<platform>all</platform>
+		<forum>http://forum.xbmc.org/showthread.php?tid=180878</forum>
+		<source></source>
+	</extension>
+</addon>
+
+<addon id="weather.yahoo" name="Yahoo! Weather" version="3.0.8" provider-name="ronie">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+		<import addon="script.module.simplejson" version="3.3.0"/>
+	</requires>
+	<extension point="xbmc.python.weather" library="default.py"/>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="af">Weervoorspelling van yahoo.com</summary>
+		<summary lang="am">የ አየር ንብረት ከ ያሁ.ኮም</summary>
+		<summary lang="ar">تنبؤات الطقس من موقع yahoo.com</summary>
+		<summary lang="bg">Синоптична прогноза от www.yahoo.com</summary>
+		<summary lang="ca">Previsió del temps des de yahoo.com</summary>
+		<summary lang="cs">Předpověď počasí z yahoo.com</summary>
+		<summary lang="da">Vejrudsigt fra yahoo.com</summary>
+		<summary lang="de">Wettervorhersage von yahoo.com</summary>
+		<summary lang="el">Πρόγνωση καιρού από το yahoo.com</summary>
+		<summary lang="en">Weather forecast from yahoo.com</summary>
+		<summary lang="en_NZ">Weather forecast from yahoo.com</summary>
+		<summary lang="en_US">Weather forecast from yahoo.com</summary>
+		<summary lang="es">Predicción meteorológica de yahoo.com</summary>
+		<summary lang="et">yahoo.com ilmaennustus</summary>
+		<summary lang="fi">Yahoo.com sääennuste</summary>
+		<summary lang="fr">Prévisions météo depuis yahoo.com</summary>
+		<summary lang="fr_CA">Prévisions météorologiques de yahoo.com</summary>
+		<summary lang="gl">Predición meteorolóxica de yahoo.com</summary>
+		<summary lang="he">תחזית מזג אוויר מ-yahoo.com</summary>
+		<summary lang="hr">Prognoza vremena sa yahoo.com</summary>
+		<summary lang="hu">Időjárás előrejelzés a yahoo.com oldalról</summary>
+		<summary lang="id">Ramalan Cuaca dari yahoo.com</summary>
+		<summary lang="is">Veðurspá frá yahoo.com</summary>
+		<summary lang="it">Servizio meteo di yahoo.com</summary>
+		<summary lang="ja">yahoo.com 天気予報</summary>
+		<summary lang="ko">yahoo.com 일기예보</summary>
+		<summary lang="lt">Orų prognozė iš yahoo.com</summary>
+		<summary lang="lv">Laikapstākļu prognoze no yahoo.com</summary>
+		<summary lang="nl">Weerbericht van yahoo.com</summary>
+		<summary lang="no">Værvarsel fra yahoo.com</summary>
+		<summary lang="pl">Prognoza pogody z serwisu yahoo.com</summary>
+		<summary lang="pt">Previsão do tempo a partir de yahoo.com</summary>
+		<summary lang="pt_BR">Previsão Climática de yahoo.com</summary>
+		<summary lang="ro">Prognoze meteo de la yahoo.com</summary>
+		<summary lang="ru">Прогноз погоды от yahoo.com</summary>
+		<summary lang="sk">Predpoveď počasia z yahoo.com</summary>
+		<summary lang="sl">Vremenska napoved iz yahoo.com</summary>
+		<summary lang="sr_RS">Прогноза времена са yahoo.com</summary>
+		<summary lang="sv">Väderprognos från yahoo.com</summary>
+		<summary lang="tr">Hava durumu - yahoo.com</summary>
+		<summary lang="uk">Прогноз погоди з </summary>
+		<summary lang="zh">来源于 yahoo.com 的天气预报</summary>
+		<description lang="af">Weervoorspelling verskaf deur Yahoo! Weer (http://weather.yahoo.com/)</description>
+		<description lang="ar">خدمه تنبؤات الطقس تأتيكم برعايه ياهوو الطقس (http://weather.yahoo.com/)</description>
+		<description lang="bg">Синоптична прогноза, предоставена от Yahoo! Weather (http://www.yahoo.com/)</description>
+		<description lang="ca">Previsió del temps proporcionada per Yahoo! Weather (http://weather.yahoo.com/)</description>
+		<description lang="cs">Předpověď počasí poskytnuta stránkou Yahoo! Weather (http://weather.yahoo.com/)</description>
+		<description lang="da">Vejrudsigten leveret af Yahoo! vejr (http://weather.com/)</description>
+		<description lang="de">Wettervorhersage bereitgestellt durch Yahoo! Weather (http://weather.yahoo.com/)</description>
+		<description lang="el">Η πρόγνωση καιρού παρέχεται από το Yahoo! Weather (http://weather.yahoo.com/)</description>
+		<description lang="en">Weather forecast provided by Yahoo! Weather (http://weather.yahoo.com/)</description>
+		<description lang="en_NZ">Weather forecast provided by Yahoo! Weather (http://weather.yahoo.com/)</description>
+		<description lang="en_US">Weather forecast provided by Yahoo! Weather (http://weather.yahoo.com/)</description>
+		<description lang="es">Predicción meteorológica facilitada por Yahoo! Weather (http://weather.yahoo.com/)</description>
+		<description lang="et">Ilmaennustuse toob teieni Yahoo! Weather (http://weather.yahoo.com/)</description>
+		<description lang="fi">Sääennusteen tarjoaa Yahoo! Weather (http://weather.yahoo.com)</description>
+		<description lang="fr">Prévisions météo fournies par Yahoo! Weather (http://weather.yahoo.com/)</description>
+		<description lang="fr_CA">Prévisions météorologiques fournies par Yahoo! Weather (http://weather.yahoo.com/)</description>
+		<description lang="gl">Predición meteorolóxica fornecida por Yahoo! Weather (http://weather.yahoo.com/)</description>
+		<description lang="he">תחזית מזג אוויר מסופקת ע"י Yahoo! Weather (בכתובת http://weather.yahoo.com)</description>
+		<description lang="hr">Prognoza vremena koju pruža Yahoo! Weather (http://weather.yahoo.com/)</description>
+		<description lang="hu">Az időjárás előrejelzést biztosítja a Yahoo! Weather (http://weather.yahoo.com/)</description>
+		<description lang="is">Veðurspá frá Yahoo! Weather (http://weather.yahoo.com/)</description>
+		<description lang="it">Servizio meteo fornito da Yahoo! Weather (http://weather.yahoo.com/)</description>
+		<description lang="ja">Yahoo! Weather (http://weather.yahoo.com/) 提供の天気予報</description>
+		<description lang="ko">Yahoo! Weather (http://weather.yahoo.com/) 에서 제공하는 일기예보</description>
+		<description lang="lt">Yahoo! Weather pateikta orų prognozė (http://weather.yahoo.com/)</description>
+		<description lang="lv">Laikapstākļu prognoze pēc Yahoo! laika ar nosacījumu (http://weather.yahoo.com/)</description>
+		<description lang="nl">Weersverwachting geleverd door Yahoo! (http://weather/yahoo.com)</description>
+		<description lang="no">Værvarsel levert av Yahoo! Weather (http://weather.yahoo.com/)</description>
+		<description lang="pl">Prognoza pogody jest dostarczona dzięki uprzejmości serwisu Yahoo! (http://weather.yahoo.com/)</description>
+		<description lang="pt">Previsão metereológica fornecida por Yahoo! Weather (http://weather.yahoo.com/)</description>
+		<description lang="pt_BR">Previsão climática fornecida por Yahoo! Weather (http://weather.yahoo.com)</description>
+		<description lang="ro">Prognoză meteo oferită de Yahoo! Weather (http://weather.yahoo.com/)</description>
+		<description lang="ru">Прогноз погоды предоставлен Yahoo! Weather (http://weather.yahoo.com/)</description>
+		<description lang="sk">Predpoveď počasia poskytovaná službou Yahoo! Weather (http://weather.yahoo.com/)</description>
+		<description lang="sl">Vremenska napoved od Yahoo! Weather (http://weather.yahoo.com/)</description>
+		<description lang="sr_RS">Прогноза времена коју је омогућио Yahoo! Weather (http://weather.yahoo.com/)</description>
+		<description lang="sv">Väderprognos tillhandahållen av Yahoo! Weather (http://weather.yahoo.com/)</description>
+		<description lang="tr">Yahoo! Weather tarafından sağlana hava durumu tahmini (http://weather.yahoo.com/)</description>
+		<description lang="uk">Прогноз погоди надано Yahoo! Weather (http://weather.yahoo.com/)</description>
+		<description lang="zh">由雅虎天气提供的天气预报（http://weather.yahoo.com/）</description>
+		<disclaimer lang="af">Die gebruik van hierdie byvoeging beteken dat jy ooreengekom met die diensvoorwaardes wat op geleë is http://developer.yahoo.com/weather/#terms</disclaimer>
+		<disclaimer lang="ar">إستخدامك لهذه اﻹضافه يعنى موافقتك على شروط الخدمه التى يمكن اﻹطلاع عليها من خلال http://developer.yahoo.com/weather/#terms</disclaimer>
+		<disclaimer lang="bg">Употребявайки добавката Вие се съгласявате с условията за ползване на услугата, които се намират на http://developer.yahoo.com/weather/#terms</disclaimer>
+		<disclaimer lang="ca">L'ús d'aquest complement implica que vostè ha acceptat els termes de servei ubicats a http://developer.yahoo.com/weather/#terms</disclaimer>
+		<disclaimer lang="cs">Používáním tohoto rozšíření schvalujete podmínky užívání umístěné na http://developer.yahoo.com/weather/#terms</disclaimer>
+		<disclaimer lang="da">Brug af denne add-on betyder at du har accepteret betingelserne for brug som du finder på http://developer.yahoo.com/weather/#terms</disclaimer>
+		<disclaimer lang="de">Die Benutzung der Erweiterung impliziert, das sie den Nutzungsbedingungen unter http://developer.yahoo.com/weather/#terms zugestimmt haben</disclaimer>
+		<disclaimer lang="el">Χρήση αυτού του πρόσθετου συνεπάγεται την αποδοχή των Όρων Χρήσης της Υπηρεσίας (Terms of Service) οι οποίοι βρίσκονται στο http://developer.yahoo.com/weather/#terms</disclaimer>
+		<disclaimer lang="en">Use of this add-on implies that you have agreed to the Terms of Service located at http://developer.yahoo.com/weather/#terms</disclaimer>
+		<disclaimer lang="en_NZ">Use of this add-on implies that you have agreed to the Terms of Service located at http://developer.yahoo.com/weather/#terms</disclaimer>
+		<disclaimer lang="en_US">Use of this add-on implies that you have agreed to the Terms of Service located at http://developer.yahoo.com/weather/#terms</disclaimer>
+		<disclaimer lang="es">El uso de este add-on implica la aceptación de los Términos de Servicio recogidos en http://developer.yahoo.com/weather/#terms</disclaimer>
+		<disclaimer lang="et">Selle lisa kasutamine tähendab nõustumist Kasutustingimustega aadressilt http://developer.yahoo.com/weather/#terms</disclaimer>
+		<disclaimer lang="fi">Tämän lisäosan käyttäminen tarkoittaa että hyväksyt käyttäehdot, jotka ovat osoitteessa http://developer.yahoo.com/weather/#terms</disclaimer>
+		<disclaimer lang="fr">Par l'utilisation de ce module, vous attestez accepter les Conditions Générales d'Utilisation disponibles sur http://developer.yahoo.com/weather/#terms</disclaimer>
+		<disclaimer lang="fr_CA">L'utilisation de cet addiciel implique que vous avez accepté les conditions générales d'utilisation situées à http://developer.yahoo.com/weather/#terms</disclaimer>
+		<disclaimer lang="gl">Empregar este complemento implica que vostede acepta os termos do servizo localizados en http://developer.yahoo.com/weather/#terms</disclaimer>
+		<disclaimer lang="he">מהשימוש בהרחבה זו משתמע כי הסכמת לתנאי השירות המפורטים ב-http://developer.yahoo.com/weather/#terms</disclaimer>
+		<disclaimer lang="hr">Korištenje ovog dodatka podrazumijeva da se slažete sa Pravilima korištenja koji se nalaze na: http://developer.yahoo.com/weather/#terms</disclaimer>
+		<disclaimer lang="hu">Ennek a kiegészínőnek a használatával elfogadja a Felhasználói Feltételeket amik megtalálhatóak a http://developer.yahoo.com/weather/#terms oldalon</disclaimer>
+		<disclaimer lang="is">Notkun á þessarri viðbót gefur til kynna að þú hafir samþykkt skilmálana sem finna má á http://developer.yahoo.com/weather/#terms</disclaimer>
+		<disclaimer lang="it">L'uso di questo Add-on implica l'accettazione delle Condizioni di Servizio che trovi su http://developer.yahoo.com/weather/#terms</disclaimer>
+		<disclaimer lang="ja">このアドオンを使うことにより、http://developer.yahoo.com/weather/#terms にある利用規約に同意したとみなされます。</disclaimer>
+		<disclaimer lang="ko">이 애드온을 사용하는 것은 http://developer.yahoo.com/weather/#terms 에 있는 서비스 이용 약관에 동의함을 의미합니다.</disclaimer>
+		<disclaimer lang="lt">Naudodami šį priedą, jūs sutinkate su paslaugos sąlygomis, esančiomis http://developer.yahoo.com/weather/#terms</disclaimer>
+		<disclaimer lang="lv">Lietojot šo spraudni nozīmē, ka jūs esat piekrituši pakalpojumu sniegšanas noteikumiem, kas atrodas http://developer.yahoo.com/weather/#terms</disclaimer>
+		<disclaimer lang="nl">Het gebruik van deze add-on impliceert dat je akkoord gaat met de service-voorwaarden op http://developer.yahoo.com/weather/#terms</disclaimer>
+		<disclaimer lang="no">Bruken av dette tillegget betinger at du har godkjent brukervilkårene på http://developer.yahoo.com/weather/#terms</disclaimer>
+		<disclaimer lang="pl">Korzystanie z tego dodatku jest równoznaczne z akceptacją regulaminu dostępnego pod adresem: http://developer.yahoo.com/weather/#terms</disclaimer>
+		<disclaimer lang="pt">O uso deste add-on implica o seu acordo com os Termos de Serviço disponíveis em http://developer.yahoo.com/weather/#terms</disclaimer>
+		<disclaimer lang="pt_BR">O uso deste complemento implica em aceitar os Termos de Serviço localizado em http://developer.yahoo.com/weather/#terms</disclaimer>
+		<disclaimer lang="ru">Используя это дополнение, вы соглашаетесь с условиями предоставления услуг, &#10;доступными по адресу: http://developer.yahoo.com/weather/#terms</disclaimer>
+		<disclaimer lang="sk">Používaním tohto doplnku súhlasíte s podmienkami používania služby umiestnenými na http://developer.yahoo.com/weather/#terms</disclaimer>
+		<disclaimer lang="sl">Uporaba tega dodatka pomeni, da ste se strinjali s pogoji storitve, ki se nahajajo na http://developer.yahoo.com/weather/#terms</disclaimer>
+		<disclaimer lang="sr_RS">Употреба овог додатка подразумева да сте сагласни са Условима Коришћења који се налазе на http://developer.yahoo.com/weather/#terms</disclaimer>
+		<disclaimer lang="sv">Användning av detta tillägg innebär att du har accepterat användarvillkoren som hittas på http://developer.yahoo.com/weather/#terms</disclaimer>
+		<disclaimer lang="tr">Bu eklentinin kullanımı aynı zamanda http://developer.yahoo.com/weather/#terms adresindeki Kullanım Koşullarını da kabul ettiğiniz anlamına gelir.</disclaimer>
+		<disclaimer lang="uk">Скориставшись цією надбудовою, ви тим самим погоджуєтеся з умовами використання: </disclaimer>
+		<disclaimer lang="zh">使用此插件表示你已同意此服务条款：http://developer.yahoo.com/weather/#terms</disclaimer>
+		<language></language>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE Version 2</license>
+		<forum>http://forum.kodi.tv/showthread.php?tid=169410</forum>
+		<website></website>
+		<email></email>
+		<source>https://github.com/ronie/weather.yahoo</source>
+	</extension>
+</addon>
+
+<addon
+  id="webinterface.ptvlmanager"
+  version="0.1.0"
+  name="KODI PTVL Manager"
+  provider-name="Peppy, Lunatixz">
+  <requires>
+    <import addon="xbmc.json" version="6.0.0" />
+  </requires>
+  <extension
+    point="xbmc.webinterface"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">PTVL and Kodi media management webinterface</summary>
+    <description lang="en">PTVL webinterface allows you to control and manage Kodi libraries, and manage your PTVL Channels.</description>
+    <platform>all</platform>
+    <language>en</language>
+    <source>https://github.com/peppy6582/webinterface.ptvlmanager</source>
+    <forum>http://forum.kodi.tv/showthread.php?tid=225746</forum>
+  </extension>
+</addon>
+
+<addon id="xbmc-vk.svoka.com" name="VK-xbmc" version="1.1.0" provider-name="shchvova">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+    </requires>
+	<extension point="xbmc.python.pluginsource" provides="image, audio, video" library="default.py">
+		<provides>image video audio</provides>
+	</extension>
+
+	<extension point="xbmc.addon.repository" name="VK XBMC Add-ons">
+		<info compressed="false">http://xbmc-vk-repo.googlecode.com/svn/trunk/addons/addons.xml</info>
+		<checksum>http://xbmc-vk-repo.googlecode.com/svn/trunk/addons/addons.xml.md5</checksum>
+		<datadir zip="false">http://xbmc-vk-repo.googlecode.com/svn/trunk/addons/</datadir>
+	</extension>
+
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Video, audio and photos from VKontakte social network http://vkontakte.ru/</summary>
+		<description lang="en">Video from VKontakte social network http://vkontakte.ru/
+homepage - http://code.svoka.com/vk-xbmc-plugin
+Author - Vlad Svoka aka Shchvova</description>
+		<summary lang="ru">Видео с сайта http://vkontakte.ru/</summary>
+		<description lang="ru">Видео, аудио и фотографии с сайта http://vkontakte.ru/
+Домашняя страница проекта - http://code.svoka.com/vk-xbmc-plugin
+Автор - Влад Свока aka Shchvova</description>
+		<platform>all</platform>
+	</extension>
 </addon>
 </addons>
