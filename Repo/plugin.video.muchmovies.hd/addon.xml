@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="plugin.video.muchmovies.hd" name="Much Movies HD" version="1.7.5" provider-name="lambda">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>

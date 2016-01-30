@@ -1,5 +1,11 @@
 [B][COLOR chartreuse]This file contains ALOT of useful information regarding the functionality of Super Favourites - PLEASE READ IT!![/COLOR][/B]
 
+[COLOR chartreuse]1.0.45: 14th January 2016[/COLOR]
+    - fixed adding to Kodi favourites
+    - fixed iSearch from file manager window
+    - fixed global menu behaviour in WindowXML windows
+    - added download functionlity to global menu - available if Super Favourites *may* be able to download the current playing video
+
 
 [COLOR chartreuse]1.0.44: 17th December 2015[/COLOR]
     - version bump
