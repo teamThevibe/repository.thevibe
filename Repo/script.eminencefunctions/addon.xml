@@ -3,9 +3,9 @@
     <requires>
         <import addon="xbmc.python" version="2.12.0"/>
     </requires>
-    <extension point="xbmc.python.module" library="default.py" />
+    <extension point="xbmc.python.module" library="default.py"/>
     <extension point="xbmc.addon.metadata"> 
-        <language></language>
+        <language/>
         <summary lang="en">Eminence Skin Functions Script</summary>
         <description lang="en">Provides skin functions for eminence</description>
         <platform>all</platform>

@@ -984,28 +984,24 @@
         <provides>audio</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="en"></summary>
-    <description lang="en"></description>
+    <summary lang="en"/>
+    <description lang="en"/>
     <platform>all</platform>
   </extension>
 </addon>
 
-<addon id="plugin.audio.jango"
-       name="Jango"
-       version="0.8.6"
-       provider-name="kinkin, art by jokster">
+<addon id="plugin.audio.jango" name="Jango" version="0.8.6" provider-name="kinkin, art by jokster">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
         <import addon="script.module.t0mm0.common" version="1.1.0"/>
         <import addon="script.module.requests" version="1.1.0"/>
     </requires>
 
-    <extension point="xbmc.python.pluginsource"
-               	library="default.py">
+    <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>audio</provides>
     </extension>
 
-	<extension point="xbmc.service" library="playerMP3.py" start="startup" />
+	<extension point="xbmc.service" library="playerMP3.py" start="startup"/>
 
     <extension point="xbmc.addon.metadata">
         <platform>all</platform>
@@ -1096,6 +1092,30 @@
     <description lang="en">Music box is a new way to listen and discover music thought KODI.</description>
     <platform>all</platform>
   </extension>
+</addon>
+
+<addon id="plugin.audio.tuneinradio" name="TuneIn Radio" version="3.0.0" provider-name="brianhornsby">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+		<import addon="script.module.simplejson" version="2.0.10"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>audio</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="bg">Радио TuneIn</summary>
+		<summary lang="en">TuneIn Radio</summary>
+		<summary lang="es">TuneIn Radio</summary>
+		<description lang="bg">Радио TuneIn е безплатна услуга, която ви позволява да слушате всичко, независимо къде се намирате. Каквото желаете - музика, спорт или новини. Радио TuneIn предлага над 50 000 станции от които да избирате. Можете да намерите местните станции или да откриете нови станции от целия свят. Радио TuneIn ви отвежда точно където желаете да сте.</description>
+		<description lang="en">TuneIn Radio is a free service that lets you listen to anything in the world from wherever you are. Whether you want to hear music, sports, news or current events. TuneIn Radio offers over 50,000 stations for you to choose from. From finding local stations to discovering new stations from around the world, TuneIn Radio brings you to where you want to be.</description>
+		<description lang="es">TuneIn Radio es un servicio gratuito que te permite escuchar cualquier cosa del mundo desde donde te encuentres. Si deseas escuchar música, deportes, noticias o eventos actuales. TuneIn Radio ofrece más de 50,000 estaciones radiales para escoger, desde estaciones locales hasta descubrir nuevas estaciones alrededor del mundo, TuneIn Radio te lleva a donde tu quieras estar.</description>
+		<language/>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+		<forum>http://forum.kodi.tv/showthread.php?tid=119315</forum>
+		<website>http://brianhornsby.com/kodi_addons/tuneinradio</website>
+		<source>https://github.com/brianhornsby/plugin.audio.tuneinradio</source>
+	</extension>
 </addon>
 
 <addon id="plugin.audio.tunir" name="Tunir" version="0.0.2" provider-name="Nir Elbaz">
@@ -1419,22 +1439,42 @@ Plugin by @koderdude</description>
   </extension>
 </addon>
 
-<addon id="plugin.video.ccloudtv"
-       name="cCloud TV"
-       version="1.4.2"
-       provider-name="podgod">
+<addon id="plugin.video.CanTVLive" name="CanTVLive" version="2.0.2" provider-name="podgod">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.beautifulsoup" version="3.2.1"/>
+	<import addon="script.module.simple.downloader" version="0.9.4"/>
+	<import addon="script.module.beautifulsoup4"/>
+	<import addon="script.module.requests"/>
+	<import addon="script.module.httplib2"/>
+	<import addon="script.module.youtube.dl" optional="true"/>
+	<import addon="plugin.video.youtube"/>
+	<import addon="script.module.urlresolver" optional="true"/>
+	<import addon="script.module.simplejson"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+	<provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary>Live Canadian TV channels</summary>
+    <description>Live Canadian TV channels all in one place. General disclaimer: These are just random feeds found on the net. Like all things internet, links go up and down. Also, some channels do not broadcast 24/7. I take no responsibility for the content or reliability of the feeds. Enjoy while you can. [B]Filmon.TV[/B] addon from kinkin required for CTV channels.</description>
+  </extension>
+</addon>
+
+<addon id="plugin.video.ccloudtv" name="cCloud TV" version="1.4.2" provider-name="podgod">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="script.module.beautifulsoup" version="3.2.1"/>
     <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.beautifulsoup4"/>
     <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.requests" />
-    <import addon="script.module.httplib2" />
+    <import addon="script.module.requests"/>
+    <import addon="script.module.httplib2"/>
     <import addon="script.module.youtube.dl" optional="true"/>
-    <import addon="plugin.video.youtube" />
+    <import addon="plugin.video.youtube"/>
     <import addon="script.module.urlresolver" optional="true"/>
-    <import addon="script.module.simplejson" />
+    <import addon="script.module.simplejson"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
     <provides>video</provides>
@@ -1448,7 +1488,7 @@ Plugin by @koderdude</description>
     <website>http://ccloudtv.org</website>
     <website>http://facebook.com/ccloudapp</website>
     <website>http://twitter.com/ccloudapp</website>
-    <email></email>
+    <email/>
     <platform>all</platform>
   </extension>
 </addon>
@@ -1507,23 +1547,20 @@ Plus stream or download from over 70,000 live audio bootlegs from www.archive.or
 
 </addon>
 
-<addon id="plugin.video.dextertv"
-       name="dexterTV"
-       version="2.0.5"
-       provider-name="dexter's lab">
+<addon id="plugin.video.dextertv" name="dexterTV" version="2.0.5" provider-name="dexter's lab">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
 	<import addon="script.module.t0mm0.common" version="2.0.0"/>
     <import addon="script.module.beautifulsoup" version="3.2.1"/>
     <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.beautifulsoup4"/>
     <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.requests" />
-    <import addon="script.module.httplib2" />
+    <import addon="script.module.requests"/>
+    <import addon="script.module.httplib2"/>
     <import addon="script.module.youtube.dl" optional="true"/>
     <import addon="plugin.video.youtube" version="3.0.0"/>
     <import addon="script.module.urlresolver" optional="true"/>
-    <import addon="script.module.simplejson" />
+    <import addon="script.module.simplejson"/>
     <import addon="script.common.plugin.cache" version="2.5.2"/>
     <import addon="script.module.metahandler" version="2.5.1"/>
   </requires>
@@ -1542,6 +1579,23 @@ All Credit to WebCoder for new build.
   </extension>
 </addon>
 
+<addon id="plugin.video.dnatv" name="[COLOR darkorange]DNA[/COLOR] [COLOR lightblue]TV[/COLOR]" version="2.0.6" provider-name="Team DNA">
+    <requires>
+		<import addon="xbmc.python" version="2.14.0"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="addon.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="server.py" start="startup"/>
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">DNA TV</summary>
+		<description lang="en">IPTV Stalker Clone</description>
+		<license>GNU General Public License, v2</license>
+		<language/>
+	</extension>
+</addon>
+
 <addon id="plugin.video.DSVideos" name="..DroidSticks Help Centre" version="1.0.6" provider-name="Droidsticks / MetalKettle">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -1555,6 +1609,28 @@ All Credit to WebCoder for new build.
     <description lang="en"></description>
     <platform>all</platform>
   </extension>
+</addon>
+
+<addon id="plugin.video.extreme.com" name="Extreme Sports" version="1.0.5" provider-name="lambda">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+		<import addon="script.module.simplejson" version="2.0.10"/>
+		<import addon="script.common.plugin.cache" version="0.9.1"/>
+		<import addon="script.module.parsedom" version="0.9.1"/>
+		<import addon="plugin.video.youtube" version="2.9.2"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Extreme Sports</summary>
+		<description lang="en">Visit TVADDONS.ag for support</description>
+		<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
+		<forum>http://forums.tvaddons.ag/forums/148-lambda-s-xbmc-addons</forum>
+		<source>https://offshoregit.com/lambda81/lambda-addons</source>
+		<website>https://offshoregit.com/lambda81/</website>
+		<platform>all</platform>
+	</extension>
 </addon>
 
 <addon id="plugin.video.filmehd.net" provider-name="The[COLOR tan]Highway[/COLOR]"
@@ -1636,6 +1712,41 @@ All Credit to WebCoder for new build.
         <website>https://github.com/logi85/plugin.video.flix2kodi</website>
         <email/>
         <source/>
+    </extension>
+</addon>
+
+<addon id="plugin.video.football.today" name="Football Today" version="3.0.1" provider-name="lambda">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+		<import addon="script.module.simplejson" optional="true"/>
+		<import addon="script.module.parsedom" optional="true"/>
+		<import addon="plugin.video.youtube" optional="true"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Football on demand</summary>
+		<description lang="en">Visit TVADDONS.ag for support</description>
+		<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
+		<forum>http://forums.tvaddons.ag/forums/148-lambda-s-xbmc-addons</forum>
+		<source>https://offshoregit.com/lambda81/lambda-addons</source>
+		<website>https://offshoregit.com/lambda81/</website>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="plugin.video.gdrive" version="0.7.17" name="gdrive" provider-name="ddurdle">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video audio image programs</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Listen to music, watch videos and view photos from your Google Drive account</summary>
+        <description>Plays music and video from your Google Drive account.  Not affiliated with Google.</description>
+        <platform>all</platform>
     </extension>
 </addon>
 
@@ -2248,10 +2359,10 @@ Donatello donations: http://donatellokodi.blogspot.co.il/2015/10/blog-post.html
 <addon id="plugin.video.md9movies" name="9Movies" version="1.0.7" provider-name="Mucky Duck">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
-	<import addon="script.module.addon.common" />
+	<import addon="script.module.addon.common"/>
 	<import addon="script.module.metahandler" version="2.5.1"/>
-	<import addon="script.module.requests" />
-	<import addon="repository.mdrepo" />
+	<import addon="script.module.requests"/>
+
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>video</provides>
@@ -2278,6 +2389,26 @@ Donatello donations: http://donatellokodi.blogspot.co.il/2015/10/blog-post.html
     <description lang="en">Search Karaoke Songs.....Official Support....XUNITYTALK.COM</description>
     <platform>all</platform>
   </extension>
+</addon>
+
+<addon id="plugin.video.mnutzreloaded" name="[COLOR yellow]MuttsNutz [/COLOR]Reloaded" version="1.1.0" provider-name="SchisM">
+	<requires>
+		<import addon="script.module.simplejson" version="3.3.0"/>
+		<import addon="xbmc.python" version="2.1.0"/>
+		<import addon="script.module.t0mm0.common" version="2.0.0"/>
+		<import addon="plugin.video.youtube" version="3.0.0"/>
+		<import addon="script.module.urlresolver" version="2.1.2"/>
+		<import addon="script.common.plugin.cache" version="2.5.2"/>
+		<import addon="script.module.metahandler" version="2.5.1"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+			<summary lang="en">AKA MuttsNutz Reloaded</summary>
+			<description lang="en">Credit goes to Metalkettle for the base and Lambda for the resolver</description>
+			<platform>all</platform>
+	</extension>
 </addon>
 
 <addon id="plugin.video.movieshd" name="Movies HD" version="2.0.4" provider-name="MetalKettle">
@@ -2359,6 +2490,48 @@ Donatello donations: http://donatellokodi.blogspot.co.il/2015/10/blog-post.html
 	</extension>
 </addon>
 
+<addon id="plugin.video.nbaondemand" name="NBA On-demand" version="2.0.1" provider-name="lambda,enen92">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+		<import addon="script.module.simplejson" optional="true"/>
+		<import addon="script.module.parsedom" optional="true"/>
+		<import addon="plugin.video.youtube" optional="true"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">NBA on demand</summary>
+		<description lang="en">Visit TVADDONS.ag for support</description>
+		<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
+		<forum>http://forums.tvaddons.ag/forums/148-lambda-s-xbmc-addons</forum>
+		<source>https://offshoregit.com/lambda81/lambda-addons</source>
+		<website>https://offshoregit.com/lambda81/</website>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="plugin.video.nhlondemand" name="NHL On-demand" version="2.0.1" provider-name="lambda">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+		<import addon="script.module.simplejson" optional="true"/>
+		<import addon="script.module.parsedom" optional="true"/>
+		<import addon="plugin.video.youtube" optional="true"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">NHL on demand</summary>
+		<description lang="en">Visit TVADDONS.ag for support</description>
+		<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
+		<forum>http://forums.tvaddons.ag/forums/148-lambda-s-xbmc-addons</forum>
+		<source>https://offshoregit.com/lambda81/lambda-addons</source>
+		<website>https://offshoregit.com/lambda81/</website>
+		<platform>all</platform>
+	</extension>
+</addon>
+
 <addon id="plugin.video.onlinemovies" name="Online Movies Pro" version="1.2.1" provider-name="MetalKettle">
   <requires>
     <import addon="script.module.simplejson" version="3.3.0"/>
@@ -2425,11 +2598,11 @@ Donatello donations: http://donatellokodi.blogspot.co.il/2015/10/blog-post.html
 
 <addon id="plugin.video.phstreams" name="Phoenix" version="2.8.1" provider-name="Blazetamer, lambda, VinMan_JSV">
 	<requires>
-		<import addon="xbmc.python" version="2.1.0" />
-		<import addon="script.module.pyxbmct" version="1.1.4" />
-		<import addon="script.module.requests" version="1.1.0" />
-		<import addon="script.module.metahandler" version="2.3.1" />
-		<import addon="plugin.video.youtube" optional="true" />
+		<import addon="xbmc.python" version="2.1.0"/>
+		<import addon="script.module.pyxbmct" version="1.1.4"/>
+		<import addon="script.module.requests" version="1.1.0"/>
+		<import addon="script.module.metahandler" version="2.3.1"/>
+		<import addon="plugin.video.youtube" optional="true"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
@@ -2441,6 +2614,33 @@ Donatello donations: http://donatellokodi.blogspot.co.il/2015/10/blog-post.html
 		<forum>http://forums.tvaddons.ag/forums/220-PHOENIX-LIVE-STREAMS</forum>
 		<website>http://www.tvaddons.ag/</website>
 	</extension>
+</addon>
+
+<addon id="plugin.video.ProjectCypher" name="ProjectCypher" version="2.0.1" provider-name="Cypher">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.t0mm0.common" version="2.0.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.requests"/>
+    <import addon="script.module.httplib2"/>
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" version="3.0.0"/>
+    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.simplejson"/>
+    <import addon="script.common.plugin.cache" version="2.5.2"/>
+    <import addon="script.module.metahandler" version="2.5.1"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Live SD and HD TV channels</summary>
+    <description>General disclaimer: Project Cypher takes no responsibility for the content or reliability of the feeds. Project Cypher [B]Does Not[/B] host any of the feeds or Streams. Most of the Code from this addon was taken from many other addons but used under the GNU GENERAL PUBLIC LICENSE Version 2, June 1991</description>
+    <platform>all</platform>
+  </extension>
 </addon>
 
 <addon
@@ -2485,8 +2685,8 @@ Donatello donations: http://donatellokodi.blogspot.co.il/2015/10/blog-post.html
         <provides>video</provides>
     </extension>
     <extension point="xbmc.service" library="service.py" start="startup"/>
-    <extension point="xbmc.python.module" library="resources/site-packages" />
-    <extension point="xbmc.subtitle.module" library="navigation.py" />
+    <extension point="xbmc.python.module" library="resources/site-packages"/>
+    <extension point="xbmc.subtitle.module" library="navigation.py"/>
     <extension point="xbmc.addon.metadata">
         <platform>all</platform>
         <language>en</language>
@@ -2501,35 +2701,35 @@ Donatello donations: http://donatellokodi.blogspot.co.il/2015/10/blog-post.html
 </addon>
 
 <addon id="plugin.video.reshet.video" name="רשת" version="1.3.3" provider-name="sbentin">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="repository.xbmc-israel" />
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="reshet.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <minversion>31632</minversion>
-    <summary lang="en">Watch Reshet video contents.</summary>
-    <summary lang="he">צפה בתוכניות מאפליקציית אנדרויד של רשת</summary>
-    <description lang="en">Watch contents from Reshet's android application.</description>
-    <description lang="he">צפה במגוון התוכניות והסדרות הניתנות לצפיה מהפלאגין של רשת לאנדרויד</description>
-    <disclaimer>This addon parse Reshets's android application, you should check Reshet's TOS before you using. It's as is</disclaimer>
-    <supportedcontent>
-      <content>tvshows</content>
-      <content>episodes</content>
-      <content>movies</content>
-    </supportedcontent>
-  </extension>
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="reshet.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <minversion>31632</minversion>
+        <summary lang="en">Watch Reshet video contents.</summary>
+        <summary lang="he">צפה בתוכניות מאפליקציית אנדרויד של רשת</summary>
+        <description lang="en">Watch contents from Reshet's android application.</description>
+        <description lang="he">צפה במגוון התוכניות והסדרות הניתנות לצפיה מהפלאגין של רשת לאנדרויד</description>
+        <disclaimer>This addon parse Reshets's android application, you should check Reshet's TOS before you using. It's as is</disclaimer>
+        <supportedcontent>
+          <content>tvshows</content>
+          <content>episodes</content>
+          <content>movies</content>
+        </supportedcontent>
+    </extension>
 </addon>
 
 <!--suppress ALL -->
-<addon id="plugin.video.salts" version="1.0.109" name="Stream All The Sources" provider-name="tknorris">
+<addon id="plugin.video.salts" version="1.0.108" name="Stream All The Sources" provider-name="tknorris">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
         <import addon="script.module.urlresolver" version="2.2.0"/>
-        <import addon="script.module.myconnpy" version="1.1.6" />
+        <import addon="script.module.myconnpy" version="1.1.6"/>
     </requires>
     <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>video</provides>
@@ -2678,6 +2878,45 @@ Donatello donations: http://donatellokodi.blogspot.co.il/2015/10/blog-post.html
   </extension>
 </addon>
 
+<addon id="plugin.video.spotitube" name="Youtube Music" version="1.0.5.1" provider-name="AddonScriptorDE">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="plugin.video.youtube" version="3.0.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video audio</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en">Play music videos via Youtube</summary>
+        <language/>
+        <description lang="en">Play music videos via Youtube</description>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+        <source>https://github.com/AddonScriptorDE/plugin.video.spotitube</source>
+        <forum>http://forum.xbmc.org/showthread.php?tid=</forum>
+        <email>AddonScriptorDE at yahoo dot de</email>
+        <website/>
+    </extension>
+</addon>
+
+<addon id="plugin.video.streamengine" name="Stream Engine" version="1.2.1" provider-name="Mucky Duck,Stream Engine">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.simplejson" version="3.3.0"/>
+	<import addon="script.module.urlresolver" version="2.1.2"/>
+	<import addon="script.module.addon.common"/>
+
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Top Quality Streaming Source.</summary>
+    <description lang="en"/>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="plugin.video.surveillanceroom" name="Surveillance Room" version="1.2.3" provider-name="Maikito26">
   <requires>
     <import addon="xbmc.python" version="2.19.0"/>
@@ -2727,6 +2966,37 @@ Donatello donations: http://donatellokodi.blogspot.co.il/2015/10/blog-post.html
   </extension>
 </addon>
 
+<addon id="plugin.video.theroyalwe" name="The Royal We" provider-name="DudeHere" version="0.8.23">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.module.simplejson"/>
+        <import addon="script.module.beautifulsoup"/>
+        <import addon="script.module.addon.common"/>
+        <import addon="script.module.dudehere.routines"/>
+        <import addon="script.module.metahandler"/>
+        <import addon="script.module.myconnpy"/>
+        <import addon="script.module.urlresolver"/>
+    </requires>
+    <extension library="default.py" point="xbmc.python.pluginsource">
+        <provides>video</provides>
+    </extension>
+    <extension library="calendar.py" point="kodi.context.item">
+        <item>
+            <label>TRW Calendar</label>
+            <visible>True</visible>
+        </item>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <language/>
+        <summary>The Royal We is about simplicity and sources.</summary>
+        <description>The Royal We is getting better then ever. It's all about simplicity and lots of sources. No settings. No configuration (except for a Trakt.tv account if you have one).</description>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+        <forum>http://forums.tvaddons.ag/dudehere-addons/</forum>
+        <website>http://www.tvaddons.ag/</website>
+    </extension>
+</addon>
+
 <addon id="plugin.video.thewiz.wall" name="TheWiz Movies/TV Wall" version="2.2.2" provider-name="TheWiz, KodIsrael.net">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
@@ -2766,6 +3036,36 @@ Donatello donations: http://donatellokodi.blogspot.co.il/2015/10/blog-post.html
     <forum>n/a</forum>
     <website>n/a</website>
   </extension>
+</addon>
+
+<addon id="plugin.video.torrenter" name="Torrenter" version="2.4.3c" provider-name="DiMartino">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.module.libtorrent"/>
+        <import addon="script.module.torrent.ts"/>
+        <import addon="script.module.requests"/>
+        <import addon="script.module.torrent2http"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" provides="video" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en">Plugin helps you to watch videos from p2p torrent-networks, without full predownload.
+        </summary>
+        <description lang="en">Plugin helps you to watch videos from p2p torrent-networks, without full predownload (uses python-libtorrent or Ace Stream). It also can add, control torrents and play downloaded files with external torrent-client (uTorrent, Transmisson, Vuse, Deluge) or python-libtorrent.
+        </description>
+        <disclaimer lang="en">GNU GPLv3 http://www.gnu.org/licenses/</disclaimer>
+        <summary lang="ru">Плагин позволяет просматривать видео из пиринговых торрент-сетей, не дожидаясь полного скачивания.
+        </summary>
+        <description lang="ru">Плагин позволяет просматривать видео из пиринговых торрент-сетей, не дожидаясь полного скачивания. Использует библиотеку python-libtorrent или Ace Stream. Так же плагин может добавлять, проигрывать и управлять скачками в торрент клиентах (uTorrent, Transmisson, Deluge и Vuse) или средставми python-libtorrent.
+        </description>
+        <disclaimer lang="ru">GNU GPLv3 http://www.gnu.org/licenses/</disclaimer>
+		<forum>https://forums.tvaddons.ag/addon-releases/29224-torrenter-v2.html</forum>
+		<website>http://xbmc.ru/forum/showthread.php?t=6837</website>
+		<email>skype:kyonkodura</email>
+		<source>https://github.com/DiMartinoXBMC/plugin.video.torrenter</source>
+    </extension>
 </addon>
 
 <addon id="plugin.video.tv4me"
@@ -2904,12 +3204,11 @@ Donatello donations: http://donatellokodi.blogspot.co.il/2015/10/blog-post.html
     </extension>
 </addon>
 
-    <addon id="plugin.video.velocity" version="1.0.2" name="Velocity" provider-name="Blazetamer">
+<addon id="plugin.video.velocity" version="1.0.1" name="Velocity" provider-name="Blazetamer">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
-        <import addon="script.module.urlresolver"  version="2.1.2"/>
+        <import addon="script.module.urlresolver" version="2.1.2"/>
         <import addon="script.module.t0mm0.common" version="2.0.0"/>
-        <import addon="script.module.autoupdate" version="2.0.0" />
 
 
     </requires>
@@ -2918,18 +3217,40 @@ Donatello donations: http://donatellokodi.blogspot.co.il/2015/10/blog-post.html
     </extension>
     <extension point="xbmc.addon.metadata">
         <summary>Stream Videos from multiple sources</summary>
-        <description>Stream Videos from multiple sources via Information obtained from Trakt.tv, and or your Trakt Account</description>
-        <disclaimer>The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
+        <description>Stream Videos from multiple sources via Information obtained from Trakt, and or your Trakt Account</description>
+        <disclaimer>The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
         <language>en</language>
         <platform>all</platform>
         <forum>https://forums.tvaddons.ag/blazetamer-s-repository/39658-velocity-20.html</forum>
         <website>https://offshoregit.com/Blazetamer/velocity.html</website>
-        <source></source>
-        <email></email>
+        <source/>
+        <email/>
     </extension>
 </addon>
 
-<addon id="plugin.video.wallaNew.video" name="וואלה" version="2.2.0" provider-name="sbentin shlomico">
+<addon id="plugin.video.vevo" name="VEVO" version="0.8.2" provider-name="BlueCop">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.facebook.media" version="0.9.2"/>
+
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video audio</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Music Videos from VEVO</summary>
+    <summary lang="de">Musik Videos von VEVO</summary>
+    <description lang="en">Watch your favorite artist's music videos, see premiere performances and search for new music on VEVO.com</description>
+    <description lang="de">Schaue Top Videos und Performances Deiner Lieblingskünstler und entdecke neue Musik auf VEVO.com</description>
+    <disclaimer lang="en">Some parts of this addon may not be legal in your country of residence - please check with your local laws before installing.</disclaimer>
+    <disclaimer lang="de">Einige Teile dieses Addons sind möglicherweise in Ihrem Land nicht legal - bitte prüfen Sie Ihre lokal gültigen Gesetze vor der Installation.</disclaimer>
+    <source>https://github.com/moneymaker365/plugin.video.vevo</source>
+  </extension>
+</addon>
+
+<addon id="plugin.video.wallaNew.video" name="וואלה" version="2.2.1" provider-name="sbentin shlomico">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
         <import addon="script.common.plugin.cache" version="0.9.1"/>
@@ -2977,23 +3298,41 @@ Donatello donations: http://donatellokodi.blogspot.co.il/2015/10/blog-post.html
 </addon>
 
 <addon id="plugin.video.watch1080" name="Watch 1080p" version="1.0.1" provider-name="MetalKettle">
+
   <requires>
+
     <import addon="script.module.simplejson" version="3.3.0"/>
+
     <import addon="xbmc.python" version="2.1.0"/>
+
     <import addon="script.module.t0mm0.common" version="2.0.0"/>
+
     <import addon="plugin.video.youtube" version="3.0.0"/>
-    <import addon="script.module.urlresolver"  version="2.1.2"/>
+
+    <import addon="script.module.urlresolver" version="2.1.2"/>
+
     <import addon="script.common.plugin.cache" version="2.5.2"/>
+
     <import addon="script.module.metahandler" version="2.5.1"/>
+
   </requires>
+
   <extension point="xbmc.python.pluginsource" library="default.py">
+
         <provides>video</provides>
+
   </extension>
+
   <extension point="xbmc.addon.metadata">
-    <summary lang="en"></summary>
-    <description lang="en"></description>
+
+    <summary lang="en"/>
+
+    <description lang="en"/>
+
     <platform>all</platform>
+
   </extension>
+
 </addon>
 
 <addon id="plugin.video.wweonline" name="WWE Online" version="0.1.7" provider-name="[COLOR blue]X[/COLOR]unity[COLOR blue]T[/COLOR]alk">
@@ -3064,23 +3403,41 @@ XBMC HUB: j.mp/xbmctorrent]]></description>
 </addon>
 
 <addon id="plugin.video.xmovies8" name="XMovies8" version="1.1.1" provider-name="MetalKettle">
+
   <requires>
+
     <import addon="script.module.simplejson" version="3.3.0"/>
+
     <import addon="xbmc.python" version="2.1.0"/>
+
     <import addon="script.module.t0mm0.common" version="2.0.0"/>
+
     <import addon="plugin.video.youtube" version="3.0.0"/>
-    <import addon="script.module.urlresolver"  version="2.1.2"/>
+
+    <import addon="script.module.urlresolver" version="2.1.2"/>
+
     <import addon="script.common.plugin.cache" version="2.5.2"/>
+
     <import addon="script.module.metahandler" version="2.5.1"/>
+
   </requires>
+
   <extension point="xbmc.python.pluginsource" library="default.py">
+
         <provides>video</provides>
+
   </extension>
+
   <extension point="xbmc.addon.metadata">
-    <summary lang="en"></summary>
-    <description lang="en"></description>
+
+    <summary lang="en"/>
+
+    <description lang="en"/>
+
     <platform>all</platform>
+
   </extension>
+
 </addon>
 
 <addon id="plugin.video.xunity" name=".[COLOR blue]i[/COLOR]Stream Installer" version="1.2.3" provider-name="[COLOR blue]X[/COLOR]unity [COLOR blue]T[/COLOR]alk">
@@ -3178,6 +3535,26 @@ XBMC HUB: j.mp/xbmctorrent]]></description>
 		<email>bromix at gmx dot net</email>
 		<source>https://github.com/bromix/plugin.video.youtube</source>
 	</extension>
+</addon>
+
+<addon id="program.plexus" name="Plexus" version="0.1.4" provider-name="enen92, TV ADDONS">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.requests"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
+  </extension>
+
+  <extension point="xbmc.addon.metadata">
+    <summary>SopCast and AceStream for Kodi</summary>
+    <description lang="en">Plexus - Any complex structure containing an intricate network of parts. Plexus brings native peer-to-peer support (AceStream and SopCast) for Kodi Entertainment Center for several platforms.[CR][CR]Documentation: (missing)</description>
+    <description lang="pt">Plexus - Uma estrutura complexa constituída por uma rede de partes. O Plexus adiciona suporte peer-to-peer nativo (AceStream e Sopcast) ao Kodi Entertainment Center para várias plataformas.[CR][CR]Documentação: (em falta)</description>
+    <disclaimer lang="en">The author does not host nor distribute any of the content you may watch using this addon. The author has no part in the development of any included technologies. When seeking help in Kodi's forum please respect rules (http://kodi.wiki/view/Forum_rules).</disclaimer>
+    <disclaimer lang="pt">Os autores não alojam nem distribuem nenhum do conteúdo que poderá ser reproduzido a partir deste addon. Os autores não têm qualquer parte no desenvolvimento de qualquer uma das tecnologias. Se procurar ajuda no fórum oficial do Kodi por favor respeite as regras do fórum (http://kodi.wiki/view/Forum_rules).</disclaimer>
+    <forum>http://forums.tvaddons.ag</forum>
+    <platform>all</platform>
+  </extension>
 </addon>
 
 <addon
@@ -3673,15 +4050,15 @@ If for any reason the check of a successful wake-up via ping is not possible or 
   </extension>
 </addon>
 
-  <addon id="script.artwork.downloader" name="Artwork Downloader" version="12.0.29.1" provider-name="Martijn">
+<addon id="script.artwork.downloader" name="Artwork Downloader" version="13.1.0" provider-name="Martijn">
   <requires>
-    <import addon="xbmc.python"                 version="2.1.0"/>
-    <import addon="xbmc.json"                   version="6.0.0"/>
-    <import addon="xbmc.addon"                  version="12.0.0"/>
-    <import addon="script.module.simplejson"    version="3.3.0"/>
-    <import addon="script.common.plugin.cache"  version="1.3.0"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="xbmc.json" version="6.0.0"/>
+    <import addon="xbmc.addon" version="12.0.0"/>
+    <import addon="script.module.simplejson" version="3.3.0"/>
+    <import addon="script.common.plugin.cache" version="1.3.0"/>
   </requires>
-  <extension point="xbmc.python.script"         library="default.py">
+  <extension point="xbmc.python.script" library="default.py">
     <provides>executable</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
@@ -3708,7 +4085,10 @@ If for any reason the check of a successful wake-up via ping is not possible or 
     <description lang="be">Downloads all available artwork for TV shows, Movies and Musicvideos in your library. Check the options for supported artwork[CR]Artwork sources:[CR]www.fanart.tv[CR]www.thetvdb.com[CR]www.themoviedb.org[CR]Remark:[CR]Check your skin to see what type of artwork is supported![CR]Each TV Show/Movie must have its own folder![CR]Skin integration:[CR]See readme file</description>
     <description lang="da">Henter alle tilgængelige illustrationer til TV-serier, Film og Musikvideoer i dit bibliotek. Tjek indstillingerne for at se understøttede illustrationer.[CR]Kilder til illustrationer[CR]www.fanart.tv[CR]www.thetvdb.com[CR]www.themoviedb.org[CR]Bemærk:[CR]Tjek dit skin for at se, hvilke typer illustrationer, der understøttes![CR]Hver TV-serie/Film skal have sin egen mappe![CR]Skin-integration:[CR]Se 'readme' fil</description>
     <description lang="de">Downloadet alle verfügbaren Artworks für TV Sendungen, Filme und Musikvideos in deine Datenbank. Überprüfe die Optionen für nicht unterstützte Artwork[CR]Artworkquellen: [CR]www.fanart.tv[CR]www.thetvdb.com[CR]www.themoviedb.org[CR]Remark:[CR]Überprüfe dein Skin ob Artwork unterstützt wird![CR]Jede TV Sendung/Film braucht seinen eigenen Ordner![CR]Skin Integration:[CR]Siehe Readme Datei</description>
-    <description lang="el">Κατεβάζει όλες τις διαθέσιμες εικόνες για τις Τηλεοπτικές Σειρές, τις Ταινίες και τα Μουσικά Βίντεο της συλλογής σας. Ελέγξτε τις επιλογές για υποστηριζόμενες εικόνες[CR]&#10;Πηγές Εικόνων:[CR]www.fanart.tv[CR]www.thetvdb.com[CR]www.themoviedb.org[CR]&#10;Σημείωση:[CR]Ελέγξτε το κέλυφός σας για να δείτε τι είδους εικόνες υποστηρίζονται![CR]Κάθε Σειρά/Ταινία πρέπει να έχει το δικό της φάκελο![CR]&#10;Για ενσωμάτωση στο κέλυφος:[CR]Δείτε το αρχείο readme</description>
+    <description lang="el">Κατεβάζει όλες τις διαθέσιμες εικόνες για τις Τηλεοπτικές Σειρές, τις Ταινίες και τα Μουσικά Βίντεο της συλλογής σας. Ελέγξτε τις επιλογές για υποστηριζόμενες εικόνες[CR]
+Πηγές Εικόνων:[CR]www.fanart.tv[CR]www.thetvdb.com[CR]www.themoviedb.org[CR]
+Σημείωση:[CR]Ελέγξτε το κέλυφός σας για να δείτε τι είδους εικόνες υποστηρίζονται![CR]Κάθε Σειρά/Ταινία πρέπει να έχει το δικό της φάκελο![CR]
+Για ενσωμάτωση στο κέλυφος:[CR]Δείτε το αρχείο readme</description>
     <description lang="en">Downloads all available artwork for TV shows, Movies and Musicvideos in your library. Check the options for supported artwork[CR]Artwork sources:[CR]www.fanart.tv[CR]www.thetvdb.com[CR]www.themoviedb.org[CR]Remark:[CR]Check your skin to see what type of artwork is supported![CR]Each TV Show/Movie must have its own folder![CR]Skin integration:[CR]See readme file</description>
     <description lang="es">Descarga artwork de programas de televisión, películas y videos musicales en su biblioteca. Marque las opciones correspondientes compatible d artwork[CR]Artwork:[CR]www.fanart.tv[CR]www.thetvdb.com[CR]www.themoviedb.org[CR]Remark:[CR]Check su piel para ver qué tipo de obra de arte es compatible![CR]Cada Show de TV\/película debe tener su propia carpeta![CR]Integración de la piel: [CR] consulte el archivo Léame</description>
     <description lang="fr">Téléchargez tous les artworks disponibles pour les séries TV, les films et les vidéos musicales de votre médiathèque. Regardez les options pour les artsworks supportés[CR]Sources des Artworks : [CR]www.fanart.tv[CR]www.thetvdb.com[CR]www.themoviedb.org[CR]Remarques : [CR]Véifiez votre thême pour savoir quel type d'artwork est supporté ![CR]Chaque Série TV/Film doit avoir son propre dossier ![CR]Intégration dans un thême :[CR]Regardez le fichier readme.txt</description>
@@ -3718,12 +4098,29 @@ If for any reason the check of a successful wake-up via ping is not possible or 
     <description lang="it">Scarica tutti gli artwork disponibili per le serie TV, i film ed i video musicali presenti nella libreria. Controlla le opzioni per gli artwork supportati[CR]Fonti artwork:[CR]www.fanart.tv[CR]www.thetvdb.com[CR]www.themoviedb.org[CR]Nota:[CR]Controlla la tua skin per vedere che tipi artwork sono supportati![CR]Ogni Serie TV/Film deve avere una cartella propria![CR]Integrazione skin:[CR]Vedi file readme</description>
     <description lang="ko">라이브러리에 있는 TV 쇼, 영화, 뮤직비디오의 사용 가능한 모든 아트워크를 다운로드합니다. 지원하는 아트워크는 옵션을 확인하세요[CR]아트워크 소스:[CR]www.fanart.tv[CR]www.thetvdb.com[CR]www.themoviedb.org[CR] 참고:[CR]사용하는 스킨이 어떤 형식의 아트워크를 지원하는지 확인하세요![CR]각 TV 쇼/영화는 자신의 폴더에 있어야 합니다![CR]스킨 통합:[CR]readme 파일 참고</description>
     <description lang="nl">Download alle beschikbare artwork voor TV series, Films en Muziekvideos in jouw bibliotheek. Bekijk de opties voor ondersteunde artwork[CR]Artwork bronnen:[CR]www.fanart.tv[CR]www.thetvdb.com[CR]www.themoviedb.org[CR]Opmerking:[CR]Controleer jouw skin om te bepalen welke artwork deze ondersteund![CR]Elke TV serie/Film moet zich in zijn eigen folder bevinden![CR]Skin integratie:[CR]Kijk in de readme bestand</description>
-    <description lang="pl">Pobierz wszystkie dostępne grafiki dla seriali TV, filmów i teledysków ze swojej biblioteki. Sprawdź ustawienia aby zobaczyć wszystkie dostępne grafiki[CR]&#10;    Źródła grafik:[CR]www.fanart.tv[CR]www.thetvdb.com[CR]www.themoviedb.org[CR]&#10;    Uwaga:[CR]Sprawdź jakie rodzaje grafik wspiera twoja skóra![CR]Każdy Serial TV/Film musi być w osobnym folderze![CR]&#10;    Integracja ze skórą:[CR]Przeczytaj plik readme&#10;    </description>
+    <description lang="pl">Pobierz wszystkie dostępne grafiki dla seriali TV, filmów i teledysków ze swojej biblioteki. Sprawdź ustawienia aby zobaczyć wszystkie dostępne grafiki[CR]
+    Źródła grafik:[CR]www.fanart.tv[CR]www.thetvdb.com[CR]www.themoviedb.org[CR]
+    Uwaga:[CR]Sprawdź jakie rodzaje grafik wspiera twoja skóra![CR]Każdy Serial TV/Film musi być w osobnym folderze![CR]
+    Integracja ze skórą:[CR]Przeczytaj plik readme
+    </description>
     <description lang="pt">Transfere toda a artwork disponível para Séries TV, Filmes e Vídeoclipes na sua biblioteca. Verifique a artwork suportada nas opções.[CR]Fontes de Artwork:[CR]www.fanart.tv[CR]www.thetvdb.com[CR]www.themoviedb.org[CR]Lembre-se:[CR]Verifique o seu tema para ver que tipo de artwork é suportada![CR]Cada Série TV/Filme deve ter a sua própria pasta![CR]Integração no tema:[CR]veja o ficheiro readme</description>
-    <description lang="pt_BR">Download todas as artworks disponíveis para Seriados, Filmes e Concertos em sua coleção. Verifique as opções de artes suportadas. &#10;Artwork fontes:[CR]www.fanart.tv[CR]www.thetvdb.com[CR]www.themoviedb.org[CR]Lembrete:[CR]Verifique se sua skin tem suporte para os tipos de artes disponíveis![CR]Cada Seriado/Filme ou Concerto deve estar em pastas próprias![CR]Skin integração:[CR]Veja o arquivo leia-me.</description>
-    <description lang="sk">Sťahuje umeleckú grafiku k TV seriálom, filmom a hudobným videám vo Vašej knižnici. Na overenie podporovanej umeleckej grafiky pozrite nastavenia.&#10;Zdroje umeleckej grafiky:&#10;www.fanart.tv&#10;www.thetvdb.com&#10;www.themoviedb.org&#10;Poznámka:&#10;Aby ste si overili aká umelecká grafika je podporovaná, skontrolujte Váš Vzhľad!&#10;Každý TV seriál / film musí byť v samostatnom priečinku!&#10;Integrácia so vzhľadom:&#10;Pozri readme súbor</description>
+    <description lang="pt_BR">Download todas as artworks disponíveis para Seriados, Filmes e Concertos em sua coleção. Verifique as opções de artes suportadas.
+Artwork fontes:[CR]www.fanart.tv[CR]www.thetvdb.com[CR]www.themoviedb.org[CR]Lembrete:[CR]Verifique se sua skin tem suporte para os tipos de artes disponíveis![CR]Cada Seriado/Filme ou Concerto deve estar em pastas próprias![CR]Skin integração:[CR]Veja o arquivo leia-me.</description>
+    <description lang="sk">Sťahuje umeleckú grafiku k TV seriálom, filmom a hudobným videám vo Vašej knižnici. Na overenie podporovanej umeleckej grafiky pozrite nastavenia.
+Zdroje umeleckej grafiky:
+www.fanart.tv
+www.thetvdb.com
+www.themoviedb.org
+Poznámka:
+Aby ste si overili aká umelecká grafika je podporovaná, skontrolujte Váš Vzhľad!
+Každý TV seriál / film musí byť v samostatnom priečinku!
+Integrácia so vzhľadom:
+Pozri readme súbor</description>
     <description lang="sv">Laddar ner alla tillgängliga omslag, bakgrunder etc för TV-serier, Filmer och Musikvideos till ditt bibliotek. Kontrollera inställningar för vad som stöds[CR] Omslag, bakgrunder etc hämtas från följande resurser:[CR]www.fanart.tv[CR]www.thetvdb.com[CR]www.themoviedb.org[CR] Remark:[CR]Kontrollera skalinställningar för att ta reda på vad som stöds![CR]Varje TV-serie/Film måste ha sin egen mapp![CR] Skalintegration:[CR]See readme file</description>
-    <description lang="zh">下载剧集、电影和音乐电视的所有可用艺术图片到资料库。查看支持的艺术图片选项[CR]&#10;艺术图片来源：[CR]www.fanart.tv[CR]www.thetvdb.com[CR]www.themoviedb.org[CR]&#10; 备注：[CR]查看你的皮肤了解支持什么类型的艺术图片！[CR]每一个剧集/电影必须保存在单独的文件夹中！[CR]&#10; 皮肤集成：[CR]参见readme文件</description>
+    <description lang="zh">下载剧集、电影和音乐电视的所有可用艺术图片到资料库。查看支持的艺术图片选项[CR]
+艺术图片来源：[CR]www.fanart.tv[CR]www.thetvdb.com[CR]www.themoviedb.org[CR]
+ 备注：[CR]查看你的皮肤了解支持什么类型的艺术图片！[CR]每一个剧集/电影必须保存在单独的文件夹中！[CR]
+ 皮肤集成：[CR]参见readme文件</description>
     <disclaimer lang="be">For bugs, requests or general questions visit the Artwork Downloader thread on the XBMC forum.</disclaimer>
     <disclaimer lang="da">Ved fejl, forespørgsler eller generelle spørgsmål besøg Artwork Downloader-tråden i XBMCs forum.</disclaimer>
     <disclaimer lang="de">FÃ¼r Fehler, VorschlÃ¤ge oder alggemeine Fragen, besuche das Artwork Downloader-Thema im XBMC-Forum (englisch).</disclaimer>
@@ -3744,12 +4141,12 @@ If for any reason the check of a successful wake-up via ping is not possible or 
     <disclaimer lang="sk">Pre chyby, požiadavky alebo všeobecné otázky navštívte "Artwork Downloader" vlákno na XBMC fóre.</disclaimer>
     <disclaimer lang="sv">För buggar, önskemål och frågor, besök Artwork Downloader tråden på XBMCs forum.</disclaimer>
     <disclaimer lang="zh">错误报告、功能需求及常见问题，请访问XBMC论坛的Artwork Downloader专贴。</disclaimer>
-    <language></language>
+    <language/>
     <platform>all</platform>
-    <website></website>
+    <website/>
     <source>https://github.com/XBMC-Addons/script.artwork.downloader</source>
     <forum>http://forum.xbmc.org/showthread.php?tid=114633</forum>
-    <email></email>
+    <email/>
   </extension>
 </addon>
 
@@ -3912,6 +4309,19 @@ If for any reason the check of a successful wake-up via ping is not possible or 
   </extension>
 </addon>
 
+<addon id="script.common.plugin.cache" name="Common plugin cache" provider-name="TheCollective" version="2.5.6">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension library="default.py" point="xbmc.service" start="startup">
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Common caching api for xbmc plugins.</summary>
+  </extension>
+  <extension library="lib" point="xbmc.python.module"/>
+</addon>
+
 <addon id="script.cu.lrclyrics" name="CU LRC Lyrics" version="3.2.0" provider-name="Taxigps|ronie">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
@@ -3992,9 +4402,9 @@ If for any reason the check of a successful wake-up via ping is not possible or 
     <requires>
         <import addon="xbmc.python" version="2.12.0"/>
     </requires>
-    <extension point="xbmc.python.module" library="default.py" />
+    <extension point="xbmc.python.module" library="default.py"/>
     <extension point="xbmc.addon.metadata">
-        <language></language>
+        <language/>
         <summary lang="en">Eminence Skin Functions Script</summary>
         <description lang="en">Provides skin functions for eminence</description>
         <platform>all</platform>
@@ -4030,9 +4440,31 @@ If for any reason the check of a successful wake-up via ping is not possible or 
 	</extension>
 </addon>
 
-<addon id="script.favourites" name="Favourites script" version="6.0.2" provider-name="ronie|`Black">
+<addon id="script.facebook.media" name="Facebook Media" version="0.9.15" provider-name="Rick Phillips (ruuk)">
 	<requires>
-		<import addon="xbmc.python" version="2.12.0"/>
+		<import addon="xbmc.python" version="2.1.0"/>
+		<import addon="script.module.simplejson" version="2.0.9"/>
+		<import addon="script.module.mechanize" version="0.2.6"/>
+		<import addon="script.module.oauth.helper" version="0.0.7"/>
+	</requires>
+	<extension point="xbmc.python.script" library="default.py">
+		<provides>executable</provides>
+		<provides>image</provides>
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">Browse Facebook photos and videos</summary>
+		<description lang="en">Browse your and your friends' photos and videos. View and add comments and likes. View image tags.</description>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+		<forum>http://forum.xbmc.org/showthread.php?tid=82500</forum>
+		<source>http://github.com/ruuk/script.facebook.media</source>
+	</extension>
+</addon>
+
+<addon id="script.favourites" name="Favourites script" version="6.0.3" provider-name="ronie, `Black">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
 	</requires>
 	<extension point="xbmc.python.library" library="default.py"/>
 	<extension point="xbmc.addon.metadata">
@@ -4082,7 +4514,7 @@ If for any reason the check of a successful wake-up via ping is not possible or 
 		<description lang="es">Usar ítems de tus favoritos de Kodi para crear menús y submenús personalizados</description>
 		<description lang="es_AR">Obtiene medios de sus favoritos en Kodi para enriquecer su menu inicio y sub carpetas con botones personalizados</description>
 		<description lang="fi">Hakee Kodin suosikeista kohteita ja populoi sillä Koti-valikon / alivalikon muokatuilla napeilla.</description>
-		<description lang="fr">Récupère l'élément depuis les favoris Kodi pour remplir le menu/sous-menu de l'accueil avec des boutons personnalisés.</description>
+		<description lang="fr">Récupère l'élément depuis les favoris Kodi pour remplir le menu/sous-menu de la page d'accueil avec des boutons personnalisés.</description>
 		<description lang="fr_CA">Récupère l'élément de vos favoris Kodi pour remplir le menu d'accueil/le sous-menu avec des boutons personnalisés.</description>
 		<description lang="gl">Obtén o elemento dos favoritos para estabelecer botóns personalizados no Menú Principal/Submenú</description>
 		<description lang="he">מייבא פריט מהמועדפים שלך לאכלוס תפריט/תת תפריט עם לחצנים מותאמים אישית במסך הבית.</description>
@@ -4101,7 +4533,7 @@ If for any reason the check of a successful wake-up via ping is not possible or 
 		<description lang="sv">Hämtar objekt från dina Kodi-favoriter för att fylla ut hem-menyn med egna knappar.</description>
 		<description lang="zh">将 Kodi 收藏夹项目用于主界面菜单/子菜单的自定义按钮。</description>
 		<disclaimer lang="be">Needs skin support for it to be used properly</disclaimer>
-		<disclaimer lang="bg">Необходима е поддръжка на скинове за коректно показване</disclaimer>
+		<disclaimer lang="bg">Необходима е поддръжка от страна на облика за коректно функциониране</disclaimer>
 		<disclaimer lang="ca">Necessita Suport de la pell perquè sigui utilitzat correctament</disclaimer>
 		<disclaimer lang="cs">Pro správné použití je potřeba podpora skinu.</disclaimer>
 		<disclaimer lang="da">Behøver skinsupport for at blive brugt ordentligt</disclaimer>
@@ -4134,12 +4566,12 @@ If for any reason the check of a successful wake-up via ping is not possible or 
 		<disclaimer lang="sv">Behöver skalsupport för att kunna användas riktigt</disclaimer>
 		<disclaimer lang="tr">Düzgün kullanılabilmesi için dış görünüm desteğine ihtiyacınız var</disclaimer>
 		<disclaimer lang="zh">正常使用需要皮肤支持</disclaimer>
-		<language></language>
+		<language/>
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE Version 2</license>
 		<forum>http://forum.kodi.tv/showthread.php?tid=114671</forum>
-		<website></website>
-		<email></email>
+		<website/>
+		<email/>
 		<source>https://github.com/ronie/script.favourites</source>
 	</extension>
 </addon>
@@ -4167,9 +4599,9 @@ If for any reason the check of a successful wake-up via ping is not possible or 
   </extension>
 </addon>
 
-<addon id="script.globalsearch" name="Global Search" version="4.0.4" provider-name="ronie">
+<addon id="script.globalsearch" name="Global Search" version="5.0.0" provider-name="ronie">
 	<requires>
-		<import addon="xbmc.python" version="2.12.0"/>
+		<import addon="xbmc.python" version="2.20.0"/>
 		<import addon="script.module.simplejson" version="3.3.0"/>
 	</requires>
 	<extension point="xbmc.python.script" library="default.py">
@@ -4178,7 +4610,8 @@ If for any reason the check of a successful wake-up via ping is not possible or 
 	<extension point="xbmc.addon.metadata">
 		<summary lang="bg">Търси в библиотеката Ви.</summary>
 		<summary lang="ca">Cerca a la teva biblioteca.</summary>
-		<summary lang="de">Durchsuche deine Bibliothek.</summary>
+		<summary lang="cs">Hledej v knihovně</summary>
+		<summary lang="de">Durchsuchen Sie Ihre Bibliothek.</summary>
 		<summary lang="el">Αναζήτηση στη Συλλογή σας.</summary>
 		<summary lang="en">Search your library.</summary>
 		<summary lang="en_NZ">Search your library.</summary>
@@ -4187,7 +4620,7 @@ If for any reason the check of a successful wake-up via ping is not possible or 
 		<summary lang="fr">Chercher dans votre médiathèque.</summary>
 		<summary lang="fr_CA">Chercher dans votre bibliothèque</summary>
 		<summary lang="gl">Buscar a súa biblioteca.</summary>
-		<summary lang="he">חפש בספריה שלך.</summary>
+		<summary lang="he">חיפוש בספריית המדיה.</summary>
 		<summary lang="hr">Pretražite svoju zbirku.</summary>
 		<summary lang="hu">Keresés a médiatárban</summary>
 		<summary lang="id">Cari pustaka Anda.</summary>
@@ -4199,22 +4632,25 @@ If for any reason the check of a successful wake-up via ping is not possible or 
 		<summary lang="pl">Przeszukaj swoją bibliotekę</summary>
 		<summary lang="pt">Faça buscas na sua biblioteca.</summary>
 		<summary lang="pt_BR">Pesquise sua coleção.</summary>
+		<summary lang="ro">Căutați în mediateca dumneavoastră.</summary>
 		<summary lang="ru">Поиск в вашей медиатеке.</summary>
 		<summary lang="sl">Iščite v svoji knjižnici.</summary>
 		<summary lang="sv">Sök i ditt bibliotek.</summary>
+		<summary lang="tr">Kitaplığını ara</summary>
 		<summary lang="zh">资料库搜索</summary>
 		<description lang="bg">Добавката може да намери всеки елемент във вашата видео и музикална библиотека.</description>
 		<description lang="ca">Aquest complement pot trobat qualsevol article en la teva biblioteca de vídeo i música</description>
-		<description lang="de">Dieses Add-on findet jeden Eintrag in deiner Video- und Musikbibliothek.</description>
+		<description lang="cs">Tento dopněk dokáže najít libovolnou položku ve vaší audio a video knihovně.</description>
+		<description lang="de">Dieses Add-on kann jeden Eintrag in Ihrer Video- und Musikbibliothek finden.</description>
 		<description lang="el">Αυτό το πρόσθετο μπορεί να βρει κάθε αντικείμενο στις συλλογές σας.</description>
 		<description lang="en">This addon can find any item in your video and music library.</description>
 		<description lang="en_NZ">This addon can find any item in your video and music library.</description>
 		<description lang="en_US">This addon can find any item in your video and music library.</description>
 		<description lang="es">Este complemento puede encontrar cualquier elemento en tu biblioteca de vídeo y música.</description>
-		<description lang="fr">Cet add-on peut trouver n'importe quel élément de votre médiathèque vidéo et musicale.</description>
+		<description lang="fr">Cette extension peut trouver n'importe quel élément de votre médiathèque vidéo et musicale.</description>
 		<description lang="fr_CA">Cet addiciel peut trouver tout élément dans votre vidéothèque et dans votre audiothèque.</description>
 		<description lang="gl">Este complemento pode atopar calquera elemento na súa biblioteca de medios.</description>
-		<description lang="he">הרחבה זו יכולה למצוא כל פריט בספריות הוידאו והמוזיקה שלך.</description>
+		<description lang="he">הרחבה זו יכולה למצוא כל פריט בספריות הווידאו והמוזיקה.</description>
 		<description lang="hr">Ovaj dodatak može pronaći svaku stavku u vašoj videoteci ili fonoteci.</description>
 		<description lang="hu">Ez a kiegészítő bármely elemet megtalálja a videó és audió médiatárban.</description>
 		<description lang="id">Addon ini dapat mencari item apa saja di pustaka video dan musik Anda.</description>
@@ -4226,16 +4662,18 @@ If for any reason the check of a successful wake-up via ping is not possible or 
 		<description lang="pl">Ten plugin może odnaleźć dowolną pozycję w twojej bibliotece wideo oraz muzycznej.</description>
 		<description lang="pt">Este addon pode encontrar qualquer item na sua biblioteca de vídeos e de músicas.</description>
 		<description lang="pt_BR">Este addon pode encontrar qualquer item na sua coleção de vídeos e música.</description>
+		<description lang="ro">Acest supliment poate găsi orice element în mediateca dumneavoastră video și audio.</description>
 		<description lang="ru">Это дополнение поможет найти любую запись в вашей медиатеке.</description>
 		<description lang="sl">Ta dodatek lahko poišče katerokoli podatek v vaši knjižnici filmov in glasbe.</description>
 		<description lang="sv">Detta tillägg kan hitta vilket objekt som helst i ditt video och musikbibliotek.</description>
+		<description lang="tr">Bu eklenti video ve müzik kitaplığınızdaki herhangi bir öğeyi bulabilir.</description>
 		<description lang="zh">此插件搜索你的视频和音乐资料库项目。</description>
-		<language></language>
+		<language/>
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE Version 2</license>
 		<forum>http://forum.kodi.tv/showthread.php?tid=109301</forum>
-		<website></website>
-		<email></email>
+		<website/>
+		<email/>
 		<source>https://github.com/ronie/script.globalsearch/</source>
 	</extension>
 </addon>
@@ -4349,6 +4787,25 @@ If for any reason the check of a successful wake-up via ping is not possible or 
     </extension>
 </addon>
 
+<addon id="script.image.resource.select" name="Image Resource Select Addon" version="0.0.9" provider-name="ronie">
+	<requires>
+		<import addon="xbmc.python" version="2.24.0"/>
+		<import addon="script.module.simplejson" version="3.3.0"/>
+	</requires>
+	<extension point="xbmc.python.library" library="default.py"/>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Image resource selection addon</summary>
+		<description lang="en">Script for skinners to let users select an image resource addon.</description>
+		<language/>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE Version 2</license>
+		<forum>http://forum.kodi.tv/showthread.php?tid=239558</forum>
+		<website/>
+		<email/>
+		<source>https://github.com/ronie/script.image.resource.select</source>
+	</extension>
+</addon>
+
 <addon id="script.keymap"
        name="Keymap Editor"
        version="1.0.9"
@@ -4368,26 +4825,23 @@ If for any reason the check of a successful wake-up via ping is not possible or 
     </extension>
 </addon>
 
-<addon id="script.module.addon.common"
-	     name="Common addon methods"
-	     version="2.0.1"
-	     provider-name="Eldorado (original: t0mm0)">
+<addon id="script.module.addon.common" name="Common addon methods" version="2.0.0" provider-name="Eldorado (original: t0mm0)">
   <requires>
-    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="xbmc.python" version="2.1.0"/>
   </requires>
-  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.python.module" library="lib"/>
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
     <summary lang="en">Collection of commonly used addon routines</summary>
     <description lang="en">Collection of commonly used addon routines to simplify addon development.</description>
-    <disclaimer lang="en"></disclaimer>
-    <language></language>
+    <disclaimer lang="en"/>
+    <language/>
     <platform>all</platform>
     <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-    <forum></forum>
-    <website></website>
-    <email></email>
-    <source></source>
+    <forum/>
+    <website/>
+    <email/>
+    <source/>
   </extension>
 </addon>
 
@@ -4414,16 +4868,39 @@ If for any reason the check of a successful wake-up via ping is not possible or 
   </extension>
 </addon>
 
-<addon id="script.module.beautifulsoup4"
-       name="BeautifulSoup4"
-       version="4.3.2"
-       provider-name="Leonard Richardson (leonardr@segfault.org)">
+<addon id="script.module.axel.downloader" name="Axel Downloader" version="0.2.2" provider-name="Eldorado">
   <requires>
-    <import addon="xbmc.python"
-    		version="2.1.0"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.addon.common" version="2.0.0"/>
   </requires>
-  <extension point="xbmc.python.module"
-             library="lib" />
+  <extension point="xbmc.python.script" library="controlpanel.py"/>
+  <extension point="xbmc.python.module" library="lib"/>
+  <extension library="default.py" point="xbmc.service" start="startup"/>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Multi-connection/threaded Downloader</summary>
+    <description lang="en">Download a file using multiple connections to achieve the highest speed.</description>
+  </extension>
+</addon>
+
+<addon id="script.module.beautifulsoup" name="BeautifulSoup" version="3.2.1" provider-name="Leonard Richardson (leonardr@segfault.org)">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib"/>
+  <extension point="xbmc.addon.metadata">
+    <summary>HTML/XML parser for quick-turnaround applications like screen-scraping</summary>
+    <description>Beautiful Soup parses arbitrarily invalid SGML and provides a variety of methods and Pythonic idioms for iterating and searching the parse tree.</description>
+    <license>BSD</license>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="script.module.beautifulsoup4" name="BeautifulSoup4" version="4.3.2" provider-name="Leonard Richardson (leonardr@segfault.org)">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib"/>
   <extension point="xbmc.addon.metadata">
     <summary>HTML/XML parser for quick-turnaround applications like screen-scraping</summary>
     <description>Beautiful Soup parses arbitrarily invalid SGML and provides a variety of methods and Pythonic idioms for iterating and searching the parse tree.</description>
@@ -4499,19 +4976,53 @@ If for any reason the check of a successful wake-up via ping is not possible or 
     </extension>
 </addon>
 
-<addon id="script.module.html5lib"
-       name="html5lib-python"
-       version="0.999.0"
-       provider-name="html5lib">
+<addon id="script.module.dateutil" name="dateutil" version="2.4.2" provider-name="Gustavo Niemeyer, Tomi Pieviläinen, Yaron de Leeuw, Razzeee">
   <requires>
-    <import addon="xbmc.python"
-    		version="2.1.0"/>
-    <import addon="script.module.six"
-                      version="1.4.1"
-                     optional="false"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.six" version="1.9.0"/>
   </requires>
-  <extension point="xbmc.python.module"
-             library="lib" />
+  <extension point="xbmc.python.module" library="lib"/>
+  <extension point="xbmc.addon.metadata">
+    <summary>dateutil - powerful extensions to datetime</summary>
+    <description>Packed for Kodi from https://github.com/dateutil/dateutil</description>
+    <platform>all</platform>
+    <language/>
+    <license>Revised BSD License</license>
+    <forum/>
+    <website>https://dateutil.readthedocs.org/en/latest/</website>
+    <source>https://github.com/Razzeee/script.module.dateutil</source>
+    <email/>
+  </extension>
+</addon>
+
+<addon id="script.module.dudehere.routines" name="DudeHere Common Routines" provider-name="DudeHere" version="0.3.42">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.module.addon.common" version="2.0.0"/>
+    </requires>
+    <extension library="lib" point="xbmc.python.module"/>
+    <extension library="service.py" point="xbmc.service" start="startup"/>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en">Collection of commonly used addon routines</summary>
+        <description lang="en">Collection of commonly used addon routines used by DudeHere.</description>
+        <disclaimer lang="en"/>
+        <language/>
+        <platform>all</platform>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+        <forum>http://forums.tvaddons.ag/dudehere-addons/</forum>
+        <website>http://www.tvaddons.ag/</website>
+        <email/>
+        <source/>
+    </extension>
+</addon>
+
+<addon id="script.module.html5lib" name="html5lib-python" version="0.999.0" provider-name="html5lib">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.six" version="1.4.1" optional="false"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib"/>
   <extension point="xbmc.addon.metadata">
     <summary>Standards-compliant library for parsing and serializing HTML documents and fragments in Python.</summary>
     <description>html5lib is a pure-python library for parsing HTML. It is designed to conform to the WHATWG HTML specification, as is implemented by all major web browsers.</description>
@@ -4522,17 +5033,50 @@ If for any reason the check of a successful wake-up via ping is not possible or 
   </extension>
 </addon>
 
+<addon id="script.module.httplib2" name="httplib2" provider-name=" Joe Gregorio" version="0.8.0">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension library="lib" point="xbmc.python.module"/>
+  <extension point="xbmc.addon.metadata">
+        <description lan="en">httplib2 module</description>
+        <summary lang="en">httplib2 module</summary>
+        <disclaimer lang="en">Visit https://pypi.python.org/pypi/httplib2</disclaimer>
+        <license>MIT</license>
+        <platform>all</platform>
+        <email/>
+        <website>https://pypi.python.org/pypi/httplib2</website>
+        <forum/>
+        <source>https://pypi.python.org/pypi/httplib2</source>
+        <language/>
+   </extension>
+</addon>
+
 <addon id="script.module.israeliveresolver" name="IsraeLiveResolver" version="0.2.6" provider-name="Avigdor (xbmc-israel repo)">
   <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-	<import addon="repository.xbmc-israel" />
+    <import addon="xbmc.python" version="2.1.0"/>
+
   </requires>
-  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.python.module" library="lib"/>
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
     <summary lang="en">Resolve dynamic URL's to be playable in XBMC/Kodi.</summary>
     <description lang="en">Resolve dynamic URL's to be playable in XBMC/Kodi.</description>
   </extension>
+</addon>
+
+<addon id="script.module.libtorrent" version="1.0.7b" name="LibTorrent" provider-name="DiMartino, srg70, RussakHH, aisman">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary>LibTorrent</summary>
+  </extension>
+  <extension point="xbmc.python.module"/>
 </addon>
 
 <addon id="script.module.livestreamer"
@@ -4563,6 +5107,161 @@ If for any reason the check of a successful wake-up via ping is not possible or 
   </extension>
 </addon>
 
+<addon id="script.module.mechanize" name="Mechanize" version="0.2.6" provider-name="Tristan Fischer (sphere)">
+	<requires>
+	<import addon="xbmc.python" version="2.1.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib"/>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Stateful programmatic web browsing in Python, after Andy Lester’s Perl module WWW::Mechanize.</summary>
+		<description lang="en">packed for xbmc from https://github.com/jjlee/mechanize</description>
+		<disclaimer lang="en">packed for xbmc from https://github.com/jjlee/mechanize</disclaimer>
+		<forum/>
+		<website>http://wwwsearch.sourceforge.net/mechanize/</website>
+		<license>BSD</license>
+		<platform>all</platform>
+		<source>https://github.com/jjlee/mechanize</source>
+	</extension>
+</addon>
+
+<addon id="script.module.metahandler" name="metahandler" version="2.9.0" provider-name="Eldorado">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.simplejson" version="3.3.0"/>
+    <import addon="script.module.addon.common" version="2.0.0"/>
+    <import addon="script.module.myconnpy" version="1.1.6"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Downloads Artwork for TV shows, Movies and Music videos for addons and stores them in a local SQLITE database</summary>
+    <description lang="en">Queries, stores, and returns metadata for TV shows, Movies and Musicvideos. [CR]Sources:[CR]www.thetvdb.com[CR]www.themoviedb.org[CR]www.imdb.com</description>
+    <disclaimer lang="en"/>
+    <language/>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <forum/>
+    <website/>
+    <email/>
+    <source/>
+  </extension>
+</addon>
+
+<addon id="script.module.mutagen" name="mutagen" version="1.22.0" provider-name="Joe Wreschnig">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib"/>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <language/>
+    <summary lang="en">Mutagen is a Python module to handle audio metadata.</summary>
+    <description lang="en">Mutagen is a Python module to handle audio metadata. It supports ASF, FLAC,
+M4A, Monkey's Audio, MP3, Musepack, Ogg Opus, Ogg FLAC, Ogg Speex, Ogg
+Theora, Ogg Vorbis, True Audio, WavPack and OptimFROG audio files. All
+versions of ID3v2 are supported, and all standard ID3v2.4 frames are
+parsed. It can read Xing headers to accurately calculate the bitrate and
+length of MP3s. ID3 and APEv2 tags can be edited regardless of audio
+format. It can also manipulate Ogg streams on an individual packet/page
+level.</description>
+    <disclaimer lang="en">Code taken from http://code.google.com/p/mutagen/</disclaimer>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <website>http://code.google.com/p/mutagen/</website>
+    <source>https://bitbucket.org/lazka/mutagen/overview</source>
+  </extension>
+</addon>
+
+<addon id="script.module.myconnpy" name="MySQL Connector/Python" version="1.1.7" provider-name="MySQL">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+    </requires>
+    <extension point="xbmc.python.module" library="lib"/>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">MySQL Connector/Python</summary>
+        <description lang="en">MySQL Connector/Python is implementing the MySQL Client/Server protocol completely in Python. This means you don't have to compile anything or MySQL (client library) doesn't even have to be installed on the machine.</description>
+        <license>GPLv2</license>
+        <platform>all</platform>
+        <website>http://dev.mysql.com/doc/connector-python/en/index.html</website>
+        <source>http://dev.mysql.com/downloads/connector/python/</source>
+    </extension>
+</addon>
+
+<addon id="script.module.parsedom" name="Parsedom for xbmc plugins" provider-name="TheCollective" version="2.5.2">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Parsedom for xbmc plugins.</summary>
+  </extension>
+  <extension library="lib" point="xbmc.python.module"/>
+  <extension point="xbmc.addon.metadata">
+        <license>GPLv3</license>
+        <platform>all</platform>
+        <email/>
+        <website/>
+        <forum>http://forum.xbmc.org/showthread.php?tid=116498</forum>
+        <source>https://github.com/HenrikDK/xbmc-common-plugin-functions</source>
+        <language/>
+   </extension>
+</addon>
+
+<addon id="script.module.pydevd" name="pydevd" version="3.4.1" provider-name="Fabio Zadrozny, Paul Backhouse">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib"/>
+	<extension point="xbmc.addon.metadata">
+	    <summary lang="en">XBMC support for PyDev remote debugging in Eclipse/Aptana.</summary>
+	    <description lang="en">See here for details: http://pydev.org/manual_adv_remote_debugger.html</description>
+	    <platform>all</platform>
+	    <language/>
+	    <license>Eclipse Public License</license>
+	    <forum/>
+	    <website>http://pydev.org/</website>
+	    <source>https://github.com/powlo/script.module.pydevd</source>
+	    <email/>
+	    <disclaimer lang="en">Use at your own risk. The authors accept no liability. May cause permanent and/or catastrophic damage. Side effects include, but are not limited to, loss of memory, seizures, sudden fits of rage, sudden fits of melancholy, inability to recall prominent capital cities, lack of respect for authority, fear of cats, temporary and/or permanent black outs. Avoid inhalation. Use in a well ventilated space. Keep away from small children.</disclaimer>
+	</extension>
+</addon>
+
+<addon id="script.module.pytz" name="pytz" version="2014.2" provider-name="Stuart Bishop, Paul Backhouse">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib"/>
+	<extension point="xbmc.addon.metadata">
+	    <summary lang="en">World Timezone Definitions for Python.</summary>
+	    <description lang="en">pytz brings the Olson tz database into Python. This library allows accurate and cross platform timezone calculations using Python 2.4 or higher. It also solves the issue of ambiguous times at the end of daylight saving time, which you can read more about in the Python Library Reference (datetime.tzinfo).</description>
+	    <platform>all</platform>
+	    <language/>
+	    <license>MIT</license>
+	    <forum/>
+	    <website>https://pypi.python.org/pypi/pytz/</website>
+	    <source>https://github.com/powlo/script.module.pytz</source>
+	    <email/>
+	    <disclaimer lang="en">Use at your own risk. The authors accept no liability. May cause permanent and/or catastrophic damage. Side effects include, but are not limited to loss of memory, seizures, sudden fits of rage, sudden fits of melancholy, inability to recall prominent capital cities, lack of respect for authority, fear of cats, temporary and/or permanent black outs. Avoid inhalation. Use in a well ventilated space. Keep away from small children.</disclaimer>
+	</extension>
+</addon>
+
+<addon id="script.module.pyxbmct" name="PyXBMCt" version="1.1.5" provider-name="Roman_V_M">
+  <requires>
+    <import addon="xbmc.python" version="2.14.0"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib"/>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">PyXBMCt UI framework</summary>
+    <description lang="en">PyXBMCt is a mini-framework for simple XBMC addon UI buliding. It is similar to PyQt and provides parent windows, a number of UI controls (widgets) and a grid layout manager to place controls.</description>
+    <disclaimer lang="en"/>
+    <language/>
+    <license>GNU GPL v.3</license>
+    <forum>http://forum.xbmc.org/showthread.php?tid=174859</forum>
+    <website>http://romanvm.github.io/PyXBMCt</website>
+    <email>romanvm@yandex.ua</email>
+    <source>https://github.com/romanvm/script.module.pyxbmct</source>
+  </extension>
+</addon>
+
 <addon id="script.module.requests" name="requests" version="2.9.1" provider-name="kennethreitz, beenje">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
@@ -4581,18 +5280,28 @@ If for any reason the check of a successful wake-up via ping is not possible or 
   </extension>
 </addon>
 
-<addon id="script.module.simplejson"
-       name="simplejson"
-       version="3.3.0"
-       provider-name="Martijn">
+<addon id="script.module.simple.downloader" name="Simple Downloader for xbmc plugins" provider-name="TheCollective" version="1.9.5">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.common.plugin.cache" version="2.5.0"/>
+    <import addon="script.module.parsedom" version="2.5.1"/>
+  </requires>
+  <extension library="default.py" point="xbmc.service"/>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Simple downloader for xbmc plugins.</summary>
+  </extension>
+  <extension library="lib" point="xbmc.python.module"/>
+</addon>
+
+<addon id="script.module.simplejson" name="simplejson" version="3.3.0" provider-name="Martijn">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
-  <extension point="xbmc.python.module"
-             library="lib" />
+  <extension point="xbmc.python.module" library="lib"/>
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
-    <language></language>
+    <language/>
     <summary lang="en">Simple, fast, extensible JSON encoder/decoder for Python</summary>
     <description lang="en">Simple, fast, extensible JSON encoder/decoder for Python</description>
     <disclaimer lang="en">Code taken from https://pypi.python.org/pypi/simplejson/</disclaimer>
@@ -4602,14 +5311,26 @@ If for any reason the check of a successful wake-up via ping is not possible or 
   </extension>
 </addon>
 
-<addon id="script.module.t0mm0.common"
-	     name="t0mm0's common stuff"
-	     version="2.1.1.01"
-	     provider-name="t0mm0">
+<addon id="script.module.six" name="six" version="1.9.0" provider-name="gutworth">
   <requires>
-    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="xbmc.python" version="2.1.0"/>
   </requires>
-  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.python.module" library="lib"/>
+  <extension point="xbmc.addon.metadata">
+    <summary>Python 2 and 3 compatibility utilities.</summary>
+    <description>Six is a Python 2 and 3 compatibility library. It provides utility functions for smoothing over the differences between the Python versions with the goal of writing Python code that is compatible on both Python versions. See the documentation for more information on what is provided.</description>
+    <platform>all</platform>
+    <license>MIT</license>
+    <source>https://pypi.python.org/pypi/six</source>
+    <website>https://pypi.python.org/pypi/six</website>
+  </extension>
+</addon>
+
+<addon id="script.module.t0mm0.common" name="t0mm0's common stuff" version="2.1.1" provider-name="t0mm0">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib"/>
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
     <summary lang="en">Collection of commonly used addon routines</summary>
@@ -4617,15 +5338,81 @@ If for any reason the check of a successful wake-up via ping is not possible or 
   </extension>
 </addon>
 
-<addon id="script.module.youtube.dl" name="youtube-dl Control" version="15.318.0" provider-name="Rick Phillips (ruuk)">
+<addon id="script.module.torrent.ts" version="0.6.0.28a" name="AceStream Client" provider-name="NuisMons">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="tsserv.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary>AceStream Engine support</summary>
+  </extension>
+  <extension library="default.py" point="xbmc.service"/>
+  <extension point="xbmc.python.module"/>
+</addon>
+
+<addon id="script.module.torrent2http" name="torrent2http" version="0.1.3" provider-name="anteo">
     <requires>
-        <import addon="xbmc.python" version="2.1.0" />
+        <import addon="xbmc.python" version="2.14.0"/>
+    </requires>
+    <extension point="xbmc.python.module" library="lib"/>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <language>en</language>
+        <summary lang="en">Downloads torrents and share it over HTTP</summary>
+        <summary lang="ru">Загружает торренты и раздает их по HTTP</summary>
+        <description lang="ru">Обеспечивает последовательную (sequential) загрузку торрентов для потокового онлайн просмотра через HTTP. Основан на библиотеке LibTorrent.</description>
+        <description lang="en">Provides sequential torrent downloading for online streaming video and other media over HTTP.</description>
+        <email>anteo@academ.org</email>
+    </extension>
+</addon>
+
+<addon id="script.module.trakt" name="trakt.py" version="2.5.1" provider-name="Fuzeman, Razzeee">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.requests" version="2.7.0"/>
+	<import addon="script.module.six" version="1.9.0"/>
+	<import addon="script.module.arrow" version="0.6.0"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib"/>
+  <extension point="xbmc.addon.metadata">
+    <summary>Python interface for the trakt.tv API</summary>
+    <description>Packed for Kodi from https://github.com/fuzeman/trakt.py</description>
+    <platform>all</platform>
+    <language/>
+    <license>MIT</license>
+    <forum/>
+    <website>https://github.com/fuzeman/trakt.py</website>
+    <source>https://github.com/Razzeee/script.module.trakt</source>
+    <email/>
+  </extension>
+</addon>
+
+<addon id="script.module.urlresolver" name="URLResolver" version="2.10.0" provider-name="Eldorado">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.t0mm0.common" version="2.0.0"/>
+    <import addon="script.module.simplejson" version="3.3.0"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib"/>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Resolve common video host URL's to be playable in XBMC/Kodi.</summary>
+    <description lang="en">Resolve common video host URL's to be playable in XBMC/Kodi, simplify addon development of video plugins requiring multi video hosts.</description>
+  </extension>
+</addon>
+
+<addon id="script.module.youtube.dl" name="youtube-dl Control" version="15.1223.0" provider-name="Rick Phillips (ruuk)">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
         <import addon="script.module.addon.signals" version="0.0.1"/>
     </requires>
     <extension point="xbmc.python.script" library="control.py">
         <provides>executable</provides>
     </extension>
-    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.python.module" library="lib"/>
     <extension point="xbmc.addon.metadata">
         <platform>all</platform>
         <summary lang="en">Module providing access to youtube-dl video stream extraction</summary>
@@ -4858,26 +5645,25 @@ If for any reason the check of a successful wake-up via ping is not possible or 
   </extension>
 </addon>
 
-	<addon id="script.skin.helper.service" name="Skin Helper Service" version="1.0.34" provider-name="marcelveldt">
+<addon id="script.skin.helper.service" name="Skin Helper Service" version="1.0.23" provider-name="marcelveldt">
 	<requires>
 		<import addon="xbmc.python" version="2.13.0"/>
 		<import addon="xbmc.addon" version="12.0.0"/>
 		<import addon="script.module.pil" version="1.1.7"/>
 		<import addon="script.module.requests" version="2.3.0"/>
         <import addon="script.module.simplejson" version="3.3.0"/>
-        <import addon="script.module.beautifulsoup" version="3.0.8" />
 	</requires>
 
-    <extension point="xbmc.python.library" library="default.py" />
+    <extension point="xbmc.python.library" library="default.py"/>
 	<extension point="xbmc.python.pluginsource" library="plugin.py">
 		<provides>video</provides>
 	</extension>
-	<extension library="service.py" point="xbmc.service" start="login" />
+	<extension library="service.py" point="xbmc.service" start="login"/>
 	<extension point="kodi.context.item" library="contextmenu_serieslevel.py">
 		<item>
 			<label>32072</label>
             <description>Display Series level button in next/recent/in progress episodes listings</description>
-			<visible>Container.Content(episodes) + !StringCompare(Container.ListItem(0).TvShowTitle,Container.ListItem(1).TvShowTitle)</visible>
+			<visible>Container.Content(episodes) + [!Substring(Container.FolderPath,videodb://tvshows/titles,left) | Substring(Container.FolderPath,xsp=)] + [[!IsEmpty(ListItem.DBID) + !StringCompare(ListItem.DBID,-1)] | !IsEmpty(ListItem.Property(DBID))]</visible>
 		</item>
 	</extension>
     <extension point="kodi.context.item" library="contextmenu_artwork.py">
@@ -4890,12 +5676,52 @@ If for any reason the check of a successful wake-up via ping is not possible or 
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Helper service for Kodi skins</summary>
         <description>Helper service for Kodi skins</description>
-		<language></language>
+		<language/>
 		<platform>all</platform>
 		<license>GPL v2.0</license>
-		<forum>http://forum.kodi.tv/showthread.php?tid=235676</forum>
-		<website></website>
-		<source>https://github.com/marcelveldt/script.skin.helper.service</source>
+		<forum/>
+		<website/>
+		<source/>
+	</extension>
+</addon>
+
+<addon id="script.skinshortcuts" name="Skin Shortcuts" version="1.0.2" provider-name="BigNoid,marcelveldt">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+		<import addon="script.module.simplejson" version="3.3.0"/>
+		<import addon="script.module.unidecode" version="0.4.14"/>
+	</requires>
+	<extension point="xbmc.python.library" library="default.py"/>
+	<extension point="xbmc.addon.metadata">
+		<description lang="bg">Добавка за облици, която осигурява просто управление и списък с потребителски преки пътища (изисква поддръжка от облика)</description>
+		<description lang="de">Add-on für Skins für einfache Bearbeitung und Auflistung von benutzerdefinierten Verknüpfungen (erfordert Skin-Unterstützung)</description>
+		<description lang="el">Πρόσθετο για κελύφη, το οποίο παρέχει έναν απλό τρόπο διαχείρισης και κατηγοριοποίησης των συντομεύσεων του χρήστη (πρέπει να υποστηρίζεται από το κέλυφος)</description>
+		<description lang="en">Add-on for skins to provide simple managing and listing of user shortcuts (requires skin support)</description>
+		<description lang="en_NZ">Add-on for skins to provide simple managing and listing of user shortcuts (requires skin support)</description>
+		<description lang="en_US">Add-on for skins to provide simple managing and listing of user shortcuts (requires skin support)</description>
+		<description lang="es">Complemento para las pieles para proporcionar una gestión sencilla y lista de atajos de usuario (requiere que la piel lo soporte)</description>
+		<description lang="fr_CA">Addiciel pour habillages qui fournit une gestion simple et un listage des raccourcis utilisateurs (exige la prise en charge de l'habillage)</description>
+		<description lang="gl">Complemento que fornece aos temas dunha xestión sinxela dos atallos dos usuarios (require soporte do tema)</description>
+		<description lang="hr">Dodatak za presvlake koja omogućava jednostavno upravljanje i prikaz korisnikovih prečaca (zahtijeva podršku presvlake) </description>
+		<description lang="hu">Felszín kiegészítő amely könnyen kezelhetővé és listázhatóvá teszi a felhasználói parancsikonokat (Felszín támogatás szükséges)</description>
+		<description lang="is">Viðbót fyrir viðmót til að halda utan um flýtivísa og fá yfirlit yfir þá (þarfnast stuðnings frá viðmóti)</description>
+		<description lang="it">Add-on per gli skin per consentire un facile gestione ed elenco delle scorciatoie utente (richiede che lo skin lo supporti)</description>
+		<description lang="lt">Priedas teminėms išvaizdoms, kad jos turėtų galimybę paprastai tvarkyti ir atvaizduoti vartotojo  sukurtas nuorodas (reikalingas teminės išvaizdos palaikymas)</description>
+		<description lang="nl">Add-on voor skins om te voorzien in het eenvoudig beheren en sorteren van gebruikers snelkoppelingen (vereist skin ondersteuning)</description>
+		<description lang="no">Tillegg for enkel administrering og opplisting av bruker-snarveier i tema (krever støtte i tema)</description>
+		<description lang="pl">Wtyczka dla skór, która zapewnia proste zarządzanie i tworzenie list skrótów użytkownika (wymaga wsparcia skóry)</description>
+		<description lang="pt">Um add-on que permite que os temas tenham recursos simples para gerir e listar atalhos de utilizadores (é necessário suporte do tema)</description>
+		<description lang="pt_BR">Add-on para que as skins possam prover gerenciamento de lista de atalhos para o menu principal (requer suporte da skin)</description>
+		<description lang="ru">Дополнение для обложек, предоставляющее простой способ управления и список пользовательских ярлыков (требуется поддержка обложкой)</description>
+		<description lang="sv">Skinntillägg som tillhandahåller enkel hantering och översikt av användargenvägar (om skinnet stöder det)</description>
+		<description lang="zh">插件为皮肤提供了简单的管理和用户连接方式列表 (需要皮肤支持)</description>
+		<language/>
+		<platform>all</platform>
+		<license>GNU General Public License, v2</license>
+		<forum>http://forum.xbmc.org/showthread.php?tid=178294</forum>
+		<website/>
+		<email/>
+		<source>https://github.com/BigNoid/script.skinshortcuts</source>
 	</extension>
 </addon>
 
@@ -4905,7 +5731,7 @@ If for any reason the check of a successful wake-up via ping is not possible or 
 		<import addon="script.module.simplejson" version="2.0.10"/>
 		<import addon="script.module.pil" version="1.1.7"/>
 	</requires>
-    <extension point="xbmc.python.script"           library="default.py">
+    <extension point="xbmc.python.script" library="default.py">
         <provides>executable</provides>
     </extension>
 	<extension point="xbmc.addon.metadata">
@@ -4917,6 +5743,469 @@ If for any reason the check of a successful wake-up via ping is not possible or 
 		<forum>http://forum.kodi.tv/showthread.php?tid=207618</forum>
 		<source>https://github.com/phil65/script.toolbox</source>
 		<email>phil65@kodi.tv</email>
+	</extension>
+</addon>
+
+<addon id="script.trakt" name="Trakt" version="3.0.3" provider-name="Trakt.tv, Razze">
+	<requires>
+		<import addon="xbmc.python" version="2.14.0"/>
+		<import addon="script.module.simplejson" version="3.3.0"/>
+        <import addon="script.module.trakt" version="2.3.3"/>
+        <import addon="script.module.dateutil" version="2.4.2"/>
+	</requires>
+	<extension point="xbmc.python.script" library="script.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.service" name="trakt.service" library="default.py" start="login"/>
+	<extension point="xbmc.addon.metadata" name="trakt.metadata">
+		<summary lang="da">TV og film program for Trakt.tv</summary>
+		<summary lang="de">TV und Film Scrobbler für Trakt.tv</summary>
+		<summary lang="el">Υπηρεσία κοινοποίησης ταινιών και τηλ. σειρών (scrobbler) στο Trakt.tv</summary>
+		<summary lang="en">TV and movie scrobbler for Trakt.tv</summary>
+		<summary lang="en_US">TV and movie scrobbler for Trakt.tv</summary>
+		<summary lang="es">Scrobbler de Películas y Series para Trakt.tv</summary>
+		<summary lang="fi">TV-sarjojen ja elokuvien scrobbler Trakt.tv:lle</summary>
+		<summary lang="fr">Scrobbler TV et film pour Trakt.tv</summary>
+		<summary lang="fr_CA">Scobbler télé et films pour Trakt.tv</summary>
+		<summary lang="he">Scrobbler סדרות וסרטים עבור Trakt.tv</summary>
+		<summary lang="it">Scrobbler di serie TV e film per Trakt.tv</summary>
+		<summary lang="ko">Trakt.tv에 TV와 영화 시청 상태를 전송합니다</summary>
+		<summary lang="lt">TV ir filmų registratorius, skirtas Trakt.tv</summary>
+		<summary lang="nl">TV- en films-scrobbler voor Trakt.tv</summary>
+		<summary lang="no">TV og film-scrobbler for Trakt.tv</summary>
+		<summary lang="pl">Dodatek umożliwiający rejestrację odtwarzanych i obejrzanych seriali i filmów w serwisie Trakt.tv</summary>
+		<summary lang="pt">Scrobbler de episódios e filmes para o Trakt.tv</summary>
+		<summary lang="pt_BR">Scrobbler de episódios e filmes para o Trakt.tv</summary>
+		<summary lang="sv">TV och film skrobblare för Trakt.tv</summary>
+		<description lang="da">Scrobble automatisk alle tv-episoder og film du ser til Trakt.tv! Du får en omfattende historik af alt, hvad du har set og du vil være en del af et globalt fællesskab af serie og film-entusiaster. Tilmeld dig gratis på http://trakt.tv og få et væld af funktioner:
+
+
+- Scrobble automatiskalt  hvad du ser
+
+- Mobile apps til iPhone, iPad, Android og Windows Phone
+
+- Del det, du ser (i realtid), samt send vurderinger til facebook og
+twitter
+
+- Personlig kalender, så du aldrig går glip af en serie/film
+
+- Følg med i hvad dine venner og bekendte ser
+
+- Brug huskelister så du ikke glemmer, hvad de skal se
+
+- Vis og imponér din samling til venner
+
+- Opret brugerdefinerede lister
+
+- Nemt holde øje med dit serie fremskridt i løbet af sæsoner og afsnit
+
+- Sammenlign din samling mod lister som IMDb Top 250
+
+- Opdag nye serier og film baseret på TV-vaner
+
+- Widgets til dit forumsignalturer
+
+
+Hvad kan denne tilføjelse gøre?
+
+
+- Scrobble automatisk alle tv-afsnit og film, du ser
+
+- Synkroniser dine tv-afsnit og film samlinger til Trakt (efter et bibliotek opdatering)
+
+- Automatisk oprydning af din Trakt-samling, så den passer sammen med Kodi
+
+- Hold set-statusser synkroniseret mellem Kodi og Trakt
+
+- Vurder film og afsnit umiddelbart efter at de er set
+
+
+Særlig tak til alle der har bidraget til denne tilføjelser! Se historikken og  og changelog for at se hvem disse talentfulde udviklere er.</description>
+		<description lang="de">Scrobble automatisch alle Serien und Filme die du schaust zu Trakt.tv! Behalte den Überblick über deine Sammlung und sei Teil einer globalen Gemeinschaft von Serien- und Filmliebhabern. Registriere jetzt deinen kostenlosen Account unter http://trakt.tv und bekomme einen Haufen Funktionen:
+
+- Automatisches scrobbeln von dem was du guckst
+- Mobile Apps für iPhone, iPad, Android und Windows Phone
+- Teile was du schaust (in Echtzeit) und bewerte auf Facebook und Twitter
+- Personalisierte Kalender: So verpasst du nie wieder eine Serie
+- Folge deinen Freunden und Leuten, für die du dich interessierst
+- Mach dir Beobachtungsliste zu nutze, um nicht zu vergessen was du ansehen wolltest
+- Tracke deine Mediensammlung, um deine Freunde zu beeindrucken
+- Erstelle benutzerdefinierte Listen zu jedem Thema das dir einfällt
+- Behalte die Übersicht über deinen Fortschritt bei Serien
+- Überblicke deinen Fortschritt bei offiziellen Listen wie zum Beispiel den IMDb Top 250
+- Entdecke neue Serien und Filme anhand deines Geschmacks
+- Widgets für deine Forum Signatur
+
+Was kann dieses Addon?
+
+- Automatisches scrobbeln aller Serien und Filme die du anschaust
+- Synchronisiere deine gesammelten Serien und Filme zur Trakt Sammlung (direkt nach dem Bibliotheksupdate)
+- Automatisches aufräumen deiner Trakt Sammlung damit sie mit Kodi übereinstimmt
+- Halte "gesehen" Markierungen synchronisiert zwischen Kodi und Trakt
+- Bewerte Episoden und Filme direkt nach dem du sie geguckt hast
+
+Besonderer Dank gilt allen die an diesem Plugin mit gearbeitet haben! Schau in die Commit Historie und das Änderungsprotokoll, um diese talentierten Entwickler zu sehen.</description>
+		<description lang="el">Αυτόματη κοινοποίηση στο Trakt.tv όλων των επεισοδίων και ταινιών που παρακολουθείτε! Μπορείτε να διατηρείτε αναλυτικό ιστορικό από ο,τιδήποτε είδατε, και να γίνετε μέρος μιας παγκόσμιας κοινότητας σινεφίλ και φαν της τηλεόρασης. Εγγραφείτε δωρεάν στο http://trakt.tv για ένα πλήθος παροχών:
+
+- Αυτόματη κοινοποίηση όσων παρακολουθείτε
+- Εφαρμογές για κινητά iPhone, Android, Windows Phone και iPad
+- Μοιραστείτε ό,τι παρακολουθείτε (σε πραγματικό χρόνο), μαζί με τη βαθμολογία σας, στο facebook και το twitter
+- Προσωπικό ημερολόγιο, για να μη χάνετε ποτέ επεισόδιο
+- Ακολουθήστε τους φίλους σας, και άτομα για τα οποία ενδιαφέρεστε
+- Χρήση λιστών προβολής, για να μην ξεχνάτε τι θέλετε να δείτε
+- Εντυπωσιάστε τους φίλους σας με τις συλλογές σας
+- Δημιουργήστε προσωπικές λίστες με ό,τι θέμα επιθυμείτε
+- Δείτε την πρόοδό σας όσον αφορά τις τηλεοπτικές σειρές, με πολύ εύκολο τρόπο
+- Συγκρίνετε την πρόοδό σας με επίσημες λίστες, όπως των 250 Κορυφαίων του IMDb
+- Ανακαλύψτε νέες σειρές και ταινίες με βάση όσα έχετε ήδη παρακολουθήσει
+- Widget για την υπογραφή σας σε διάφορα forum
+
+Τι μπορεί να κάνει αυτό το πρόσθετο;
+
+- Αυτόματη κοινοποίηση όλων των επεισοδίων και ταινιών που παρακολουθείτε
+- Συγχρονισμός όλων των επεισοδίων και συλλογών ταινιών στο Trakt (αυτόματα μετά από κάθε ενημέρωση της συλλογής)
+- Αυτόματη εκκαθάριση της συλλογής σας στο Trakt ούτως ώστε να ταυτίζεται με αυτή στο Kodi
+- Συγχρονισμός όσων παρακολουθήσατε ήδη μεταξύ του Kodi και του Trakt
+- Βαθμολογήστε τις ταινίες και τα επεισόδια αφού τα παρακολουθήσετε
+
+Ευχαριστούμε ιδιαιτέρως όλους όσους συνεισέφεραν σε αυτήν την εφαρμογή! Ελέγξτε το ιστορικό των προσθηκών και αλλαγών για να βρείτε αυτούς τους ταλαντούχους προγραμματιστές.</description>
+		<description lang="en">Automatically scrobble all TV episodes and movies you are watching to Trakt.tv! Keep a comprehensive history of everything you've watched and be part of a global community of TV and movie enthusiasts. Sign up for a free account at http://trakt.tv and get a ton of features:
+
+- Automatically scrobble what you're watching
+- Mobile apps for iPhone, iPad, Android, and Windows Phone
+- Share what you're watching (in real time) and rating to facebook and twitter
+- Personalized calendar so you never miss a TV show
+- Follow your friends and people you're interesed in
+- Use watchlists so you don't forget to what to watch
+- Track your media collections and impress your friends
+- Create custom lists around any topics you choose
+- Easily track your TV show progress across all seasons and episodes
+- Track your progress against industry lists such as the IMDb Top 250
+- Discover new shows and movies based on your viewing habits
+- Widgets for your forum signature
+
+What can this addon do?
+
+- Automatically scrobble all TV episodes and movies you are watching
+- Sync your TV episode and movie collections to Trakt (triggered after a library update)
+- Auto clean your Trakt collection so that it matches up with Kodi
+- Keep watched statuses synced between Kodi and Trakt
+- Rate movies and episode after watching them
+
+Special thanks to all who contributed to this plugin! Check the commit history and changelog to see these talented developers.</description>
+		<description lang="en_US">Automatically scrobble all TV episodes and movies you are watching to Trakt.tv! Keep a comprehensive history of everything you've watched and be part of a global community of TV and movie enthusiasts. Sign up for a free account at http://trakt.tv and get a ton of features:
+
+- Automatically scrobble what you're watching
+- Mobile apps for iPhone, iPad, Android, and Windows Phone
+- Share what you're watching (in real time) and rating to facebook and twitter
+- Personalized calendar so you never miss a TV show
+- Follow your friends and people you're interesed in
+- Use watchlists so you don't forget to what to watch
+- Track your media collections and impress your friends
+- Create custom lists around any topics you choose
+- Easily track your TV show progress across all seasons and episodes
+- Track your progress against industry lists such as the IMDb Top 250
+- Discover new shows and movies based on your viewing habits
+- Widgets for your forum signature
+
+What can this addon do?
+
+- Automatically scrobble all TV episodes and movies you are watching
+- Sync your TV episode and movie collections to Trakt (triggered after a library update)
+- Auto clean your Trakt collection so that it matches up with Kodi
+- Keep watched statuses synced between Kodi and Trakt
+- Rate movies and episode after watching them
+
+Special thanks to all who contributed to this plugin! Check the commit history and changelog to see these talented developers.</description>
+		<description lang="es">Haz scrobble automáticamente de todas tus Series de TV y Películas que estés viendo en Trakt.tv! Mantén un historial de todo lo que has visto y se parte de una comunidad global de entusiastas por las Series y Películas. Regístrate gratis en http://trakt.tv y consigue una tonelada de características:
+
+- Scrobble automático de lo que estás viendo
+- Aplicaciones móviles para iPhone, iPad, Android y Windows Phone
+- Comparte lo que estás viendo (en tiempo real) y tu valoración en Facebook y Twitter
+- Calendario personalizado para que no te pierdas ninguna serie
+- Sigue tus amigos y personas de interés
+- Usa las watchlists para no olvidarte de lo que quieres ver
+- Controla tus colecciones multimedia e impresiona a tus amigos
+- Crea listas personalizadas sobre los temas de tu elección
+- Controla fácilmente el progreso de los episodios y temporadas de tus Series
+- Controla tu progreso en comparación con listas industriales como IMDb TOP 250
+- Descubre nuevas Series y Películas basadas en tus hábitos
+- Widgets para tu firma en foros
+
+¿Qué puede hacer este add-on?
+
+- Scrobble automático de las Episodios y Películas que estás viendo
+- Sincronizar tus colecciones Series y Películas con Trakt.tv (después de la actualización de la biblioteca)
+- Limpiar automáticamente tu colección de Trakt.tv para que sea idéntica a la de Kodi
+- Mantener el mismo estado de visionado entre Kodi y Trakt.tv
+- Valorar Películas y Episodios después de verlos
+
+¡Un agradecimiento especial a todos los que han contribuido en este plugin! Revisa el histórico de commits y el histórico de cambios para ver todos esos desarrolladores con talento.</description>
+		<description lang="fr">Scrobble automatiquement sur Trakt.tv tous les épisodes TV et les films que vous regarder! Garder un historique complet de tout ce que vous avez regardé et prenez part à une communauté globale d'amateurs de TV et de films. Enregistrez-vous pour un compte gratuit sur http://trakt.tv pour accéder à des tonnes de fonctionnalités:
+
+- Scrobblez automatiquement ce que vous regardez
+- Applications mobiles pour iPhone, iPad, Android et Windows Phone
+- Partagez ce que vous regardez (en temps réel) et vos notes sur Facebook et Twitter
+- Calendrier personnalisé pour ne plus jamais rater un épisode
+- Suivez vos amis et les gens qui vous intéressent
+- Utilisez des listes pour ne plus oublier ce que vous voulez regarder
+- Synchronisez vos collections de media et impressionnez vos amis
+- Créez des listes personnalisées autour des sujets que vous choisissez
+- Suivez facilement vos progrès pour toutes les saisons et épisodes des séries TV
+- Comparez vos progrès à des listes comme le Top 250 IMDb
+- Découvrez des nouvelles séries et des nouveaux films en vous basant sur vos habitudes de visionnement
+
+Que peut faire ce add-on?
+
+- Scrobbler automatiquement tous les épisodes TV et les films que vous regardez
+- Synchroniser vos collections d'épisodes TV et de films avec Trakt (déclenché après une mise à jour de la médiathèque)
+- Nettoyer automatiquement votre collection Trakt pour qu'elle concorde avec Kodi
+- Garder vos statuts de visionnement synchronisé entre Kodi et Trakt
+- Noter les films et épisodes après les avoir regardés
+
+Remerciements spéciaux à tous ceux qui ont apporté leur contribution à ce plugin! Allez faire un tout sur l'historique des commits et le changelog pour voir ces talentueux développeurs.</description>
+		<description lang="fr_CA">Scrobblez automatiquement tous les épisodes télé et tous les films vers Trakt.tv! Gardez sur Trakt.tv un historique détaillé de tout ce que vous avez regardé et faites partie d'une communauté mondiale de passionnés de télé et de films. Inscrivez-vous à un compte gratuit sur http://trakt.tv et obtenez une tonne de fonctions :
+
+- Scrobblez automatiquement ce que vous regardez
+- Applis mobiles pour Android, iPhone, iPad et Windows Phone
+- Partagez ce que vous regardez (en temps réel) et évaluez vers Facebook et Twitter
+- Calendrier personnalisé afin que vous ne ratiez jamais aucune émission télé
+- Suivez vos amis et les personnes qui vous intéresse
+- Utilisez des listes de suivi afin de ne pas oublier quoi regarder
+- Suivez vos collections multimédias et impressionnez vos amis
+- Créez des listes personnalisées sur tous les sujets que vous choisissez
+- Suivez la progression de toutes vos émissions télé, pour toutes les saisons et tous les épisodes
+- Suivez votre progression par rapport aux listes de l'industrie telles que les 250 1ers d'IMDb
+- Découvrez de nouvelles émissions et de nouveaux films d'après vos habitudes de visionnement
+- Widgets pour votre signature de forum
+
+Que peut faire cet addiciel?
+
+- Scrobblez automatiquement tous les épisodes télé et tous les films que vous regardez
+- Synchronisez vos collections d'épisodes télé et de films avec Trakt (déclenché après une mise à jour de la vidéothèque)
+- Autonettoyez votre collection Trakt afin qu'elle corresponde à Kodi
+- Synchronisez les états de visionnement entre Kodi et Trakt
+- Évaluez les films et les épisodes après les avoir regardés
+
+Remerciements particuliers à tous ceux qui ont contribué au développement de cet addiciel! Consultez l'historique des validations et le journal des changements pour obtenir la liste de ces développeurs talentueux.</description>
+		<description lang="it">Esegui automaticamente lo scrobbling di tutti gli episodi televisivi e dei film che guardi su Trakt.tv! Mantieni uno storico completo di tutto ciò che hai visto e prendi parte a una comunità globale di appassionati di TV e film. Registrati per avere un account gratuito su http://trakt.tv e ottieni una tonnellata di funzioni:
+
+- Scrobbling automatico di quello che stai guardando
+- Applicazioni mobili per iPhone, iPad, Android e Windows Phone
+- Condividi su Facebook e Twitter ciò che guardi (in tempo reale) e la tua valutazione
+- Calendario personalizzato in modo da non perdere mai una puntata di uno show televisivo
+- Segui i tuoi amici e le persone che ti interessano
+- Usa la Watchlist in modo da non dimenticare cosa guardare
+- Tieni traccia delle tue raccolte multimediali e impressiona i tuoi amici
+- Crea liste personalizzate su qualsiasi argomento
+- Monitora facilmente i tuoi progressi nella visione degli show televisivi in tutte le stagioni ed episodi
+- Confronta i tuoi progressi con le liste di settore come la IMDb Top 250
+- Scopri nuovi spettacoli e film in base alle tue abitudini di visione
+- Widget per la firma del forum
+
+Che cosa può fare questa add-on?
+
+- Scrobble automatico di tutti gli episodi televisivi e film che vengono guardati
+- Sincronizzazione dei tuoi episodi TV e delle collezioni di film di Trakt (attivata dopo un aggiornamento della libreria)
+- Pulizia automatica della collezione Trakt in modo da farla corrispondere con Kodi
+- Mantenere lo stato delle visioni sincronizzate tra Kodi e Trakt
+- Votazione di ogni puntata o film dopo la visualizzazione
+
+Un ringraziamento speciale a tutti coloro che hanno contribuito a questo plugin! Controllate la storia dei commit e la lista dei cambiamenti per vedere questi sviluppatori di talento.</description>
+		<description lang="ko">시청 중인 모든 TV 쇼 에피소드와 영화 정보를 자동으로 Trakt.tv에 전송합니다! 사용자가 시청한 모든 이력을 자세히 보관하고 전세계의 TV, 영화 커뮤니티의 일원으로 참여하세요. http://Trakt.tv에서 무료 회원으로 가입하고 다양한 기능을 활용하세요:
+
+- 시청 중인 영화와 에피소드 정보를 자동으로 전송
+- iPhone, iPad, Android, Windows Phone 앱 지원
+- 시청 중 정보를 (실시간)으로 Facebook과 twitter로 공유하고 평가
+- 개인 캘린더로 TV 쇼 본방송을 놓치지 마세요
+- 친구와 관심있는 사람을 팔로우 하세요
+- 꼭 봐야 할 것들을 잊지 않기 위해 Watclist를 사용하세요
+- 여러분의 컬렉션을 관리하고 친구들을 감동 시키세요
+- 여러분이 선택한 모든 주제의 목록을 만드세요
+- 여러분의 TV 쇼 시청 진행 상태를 시즌별 에피소드별로 쉽게 기록하고 관리하세요
+- 여러분의 시청 상태를 IMDb Top 250 같은 목록과 비교해 보세요
+- 여러분이 시청한 자료를 토대로 새로운 영화와 TV쇼를 찾아보세요
+- 커뮤니티 포럼의 Widgets 으로 활용하세요
+
+이 애든온이 할 수 있는 것은?
+
+- 시청 중인 영화와 에피소드 정보를 자동으로 전송
+- 여러분의 TV 에피소드와 영화 컬렉션을 Trakt와 동기화 (라이브러리를 업데이트할 때 작동)
+- Kodi 라이브러리와 일치하도록 Trakt 컬렉션 자동 정리
+- Kodi와 Trakt 사이의 시청 정보 동기화
+- 영화와 에피소드를 시청한 후 평가하기
+
+이 플러그인에 공헌한 모든 이에게 감사드립니다! 재능있는 이 개발자들을 확인하려면 커밋 이력과 변경사항을 확인하기 바랍니다.</description>
+		<description lang="lt">Automatiškai užregistruoti visus TV epizodus ir filmus, kuriuos žiūrite, Trakt.tv sistemoje! Laikykite išsamią istoriją visko, ką peržiūrėjote ir būkite globalios TV ir filmų entuziastų bendruomenės dalimi. Susikurkite nemokamą paskyrą http://trakt.tv puslapyje ir gaukite daugybę funkcionalumų:
+
+- Automatiškai užregistruokite tai, ką žiūrite
+- Mobilios programelės, skirtos iPhone, iPad, Android ir Windows Phone
+- Dalinkitės tuo, ką žiūrite (realiuoju laiku) ir įvertinimais facebook ir twitter sistemose
+- Suasmenintas kalendorius, kad niekada nepraleistumėte TV laidos
+- Sekite savo draugus ir žmones, kuriais domitės
+- Naudokite peržiūros sąrašą, kad nepamirštumėte ką norite peržiūrėti
+- Sekite savo media kolekciją ir padarykite įspūdį savo draugams
+- Sukurkite savus sąrašus bet kokia pasirinkta tema
+- Lengvai sekite TV laidos progresą tarp visų sezonų ir epizodų
+- Sekite savo progresą tarp industrinių sąrašų, tokių kaip IMDb Top 250
+- Atraskite naujas laidas ir filmus pagal savo žiūrėjimo įpročius
+- Valdiklis jūsų forumo paskyros parašui
+
+Ką gali šis priedas?
+
+- Automatiškai registruoti visus TV epizodus ir filmus, kuriuos žiūrite
+- Sinchronizuoti jūsų TV epizodų ir filmų kolekciją su Trakt.tv (vykdoma po bibliotekos atnaujinimo)
+- Automatiškai išvalyti jūsų Trakt.tv kolekciją, kad ji sutaptų su Kodi
+- Išlaikyti peržiūrėjimo būsenas sinchronizuotas tarp Kodi ir Trakt.tv
+- Įvertinti filmus ir epizodus juos peržiūrėjus
+
+Specialus ačiū visiems, kurie prisidėjo prie šio įskiepio! Patikrinkite kodo istoriją ir pakeitimų sąrašą, kad pamatytumėte šiuos talentingus kūrėjus.</description>
+		<description lang="nl">Scrobble automatisch alle TV afleveringen en films die je aan bekijken bent naar Trakt.tv! Hou een uitgebreide historie bij van alles wat je hebt bekeken en maak deel uit van een wereldwijde gemeenschap van TV- en filmliefhebbers. Schrijf je in voor een gratis account op http://trakt.tv en krijg een enorme hoeveelheid aan mogelijkheden:
+
+- Automatisch scrobblen wat je aan het bekijken bent
+- Mobiele apps voor iPhone, iPad, Android en Windows Phone
+- Deel wat je aan het bekijken ben (gelijktijdig) en stuur je waardering door naar Facebook en Twitter
+- Persoonlijke kalender zodat je nooit een TV aflevering mist
+- Volg je vrienden en mensen waarin je ben geïnteresseerd
+- Gebruik kijklijsten zodat je niets mist van wat je wilt kijken
+- Leg je eigen mediaverzameling aan en maak indruk op je vrienden
+- Maak aangepaste lijsten over onderwerpen die je zelf kiest
+- Volg het verloop van je tv serie voor alle seizoenen en afleveringen
+- Vergelijk je bekeken films en series met bekende lijsten zoals de IMDb Top 250
+- Ontdek nieuwe series en films gebaseerd op jouw kijk gewoonten
+- Widgets voor jouw forum handtekening
+
+Wat kan deze add-on doen?
+
+- Automatisch scrobblen van alle TV afleveringen en films die je aan het bekijken bent
+- Synchroniseer je TV afleveringen en film collecties naar Trakt (start na een bibliotheekupdate)
+- Automatisch opschonen van je Trakt collectie zodat deze overeenkomt met Kodi
+- Houdt  de bekeken status gesynchroniseerd tussen Kodi en Trakt
+- Geef een cijfer aan films en afleveringen na ze te hebben bekeken
+
+Speciale dank aan allen die hebben meegeholpen met deze plugin! Bekijk de commentaar historie en wijzigingenlijst om deze getalenteerde ontwikkelaars te zien.</description>
+		<description lang="no">Scrobble alle TV-episoder og filmer du ser til Trakt.tv! Hold en omfattende oversikt av alt du har sett og bli en del av et globalt samfunn av TV og filmentusiaster. Meld deg inn og få en gratis konto på http://trakt.tv og få tilgang til en haug av funksjoner:
+
+- Scrobble det du ser automatisk
+- Mobile applikasjoner for iPhone, iPad, Android og Windows Phone
+- Del det du ser (i sanntid) og vurderinger til Facebook og Twitter
+- Personalisert kalender så du ikke går glipp av favorittprogrammene dine
+- Følg vennene dine og folk du er interessert i
+- Bruk overvåkingsliste så du ikke glemmer hva du skal se
+- Spor mediasamlingen og imponer venner
+- Lag tilpassede lister basert på egne emner
+- Spor fremgangen din på TV-programmer på tvers av sesonger og episoder
+- Spor fremgangen din mot lister som IMDb Top 250
+- Oppdag nye TV-programmer og filmer basert på vanene dine
+- Widgets som forumsignatur
+
+- Hva kan denne utvidelsen gjøre?
+
+- Scrobble alle TV-episoder og filmer som du ser på automatisk
+- Synkronisere TV-episode og filmsamlinger til Trakt (trigges etter biblioteksoppdatering)
+- Automatisk opprydning i Trakt-samlingen så den samsvarer med Kodi
+- Hold sett-statuser synkronisert mellom Kodi og Trakt
+- Vurder filmer og episoder etter å ha sett de
+
+Takk til alle som har bidratt til denne utvidelsen! Sjekk commit-historien og endringsloggen for å se disse talentfulle utviklerene.</description>
+		<description lang="pl">Automatyczna rejestracja obejrzanych odcinków serialów i film w serwisie Trakt.tv! Przechowuj pełną historię wszystkich obejrzanych mediów i bądź częścią globalnej społeczności entuzjastów multimediów. Zarejestruj swoje konto za darmo na http://trakt.tv i uzyskaj dostęp do mnóstwa funkcji:
+- automatycznej rejestracji obejrzanych mediów
+- mobilnych aplikacji na iPhone'a, iPada, Androida i Windows Phone
+- publikacji obejrzanych mediów i ich oceny (w czasie rzeczywistym) w serwisach Facebook i Twitter
+- osobistego kalendarza, żebyś nigdy nie przegapił emisji serialu
+- śledzenia aktywności znajomych i osób, którymi się interesujesz
+- listy pozycji do obejrzenia, żebyś nigdy nie zapomniał tego, co chcesz obejrzeć
+- udostępniania swojej kolekcji mediów, którą możesz zaimponować swoim znajomym
+- tworzenia niestandardowych list skupionych na wybranym temacie
+- łatwego śledzenia postępów oglądania sezonów i odcinków serialu
+- porównywania własnych postępów oglądania z publicznymi listami takimi jak lista Top 250 serwisu IMDb
+- odkrywanie nowych seriali i filmów na podstawie preferencji
+
+Co potrafi ten dodatek?
+
+- rejestrować automatycznie odtwarzania wszystkich odcinków seriali i filmów
+- synchronizację biblioteki filmów i odcinków seriali z kolekcją Trakt (uruchamianą po aktualizacji biblioteki)
+- czyszczenie kolekcji Trakt w celu pełnego dopasowania z biblioteką Kodi
+- utrzymywanie synchronizacji stanów obejrzenia między biblioteką Kodi a kolekcją Trakt
+- możliwość oceny filmów i odcinków seriali zaraz po obejrzeniu
+
+Specjalne podziękowania dla wszystkich, którzy wnieśli swój wkład w tworzenie tego dodatku! Przejrzyj historię i dziennik zmian, aby poznać tych utalentowanych programistów.</description>
+		<description lang="pt">Automaticamente faça scrobble de filmes e séries que está a ver para o Trakt.tv! Mantenha um histórico de tudo o que visualizou e faça parte de uma comunidade de entusiastas de filmes e séries. Inscreva-se gratuitamente para uma conta em http://trakt.tv e receba uma tonelada de funcionalidades:
+
+- Scrobble automático quando está a visualizar
+- Aplicações moveis para iPhone, iPad, Android, Windows Phone e Blackberry
+- Partilhe o que está a visualizar (em tempo real) e as suas classificações no facebook e twitter
+- Calendário personalizado de forma a nunca perder uma série
+- Siga os seus amigos e pessoas de interesse
+- Use listas para não esquecer o que ver
+- Mostre as suas bibliotecas de filmes e séries aos seus amigos
+- Crie listas personalizadas sobre os assuntos que quiser
+- Verifique que espisódios já visualizou e quais faltam ver
+- Veja que filmes tem do IMDB TOP 250
+- Descubra novos filmes e séries com base nos que já viu
+- Widgets para usar na assinatura de fóruns
+
+O que pode este addon fazer?
+- Scrobble automático de todos os filmes e episódios de séries que está a ver
+- Sincronização dos filmes e episódios de séries vistos com o Trakt (após um update da biblioteca)
+- Limpeza automática do Trakt de forma a ficar igual ao Kodi
+- Manter as visualizações sincronizadas entre o Trakt e o Kodi
+- Classifique filmes e episódios após visualização
+
+Um obrigado especial a todos os que contribuíram para este plugin! Veja o github e o changelog para ver quem são estes programadores talentosos.</description>
+		<description lang="pt_BR">Automaticamente faça scrobble de filmes e seriados que está a assistir para o Trakt.tv! Mantenha um histórico de tudo o que assistiu e faça parte de uma comunidade de entusiastas de filmes e seriados. Inscreva-se gratuitamente para uma conta em http://trakt.tv e receba uma tonelada de funcionalidades:
+
+- Scrobble automático quando está a assistir
+- Aplicações moveis para iPhone, iPad, Android, Windows Phone e Blackberry
+- Partilhe o que está a assistir (em tempo real) e as suas classificações no facebook e twitter
+- Calendário personalizado de forma a nunca perder um seriado
+- Siga os seus amigos e pessoas de interesse
+- Use listas para não esquecer o que ver
+- Mostre as suas bibliotecas de filmes e seriados aos seus amigos
+- Crie listas personalizadas sobre os assuntos que desejar
+- Verifique que espisódios já assistiu e quais faltam assistir
+- Veja que filmes tem do IMDB TOP 250
+- Descubra novos filmes e seriados com base nos que já assistiu
+- Widgets para usar na assinatura de fóruns
+
+O que pode este addon fazer?
+- Scrobble automático de todos os filmes e episódios de TV que está a assistir
+- Sincronização dos filmes e episódios de TV assistidos com o Trakt (após um update da biblioteca)
+- Limpeza automática do Trakt de forma a ficar igual ao Kodi
+- Manter as visualizações sincronizadas entre o Trakt e o Kodi
+- Classifique filmes e episódios após visualização
+
+Um obrigado especial a todos os que contribuíram para este plugin! Veja o github e o changelog para ver quem são estes programadores talentosos.</description>
+		<description lang="sv">Skrobbla automatiskt alla TV-serie avsnitt och filmer du tittar på till Trakt.tv! Samla en innehållsrik historik om allt du tittar på och var en del av ett globalt kollektiv av TV och film entusiaster. Skapa ett gratis konto på http://trakt.tv och ta del av massor av funktioner.
+
+- Skrobbla automatiskt vad du tittar på
+- Appar för iPhone, iPad, Android och Windows Phone
+- Dela vad du tittar på (i realtid) samt dina betyg på Facebook och Twitter
+- Personlig kalender så du aldrig missar en TV serie
+- Följ dina vänner och andra intressanta personer
+- Använd "att se" listor så du inte glömmer vad du skall se
+- Spåra dina media samlingar och imponera på dina vänner
+- Skapa listor för olika ämnen som du väljer
+- Spåra lätt hur mycket av en TV serie du sett, över alla säsonger och avsnitt
+- Jämför hur mycket film du har sett mot flera viktiga listor inom industrin, t.ex. IMDb Top 250
+- Upptäck nya TV serier och filmer baserat på din historik
+- Widgets för din forum signatur
+
+Vad kan detta addon göra?
+
+- Skrobbla automatiskt alla TV-serie avsnitt och filmer du tittar på
+- Synkronisera dina samlingar av film och Tv-serier till Trakt (startas efter en uppdatering av ditt bibliotek i Kodi)
+- Städa automatiskt din Trakt samling så den stämmer med Kodi.
+- Synkronisera sedd/osedd status mellan Kodi och Trakt
+- Betygsätt filmer och TV-serier avsnitt efter du har sett dem
+
+Ett stort tack till alla som bidragit till detta plugin! Se loggen för tillägg och ändringar för att se vilka dessa talangfulla utvecklare är.</description>
+		<language/>
+		<platform>all</platform>
+		<forum>http://forum.kodi.tv/showthread.php?tid=220547</forum>
+		<website>http://trakt.tv</website>
+		<email/>
+		<source>https://github.com/trakt/script.trakt</source>
 	</extension>
 </addon>
 
@@ -5266,6 +6555,29 @@ If for any reason the check of a successful wake-up via ping is not possible or 
   </extension>
 </addon>
 
+<addon id="service.library.data.provider" name="Library Data Provider" provider-name="BigNoid, Martijn" version="0.1.4">
+	<requires>
+		<import addon="xbmc.addon" version="12.0.0"/>
+		<import addon="xbmc.json" version="6.0.0"/>
+		<import addon="xbmc.python" version="2.1.0"/>
+		<import addon="script.module.simplejson" version="2.0.10"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py"/>
+	<extension library="service.py" point="xbmc.service" start="login"/>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Plugin for skins to provide library data throughout the skin.</summary>
+		<description lang="en">Plugin for skins to provide library data throughout the skin.</description>
+		<disclaimer lang="en">This plugin is not a standalone plugin, your skin must support it.</disclaimer>
+		<platform>all</platform>
+		<language/>
+		<license>GNU GENERAL PUBLIC LICENSE Version 2, June 1991</license>
+		<forum>http://forum.kodi.tv/showthread.php?tid=210063</forum>
+		<website>https://github.com/BigNoid/service.library.data.provider</website>
+		<email>big.noid@kodi.tv</email>
+		<source>https://github.com/BigNoid/service.library.data.provider</source>
+	</extension>
+</addon>
+
 <addon id="service.libraryautoupdate"
     name="XBMC Library Auto Update" version="0.9.8" provider-name="robweber">
   <requires>
@@ -5379,11 +6691,10 @@ If for any reason the check of a successful wake-up via ping is not possible or 
   </extension>
 </addon>
 
-<addon id="service.skin.widgets" name="Skin Widgets" version="0.0.30" provider-name="Martijn, phil65">
+<addon id="service.skin.widgets" name="Skin Widgets" version="0.0.32" provider-name="Martijn, phil65">
     <requires>
-        <import addon="xbmc.addon" version="12.0.0"/>
         <import addon="xbmc.json" version="6.0.0"/>
-        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="xbmc.python" version="2.14.0"/>
         <import addon="script.module.simplejson" version="2.0.10"/>
     </requires>
     <extension point="xbmc.service" library="default.py" start="login"/>
@@ -5444,22 +6755,18 @@ If for any reason the check of a successful wake-up via ping is not possible or 
         <disclaimer lang="zh">访问wiki页或XBMC论坛了解更多信息</disclaimer>
         <platform>all</platform>
         <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-        <website></website>
+        <website/>
         <forum>http://forum.xbmc.org/showthread.php?tid=142389</forum>
         <source>https://github.com/XBMC-Addons/service.skin.widgets</source>
-        <email></email>
+        <email/>
     </extension>
 </addon>
 
-<addon id="service.subtitles.bsplayer"
-       name="BSPlayer"
-       version="0.2.1"
-       provider-name="realgam3">
+<addon id="service.subtitles.bsplayer" name="BSPlayer" version="0.2.1" provider-name="realgam3">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
-  <extension point="xbmc.subtitle.module"
-             library="service.py" />
+  <extension point="xbmc.subtitle.module" library="service.py"/>
   <extension point="xbmc.addon.metadata">
     <summary lang="en">Kodi / XBMC BSPlayer Subtitles allows for downloading subtitles from the bsplayer subtitles community.</summary>
     <description lang="en">Search and download various subtitles from the bsplayer subtitles community.</description>
@@ -5487,28 +6794,25 @@ If for any reason the check of a successful wake-up via ping is not possible or 
   </extension>
 </addon>
 
-<addon id="service.subtitles.podnapisi"
-       name="Podnapisi.net"
-       version="5.4.0"
-       provider-name="amet">
+<addon id="service.subtitles.podnapisi" name="Podnapisi.net" version="5.4.0" provider-name="amet">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
-  <extension point="xbmc.subtitle.module"
-             library="service.py" />
+  <extension point="xbmc.subtitle.module" library="service.py"/>
   <extension point="xbmc.addon.metadata">
     <summary lang="en">Podnapisi.net</summary>
     <description lang="en">Search and download subtitles from Podnapisi.net</description>
-    <disclaimer lang="en"></disclaimer>
+    <disclaimer lang="en"/>
     <platform>all</platform>
     <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-    <forum></forum>
-    <website></website>
-    <email></email>
+    <forum/>
+    <website/>
+    <email/>
     <source>https://github.com/amet/service.subtitles.podnapisi</source>
   </extension>
 </addon>
 
+<addon id="service.subtitles.subscenter" name="Subscenter.org" version="3.3.6" provider-name="CaTz">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
 	<import addon="script.common.plugin.cache" version="0.9.1"/>
@@ -5526,14 +6830,15 @@ If for any reason the check of a successful wake-up via ping is not possible or 
   </extension>
 </addon>
 
+<addon id="service.subtitles.subtitle" name="Subtitle.co.il" version="4.3.8" provider-name="CaTz">
     <requires>
         <import addon="xbmc.python" version="2.14.0"/>
         <import addon="script.common.plugin.cache" version="0.9.1"/>
     </requires>
     <extension point="xbmc.subtitle.module" library="service.py"/>
     <extension point="xbmc.addon.metadata">
-        <summary lang="en">Ktuvit.com</summary>
-        <description lang="en">Search and Download subtitles from Ktuvit.com. Contributors: rabak, Ori Varon,
+        <summary lang="en">Subtitle.co.il</summary>
+        <description lang="en">Search and Download subtitles from subtitle.co.il. Contributors: rabak, Ori Varon,
             sagiben
         </description>
         <source>https://github.com/XBMCil/service.subtitles.subtitle</source>

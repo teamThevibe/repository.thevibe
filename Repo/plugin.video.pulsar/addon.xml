@@ -7,8 +7,8 @@
         <provides>video</provides>
     </extension>
     <extension point="xbmc.service" library="service.py" start="startup"/>
-    <extension point="xbmc.python.module" library="resources/site-packages" />
-    <extension point="xbmc.subtitle.module" library="navigation.py" />
+    <extension point="xbmc.python.module" library="resources/site-packages"/>
+    <extension point="xbmc.subtitle.module" library="navigation.py"/>
     <extension point="xbmc.addon.metadata">
         <platform>all</platform>
         <language>en</language>
