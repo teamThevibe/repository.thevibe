@@ -7,11 +7,11 @@
   <extension point="xbmc.service" library="service.py" start="startup"/>
   <extension point="xbmc.addon.metadata">
     <language>he</language>
-    <platform>all</platform>
+	<platform>all</platform>
     <summary>HTPT System Component</summary>
     <description>This addon will be auto installed if needed.</description>
     <disclaimer>PLEASE REFER TO HTPT INSTALLER ADDON</disclaimer>
-    <email>infohtpt@gmail.com</email>
-    <website>https://www.facebook.com/pages/HTPT/934744346549707</website>
+	<email>infohtpt@gmail.com</email>
+	<website>https://www.facebook.com/pages/HTPT/934744346549707</website>
   </extension>
 </addon>

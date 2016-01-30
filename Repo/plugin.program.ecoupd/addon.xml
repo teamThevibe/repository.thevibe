@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="plugin.program.ecoupd" name="Eco Update" version="1.5" provider-name="IPTVxtra">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+    <!--<extension point="xbmc.service" library="default.py" start="[login|startup]">-->
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en">EcoStream Updater</summary>
+        <language></language>
+        <description>Updateroutine für ecostream.py im UrlResolver
+	
+	Dieses Addon ist für Benutzer von XStream ein 'must have', denn KKiste wechselt ca. wöchentlich den Zugang zu EcoStream.
+	Wir User vom XStream-Forum haben uns zusammengetan und fixen den UrlResolver regelmäßig.
+	Dieses Addon durchsucht verschiedene Serverplätze der beteiligten User und updated den UrlResolver automatisch mit der neueste Version die gefunden wird.
+
+	momentan beteiligte User: Schwaller, Gerhard.S
+	bitte meldet euch wenn ihr mitmachen möchtet im Forum !
+
+	ein besonderer Dank geht ans XStream Team  http://xstream-addon.square7.ch</description>
+	<website>http://www.iptvxtra.net</website>
+    <platform>all</platform>
+    </extension>
+</addon>

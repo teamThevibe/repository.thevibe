@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.program.addoninstaller" version="1.2.5" name="Addon Installer" provider-name="tvaddons.ag, Blazetamer">
+    <addon id="plugin.program.addoninstaller" version="1.2.5"
+    	name="Addon Installer" provider-name="tvaddons.ag, Blazetamer">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
-        <import addon="script.module.addon.common" optional="true"/>
+        <import addon="script.module.addon.common" optional="true" />
     </requires>
     <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>executable</provides>
@@ -15,7 +16,7 @@
         <platform>all</platform>
         <forum>http://forums.tvaddons.ag/forums/156-ADDON-INSTALLER</forum>
         <website>http://addons.tvaddons.ag/</website>
-        <source/>
-        <email/>
+        <source></source>
+        <email></email>
     </extension>
 </addon>
