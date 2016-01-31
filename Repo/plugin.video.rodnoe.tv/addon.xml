@@ -1,9 +1,14 @@
-﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.rodnoe.tv" name="Rodnoe.TV" version="1.4.0" provider-name="Eugene Bond">
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.rodnoe.tv"
+       name="Rodnoe.TV"
+       version="1.4.0"
+       provider-name="Eugene Bond">
   <requires>
-    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="xbmc.python" version="2.1.0"/>
   </requires>
-  <extension point="xbmc.python.pluginsource" provides="video" library="default.py">
+  <extension point="xbmc.python.pluginsource"
+             provides="video"
+             library="default.py">
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">

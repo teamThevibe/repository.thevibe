@@ -1,9 +1,12 @@
-﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.yt-vevo" name="Vevo Music Videos on YouTube" version="1.0.2" provider-name="coldkeys">
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.yt-vevo"
+	name="Vevo Music Videos on YouTube"
+	version="1.0.2"
+	provider-name="coldkeys">
   <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-    <import addon="script.module.addon.common" version="2.0.0" />
-    <import addon="plugin.video.youtube" version="5.0.0" />
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.addon.common" version="2.0.0"/>
+    <import addon="plugin.video.youtube" version="5.0.0"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
     <provides>video</provides>

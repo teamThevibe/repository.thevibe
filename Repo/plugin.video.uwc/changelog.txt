@@ -1,3 +1,8 @@
+[B]Version 1.0.81[/B]
+Changed: Cam4 rtmp url, now you can use it with an external player like VLC
+Changed: Added User-agent to Chaturbate stream
+
+
 [B]Version 1.0.80[/B]
 Added: Porndig
 Added: AbsoluPorn

@@ -1,12 +1,16 @@
-﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.tv2go" name="TV2GO" version="1.0.3" provider-name="Hybrid\Donatello\Blade">
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.tv2go"
+       name="TV2GO"
+       version="1.0.3"
+       provider-name="Hybrid\Donatello\Blade">
   <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-    <import addon="script.module.html5lib" version="0.999.0" />
-    <import addon="script.module.livestreamer" version="0.999.0" />
+ <import addon="xbmc.python" version="2.1.0"/>
+ <import addon="script.module.html5lib" version="0.999.0" />
+ <import addon="script.module.livestreamer" version="0.999.0" />
+
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
+        <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary lang="en">Watch tv channels.</summary>
@@ -15,8 +19,8 @@
 	Donatello donations: http://donatellokodi.blogspot.co.il/2015/10/blog-post.html
 	</description>
     <platform>all</platform>
-    <language>en</language>
-    <disclaimer> Report any issues with this addon to our group</disclaimer>
+ <language>en</language>
+ <disclaimer> Report any issues with this addon to our group</disclaimer>
   </extension>
-  <extension point="xbmc.service" library="service.py" start="startup" />
+  <extension point="xbmc.service" library="service.py" start="startup"/>
 </addon>

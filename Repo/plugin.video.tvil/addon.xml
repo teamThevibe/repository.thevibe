@@ -1,14 +1,17 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.tvil" name="TVIL.me" version="1.0.0" provider-name="Hybrid\Donatello\Blade">
+<addon id="plugin.video.tvil"
+       name="TVIL.me"
+       version="1.0.0"
+       provider-name="Hybrid\Donatello\Blade">
   <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-    <import addon="script.module.beautifulsoup4" version="4.3.1" />
-    <import addon="script.module.requests" version="2.3.0" />
-    <import addon="script.module.html5lib" version="0.999.0" />
-    <import addon="script.module.urlresolver" />
+ <import addon="xbmc.python" version="2.1.0"/>
+ <import addon="script.module.beautifulsoup4" version="4.3.1" />
+ <import addon="script.module.requests" version="2.3.0" />
+ <import addon="script.module.html5lib" version="0.999.0" />
+ <import addon="script.module.urlresolver"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
+        <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary lang="en">This plugin let you watch TVIL.me website content.</summary>
@@ -18,8 +21,7 @@ Hybrid donations: https://goo.gl/5MLzGS
 Donatello donations: http://donatellokodi.blogspot.co.il/2015/10/blog-post.html
 	</description>
     <platform>all</platform>
-    <language>en</language>
-    <disclaimer>
-    </disclaimer>
+ <language>en</language>
+ <disclaimer></disclaimer>
   </extension>
 </addon>

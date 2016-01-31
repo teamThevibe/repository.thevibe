@@ -1,3 +1,6 @@
+[B]Version 0.0.7[/B]
+- moved to a temp new site
+
 [B]Version 0.0.6[/B]
 - fixed search
 - code clean up

@@ -1,3 +1,6 @@
+Version 3.0.8
+Fixing eztv.ag
+
 Version 2.1.7
 Error message
 
