@@ -6,3 +6,6 @@
 
 [B]Version 0.0.5[/B]
 - Initial version 
+
+[B]Version 0.0.6[/B]
+- small fixes

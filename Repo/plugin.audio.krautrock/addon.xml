@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="plugin.audio.krautrock" name="Krautrock Radio" version="1.2" provider-name="IPTVxtra Team">
   <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="xbmc.python" version="2.1.0" />
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>audio</provides>
+    <provides>audio</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary>IPTVxtra Team</summary>
@@ -15,9 +15,7 @@ Musikrichtung: Psychedelic und Progressive Rock
 	
 	
 	http://www.IPTVxtra.net</description>
-	<website>http://www.iptvxtra.net</website>
+    <website>http://www.iptvxtra.net</website>
     <platform>all</platform>
   </extension>
 </addon>
-
-

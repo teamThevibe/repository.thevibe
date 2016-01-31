@@ -1,16 +1,16 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="metadata.sratimNew.co.il" name="סרטים" version="1.0.3" provider-name="sbentin">
-	<requires>
-		<import addon="xbmc.metadata" version="1.0" />
-		<import addon="metadata.common.themoviedb.org" version="1.0.7" />
-		<import addon="metadata.common.imdb.com" version="2.1.3" />
-	</requires>
-	<extension point="xbmc.metadata.scraper.movies" language="he" library="Sratim.xml" />
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Yes another Sratim Site Movie Scraper</summary>
-		<summary lang="he">עוד סקרייפר לסרטים מאתר סרטים</summary>
-		<description lang="he">www.sratim.co.il הורדת מידע סרטים מאתר. הסקרפר כולל יותר אפשרויות בחירה להורדה של fanart מאתר גוגל, כמו גם קדימונים ומידע על שחקנים. ניתן להגדיר את הבחירות בהגדרות הסקרפר.</description>
-		<description lang="en">Download Movie information from www.sratim.co.il. This scraper includes choice option to download fanart images from google as well as actor details and trailers. You can define these options on the scraper settings page.</description>
-		<disclaimer>The scrpaer gets information from sratim site and google. It bares no responsibility for the content of the information</disclaimer>
-	</extension>
+  <requires>
+    <import addon="xbmc.metadata" version="1.0" />
+    <import addon="metadata.common.themoviedb.org" version="1.0.7" />
+    <import addon="metadata.common.imdb.com" version="2.1.3" />
+  </requires>
+  <extension point="xbmc.metadata.scraper.movies" language="he" library="Sratim.xml" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Yes another Sratim Site Movie Scraper</summary>
+    <summary lang="he">עוד סקרייפר לסרטים מאתר סרטים</summary>
+    <description lang="he">www.sratim.co.il הורדת מידע סרטים מאתר. הסקרפר כולל יותר אפשרויות בחירה להורדה של fanart מאתר גוגל, כמו גם קדימונים ומידע על שחקנים. ניתן להגדיר את הבחירות בהגדרות הסקרפר.</description>
+    <description lang="en">Download Movie information from www.sratim.co.il. This scraper includes choice option to download fanart images from google as well as actor details and trailers. You can define these options on the scraper settings page.</description>
+    <disclaimer>The scrpaer gets information from sratim site and google. It bares no responsibility for the content of the information</disclaimer>
+  </extension>
 </addon>

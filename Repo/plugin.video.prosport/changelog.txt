@@ -67,3 +67,8 @@ ver 0.21:
 	- fixed gsrteam
 	- fixed streamarena
 	- added rawstreams donation link
+	
+ver 0.22:
+	- fixed rawstreams
+	- added sd streams (can be disabled in settings). Thanks to Phoenix for code example!
+	- other bugfixes

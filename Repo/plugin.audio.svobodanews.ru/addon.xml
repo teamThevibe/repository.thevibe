@@ -1,14 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.audio.svobodanews.ru"
-       name="Svobodanews"
-       version="1.0.7"
-       provider-name="HD-Lab Team">
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.audio.svobodanews.ru" name="Svobodanews" version="1.0.7" provider-name="HD-Lab Team">
   <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="xbmc.python" version="2.1.0" />
   </requires>
-  <extension point="xbmc.python.pluginsource"
-            library="default.py">
-        <provides>audio</provides>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>audio</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary lang="ru">Радио Свободная Европа/Радио Свобода</summary>

@@ -1,4 +1,17 @@
 ------------------------
+Ororo TV v2.2.9 (26-Jan-16)
+------------------------
+
+- Updated User-Agent
+- Minor fixes to TV shows list and episodes
+
+------------------------
+Ororo TV v2.2.8.2 (16-Jan-16)
+------------------------
+
+- Added support for Krypton (Kodi v17)
+
+------------------------
 Ororo TV v2.2.8 (19-Dec-15)
 ------------------------
 

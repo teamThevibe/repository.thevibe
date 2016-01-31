@@ -1,16 +1,16 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="plugin.audio.radiothai" name="Radio Thailand" version="2.0" provider-name="IPTVxtra Team">
   <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="xbmc.python" version="2.1.0" />
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>audio</provides>
+    <provides>audio</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary>IPTVxtra Team</summary>
     <description>Addon für Radiosender aus Thailand
 		
 	http://www.IPTVxtra.net</description>
-	<platform>all</platform>
+    <platform>all</platform>
   </extension>
 </addon>

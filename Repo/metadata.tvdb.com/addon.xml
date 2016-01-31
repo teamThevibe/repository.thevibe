@@ -1,16 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="metadata.tvdb.com"
-       name="The TVDB"
-       version="1.8.2"
-       provider-name="XBMC Foundation">
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="metadata.tvdb.com" name="The TVDB" version="1.8.3" provider-name="Team Kodi">
   <requires>
-    <import addon="xbmc.metadata" version="2.1.0"/>
-    <import addon="metadata.common.imdb.com" version="2.7.8"/>
+    <import addon="xbmc.metadata" version="2.1.0" />
+    <import addon="metadata.common.imdb.com" version="2.7.8" />
   </requires>
-  <extension point="xbmc.metadata.scraper.tvshows"
-             language="multi"
-             library="tvdb.xml"
-             cachepersistence="00:15"/>
+  <extension point="xbmc.metadata.scraper.tvshows" language="multi" library="tvdb.xml" cachepersistence="00:15" />
   <extension point="xbmc.addon.metadata">
     <summary lang="af">Gaan haal TV vertoning metadata vanaf TheTVDB.com</summary>
     <summary lang="be">Fetch TV show metadata from TheTVDB.com</summary>
@@ -119,9 +113,13 @@
     <description lang="zh_TW">TheTVDB.com是一個電視節目。該網站是一個龐大並可以由任何人修改的開放性資料庫，並包含可以以多國語言顯示的完整的數據資料。所有內容和圖片都是經由用戶提供使用，有一定的標準或質量。數據庫架構和網站是在GPL下的開放性源碼。</description>
     <platform>all</platform>
     <license>GPL v2.0</license>
-    <forum></forum>
-    <website></website>
-    <email></email>
-    <source></source>
+    <forum>
+    </forum>
+    <website>
+    </website>
+    <email>
+    </email>
+    <source>
+    </source>
   </extension>
 </addon>

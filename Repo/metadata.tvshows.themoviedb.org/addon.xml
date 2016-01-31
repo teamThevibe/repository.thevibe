@@ -1,14 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="metadata.tvshows.themoviedb.org"
-       name="The Movie Database"
-       version="1.2.0"
-       provider-name="XBMC Foundation">
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="metadata.tvshows.themoviedb.org" name="The Movie Database" version="1.2.2" provider-name="Team Kodi">
   <requires>
-    <import addon="xbmc.metadata" version="2.1.0"/>
+    <import addon="xbmc.metadata" version="2.1.0" />
   </requires>
-  <extension point="xbmc.metadata.scraper.tvshows"
-             language="en"
-             library="tmdb.xml"/>
+  <extension point="xbmc.metadata.scraper.tvshows" language="en" library="tmdb.xml" />
   <extension point="xbmc.addon.metadata">
     <summary lang="bg">Сваля инф. за ТВ Сериали от TMDB</summary>
     <summary lang="cs">TMDb zdroj  dat k seriálům </summary>
@@ -86,8 +81,11 @@
     <platform>all</platform>
     <license>GPL v2.0</license>
     <forum>http://forum.xbmc.org/showthread.php?tid=200504</forum>
-    <website></website>
-    <email></email>
-    <source></source>
+    <website>
+    </website>
+    <email>
+    </email>
+    <source>
+    </source>
   </extension>
 </addon>

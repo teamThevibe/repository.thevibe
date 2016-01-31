@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.imdb" name="[COLOR FFE8C233]IMDB[/COLOR] viewer" version="1.0.1" provider-name="mancuniancol">
+<addon id="plugin.video.imdb" name="[COLOR FFE8C233]IMDB[/COLOR] viewer" version="1.0.3" provider-name="mancuniancol">
   <requires>
     <import addon="xbmc.python" version="2.12.0" />
     <import addon="script.module.mctools" optional="false" />

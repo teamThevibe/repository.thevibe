@@ -1,9 +1,10 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.offside" name="OffSide Streams" version="3.2.9" provider-name="Mikey1234">
+<addon id="plugin.video.offside" name="OffSide Streams" version="3.3.3" provider-name="OSS">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
     <import addon="script.module.t0mm0.common" version="0.0.1" />
     <import addon="plugin.video.footballreplays" version="0.0.1" />
+    <import addon="plugin.video.streamtvbox" version="0.0.1" />
     <import addon="script.module.urlresolver" version="0.0.1" />
     <import addon="script.module.requests" version="0.0.1" />
   </requires>
