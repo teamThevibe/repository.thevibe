@@ -1,3 +1,4 @@
+Version 1.0.6 Adding Quasar support
 Version 1.0.5 refreshing view
 Version 1.0.4 fixing dialog error
 Version 1.0.3 Adding episode title

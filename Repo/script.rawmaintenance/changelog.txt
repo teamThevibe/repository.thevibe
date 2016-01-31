@@ -1,6 +1,28 @@
-0.1.0
+For support please visit www.no-issue.ca
+This tool is the simplest tool to delete/maintain your cache, thumbnails and packages. 
 
-- First Attempt!
+When the Raw Maintenance service is enabled it will warn you to use the tool when the device gets below 500MB of free space. 
+
+It is safe to delete all 3 items, the thumbnails will regenerate. 
+
+0.1.8
+
+- Valentines 2016 Theme
+- News updated
+
+
+0.1.7
+
+- Christmas 2015 Edition 
+- News updated
+
+0.1.6
+
+- Fixed script error 
+
+0.1.5
+
+- News placeholder
 
 0.1.4
 
@@ -11,10 +33,9 @@
 	most by which platforms so that we can best focus our development 
 	time to bring the community the best possible software.
 
-0.1.5
+0.1.0
 
-- News placeholder
+- First Attempt!
 
-0.1.6
 
-- Fixed script error 
+

@@ -1,3 +1,14 @@
+2016-01-31: cloudfare: fix cookie imposition, request domain before sending post data
+2016-01-31: addonxml: update website info http://ump.us.to
+2016-01-31: korenaturk: removed from provider list
+2016-01-31: openload: new url provider, veterok: new url provider, api: randomize user agents each time on each session, koreanturk: removed since i dont wanna deal with it :), animeram: totally new siteü totally new link provider, turkanimetv: too many changes too many updates,
+2016-01-31: ui: push imdb id for script.trakt, ann: localisation, remove useless avigations steps make it leaner, code3-> annid tvdb: code10->zap2it id, code2: tvdbid, primewire: cover up animes as well, unidecode: fix import error, url_google: remove html5 key, ok.ru: remove html5 key, cloudfare: fix new validation js, fix cookie imposing error,
+2016-01-29: cloudfare: recaptcha protection  warnning, api: randomize user agent, ann: animes by themes, settings: override user agent=false
+2016-01-28: imdb: localisation, tvdb:localisation, 720pizle: new match algo, dizigold: new match algo, new site design, dizipub: new match algo, new page design, moviesub: new match algo, pubfilm: new match algo unutlmaz filmler: new match algo, afdah: fix titles, primewire: new match algo, okru: referer update, transparent: lean, api: match_cast function to match movie from casting, get_vidnames is updated
+2016-01-25: kissanime: use get_names, primewire: botcheck notification, pubfilm: new link provider
+2016-01-25: imdb: localnames suport, nowvideo: fix for new design, promptfile: fix for different page design with old cookies,
+2016-01-23: unutulmaz filmer: new video link provider, url_google: use hash only without referer, url_videomega: use iframe.php, api: use addon.getsetting(). much way conveinent :/ stupid me, On multiple parted media sum the filezie on max_meta, ui: player.xplay() instead of play. dont override default method, moviesub: new video link provider
+2016-01-22: api: decrease  validation timeout 20sec., functionize meta lister ui: fix pressing enter too soon causes dialog to close, update progress bar on each 150ms, mirrors are sorted by filesize then resolation now
 2016-01-19: api: a more proper implementation of getsettings
 2016-01-19: addons.xml: add UMP tag in front of name
 2016-01-19: meta: backwards compataiblity for & char in settings.xml

@@ -1,3 +1,6 @@
+Version 3.0.9
+Fixing the problem with different title format
+
 Version 3.0.8
 Fixing eztv.ag
 

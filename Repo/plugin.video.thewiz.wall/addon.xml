@@ -1,9 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.thewiz.wall" name="TheWiz Movies/TV Wall" version="2.2.2" provider-name="TheWiz, KodIsrael.net">
+<addon id="plugin.video.thewiz.wall" name="TheWiz Movies/TV Wall" version="2.2.3" provider-name="TheWiz, KodIsrael.net">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
-        <import addon="metadata.hebtv.thewiz" version="1.0.0"/>
-        <import addon="metadata.hebmovies.wiz" version="1.0.0"/>
     </requires>
     <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>video</provides>

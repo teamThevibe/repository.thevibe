@@ -1,5 +1,26 @@
 Official Velocity addon For Kodi
 
+v1.0.3
+Bug fix
+Added ability to add to custom created lists
+in preperation for the upcoming Companion addon "Velocity for Kids"
+
+V1.0.2
+Improved Premium Hoster Tagging
+Added Custom Lists
+Added Special List Sections
+Added Ability to find other users lists
+Added IceFilms Movies & TV
+Added Caching to speed up results
+Better Meta information
+Trailers playable from Info Menu
+Other speed and Trakt Improvements
+Watched Checkmarks added (Requires Initialization)
+Optimized Download Functions
+Fixed Trakt Connection Login Dialog
+Bug Fixes
+
+
 V1.0.1
 Added Downloads
 Added download Status in context menu of download section
