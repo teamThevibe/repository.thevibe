@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.pakindia" name="Pak India Live" version="0.2.6" provider-name="Mikey1234">
+<addon id="plugin.video.pakindia" name="Pak India Live" version="0.2.7" provider-name="Mikey1234">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
   </requires>

@@ -2432,7 +2432,7 @@ Audio sources are
   </extension>
 </addon>
 
-<addon id="plugin.program.dssinstaller" name="DSS Installer" version="1.0.0" provider-name="DSS">
+<addon id="plugin.program.dssinstaller" name="DSS Installer" version="1.0.1" provider-name="DSS">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
     <import addon="script.module.addon.common" />
@@ -5377,7 +5377,7 @@ All Credit to WebCoder for new build.
   </extension>
 </addon>
 
-<addon id="plugin.video.freestreams" name="Free Streams" version="0.1.9" provider-name="Mikey1234">
+<addon id="plugin.video.freestreams" name="Free Streams" version="0.2.0" provider-name="Mikey1234">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
   </requires>
@@ -5560,26 +5560,26 @@ All Credit to WebCoder for new build.
   </extension>
 </addon>
 
-<addon id="plugin.video.genesis" name="Genesis" version="5.1.4" provider-name="lambda">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-    <import addon="script.module.requests" version="1.0.0" />
-    <import addon="script.module.metahandler" optional="true" />
-    <import addon="plugin.video.youtube" optional="true" />
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.service" library="service.py" start="startup" />
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">The origins of streaming</summary>
-    <description lang="en">Visit TVADDONS.ag for support</description>
-    <disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
-    <forum>http://forums.tvaddons.ag/forums/148-lambda-s-xbmc-addons</forum>
-    <source>https://offshoregit.com/lambda81/</source>
-    <website>https://offshoregit.com/lambda81/</website>
-    <platform>all</platform>
-  </extension>
+<addon id="plugin.video.genesis" name="Genesis" version="2016.01.31.1" provider-name="mrknow">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0" />
+		<import addon="script.module.requests" version="1.0.0" />
+		<import addon="script.module.metahandler" optional="true" />
+		<import addon="plugin.video.youtube" optional="true" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="startup" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Mrknow fork of Genesis</summary>
+		<description lang="en">Mrknow fork of Genesis</description>
+		<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
+		<forum>https://github.com/mrknow/filmkodi/issues</forum>
+		<source>http://filmkodi.com/repository/</source>
+		<website>http://filmkodi.com/en/wtyczka-specto-fork-genesis/</website>
+		<platform>all</platform>
+	</extension>
 </addon>
 
 <addon id="plugin.video.GleeOnFox" name="Glee" version="1.0.8" provider-name="tvaddons.ag">
@@ -6030,7 +6030,7 @@ Donatello donations: http://donatellokodi.blogspot.co.il/2015/10/blog-post.html
   </extension>
 </addon>
 
-<addon id="plugin.video.hulubox" name="HuluBox" version="1.0.6" provider-name="MetalKettle">
+<addon id="plugin.video.hulubox" name="HuluBox" version="1.0.7" provider-name="MetalKettle">
   <requires>
     <import addon="script.module.simplejson" version="3.3.0" />
     <import addon="xbmc.python" version="2.1.0" />
@@ -6068,6 +6068,32 @@ Donatello donations: http://donatellokodi.blogspot.co.il/2015/10/blog-post.html
     <forum>http://entertainmentrepo.com/</forum>
     <website>http://entertainmentrepo.com/</website>
     <disclaimer lang="en">All the movies on this website are hosted on the third party sites and uploaded by other people. We are not responsible for any content that hosted on on the third-party sites. If you have any legal issues please contact appropriate video owners hosters.</disclaimer>
+  </extension>
+</addon>
+
+<addon id="plugin.video.hushamiptv" name="Husham IPTV TV" version="1.0.3" provider-name="xunitytalk.com">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Husham IPTV TV</summary>
+    <description lang="en">Husham IPTV TV is an IP television over the internet without satellite dish or cable.[CR]For more information, visit [COLOR blue]http://iptv.husham.com[/COLOR]</description>
+    <platform>all</platform>
+    <language>
+    </language>
+    <license>
+    </license>
+    <forum>
+    </forum>
+    <website>
+    </website>
+    <source>
+    </source>
+    <email>
+    </email>
   </extension>
 </addon>
 
@@ -6109,12 +6135,12 @@ Donatello donations: http://donatellokodi.blogspot.co.il/2015/10/blog-post.html
   </extension>
 </addon>
 
-<addon id="plugin.video.hushamaddonwizard" name="Husham Addon Wizard" version="1.0.6" provider-name="Husham.com">
+<addon id="plugin.video.hushamaddonwizard" name="Husham Addon Wizard" version="1.0.7" provider-name="Husham.com">
   <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="xbmc.python" version="2.1.0" />
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video executable</provides>
+    <provides>video executable</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary lang="en">Husham Addon Wizard</summary>
@@ -8298,13 +8324,10 @@ Donatello donations: http://donatellokodi.blogspot.co.il/2015/10/blog-post.html
   </extension>
 </addon>
 
-<addon id="plugin.video.mobdro"
-	name="Mobdro"
-	version="1.05"
-	provider-name="AddonHacker">
+<addon id="plugin.video.mobdro" name="Mobdro" version="1.05" provider-name="AddonHacker">
   <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="plugin.video.youtube" version="3.0.0"/>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="plugin.video.youtube" version="3.0.0" />
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
     <provides>video</provides>
@@ -9427,7 +9450,7 @@ JS</description>
   <extension point="xbmc.service" library="service.py" start="login" />
 </addon>
 
-<addon id="plugin.video.pakindia" name="Pak India Live" version="0.2.6" provider-name="Mikey1234">
+<addon id="plugin.video.pakindia" name="Pak India Live" version="0.2.7" provider-name="Mikey1234">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
   </requires>
@@ -9442,7 +9465,7 @@ JS</description>
   <extension point="xbmc.service" library="service.py" start="login" />
 </addon>
 
-<addon id="plugin.video.pelisalacarta" name="pelisalacarta" version="4.0.5" provider-name="tvalacarta">
+<addon id="plugin.video.pelisalacarta" name="pelisalacarta" version="4.0.6" provider-name="tvalacarta">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
   </requires>
@@ -9455,12 +9478,17 @@ JS</description>
     <summary lang="en">Movies and TV Shows on demand</summary>
     <description lang="en">Movies, Series, Documentaries, Anime, ... everything you can find on Internet now on your media center. Includes channels in Spanish, Italian and English.</description>
     <platform>all</platform>
+    <license>GNU GPL v3</license>
+    <forum>http://www.mimediacenter.info/foro</forum>
+    <website>http://blog.tvalacarta.info/plugin-xbmc/pelisalacarta</website>
+    <email>tvalacarta@gmail.com</email>
+    <source>https://github.com/tvalacarta/pelisalacarta</source>
   </extension>
   <extension point="xbmc.service" library="library_service.py" start="login|startup">
   </extension>
 </addon>
 
-<addon id="plugin.video.pelisalacarta-ui" name="pelisalacarta UI" version="4.0.5" provider-name="tvalacarta">
+<addon id="plugin.video.pelisalacarta-ui" name="pelisalacarta UI" version="4.0.6" provider-name="tvalacarta">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
   </requires>
@@ -9469,10 +9497,15 @@ JS</description>
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary lang="es">Películas y series a la carta</summary>
-    <description lang="es">Películas, series, documentales, anime, ... todo lo que puedas encontrar en Internet ahora desde tu media center. Incluye canales en Español, Italiano, Inglés y Rumano.</description>
+    <description lang="es">Películas, series, documentales, anime, ... todo lo que puedas encontrar en Internet ahora desde tu media center. Incluye canales en Español, Italiano e Inglés.</description>
     <summary lang="en">Movies and TV Shows on demand</summary>
-    <description lang="en">Movies, Series, Documentaries, Anime, ... everything you can find on Internet now on your media center. Includes channels in Spanish, Italian, English and Romanian.</description>
+    <description lang="en">Movies, Series, Documentaries, Anime, ... everything you can find on Internet now on your media center. Includes channels in Spanish, Italian and English.</description>
     <platform>all</platform>
+    <license>GNU GPL v3</license>
+    <forum>http://www.mimediacenter.info/foro</forum>
+    <website>http://blog.tvalacarta.info/plugin-xbmc/pelisalacarta</website>
+    <email>tvalacarta@gmail.com</email>
+    <source>https://github.com/tvalacarta/pelisalacarta</source>
   </extension>
   <extension point="xbmc.service" library="library_service.py" start="login|startup">
   </extension>
@@ -10720,6 +10753,28 @@ RuTube - отличная стартовая площадка для незав�
   </extension>
 </addon>
 
+<addon id="plugin.video.specto" name="Specto - Genesis Fork" version="2016.01.31.1" provider-name="mrknow">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0" />
+		<import addon="script.module.requests" version="1.0.0" />
+		<import addon="script.module.metahandler" optional="true" />
+		<import addon="plugin.video.youtube" optional="true" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="startup" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Mrknow fork of Genesis</summary>
+		<description lang="en">Mrknow fork of Genesis</description>
+		<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
+		<forum>https://github.com/mrknow/filmkodi/issues</forum>
+		<source>http://filmkodi.com/repository/</source>
+		<website>http://filmkodi.com/en/wtyczka-specto-fork-genesis/</website>
+		<platform>all</platform>
+	</extension>
+</addon>
+
 <addon id="plugin.video.speedway" name="SPEEDWAY PORTAL" version="1.0.7" provider-name="MetalKettle / @SpeedwayPortal">
   <requires>
     <import addon="script.module.simplejson" version="3.3.0"/>
@@ -11042,16 +11097,16 @@ RuTube - отличная стартовая площадка для незав�
     </extension>
 </addon>
 
-<addon id="plugin.video.streamtvbox" name="StreamTVBox" version="3.3.8" provider-name="Mikey1234">
+<addon id="plugin.video.streamtvbox" name="StreamTVBox" version="3.3.9" provider-name="Mikey1234">
   <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.t0mm0.common" version="0.0.1"/>
-    <import addon="plugin.video.footballreplays" version="0.0.1"/>
-    <import addon="script.module.urlresolver" version="0.0.1"/>
-    <import addon="script.module.requests" version="0.0.1"/>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.t0mm0.common" version="0.0.1" />
+    <import addon="plugin.video.footballreplays" version="0.0.1" />
+    <import addon="script.module.urlresolver" version="0.0.1" />
+    <import addon="script.module.requests" version="0.0.1" />
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video</provides>
+    <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary lang="en">Streamtvbox Streams</summary>
@@ -12329,18 +12384,18 @@ Donatello donations: http://donatellokodi.blogspot.co.il/2015/10/blog-post.html
   </extension>
 </addon>
 
-<addon id="plugin.video.ukturk" name="UK Turk Playlists" version="2.0.3" provider-name="MetalKettle">
+<addon id="plugin.video.ukturk" name="UK Turk Playlists" version="2.0.4" provider-name="MetalKettle">
   <requires>
-    <import addon="script.module.simplejson" version="3.3.0"/>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.t0mm0.common" version="2.0.0"/>
-    <import addon="plugin.video.youtube" version="3.0.0"/>
-    <import addon="script.module.urlresolver"  version="2.1.2"/>
-    <import addon="script.common.plugin.cache" version="2.5.2"/>
-    <import addon="script.module.metahandler" version="2.5.1"/>
+    <import addon="script.module.simplejson" version="3.3.0" />
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.t0mm0.common" version="2.0.0" />
+    <import addon="plugin.video.youtube" version="3.0.0" />
+    <import addon="script.module.urlresolver" version="2.1.2" />
+    <import addon="script.common.plugin.cache" version="2.5.2" />
+    <import addon="script.module.metahandler" version="2.5.1" />
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video</provides>
+    <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary lang="en">Free Playlists courtesy of @uk_turk</summary>
@@ -12547,24 +12602,20 @@ Donatello donations: http://donatellokodi.blogspot.co.il/2015/10/blog-post.html
   </extension>
 </addon>
 
-<addon id="plugin.video.uwc"
-       name="Ultimate Whitecream"
-       version="1.0.81"
-       provider-name="mortael">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource"
-               library="default.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <platform>all</platform>
-        <license>GPL 2.0</license>
-        <summary lang="en">Watch [COLOR red][B]ADULT[/B][/COLOR] Movies with Ultimate WhiteCream</summary>
-        <description lang="en">Watch [COLOR red][B]ADULT[/B][/COLOR] Movies with Ultimate WhiteCream</description>
-		<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
-    </extension>
+<addon id="plugin.video.uwc" name="Ultimate Whitecream" version="1.0.82" provider-name="mortael">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <license>GPL 2.0</license>
+    <summary lang="en">Watch [COLOR red][B]ADULT[/B][/COLOR] Movies with Ultimate WhiteCream</summary>
+    <description lang="en">Watch [COLOR red][B]ADULT[/B][/COLOR] Movies with Ultimate WhiteCream</description>
+    <disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
+  </extension>
 </addon>
 
 <addon id="plugin.video.vdubt" name="Vdubt25" version="0.1.3" provider-name="Mikey1234">
@@ -16146,24 +16197,25 @@ If for any reason the check of a successful wake-up via ping is not possible or 
 	</extension>
 </addon>
 
-<addon id="script.featherence.service" name="Featherence Service" version="0.1.34" provider-name="finalmakerr">
+<addon id="script.featherence.service" name="Featherence Service" version="0.1.35" provider-name="finalmakerr">
   <requires>
-	<import addon="xbmc.json" version="6.0.0"/>
-	<import addon="xbmc.python" version="2.1.0"/>
+    <import addon="xbmc.json" version="6.0.0" />
+    <import addon="xbmc.python" version="2.1.0" />
   </requires>
-  <extension point="xbmc.python.script" library="default.py"/>
-  <extension point="xbmc.service" library="service.py" start="startup"/>
+  <extension point="xbmc.python.script" library="default.py" />
+  <extension point="xbmc.service" library="service.py" start="startup" />
   <extension point="xbmc.addon.metadata">
-	<platform>all</platform>
+    <platform>all</platform>
     <summary lang="en">Developer ToolKit</summary>
-	<summary lang="he">כלים למפתחים</summary>
+    <summary lang="he">כלים למפתחים</summary>
     <description lang="en">_</description>
-	<description lang="he">_</description>
+    <description lang="he">_</description>
     <disclaimer>Dear developers: Feel free to use this addon to fit your needs.</disclaimer>
-	<email>featherence@groups.facebook.com</email>
-	<forum></forum>
-	<source>https://github.com/finalmakerr/featherence/tree/master/master/script.featherence.service</source>
-	<website>https://www.facebook.com/groups/featherence/</website>
+    <email>featherence@groups.facebook.com</email>
+    <forum>
+    </forum>
+    <source>https://github.com/finalmakerr/featherence/tree/master/master/script.featherence.service</source>
+    <website>https://www.facebook.com/groups/featherence/</website>
   </extension>
 </addon>
 
@@ -16435,27 +16487,34 @@ If for any reason the check of a successful wake-up via ping is not possible or 
     </extension>
 </addon>
 
-<addon id="script.icechannel.extn.xunitytalk" version="0.4.74" name=".[COLOR blue]X[/COLOR]unity Talk iStream Extensions" provider-name="[COLOR blue]X[/COLOR]unity[COLOR blue]T[/COLOR]alk">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0"/>
-        <import addon="repository.istream" version="1.0"/>
-	    <import addon="script.icechannel" version="0.0.1"/>
-	    <import addon="script.module.requests" version="0.0.1"/>
-    </requires>
-	<extension library="default.py" point="xbmc.service" />
-		<summary lang="en">iStream Extensions by xunitytalk.com</summary>
-    <extension point="xbmc.python.module" library="lib" />
-    <extension point="xbmc.addon.metadata">
-		<description lang="en">iStream Extensions by Xunity Talk Movies Tv Shows Kids Live</description>
-		<!--<provides>video</provides>-->
-		<platform></platform>
-		<language></language>
-		<license></license>
-		<forum></forum>
-		<website></website>
-		<source></source>
-		<email></email>
-    </extension>
+<addon id="script.icechannel.extn.xunitytalk" version="0.4.75" name=".[COLOR blue]X[/COLOR]unity Talk iStream Extensions" provider-name="[COLOR blue]X[/COLOR]unity[COLOR blue]T[/COLOR]alk">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="repository.istream" version="1.0" />
+    <import addon="script.icechannel" version="0.0.1" />
+    <import addon="script.module.requests" version="0.0.1" />
+  </requires>
+  <extension library="default.py" point="xbmc.service" />
+  <summary lang="en">iStream Extensions by xunitytalk.com</summary>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <description lang="en">iStream Extensions by Xunity Talk Movies Tv Shows Kids Live</description>
+    <!--<provides>video</provides>-->
+    <platform>
+    </platform>
+    <language>
+    </language>
+    <license>
+    </license>
+    <forum>
+    </forum>
+    <website>
+    </website>
+    <source>
+    </source>
+    <email>
+    </email>
+  </extension>
   <extension point="xbmc.service" library="service.py" start="login" />
 </addon>
 
@@ -16953,10 +17012,9 @@ provider-name="Roman_V_M">
    </extension>
 </addon>
 
-<addon id="script.module.israeliveresolver" name="IsraeLiveResolver" version="0.2.6" provider-name="Avigdor (xbmc-israel repo)">
+<addon id="script.module.israeliveresolver" name="IsraeLiveResolver" version="0.2.7" provider-name="Avigdor (xbmc-israel repo)">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
-	<import addon="repository.xbmc-israel" />
   </requires>
   <extension point="xbmc.python.module" library="lib" />
   <extension point="xbmc.addon.metadata">
@@ -20052,23 +20110,30 @@ level.</description>
   </extension>
 </addon>
 
-    <addon id="service.thewiz.wizard" version="1.0.3" name="TheWiz Kodi Wizard" provider-name="TheWiz ,Blazetamer">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0"/>
-		<import addon="script.module.requests" version="2.4.3" />
-    </requires>
-    <extension point="xbmc.service" library="service.py" start="login"/>
-    <extension point="xbmc.addon.metadata">
-        <summary></summary>
-        <description></description>
-        <disclaimer></disclaimer>
-        <language>he</language>
-        <platform>all</platform>
-        <forum></forum>
-        <website></website>
-        <source></source>
-        <email></email>
-    </extension>
+<addon id="service.thewiz.wizard" version="1.0.5" name="TheWiz Kodi Wizard" provider-name="TheWiz ,Blazetamer">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.requests" version="2.4.3" />
+  </requires>
+  <extension point="xbmc.service" library="service.py" start="login" />
+  <extension point="xbmc.addon.metadata">
+    <summary>
+    </summary>
+    <description>
+    </description>
+    <disclaimer>
+    </disclaimer>
+    <language>he</language>
+    <platform>all</platform>
+    <forum>
+    </forum>
+    <website>
+    </website>
+    <source>
+    </source>
+    <email>
+    </email>
+  </extension>
 </addon>
 
 <addon id="service.watchdog" name="Watchdog" version="0.9.7" provider-name="takoi">

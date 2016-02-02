@@ -1,3 +1,7 @@
+[B]Version 1.0.82[/B]
+Added: You can now add/use keywords for every site with a search function
+
+
 [B]Version 1.0.81[/B]
 Changed: Cam4 rtmp url, now you can use it with an external player like VLC
 Changed: Added User-agent to Chaturbate stream
