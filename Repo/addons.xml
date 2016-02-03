@@ -14373,21 +14373,6 @@ XBMC HUB: j.mp/xbmctorrent]]></description>
 	</extension>
 </addon>
 
-<addon id="repository.hebskins" name="Phenomenal Repository" version="1.0.3" provider-name="tomer953">
-    <extension point="xbmc.addon.repository" name="Phenomenal Repository">
-        <info compressed="true">https://raw.github.com/tomer953/phenomenal/master/addons.xml</info>
-        <checksum>https://raw.github.com/tomer953/phenomenal/master/addons.xml.md5</checksum>
-        <datadir zip="true">http://kodisrael.net/phenomenal/addons/</datadir>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <platform>all</platform>
-        <summary lang="en">Phenomenal Skin Repository</summary>
-        <summary lang="he">מאגר ההרחבות לסקין פנומנל</summary>
-        <description lang="en">Phenomenal Skin Repository</description>
-        <description lang="he">מאגר ההרחבות לסקין פנומנל</description>
-    </extension>
-</addon>
-
 <addon id="repository.hockeyanon" name="hockeyanon Add-on repository" version="1.0.0" provider-name="hockeyanon">
 	<extension point="xbmc.addon.repository" name="hockeyanon Add-on repository">
 		<dir>
@@ -19696,21 +19681,6 @@ level.</description>
   </extension>
 </addon>
 
-<addon id="service.FMupdater"
-       name="FMupdater service"
-       version="1.0.7"
-       provider-name="The-Vibe.co.il">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-	<import addon="repository.thevibe" version="2.0" optional="false"/>
-  </requires>
-  <extension point="xbmc.service" library="service.py" start="[login|startup]" />
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <summary lang="en">Upgrade Service For phenomenal Skin</summary>
-  </extension>
-</addon>
-
 <addon id="service.gdrive.3david" name="GDrive David3 Movies" version="1.0.0" provider-name="3David, TheWiz">
     <requires>
         <import addon="plugin.video.gdrive"/>
@@ -20575,36 +20545,6 @@ level.</description>
     <description lang="pt_BR">Eminence é uma skin que busca simplicidade, funcionalidade e costumização através de uma aparência moderna.</description>
     <platform>all</platform>
   </extension>
-</addon>
-
-<addon id="skin.phenomenal" name="Phenomenal" version="1.6.0" provider-name="tomer953">
-	<requires>
-		<import addon="xbmc.gui" version="5.9.0"/>
-		<import addon="script.skin.helper.service" version="1.0.0"/>
-		<import addon="script.skinshortcuts" version="0.6.6"/>
-		<import addon="script.artwork.downloader" version="12.0.20"/>
-		<!-- <import addon="script.favourites" version="5.0.0"/>
-		<import addon="script.artwork.downloader" version="12.0.20"/>
-		<import addon="script.globalsearch" version="1.1.1"/>
-		<import addon="service.library.data.provider" version="0.1.1"/>
-		<import addon="script.extendedinfo" version="3.0.0"/>
-		-->
-	</requires>
-	<extension point="xbmc.gui.skin" defaultthemename="Textures.xbt" effectslowdown="1" debugging="false">
-		<res width="1920" height="1080" aspect="16:9" default="true" folder="1080p"/>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Phenomenal - Perfection Made Simple</summary>
-		<summary lang="he">פנומנל - פשוט להגיע לשלמות</summary>
-		<description lang="en">Elegance, simplicity and professionalism are the skins guidelines. With Phenomenal you can enjoy all of kodi's newest and sophisticated features while still maintaining a clean and beautiful design</description>
-		<description lang="he">Phenomenal - אלגנטיות, פשטות ומקצועיות הם הקווים המנחים של הסקין, עם פנומנל תוכלו להינות משלל האפשרויות המתקדמות שקודי מציעה תוך שמירה על סקין נקי ויפיפה</description>
-		<platform>all</platform>
-		<license>Creative Commons Attribution-ShareAlike 3.0 license</license>
-		<forum>http://kodisrael.net</forum>
-		<website>http://phenomenal-skin.com</website>
-		<email></email>
-		<source></source>
-	</extension>
 </addon>
 
 <addon
