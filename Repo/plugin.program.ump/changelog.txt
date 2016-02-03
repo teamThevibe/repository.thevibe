@@ -1,3 +1,6 @@
+2016-02-03: moviesub: int(year), primewire: int(year), afdah: int(year),
+2016-02-03: 702pizle: dont run on series
+2016-01-31: ann: remove vote filter on browse by themes, latinise -, fix typo orginaltitle
 2016-01-31: cloudfare: fix cookie imposition, request domain before sending post data
 2016-01-31: addonxml: update website info http://ump.us.to
 2016-01-31: korenaturk: removed from provider list

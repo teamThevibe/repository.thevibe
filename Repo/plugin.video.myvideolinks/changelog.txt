@@ -1,3 +1,6 @@
+[B]Version 5.2.2[/B]
+- temp fix 030216
+
 [B]Version 5.2.1[/B]
 - temp fix 1
 

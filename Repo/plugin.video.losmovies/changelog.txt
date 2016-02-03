@@ -27,8 +27,7 @@ v1.16 - Fixed file error
 v1.17 - Added new host
 v1.18 - Updated for site changes
 v1.19 - added custom URL option
-v1.20 - URL Changed
-v1.21 - Updated base URL
-v1.22 - Fixed Favorites
-v1.23 - More Movie Categories Added.
-v1.24 - Updated Base URL
+v2.0  - Fixed changes to get back up and running
+v2.1  - Fixed URL redirect checker
+v2.2  - Fixed coder error for KODI
+v2.3  - Fixed site change with urls

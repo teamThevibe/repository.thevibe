@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<addon id="plugin.video.myvideolinks" version="5.2.1" name="Prime Links" provider-name="@MrEntertainRepo">
+<addon id="plugin.video.myvideolinks" version="5.2.2" name="Prime Links" provider-name="@MrEntertainRepo">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
     <import addon="script.module.t0mm0.common" version="2.1.1" />
