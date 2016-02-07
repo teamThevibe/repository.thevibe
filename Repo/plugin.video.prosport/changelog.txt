@@ -72,3 +72,7 @@ ver 0.22:
 	- fixed rawstreams
 	- added sd streams (can be disabled in settings). Thanks to Phoenix for code example!
 	- other bugfixes
+	
+ver 0.23:
+	- removed rawstreams (site is closed and just delays streams finding)
+	- fixed fake m3u link appears in streams

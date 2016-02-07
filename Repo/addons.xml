@@ -3721,25 +3721,28 @@ Plugin by @koderdude</description>
   </extension>
 </addon>
 
-<addon id="plugin.video.castaway" name="Castaway" version="0.0.7" provider-name="natko1412">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-    <import addon="script.module.beautifulsoup" version="3.2.1" />
-    <import addon="script.module.requests" />
-    <import addon="script.module.mechanize" />
-    <import addon="script.module.addon.common" version="2.0.0" />
-    <import addon="script.module.urlresolver" version="2.5.0" />
-    <import addon="script.module.liveresolver" />
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Just a castaway.</summary>
-    <description lang="en">Provides access to live content from many sites.</description>
-    <disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
-    <platform>all</platform>
-  </extension>
+<addon id="plugin.video.castaway" name="Castaway" version="0.0.8" provider-name="natko1412">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+		<import addon="script.module.beautifulsoup" version="3.2.1"/>
+		<import addon="script.module.requests"  />
+		<import addon="script.module.mechanize"  />
+    	<import addon="script.module.addon.common" />
+		<import addon="script.module.urlresolver" />
+		<import addon="script.module.liveresolver"  />
+
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Just a castaway.</summary>
+		<description lang="en">Visit TVADDONS.ag for support.
+		</description>
+		<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
+
+		<platform>all</platform>
+	</extension>
 </addon>
 
 <addon id="plugin.video.cccp.tv" name="CCCP TV" version="1.0.5" provider-name="HD-Lab Team">
@@ -4087,18 +4090,20 @@ Plus stream or download from over 70,000 live audio bootlegs from www.archive.or
   </extension>
 </addon>
 
-<addon id="plugin.video.cScVOD" name="[COLOR FF00FF00]cScVOD[/COLOR]" version="1.5.7" provider-name="CSC">
+<addon id="plugin.video.cScVOD"
+       name="[COLOR FF00FF00]cScVOD[/COLOR]"
+       version="2.0.0"
+       provider-name="CSC">
   <requires>
-    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="plugin.video.youtube"/>
   </requires>
   <extension point="xbmc.python.pluginsource" provides="video" library="addon.py">
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary>cScVOD</summary>
-    <description>
-БОЛЕЕ 70 САЙТОВ В ОДНОМ ПЛАГИНЕ!Все стоящие русскоязычные сайты с фильмами/мультиками/сериалами и т.д. В ОДНОМ АДДОНЕ. ОФициальный форум - cscvod.ru
-    </description>
+    <description>Удобный аддон с лучшими мультимедиа сайтами</description>
     <platform>all</platform>
   </extension>
 </addon>
@@ -4528,21 +4533,20 @@ All Credit to WebCoder for new build.
   </extension>
 </addon>
 
-<addon id="plugin.video.dss" name="Dutch Sports Streams" version="4.0.7" provider-name="DSS">
-  <requires>
-    <import addon="plugin.video.veetle" version="0.3.1" optional="false" />
-    <import addon="plugin.video.p2p-streams" version="1.1" optional="false" />
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="nl">Bekijk de streams van Nederlandse Sport Streamproviders op uw XBMC / Kodi.</summary>
-    <description lang="nl">Met deze plugin is het mogelijk om streams van Nederlandse stream providers te bekijken.[CR]Let op: Veetle dient te zijn geinstalleerd.</description>
-    <platform>all</platform>
-    <website>
-    </website>
-  </extension>
+<addon id="plugin.video.dss" name="Dutch Sports Streams" version="4.0.8" provider-name="DSS">
+	<requires>
+		<import addon="plugin.video.veetle" version="0.3.1" optional="false"/>
+		<import addon="plugin.video.p2p-streams" version="1.1" optional="false"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension  point="xbmc.addon.metadata">
+		<summary lang="nl">Bekijk de streams van Nederlandse Sport Streamproviders op uw XBMC / Kodi.</summary>
+		<description lang="nl">Met deze plugin is het mogelijk om streams van Nederlandse stream providers te bekijken.[CR]Let op: Veetle dient te zijn geinstalleerd.</description>
+		<platform>all</platform>
+		<website></website>
+	</extension>
 </addon>
 
 <addon id="plugin.video.DSVideos" name="..DroidSticks Help Centre" version="1.0.6" provider-name="Droidsticks / MetalKettle">
@@ -5014,17 +5018,17 @@ All Credit to WebCoder for new build.
   </extension>
 </addon>
 
-<addon id="plugin.video.featherence.music" name="Featherence Music" version="0.2.2" provider-name="finalmakerr, amir elgazar">
+<addon id="plugin.video.featherence.music" name="Featherence Music" version="0.2.3" provider-name="finalmakerr, amir elgazar">
   <requires>
-    <import addon="xbmc.python" version="2.1.0" />
+	<import addon="xbmc.python" version="2.1.0"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
     <provides>video audio</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
+	<platform>all</platform>
     <summary lang="en">_</summary>
-    <summary lang="he">_</summary>
+	<summary lang="he">_</summary>
     <description lang="en">Features:
 - Customized Menus: Support customized Fanart for each button.
 - Favourite Items: Add any valid existed item to My Kids button.
@@ -5036,7 +5040,7 @@ All Credit to WebCoder for new build.
 - Varied and unlimited contents: Support unlimited URLs per content from varied sources such as Youtube, Dailymotion, Dropbox, Kodi's addons, supported websites..
 - YouTube search: Search any contents from YouTube, history included.
     </description>
-    <description lang="he">מאפיינים:
+	<description lang="he">מאפיינים:
 - המוזיקה שלי: צור כפתורים משלך ע"י הזנת קישורים מיו-טיוב.
   בנוסף ניתן להוסיף לכפתורים: שם, תאור, תמונה, פאנארט ואפילו לשתף עם אנשים אחרים.
 - חיפוש יו-טיוב: מאפשר חיפוש תכנים מיו-טיוב, כולל רשימת היסטוריה.
@@ -5048,11 +5052,10 @@ All Credit to WebCoder for new build.
 - תפריטים אישיים: אפשרות ליצור פאנארט אישי לכל כפתור.
 	</description>
     <disclaimer>The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
-    <forum>
-    </forum>
-    <email>featherence@groups.facebook.com</email>
-    <source>https://github.com/finalmakerr/featherence/tree/master/master/plugin.video.featherence.music</source>
-    <website>https://www.facebook.com/groups/featherence/</website>
+	<forum></forum>
+	<email>featherence@groups.facebook.com</email>
+	<source>https://github.com/finalmakerr/featherence/tree/master/master/plugin.video.featherence.music</source>
+	<website>https://www.facebook.com/groups/featherence/</website>
   </extension>
 </addon>
 
@@ -5070,24 +5073,22 @@ All Credit to WebCoder for new build.
   </extension>
 </addon>
 
-<addon id="plugin.video.filmdictator" name="Film Dictator" version="2.0.3" provider-name="MetalKettle">
+<addon id="plugin.video.filmdictator" name="Film Dictator" version="2.0.4" provider-name="MetalKettle">
   <requires>
-    <import addon="script.module.simplejson" version="3.3.0" />
-    <import addon="xbmc.python" version="2.1.0" />
-    <import addon="script.module.t0mm0.common" version="2.0.0" />
-    <import addon="plugin.video.youtube" version="3.0.0" />
-    <import addon="script.module.urlresolver" version="2.1.2" />
-    <import addon="script.common.plugin.cache" version="2.5.2" />
-    <import addon="script.module.metahandler" version="2.5.1" />
+    <import addon="script.module.simplejson" version="3.3.0"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.t0mm0.common" version="2.0.0"/>
+    <import addon="plugin.video.youtube" version="3.0.0"/>
+    <import addon="script.module.urlresolver"  version="2.1.2"/>
+    <import addon="script.common.plugin.cache" version="2.5.2"/>
+    <import addon="script.module.metahandler" version="2.5.1"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
+        <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="en">
-    </summary>
-    <description lang="en">
-    </description>
+    <summary lang="en"></summary>
+    <description lang="en"></description>
     <platform>all</platform>
   </extension>
 </addon>
@@ -5427,12 +5428,12 @@ All Credit to WebCoder for new build.
   </extension>
 </addon>
 
-<addon id="plugin.video.freestreams" name="Free Streams" version="0.2.0" provider-name="Mikey1234">
+<addon id="plugin.video.freestreams" name="Free Streams" version="0.2.1" provider-name="Mikey1234">
   <requires>
-    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="xbmc.python" version="2.1.0"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
+        <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary lang="en">Free Streams</summary>
@@ -6080,24 +6081,22 @@ Donatello donations: http://donatellokodi.blogspot.co.il/2015/10/blog-post.html
   </extension>
 </addon>
 
-<addon id="plugin.video.hulubox" name="HuluBox" version="1.0.8" provider-name="MetalKettle">
+<addon id="plugin.video.hulubox" name="HuluBox" version="1.0.10" provider-name="MetalKettle">
   <requires>
-    <import addon="script.module.simplejson" version="3.3.0" />
-    <import addon="xbmc.python" version="2.1.0" />
-    <import addon="script.module.t0mm0.common" version="2.0.0" />
-    <import addon="plugin.video.youtube" version="3.0.0" />
-    <import addon="script.module.urlresolver" version="2.1.2" />
-    <import addon="script.common.plugin.cache" version="2.5.2" />
-    <import addon="script.module.metahandler" version="2.5.1" />
+    <import addon="script.module.simplejson" version="3.3.0"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.t0mm0.common" version="2.0.0"/>
+    <import addon="plugin.video.youtube" version="3.0.0"/>
+    <import addon="script.module.urlresolver"  version="2.1.2"/>
+    <import addon="script.common.plugin.cache" version="2.5.2"/>
+    <import addon="script.module.metahandler" version="2.5.1"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
+        <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="en">
-    </summary>
-    <description lang="en">
-    </description>
+    <summary lang="en"></summary>
+    <description lang="en"></description>
     <platform>all</platform>
   </extension>
 </addon>
@@ -6123,27 +6122,21 @@ Donatello donations: http://donatellokodi.blogspot.co.il/2015/10/blog-post.html
 
 <addon id="plugin.video.hushamiptv" name="Husham IPTV TV" version="1.0.3" provider-name="xunitytalk.com">
   <requires>
-    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="xbmc.python" version="2.1.0"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
+        <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary lang="en">Husham IPTV TV</summary>
     <description lang="en">Husham IPTV TV is an IP television over the internet without satellite dish or cable.[CR]For more information, visit [COLOR blue]http://iptv.husham.com[/COLOR]</description>
     <platform>all</platform>
-    <language>
-    </language>
-    <license>
-    </license>
-    <forum>
-    </forum>
-    <website>
-    </website>
-    <source>
-    </source>
-    <email>
-    </email>
+	<language></language>
+	<license></license>
+	<forum></forum>
+	<website></website>
+	<source></source>
+	<email></email>
   </extension>
 </addon>
 
@@ -6426,20 +6419,24 @@ Donatello donations: http://donatellokodi.blogspot.co.il/2015/10/blog-post.html
   </extension>
 </addon>
 
-<addon id="plugin.video.iltwenty" name="ערוץ 20" version="1.0.2" provider-name="xbmc-israel team ([COLOR white]x[/COLOR][COLOR blue]b[/COLOR][COLOR white]m[/COLOR][COLOR blue]c[/COLOR]-[COLOR white]i[/COLOR][COLOR blue]s[/COLOR][COLOR white]r[/COLOR][COLOR blue]a[/COLOR][COLOR white]e[/COLOR][COLOR blue]l[/COLOR] repo)">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Watch Channel 20 Videos</summary>
-    <description lang="en">Watch Channel 20 Video content from Channel 20 website.</description>
-    <summary lang="he">צפיה בתכנים מאתר ערוץ 20</summary>
-    <description lang="he">צפיה בתכנים מאתר ערוץ 20.</description>
-    <platform>all</platform>
-  </extension>
+<addon id="plugin.video.iltwenty"
+       name="ערוץ 20"
+       version="1.0.3"
+       provider-name="xbmc-israel team ([COLOR white]x[/COLOR][COLOR blue]b[/COLOR][COLOR white]m[/COLOR][COLOR blue]c[/COLOR]-[COLOR white]i[/COLOR][COLOR blue]s[/COLOR][COLOR white]r[/COLOR][COLOR blue]a[/COLOR][COLOR white]e[/COLOR][COLOR blue]l[/COLOR] repo)">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+		<import addon="repository.xbmc-israel" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Watch Channel 20 Videos</summary>
+		<description lang="en">Watch Channel 20 Video content from Channel 20 website.</description>
+		<summary lang="he">צפיה בתכנים מאתר ערוץ 20</summary>
+		<description lang="he">צפיה בתכנים מאתר ערוץ 20.</description>
+		<platform>all</platform>
+	</extension>
 </addon>
 
 <addon id="plugin.video.imdb" name="[COLOR FFE8C233]IMDB[/COLOR] viewer" version="1.0.4"
@@ -6907,18 +6904,18 @@ http://www.IPTVxtra.net</description>
   </extension>
 </addon>
 
-<addon id="plugin.video.irish.tv" name="Irish TV" version="0.2.3" provider-name="Mikey1234">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <language>en</language>
-    <platform>all</platform>
-    <summary>Irish TV Live</summary>
-  </extension>
+<addon id="plugin.video.irish.tv" name="Irish TV" version="0.2.4" provider-name="Mikey1234">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+	<language>en</language>
+        <platform>all</platform>
+        <summary>Irish TV Live</summary>
+    </extension>
 </addon>
 
 <addon id="plugin.video.israelive" name="[COLOR white]Israe[/COLOR][COLOR blue]L[/COLOR][COLOR white]IVE[/COLOR]" version="4.7.1" provider-name="Benny123, Avigdor (xbmc-israel repo)">
@@ -7428,14 +7425,12 @@ Donatello donations: http://donatellokodi.blogspot.co.il/2015/10/blog-post.html
   </extension>
 </addon>
 
-<addon id="plugin.video.kinoxa-x.ru" name="[COLOR FFcFFF48]Kinoxa-X.ru[/COLOR]" version="0.5.5" provider-name="Silhouette">
+<addon id="plugin.video.kinoxa-x.ru" name="[COLOR FFcFFF48]Kinoxa-X.ru[/COLOR]" version="0.6.0" provider-name="Silhouette">
   <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-    <import addon="script.module.beautifulsoup" version="3.0.8" />
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.0.8"/>
   </requires>
-  <extension point="xbmc.python.pluginsource" provides="video" library="default.py">
-    <provides>video</provides>
-  </extension>
+  <extension point="xbmc.python.pluginsource"  provides="video" library="default.py"><provides>video</provides></extension>
   <extension point="xbmc.addon.metadata">
     <summary>KINOXA-X.RU у нас Вы можите смотреть кино онлайн</summary>
     <description>Добро пожаловать в лучший онлайн кинотеатр KINOXA-X.RU у нас Вы можите смотреть кино онлайн. Выберите фильм любого жанра и наслаждайтесь просмотром</description>
@@ -7962,10 +7957,13 @@ Donatello donations: http://donatellokodi.blogspot.co.il/2015/10/blog-post.html
     </extension>
 </addon>
 
-<addon id="plugin.video.MakoTV" name="MakoTV (web)" version="1.1.2" provider-name="xbmc-israel team ([COLOR white]x[/COLOR][COLOR blue]b[/COLOR][COLOR white]m[/COLOR][COLOR blue]c[/COLOR]-[COLOR white]i[/COLOR][COLOR blue]s[/COLOR][COLOR white]r[/COLOR][COLOR blue]a[/COLOR][COLOR white]e[/COLOR][COLOR blue]l[/COLOR] repo)">
+<addon id="plugin.video.MakoTV"
+       name="MakoTV (web)"
+       version="1.1.3"
+       provider-name="xbmc-israel team ([COLOR white]x[/COLOR][COLOR blue]b[/COLOR][COLOR white]m[/COLOR][COLOR blue]c[/COLOR]-[COLOR white]i[/COLOR][COLOR blue]s[/COLOR][COLOR white]r[/COLOR][COLOR blue]a[/COLOR][COLOR white]e[/COLOR][COLOR blue]l[/COLOR] repo)">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>
-
+		<import addon="repository.xbmc-israel" />
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
@@ -8373,10 +8371,13 @@ Donatello donations: http://donatellokodi.blogspot.co.il/2015/10/blog-post.html
   </extension>
 </addon>
 
-<addon id="plugin.video.mobdro" name="Mobdro" version="1.05" provider-name="AddonHacker">
+<addon id="plugin.video.mobdro"
+	name="Mobdro"
+	version="1.05"
+	provider-name="AddonHacker">
   <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-    <import addon="plugin.video.youtube" version="3.0.0" />
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="plugin.video.youtube" version="3.0.0"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
     <provides>video</provides>
@@ -8841,24 +8842,24 @@ Donatello donations: http://donatellokodi.blogspot.co.il/2015/10/blog-post.html
   </extension>
 </addon>
 
-<addon id="plugin.video.myvideolinks" version="5.2.2" name="Prime Links" provider-name="@MrEntertainRepo">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-    <import addon="script.module.t0mm0.common" version="2.1.1" />
-    <import addon="script.module.urlresolver" version="2.0.9" />
-    <import addon="script.module.simplejson" version="3.3.0" />
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary>Stream Films from Prime Links</summary>
-    <description>Stream a wide selection of movies and tv shows from Prime Links great 3D 1080p mp4 and mkv old and new movies.. For more info go to www.entertainmentrepo.com.</description>
-    <platform>all</platform>
-    <forum>http://entertainmentrepo.com/</forum>
-    <website>http://entertainmentrepo.com/</website>
-    <disclaimer lang="en">All the movies on this website are hosted on the third party sites and uploaded by other people. We are not responsible for any content that hosted on on the third-party sites. If you have any legal issues please contact appropriate video owners hosters.</disclaimer>
-  </extension>
+<addon id="plugin.video.myvideolinks" version="5.2.4" name="Prime Links" provider-name="@MrEntertainRepo">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.module.t0mm0.common" version="2.1.1"/>
+        <import addon="script.module.urlresolver"  version="2.0.9"/>
+        <import addon="script.module.simplejson" version="3.3.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Stream Films from Prime Links</summary>
+        <description>Stream a wide selection of movies and tv shows from Prime Links great 3D 1080p mp4 and mkv old and new movies.. For more info go to www.entertainmentrepo.com.</description>
+        <platform>all</platform>
+	 <forum>http://entertainmentrepo.com/</forum>
+	 <website>http://entertainmentrepo.com/</website>
+        <disclaimer lang="en">All the movies on this website are hosted on the third party sites and uploaded by other people. We are not responsible for any content that hosted on on the third-party sites. If you have any legal issues please contact appropriate video owners hosters.</disclaimer>
+    </extension>
 </addon>
 
 <addon id="plugin.video.myyoutube" name="My YouTube" version="1.0.2" provider-name=".[COLOR blue]X[/COLOR]unity[COLOR blue]T[/COLOR]alk">
@@ -9005,14 +9006,12 @@ Donatello donations: http://donatellokodi.blogspot.co.il/2015/10/blog-post.html
   </extension>
 </addon>
 
-<addon id="plugin.video.new-kino.net" name="[COLOR FF37C6FD]New-Kino.net[/COLOR]" version="0.9.0" provider-name="Silhouette">
+<addon id="plugin.video.new-kino.net" name="[COLOR FF37C6FD]New-Kino.net[/COLOR]" version="0.9.1" provider-name="Silhouette">
   <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-    <import addon="script.module.beautifulsoup" version="3.0.8" />
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.0.8"/>
   </requires>
-  <extension point="xbmc.python.pluginsource" provides="video" library="default.py">
-    <provides>video</provides>
-  </extension>
+  <extension point="xbmc.python.pluginsource"  provides="video" library="default.py"><provides>video</provides></extension>
   <extension point="xbmc.addon.metadata">
     <summary>new-kino.net - фильмы, мультфильмы, сериалы</summary>
     <description>new-kino.net - фильмы, мультфильмы, сериалы - круглосуточно на нашем сайте, смотрите, наслаждайтесь и отдыхайте</description>
@@ -9499,12 +9498,12 @@ JS</description>
   <extension point="xbmc.service" library="service.py" start="login" />
 </addon>
 
-<addon id="plugin.video.pakindia" name="Pak India Live" version="0.2.7" provider-name="Mikey1234">
+<addon id="plugin.video.pakindia" name="Pak India Live" version="0.2.8" provider-name="Mikey1234">
   <requires>
-    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="xbmc.python" version="2.1.0"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
+        <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary lang="en">Pak India Live</summary>
@@ -9579,23 +9578,32 @@ JS</description>
   </extension>
 </addon>
 
-<addon id="plugin.video.pftvso" name="ProjectFreeTV.so" version="0.3.3" provider-name="natko1412">
+<addon id="plugin.video.pftvso"
+	name="ProjectFreeTV.so"
+	version="0.3.4"
+	provider-name="natko1412">
   <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-    <import addon="script.module.beautifulsoup" version="3.2.1" />
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
     <import addon="script.module.urlresolver" version="2.5.0" />
     <import addon="script.module.metahandler" />
-    <import addon="script.module.simple.downloader" version="1.9.5" />
-    <import addon="script.module.axel.downloader" version="0.2.0" optional="true" />
+    <import addon="script.module.simple.downloader" version="1.9.5"/>
+
+    <import addon="script.module.axel.downloader" version="0.2.0" optional="true"/>
+
+
+
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary>Watch movies and TV Shows available at projectfreetv.so</summary>
-    <description>Watch movies and TV Shows available at projectfreetv.so</description>
+        <description>Watch movies and TV Shows available at projectfreetv.so</description>
+
     <platform>all</platform>
     <forum>forums.tvaddons.ag</forum>
+
   </extension>
 </addon>
 
@@ -9802,7 +9810,7 @@ I hope you like this!
   </extension>
 </addon>
 
-<addon id="plugin.video.prosport" name="Pro Sport" version="0.22" provider-name="gerikss, podgod">
+<addon id="plugin.video.prosport" name="Pro Sport" version="0.23" provider-name="gerikss, podgod">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
   </requires>
@@ -9995,7 +10003,7 @@ I hope you like this!
   </extension>
 </addon>
 
-<addon id="plugin.video.releaseBB" version="0.4.8" name="Release[COLOR orange][B]BB[/B][/COLOR]" provider-name="Mr Entertainment">
+<addon id="plugin.video.releaseBB" version="0.5.0" name="Release[COLOR orange][B]BB[/B][/COLOR]" provider-name="@MrEntertainRepo">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
         <import addon="script.module.t0mm0.common" version="2.1.1"/>
@@ -10007,9 +10015,10 @@ I hope you like this!
     </extension>
     <extension point="xbmc.addon.metadata">
         <summary>Browse Release[COLOR orange][B]BB[/B][/COLOR]</summary>
-        <description>Stream a wide selection of scene release movies and Tv shows from releaseBB.... [COLOR red][B][I]YOU will need a real-debrid or a alldebrid account[/B][/I][/COLOR]</description>
+        <description>Stream a wide selection of scene release movies and Tv shows from releaseBB.... [COLOR red][B][I]YOU will need a real-debrid or a alldebrid account for this add-on[/B][/I][/COLOR] more info at www.entertainmentrepo.com</description>
         <platform>all</platform>
-        <disclaimer lang="en">[COLOR red][B][I]Mr Entertainment[/B][/I][/COLOR]</disclaimer>
+        <disclaimer lang="en">All the movies on this website are hosted on the third party sites and uploaded by other people. We are not responsible for any content that hosted on on the third-party sites. If you have any legal issues please contact appropriate video owners hosters.</disclaimer>
+        <website>www.entertainmentrepo.com</website>
     </extension>
 </addon>
 
@@ -10357,23 +10366,23 @@ RuTube - отличная стартовая площадка для незав�
 </addon>
 
 <!--suppress ALL -->
-<addon id="plugin.video.salts" version="1.0.111" name="Stream All The Sources" provider-name="tknorris">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-    <import addon="script.module.urlresolver" version="2.2.0" />
-    <import addon="script.module.myconnpy" version="1.1.6" />
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.service" library="service.py" start="startup" />
-  <extension point="xbmc.addon.metadata">
-    <summary>Stream video from many difference sources</summary>
-    <description>This addon uses trakt.tv for most show and movie meta data and uses a variety of websites for hoster sources</description>
-    <platform>all</platform>
-    <website>http://tvaddons.ag/</website>
-    <forum>http://forums.tvaddons.ag/forums/180-TKNORRIS-RELEASE-REPOSITORY</forum>
-  </extension>
+<addon id="plugin.video.salts" version="1.0.115" name="Stream All The Sources" provider-name="tknorris">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.module.urlresolver" version="2.2.0"/>
+        <import addon="script.module.myconnpy" version="1.1.6" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+     <extension point="xbmc.service" library="service.py" start="startup"/>
+    <extension point="xbmc.addon.metadata">
+        <summary>Stream video from many difference sources</summary>
+        <description>This addon uses trakt.tv for most show and movie meta data and uses a variety of websites for hoster sources</description>
+        <platform>all</platform>
+        <website>http://tvaddons.ag/</website>
+		<forum>http://forums.tvaddons.ag/forums/180-TKNORRIS-RELEASE-REPOSITORY</forum>
+	</extension>
 </addon>
 
 <addon id="plugin.video.sbs3d" name="3D-SBS" version="1.0.0" provider-name="Hybrid">
@@ -10749,7 +10758,7 @@ RuTube - отличная стартовая площадка для незав�
 
 </addon>
 
-<addon id="plugin.video.SoapCatchup" name="Soap Catchup" version="1.0.5" provider-name="MetalKettle">
+<addon id="plugin.video.SoapCatchup" name="Soap Catchup" version="1.0.6" provider-name="MetalKettle">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>
 		<import addon="script.module.urlresolver"  version="2.1.2"/>
@@ -11147,16 +11156,16 @@ RuTube - отличная стартовая площадка для незав�
     </extension>
 </addon>
 
-<addon id="plugin.video.streamtvbox" name="StreamTVBox" version="3.3.9" provider-name="Mikey1234">
+<addon id="plugin.video.streamtvbox" name="StreamTVBox" version="3.4.0" provider-name="Mikey1234">
   <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-    <import addon="script.module.t0mm0.common" version="0.0.1" />
-    <import addon="plugin.video.footballreplays" version="0.0.1" />
-    <import addon="script.module.urlresolver" version="0.0.1" />
-    <import addon="script.module.requests" version="0.0.1" />
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.t0mm0.common" version="0.0.1"/>
+    <import addon="plugin.video.footballreplays" version="0.0.1"/>
+    <import addon="script.module.urlresolver" version="0.0.1"/>
+    <import addon="script.module.requests" version="0.0.1"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
+        <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary lang="en">Streamtvbox Streams</summary>
@@ -12434,18 +12443,18 @@ Donatello donations: http://donatellokodi.blogspot.co.il/2015/10/blog-post.html
   </extension>
 </addon>
 
-<addon id="plugin.video.ukturk" name="UK Turk Playlists" version="2.0.4" provider-name="MetalKettle">
+<addon id="plugin.video.ukturk" name="UK Turk Playlists" version="2.0.7" provider-name="MetalKettle">
   <requires>
-    <import addon="script.module.simplejson" version="3.3.0" />
-    <import addon="xbmc.python" version="2.1.0" />
-    <import addon="script.module.t0mm0.common" version="2.0.0" />
-    <import addon="plugin.video.youtube" version="3.0.0" />
-    <import addon="script.module.urlresolver" version="2.1.2" />
-    <import addon="script.common.plugin.cache" version="2.5.2" />
-    <import addon="script.module.metahandler" version="2.5.1" />
+    <import addon="script.module.simplejson" version="3.3.0"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.t0mm0.common" version="2.0.0"/>
+    <import addon="plugin.video.youtube" version="3.0.0"/>
+    <import addon="script.module.urlresolver"  version="2.1.2"/>
+    <import addon="script.common.plugin.cache" version="2.5.2"/>
+    <import addon="script.module.metahandler" version="2.5.1"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
+        <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary lang="en">Free Playlists courtesy of @uk_turk</summary>
@@ -12631,41 +12640,40 @@ Donatello donations: http://donatellokodi.blogspot.co.il/2015/10/blog-post.html
     </extension>
 </addon>
 
-<addon id="plugin.video.ustvnow.tva" name="USTVnow Live" provider-name="tvaddons.ag" version="11.0.5">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-    <import addon="script.module.pyxbmctmanager" />
-    <import addon="script.module.beautifulsoup" />
-  </requires>
-  <extension library="default.py" point="xbmc.python.pluginsource">
-    <provides>video</provides>
-  </extension>
-  <extension library="setup.py" point="xbmc.python.script">
-    <provides>executable</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary>Watch All the Major American Television Networks Live in HD for Free!</summary>
-    <description>Watch All the Major American Television Networks Live in HD! Entirely Legal and Free! You can also record content through their web site, and there is an optional premium service available with all kinds of other channels. Signup for a free account through the following link today: http://www.ustvnow.com/newuser_usa.php</description>
-    <platform>all</platform>
-    <forum>http://forums.tvaddons.ag/forums/149-USTVNOW-PLUGIN-FOR-KODI</forum>
-    <website>http://www.ustvnow.com/</website>
-  </extension>
+<addon id="plugin.video.ustvnow.tva" name="USTVnow Plus" provider-name="mhancoc7" version="14.0.9">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0" />
+    </requires>
+    <extension library="main.py" point="xbmc.python.pluginsource">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Watch All the Major American Television Networks Live in HD for Free!</summary>
+        <description>Watch All the Major American Television Networks Live in HD! Entirely Legal and Free! You can also record content through their web site, and there is an optional premium service available with all kinds of other channels. Signup for a free account through the following link today: http://watch.ustvnow.com</description>
+        <platform>all</platform>
+        <forum>https://forums.tvaddons.ag/ustvnow-plugin-for-kodi/</forum>
+        <website>http://watch.ustvnow.com/</website>
+    </extension>
 </addon>
 
-<addon id="plugin.video.uwc" name="Ultimate Whitecream" version="1.0.82" provider-name="mortael">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <license>GPL 2.0</license>
-    <summary lang="en">Watch [COLOR red][B]ADULT[/B][/COLOR] Movies with Ultimate WhiteCream</summary>
-    <description lang="en">Watch [COLOR red][B]ADULT[/B][/COLOR] Movies with Ultimate WhiteCream</description>
-    <disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
-  </extension>
+<addon id="plugin.video.uwc"
+       name="Ultimate Whitecream"
+       version="1.0.84"
+       provider-name="mortael">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource"
+               library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <license>GPL 2.0</license>
+        <summary lang="en">Watch [COLOR red][B]ADULT[/B][/COLOR] Movies with Ultimate WhiteCream</summary>
+        <description lang="en">Watch [COLOR red][B]ADULT[/B][/COLOR] Movies with Ultimate WhiteCream</description>
+		<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
+    </extension>
 </addon>
 
 <addon id="plugin.video.vdubt" name="Vdubt25" version="0.1.3" provider-name="Mikey1234">
@@ -12857,7 +12865,7 @@ Donatello donations: http://donatellokodi.blogspot.co.il/2015/10/blog-post.html
     </extension>
 </addon>
 
-<addon id="plugin.video.viewmovies" name="ViewMovies" version="1.0.3" provider-name="MetalKettle">
+<addon id="plugin.video.viewmovies" name="ViewMovies" version="1.0.4" provider-name="MetalKettle">
   <requires>
     <import addon="script.module.simplejson" version="3.3.0"/>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -12918,7 +12926,7 @@ Donatello donations: http://donatellokodi.blogspot.co.il/2015/10/blog-post.html
   </extension>
 </addon>
 
-<addon id="plugin.video.vod.9movies" name="9movies" version="1.0.1" provider-name="anhlon">
+<addon id="plugin.video.vod.9movies" name="9movies" version="1.0.2" provider-name="anhlon">
 	<requires>
 		<import addon="xbmc.python" version="2.7.0"/>
 		<import addon="script.module.framework" version="1.4"/>
@@ -14114,11 +14122,11 @@ XBMC HUB: j.mp/xbmctorrent]]></description>
 	</extension>
 </addon>
 
-<addon id="repository.aj-addons" name="aj add-ons (new look)" version="2.0.1" provider-name="ajdeveloped">
-	<extension point="xbmc.addon.repository" name="AJ ADD-ONs (NEW LOOK)">
-		<info compressed="false">http://offshoregit.com/ajdeveloped/addons.xml</info>
-			<checksum>http://offshoregit.com/ajdeveloped/addons.xml.md5</checksum>
-			<datadir zip="true">http://offshoregit.com/ajdeveloped/</datadir>
+<addon id="repository.aj-addons" name="aj add-ons" version="2.1.0" provider-name="ajdeveloped">
+	<extension point="xbmc.addon.repository" name="AJ ADD-ONs">
+		<info compressed="false">https://offshoregit.com/ajaddons/prod/repo/addons.xml</info>
+			<checksum>https://offshoregit.com/ajaddons/prod/repo/addons.xml.md5</checksum>
+			<datadir zip="true">https://offshoregit.com/ajaddons/prod/repo/</datadir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>Install AJ ADD-ONs with new look and fastest of all.</summary>
@@ -14668,20 +14676,20 @@ XBMC HUB: j.mp/xbmctorrent]]></description>
 	</extension>
 </addon>
 
-<addon id="repository.metalkettle" name="MetalKettle Add-on Repository" version="1.6.3" provider-name="MetalKettle">
-	<extension point="xbmc.addon.repository" name="MetalKettle Add-on Repository">
-		<dir>
-			<info compressed="false">http://raw.github.com/metalkettle/MetalKettles-Addon-Repository/master/addons.xml</info>
-			<checksum>http://raw.github.com/metalkettle/MetalKettles-Addon-Repository/master/addons.xml.md5</checksum>
-			<datadir zip="true">http://raw.github.com/metalkettle/MetalKettles-Addon-Repository/master/zips</datadir>
-		</dir>
-		<info compressed="false">https://offshoregit.com/metalkettle/addons.xml</info>
-		<checksum>https://offshoregit.com/metalkettle/addons.xml.md5</checksum>
-		<datadir zip="true">https://offshoregit.com/metalkettle/zips</datadir>
+<addon id="repository.metalkettle" name="MetalKettles Addon Repository" version="1.7.0" provider-name="MetalKettle">
+	<extension point="xbmc.addon.repository" name="MetalKettles Addon Repository">
+	<dir>
+		<info compressed="false">https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/addons.xml</info>
+		<checksum>https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/zips/</datadir>
+	</dir>
+		<info compressed="false">http://offshoregit.com/metalkettle/addons.xml</info>
+		<checksum>http://offshoregit.com/metalkettle/addons.xml.md5</checksum>
+		<datadir zip="true">http://offshoregit.com/metalkettle/zips/</datadir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Install Add-ons from MetalKettle</summary>
-		<description lang="en">Download and install add-ons from the MetalKettle Repository.</description>
+		<summary>Install my Addons</summary>
+		<description>Download and install addons from MetalKettle</description>
 		<platform>all</platform>
 	</extension>
 </addon>
@@ -16247,25 +16255,24 @@ If for any reason the check of a successful wake-up via ping is not possible or 
 	</extension>
 </addon>
 
-<addon id="script.featherence.service" name="Featherence Service" version="0.1.36" provider-name="finalmakerr">
+<addon id="script.featherence.service" name="Featherence Service" version="0.1.38" provider-name="finalmakerr">
   <requires>
-    <import addon="xbmc.json" version="6.0.0" />
-    <import addon="xbmc.python" version="2.1.0" />
+	<import addon="xbmc.json" version="6.0.0"/>
+	<import addon="xbmc.python" version="2.1.0"/>
   </requires>
-  <extension point="xbmc.python.script" library="default.py" />
-  <extension point="xbmc.service" library="service.py" start="startup" />
+  <extension point="xbmc.python.script" library="default.py"/>
+  <extension point="xbmc.service" library="service.py" start="startup"/>
   <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
+	<platform>all</platform>
     <summary lang="en">Developer ToolKit</summary>
-    <summary lang="he">כלים למפתחים</summary>
+	<summary lang="he">כלים למפתחים</summary>
     <description lang="en">_</description>
-    <description lang="he">_</description>
+	<description lang="he">_</description>
     <disclaimer>Dear developers: Feel free to use this addon to fit your needs.</disclaimer>
-    <email>featherence@groups.facebook.com</email>
-    <forum>
-    </forum>
-    <source>https://github.com/finalmakerr/featherence/tree/master/master/script.featherence.service</source>
-    <website>https://www.facebook.com/groups/featherence/</website>
+	<email>featherence@groups.facebook.com</email>
+	<forum></forum>
+	<source>https://github.com/finalmakerr/featherence/tree/master/master/script.featherence.service</source>
+	<website>https://www.facebook.com/groups/featherence/</website>
   </extension>
 </addon>
 
@@ -17088,19 +17095,22 @@ provider-name="Roman_V_M">
   <extension point='xbmc.python.module'/>
 </addon>
 
-<addon id="script.module.liveresolver" name="LiveResolver" version="0.1.20" provider-name="natko1412">
+<addon id="script.module.liveresolver"
+     name="LiveResolver"
+     version="0.1.21"
+     provider-name="natko1412">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
-    <import addon="script.module.beautifulsoup" version="3.2.1" />
-    <import addon="script.module.requests" />
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.requests"/>
     <import addon="script.module.addon.common" version="2.0.0" />
+
   </requires>
   <extension point="xbmc.python.module" library="lib" />
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
     <summary lang="en">Resolve common live video host URL's to be playable in XBMC/Kodi + find links embeded in sites.</summary>
-    <description lang="en">
-    </description>
+    <description lang="en"></description>
   </extension>
 </addon>
 
@@ -18889,46 +18899,45 @@ level.</description>
   </extension>
 </addon>
 
-<addon id="script.skin.helper.service" name="Skin Helper Service" version="1.0.37" provider-name="marcelveldt">
-  <requires>
-    <import addon="xbmc.python" version="2.13.0" />
-    <import addon="xbmc.addon" version="12.0.0" />
-    <import addon="script.module.pil" version="1.1.7" />
-    <import addon="script.module.requests" version="2.3.0" />
-    <import addon="script.module.simplejson" version="3.3.0" />
-    <import addon="script.module.beautifulsoup" version="3.0.8" />
-  </requires>
-  <extension point="xbmc.python.library" library="default.py" />
-  <extension point="xbmc.python.pluginsource" library="plugin.py">
-    <provides>video</provides>
-  </extension>
-  <extension library="service.py" point="xbmc.service" start="login" />
-  <extension point="kodi.context.item" library="contextmenu_serieslevel.py">
-    <item>
-      <label>32072</label>
-      <description>Display Series level button in next/recent/in progress episodes listings</description>
-      <visible>Container.Content(episodes) + !StringCompare(Container.ListItem(0).TvShowTitle,Container.ListItem(1).TvShowTitle)</visible>
-    </item>
-  </extension>
-  <extension point="kodi.context.item" library="contextmenu_artwork.py">
-    <item>
-      <label>32143</label>
-      <description>PVR and Music artwork Configuration</description>
-      <visible>[[Window.IsActive(MyPVRChannels.xml) | Window.IsActive(MyPVRGuide.xml) | Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRTimers.xml) | Window.IsActive(MyPVRSearch.xml)] + Skin.HasSetting(SkinHelper.EnablePVRThumbs)] | [Container.Content(albums) | Container.Content(artists) | Container.Content(songs)]</visible>
-    </item>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Helper service for Kodi skins</summary>
-    <description>Helper service for Kodi skins</description>
-    <language>
-    </language>
-    <platform>all</platform>
-    <license>GPL v2.0</license>
-    <forum>http://forum.kodi.tv/showthread.php?tid=235676</forum>
-    <website>
-    </website>
-    <source>https://github.com/marcelveldt/script.skin.helper.service</source>
-  </extension>
+	<addon id="script.skin.helper.service" name="Skin Helper Service" version="1.0.39" provider-name="marcelveldt">
+	<requires>
+		<import addon="xbmc.python" version="2.13.0"/>
+		<import addon="xbmc.addon" version="12.0.0"/>
+		<import addon="script.module.pil" version="1.1.7"/>
+		<import addon="script.module.requests" version="2.3.0"/>
+        <import addon="script.module.simplejson" version="3.3.0"/>
+        <import addon="script.module.beautifulsoup" version="3.0.8" />
+	</requires>
+
+    <extension point="xbmc.python.library" library="default.py" />
+	<extension point="xbmc.python.pluginsource" library="plugin.py">
+		<provides>video</provides>
+	</extension>
+	<extension library="service.py" point="xbmc.service" start="login" />
+	<extension point="kodi.context.item" library="contextmenu_serieslevel.py">
+		<item>
+			<label>32072</label>
+            <description>Display Series level button in next/recent/in progress episodes listings</description>
+			<visible>Container.Content(episodes) + !StringCompare(Container.ListItem(0).TvShowTitle,Container.ListItem(1).TvShowTitle)</visible>
+		</item>
+	</extension>
+    <extension point="kodi.context.item" library="contextmenu_artwork.py">
+		<item>
+			<label>32143</label>
+            <description>PVR and Music artwork Configuration</description>
+            <visible>[[Window.IsActive(MyPVRChannels.xml) | Window.IsActive(MyPVRGuide.xml) | Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRTimers.xml) | Window.IsActive(MyPVRSearch.xml)] + Skin.HasSetting(SkinHelper.EnablePVRThumbs)] | [Container.Content(albums) | Container.Content(artists) | Container.Content(songs)]</visible>
+		</item>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Helper service for Kodi skins</summary>
+        <description>Helper service for Kodi skins</description>
+		<language></language>
+		<platform>all</platform>
+		<license>GPL v2.0</license>
+		<forum>http://forum.kodi.tv/showthread.php?tid=235676</forum>
+		<website></website>
+		<source>https://github.com/marcelveldt/script.skin.helper.service</source>
+	</extension>
 </addon>
 
 <addon id="script.skin.info.service" name="Skin Info Service" version="1.0.1" provider-name="phil65">
@@ -19166,10 +19175,10 @@ level.</description>
 
 <addon id="script.torrent-tv.ru"
        name="Torrent-TV XBMC"
-       version="1.5.4"
+       version="1.5.5"
        provider-name="Torrent-TV">
     <requires>
-      <import addon="xbmc.python" version="2.1.0" />
+		  <import addon="xbmc.python" version="2.1.0" />
       <import addon="script.module.beautifulsoup"/>
     </requires>
     <extension point="xbmc.python.script" library="default.py">
@@ -20524,7 +20533,7 @@ level.</description>
 
 <addon
   id="skin.dss.dctv"
-  version="1.0.0"
+  version="1.0.1"
   name="DSS Skin"
   provider-name="DSS">
   <requires>

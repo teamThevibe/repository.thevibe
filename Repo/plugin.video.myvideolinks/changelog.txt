@@ -1,3 +1,6 @@
+[B]Version 5.2.4[/B]
+- code clean up
+
 [B]Version 5.2.2[/B]
 - temp fix 030216
 

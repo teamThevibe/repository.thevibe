@@ -1,3 +1,14 @@
+[B]Version 1.0.84[/B]
+Fixed: Videomega playback
+Fixed: Pornhive
+
+
+[B]Version 1.0.83[/B]
+Added: CzechHD
+Added: Webcam image refresh in Favorites listing
+Changed: Chaturbate listing
+
+
 [B]Version 1.0.82[/B]
 Added: You can now add/use keywords for every site with a search function
 
