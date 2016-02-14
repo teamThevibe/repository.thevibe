@@ -2632,6 +2632,25 @@ Erst dort findest du den Button um die AS in dein System zu kopieren, danach mus
   </extension>
 </addon>
 
+<addon id="plugin.program.senyorwizard" name="senyor wizard" version="1.0.5" provider-name="Kodi Senyor">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">senyor wizard</summary>
+    <description lang="en">Easy Install Full KODI Build.</description>
+    <description lang="he">התקנת קודי עם כל ההרחבות הכי טובות בקליק אחד</description>
+    <disclaimer lang="en">Visit Abeksis.com for more info.</disclaimer>
+    <disclaimer lang="he">בקרו באתר http://kodi-senyor.co.il</disclaimer>
+    <source>http://kodi-senyor.co.il</source>
+    <website>http://kodi-senyor.co.il</website>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="plugin.program.simplytbe" name="SIMPLY-TB EVER WIZARD" version="1.1" provider-name="simplyTB ever and husham.com">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
@@ -3213,7 +3232,10 @@ http://aaastream.com</description>
   </extension>
 </addon>
 
-<addon id="plugin.video.anarchitv" name="[COLOR yellow]AnarchiTV[/COLOR]" version="1.0.4" provider-name="kodi senyor">
+<addon id="plugin.video.anarchitv"
+       name="[COLOR yellow]AnarchiTV[/COLOR]"
+       version="1.0.5"
+       provider-name="kodi senyor">
   <requires>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
@@ -3222,12 +3244,11 @@ http://aaastream.com</description>
   <extension point="xbmc.addon.metadata">
     <summary>AnarchiTV</summary>
     <description>
-	[COLOR yellow]kodi-senyor.co.il and anarchitv.co/[/COLOR] AnarchiTV Live tv channels
+	[COLOR yellow]kodi-senyor.co.il and anarchitv.co[/COLOR] AnarchiTV Live tv channels
     </description>
-    <license>http://www.gnu.org/licenses/</license>
+	<license>http://www.gnu.org/licenses/</license>
     <website>http://kodi-senyor.co.il</website>
-    <email>
-    </email>
+    <email></email>
     <platform>all</platform>
   </extension>
 </addon>
@@ -9926,6 +9947,29 @@ I hope you like this!
   </extension>
 </addon>
 
+<addon id="plugin.video.quasar" name="Quasar" version="0.9.15" provider-name="scakemyer">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="navigation.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" start="startup"/>
+    <extension point="xbmc.python.module" library="resources/site-packages" />
+    <extension point="xbmc.subtitle.module" library="navigation.py" />
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <language>en</language>
+        <website><![CDATA[https://github.com/scakemyer/plugin.video.quasar]]></website>
+        <forum><![CDATA[http://forum.xbmc.org/showthread.php?tid=200957]]></forum>
+        <source><![CDATA[https://github.com/scakemyer/plugin.video.quasar]]></source>
+        <language>en</language>
+        <license><![CDATA[Non commercial. See https://github.com/scakemyer/plugin.video.quasar/blob/master/LICENSE]]></license>
+        <summary><![CDATA[Quasar: Torrent streaming]]></summary>
+        <description><![CDATA[Stream torrent files]]></description>
+    </extension>
+</addon>
+
 <addon id="plugin.video.rainaddonwizard" name="Rain Addon Wizard" version="1.0.6" provider-name="KODIsrael.co.il">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
@@ -12444,7 +12488,7 @@ Donatello donations: http://donatellokodi.blogspot.co.il/2015/10/blog-post.html
   </extension>
 </addon>
 
-<addon id="plugin.video.ukturk" name="UK Turk Playlists" version="2.0.7" provider-name="MetalKettle">
+<addon id="plugin.video.ukturk" name="UK Turk Playlists" version="2.0.8" provider-name="MetalKettle">
   <requires>
     <import addon="script.module.simplejson" version="3.3.0"/>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -12614,30 +12658,19 @@ Donatello donations: http://donatellokodi.blogspot.co.il/2015/10/blog-post.html
   </extension>
 </addon>
 
-<addon id="plugin.video.ustvnow" version="12.0.20" name="USTVnow" provider-name="Lunatixz">
+<addon id="plugin.video.ustvnow" name="USTVnow" provider-name="Lunatixz, mhancoc7" version="12.0.21">
     <requires>
-        <import addon="xbmc.python" version="2.14.0"/>
-        <import addon="script.module.requests" />
-        <import addon="script.module.httplib2" />
-        <import addon="script.module.beautifulsoup" />
-        <import addon="script.module.simplejson" version="3.3.0"/>
-        <import addon="script.module.t0mm0.common" version="2.0.0"/>
-        <import addon="script.common.plugin.cache" version="2.5.5"/>
+        <import addon="xbmc.python" version="2.1.0" />
     </requires>
-    <extension point="xbmc.python.pluginsource" library="default.py">
+    <extension library="main.py" point="xbmc.python.pluginsource">
         <provides>video</provides>
     </extension>
-    <extension point="xbmc.service" library="service.py" start="startup"/>
     <extension point="xbmc.addon.metadata">
-        <summary lang="en">theOfficial USTVnow Plugin lets you watch all your favorite US television channels from anywhere around the world. Visit www.ustvnow.com for more Information</summary>
-        <description lang="en">Initially when you sign up you will be registering for our free plan that lets you share our antenna to receive all major terrestrial stations that as an American citizen or resident you would normally be able to receive for free (ABC, CBS, CW, FOX, NBC, PBS).
-        After this you have the option to upgrade to any of our paid plans. You can cancel or switch plans at any time. Monthly plans automatically renew but you can cancel anytime in order not to be billed again when your current 30 day period has expired. Note, you must first sign up for our free plan and then you can upgrade to a paid plan. Channels included in USTVNow paid plans.
-        ABC, CBS, CW, FOX, NBC, PBS, My9, AE, Animal Planet, Bravo, Cartoon Network, CNBC, CNN, Comedy Central, Discovery Channel, ESPN, FX, Fox News, History, Lifetime, National Geographic, Nickelodeon, Spike, Syfy, TBS, TNT, USA, AMC. For more channels including HBO and SHOWTIME, see our Premium Plans with up to 200 channels and HD.</description>
+        <summary>Watch All the Major American Television Networks Live in HD for Free!</summary>
+        <description>Watch All the Major American Television Networks Live in HD! Entirely Legal and Free! You can also record content through their web site, and there is an optional premium service available with all kinds of other channels. Signup for a free account through the following link today: http://watch.ustvnow.com</description>
         <platform>all</platform>
-        <language>en</language>
-        <license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
-        <source>https://github.com/Lunatixz/XBMC_Addons/tree/master/plugin.video.ustvnow</source>
         <forum>http://forum.kodi.tv/showthread.php?tid=233135</forum>
+        <website>http://watch.ustvnow.com/</website>
     </extension>
 </addon>
 
@@ -12712,7 +12745,7 @@ Donatello donations: http://donatellokodi.blogspot.co.il/2015/10/blog-post.html
     </extension>
 </addon>
 
-    <addon id="plugin.video.velocity" version="1.0.3" name="Velocity" provider-name="Blazetamer">
+    <addon id="plugin.video.velocity" version="1.0.4" name="Velocity" provider-name="Blazetamer">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
         <import addon="script.module.urlresolver"  version="2.1.2"/>
@@ -13222,7 +13255,7 @@ Donatello donations: http://donatellokodi.blogspot.co.il/2015/10/blog-post.html
     </extension>
 </addon>
 
-<addon id="plugin.video.watch1080" name="Watch 1080p" version="1.0.2" provider-name="MetalKettle">
+<addon id="plugin.video.watch1080" name="Watch 1080p" version="1.0.3" provider-name="MetalKettle">
   <requires>
     <import addon="script.module.simplejson" version="3.3.0"/>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -13501,24 +13534,22 @@ XBMC HUB: j.mp/xbmctorrent]]></description>
 
 </addon>
 
-<addon id="plugin.video.xmovies8" name="XMovies8" version="1.1.1" provider-name="MetalKettle">
+<addon id="plugin.video.xmovies8" name="XMovies8" version="1.1.2" provider-name="MetalKettle">
   <requires>
-    <import addon="script.module.simplejson" version="3.3.0" />
-    <import addon="xbmc.python" version="2.1.0" />
-    <import addon="script.module.t0mm0.common" version="2.0.0" />
-    <import addon="plugin.video.youtube" version="3.0.0" />
-    <import addon="script.module.urlresolver" version="2.1.2" />
-    <import addon="script.common.plugin.cache" version="2.5.2" />
-    <import addon="script.module.metahandler" version="2.5.1" />
+    <import addon="script.module.simplejson" version="3.3.0"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.t0mm0.common" version="2.0.0"/>
+    <import addon="plugin.video.youtube" version="3.0.0"/>
+    <import addon="script.module.urlresolver"  version="2.1.2"/>
+    <import addon="script.common.plugin.cache" version="2.5.2"/>
+    <import addon="script.module.metahandler" version="2.5.1"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
+        <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="en">
-    </summary>
-    <description lang="en">
-    </description>
+    <summary lang="en"></summary>
+    <description lang="en"></description>
     <platform>all</platform>
   </extension>
 </addon>
@@ -14610,6 +14641,19 @@ XBMC HUB: j.mp/xbmctorrent]]></description>
         <noicon>false</noicon>
         <nofanart>false</nofanart>
     </extension>
+</addon>
+
+<addon id="repository.kodi-senyor" name="kodi senyor repository" version="1.1.0" provider-name="kodi senyor">
+	<extension point="xbmc.addon.repository" name="kodi senyor repository">
+			<info compressed="false">http://kodi-senyor.co.il/Zips/addons.xml</info>
+			<checksum>http://kodi-senyor.co.il/Zips/addons.xml.md5</checksum>
+			<datadir zip="true">http://kodi-senyor.co.il/Zips/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">kodi-senyor.co.il repo</summary>
+		<description lang="en">kodi-senyor.co.il repo</description>
+		<platform>all</platform>
+	</extension>
 </addon>
 
 <addon id="repository.kodiunderground" name="[COLOR FF2da7d3]Kodi Underground[/COLOR]" version="1.0.5" provider-name="Prilly">
@@ -18900,21 +18944,21 @@ level.</description>
   </extension>
 </addon>
 
-	<addon id="script.skin.helper.service" name="Skin Helper Service" version="1.0.39" provider-name="marcelveldt">
+<addon id="script.skin.helper.service" name="Skin Helper Service" version="1.0.40" provider-name="marcelveldt">
 	<requires>
 		<import addon="xbmc.python" version="2.13.0"/>
 		<import addon="xbmc.addon" version="12.0.0"/>
 		<import addon="script.module.pil" version="1.1.7"/>
 		<import addon="script.module.requests" version="2.3.0"/>
         <import addon="script.module.simplejson" version="3.3.0"/>
-        <import addon="script.module.beautifulsoup" version="3.0.8" />
+        <import addon="script.module.beautifulsoup" version="3.0.8"/>
 	</requires>
 
-    <extension point="xbmc.python.library" library="default.py" />
+    <extension point="xbmc.python.library" library="default.py"/>
 	<extension point="xbmc.python.pluginsource" library="plugin.py">
 		<provides>video</provides>
 	</extension>
-	<extension library="service.py" point="xbmc.service" start="login" />
+	<extension library="service.py" point="xbmc.service" start="login"/>
 	<extension point="kodi.context.item" library="contextmenu_serieslevel.py">
 		<item>
 			<label>32072</label>
@@ -18932,11 +18976,11 @@ level.</description>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Helper service for Kodi skins</summary>
         <description>Helper service for Kodi skins</description>
-		<language></language>
+		<language/>
 		<platform>all</platform>
 		<license>GPL v2.0</license>
 		<forum>http://forum.kodi.tv/showthread.php?tid=235676</forum>
-		<website></website>
+		<website/>
 		<source>https://github.com/marcelveldt/script.skin.helper.service</source>
 	</extension>
 </addon>
@@ -18962,9 +19006,9 @@ level.</description>
 	</extension>
 </addon>
 
-<addon id="script.skinshortcuts" name="Skin Shortcuts" version="1.0.2" provider-name="BigNoid,marcelveldt">
+<addon id="script.skinshortcuts" name="Skin Shortcuts" version="1.0.6" provider-name="BigNoid,marcelveldt">
 	<requires>
-		<import addon="xbmc.python" version="2.19.0"/>
+		<import addon="xbmc.python" version="2.20.0"/>
 		<import addon="script.module.simplejson" version="3.3.0"/>
 		<import addon="script.module.unidecode" version="0.4.14"/>
 	</requires>
