@@ -16232,6 +16232,20 @@ If for any reason the check of a successful wake-up via ping is not possible or 
   </extension>
 </addon>
 
+<addon id="script.exodus.artwork" version="1.0.0" name="Exodus Artwork" provider-name="l*m*d*">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+	</requires>
+	<extension point="xbmc.python.script" library="default.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Themes for the Exodus Addon</summary>
+		<description>Themes for Exodus are maintained separately to make distribution of the the addon itself easier/faster.</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
 <addon id="script.extendedinfo" name="ExtendedInfo Script" version="4.0.1" provider-name="phil65">
 	<requires>
 		<import addon="xbmc.python" version="2.24.0"/>
