@@ -1,3 +1,10 @@
+[B]Version 8.8.5[/B] 
+- small code change in search
+- fixed omg online movie gold
+- temp change site of latest episodes index search
+- added meattransmission to radio
+- added freshradiouk to radio
+
 [B]Version 8.8.4[/B] 
 - small code change in search
 - re-added tvdl tv shows

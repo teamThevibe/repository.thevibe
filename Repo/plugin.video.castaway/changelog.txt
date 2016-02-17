@@ -2,6 +2,11 @@
 Castaway sports addon by [COLOR yellow]@natko1412[/COLOR]
 ====================================================================
 
+v0.0.9 [07-Feb-2016]
+-fix livetv.sx custom base url
+-fix streamlive pagination
+-fix nbahd.com
+
 v0.0.8 [06-Feb-2016]
 -fix zonasports.in
 -add custom base url settings

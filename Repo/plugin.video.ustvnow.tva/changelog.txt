@@ -1,3 +1,40 @@
+[B]Version 14.1.6[/B]
+- added stream check to ensure that token can pull in streams
+- added alternate login method to use if stream check fails
+
+[B]Version 14.1.5[/B]
+- updated glossy skin with larger icons
+- updated outline skin with larger icons
+- added "No Icons" skin
+
+[B]Version 14.1.4[/B]
+- major update to Live TV streaming functions
+- live streams are now pulled using playlist.m3u8 files directly from the USTVnow API
+- My9 is the only channel that has some issues. it is forced to no higher than 1024kbps Stream Quality
+- major update to Recordings streaming functions
+- recordings streams are now pulled using playlist.m3u8 files directly from the USTVnow API
+- this change eliminates the need/ability to set Recordings Stream Type
+	
+[B]Version 14.1.3[/B]
+- fix for USTVnow Legacy paid accounts showing as free accounts
+
+[B]Version 14.1.2[/B]
+- new glossy skin (credits: https://www.iconfinder.com/iconsets/DarkGlass_Reworked)
+- new outline skin (credits: https://www.iconfinder.com/iconsets/bitsies)
+- updated Live TV Artwork to pull from USTVnow cache
+- possible fix for Kodi restart needed after display settings changes
+- removed Settings note to restart Kodi after some settings changes. Issue appears to resolved
+
+[B]Version 14.1.1[/B]
+- added new TV Guide section with full recording features!
+- added option to enable full context menu for Live TV
+- rearranged Settings
+- resized all Channel Logos to Kodi standards 256x256
+- added new icons for sections
+
+[B]Version 14.1.0[/B]
+- increased Free Account Stream Quality maximum to 1024kbps
+
 [B]Version 14.0.9[/B]
 - better fix for Free Accounts not working
 - this fix basically sets the user-agent header for the json requests
@@ -14,6 +51,50 @@
 Below is the changelog from the BETA releases
 -----------------------------------------------------------
 -----------------------------------------------------------
+
+[B]Version 1.4.0[/B]
+- added stream check to ensure that token can pull in streams
+- added alternate login method to use if stream check fails
+
+[B]Version 1.3.9[/B]
+- updated glossy skin with larger icons
+- updated outline skin with larger icons
+- added "No Icons" skin
+
+[B]Version 1.3.8[/B]
+- major update to Recordings streaming functions
+- recordings streams are now pulled using playlist.m3u8 files directly from the USTVnow API
+- this change eliminates the need/ability to set Recordings Stream Type
+
+[B]Version 1.3.7[/B]
+- major update to Live TV streaming functions
+- live streams are now pulled using playlist.m3u8 files directly from the USTVnow API
+- My9 is the only channel that has some issues. it is forced to no higher than 1024kbps Stream Quality
+
+[B]Version 1.3.6[/B]
+- fix for USTVnow Legacy paid accounts showing as free accounts
+
+[B]Version 1.3.5[/B]
+- removed Settings note to restart Kodi after some settings changes. Issue appears to resolved
+
+[B]Version 1.3.4[/B]
+- new glossy skin (credits: https://www.iconfinder.com/iconsets/DarkGlass_Reworked)
+- new outline skin (credits: https://www.iconfinder.com/iconsets/bitsies)
+- updated Live TV Artwork to pull from USTVnow cache
+- possible fix for Kodi restart needed after display settings changes
+
+[B]Version 1.3.3[/B]
+- added new icons for sections
+
+[B]Version 1.3.2[/B]
+- added new TV Guide section with full recording features!
+- added option to enable full context menu for Live TV
+- rearranged Settings
+- resized all Channel Logos to Kodi standards 256x256
+
+[B]Version 1.3.1[/B]
+- increased Free Account Stream Quality maximum to 1024kbps
+- added BETA to name to make it easier to distinguish between Official and BETA releases
 
 [B]Version 1.3.0[/B]
 - better fix for Free Accounts not working

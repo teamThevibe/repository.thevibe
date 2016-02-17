@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.fos" name="Team eXpat IPTV" version="1.0.3" provider-name="Pipcan/TeameXpat">
+<addon id="plugin.video.fos" name="Team eXpat IPTV" version="1.0.4" provider-name="Pipcan/TeameXpat">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
     <import addon="script.module.requests" />
@@ -13,5 +13,6 @@
     <language>en</language>
     <description lang="en">Team eXpat IPTV</description>
     <platform>all</platform>
+    <broken>discontinued</broken>
   </extension>
 </addon>

@@ -1,3 +1,28 @@
+[B]Version 1.0.89[/B]
+Fixed: Multiple keyword search for ParadiseHill
+Fixed: xxxstreams (org) videos wouldn't load on Android
+
+
+[B]Version 1.0.88[/B]
+Added: xxxstreams (org) (Anton40)
+Added: jav720p
+Added: Search for Paradisehill ;)
+
+
+[B]Version 1.0.87[/B]
+Fixed: Quick fix for OpenLoad
+
+
+[B]Version 1.0.86[/B]
+Added: xxxstreams (eu)
+Removed: jsbeautifier, now using the jsunpack module by Bstrdsmkr
+
+
+[B]Version 1.0.85[/B]
+Fixed: Streamin.to playback
+Fixed: Improved Pornhive, also added streamin.to support
+
+
 [B]Version 1.0.84[/B]
 Fixed: Videomega playback
 Fixed: Pornhive
