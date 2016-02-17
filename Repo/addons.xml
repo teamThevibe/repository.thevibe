@@ -10182,7 +10182,7 @@ I hope you like this!
   </extension>
 </addon>
 
-<addon id="plugin.video.quasar" name="Quasar" version="0.9.18" provider-name="scakemyer">
+<addon id="plugin.video.quasar" name="Quasar" version="0.9.20" provider-name="scakemyer">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
     </requires>
@@ -10196,7 +10196,7 @@ I hope you like this!
         <platform>all</platform>
         <language>en</language>
         <website><![CDATA[https://github.com/scakemyer/plugin.video.quasar]]></website>
-        <forum><![CDATA[http://forum.xbmc.org/showthread.php?tid=200957]]></forum>
+        <forum><![CDATA[http://forum.kodi.tv/showthread.php?tid=257967]]></forum>
         <source><![CDATA[https://github.com/scakemyer/plugin.video.quasar]]></source>
         <language>en</language>
         <license><![CDATA[Non commercial. See https://github.com/scakemyer/plugin.video.quasar/blob/master/LICENSE]]></license>
