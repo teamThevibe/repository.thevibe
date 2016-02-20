@@ -1,8 +1,0 @@
-1.0.0
-Added support for PVR using IPTV Simple Client
-
-0.6.0
-Now logs in using Smoothstreams settings to allow results
-
-0.5.0
-release
