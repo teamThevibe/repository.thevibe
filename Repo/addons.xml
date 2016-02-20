@@ -1546,57 +1546,6 @@ this is an unofficial addon. please don't ask for support in openelec forum / ir
   </extension>
 </addon>
 
-<addon id="plugin.audio.DejaVu" name="DejaVu FM" version="0.0.2" provider-name="TheYid">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-    <import addon="xbmc.addon" version="12.1.0" />
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>audio</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">DejaVu FM</summary>
-    <description lang="en">Listen to DejaVu FM; London's finest underground radio station</description>
-    <disclaimer lang="en">DejaVu.co.uk</disclaimer>
-    <platform>all</platform>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
-    <language>en</language>
-    <forum>
-    </forum>
-    <website>
-    </website>
-    <email>
-    </email>
-    <source>
-    </source>
-  </extension>
-</addon>
-
-<addon id="plugin.audio.jango"
-       name="Jango"
-       version="0.8.6"
-       provider-name="kinkin, art by jokster">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0"/>
-        <import addon="script.module.t0mm0.common" version="1.1.0"/>
-        <import addon="script.module.requests" version="1.1.0"/>
-    </requires>
-
-    <extension point="xbmc.python.pluginsource"
-               	library="default.py">
-        <provides>audio</provides>
-    </extension>
-
-	<extension point="xbmc.service" library="playerMP3.py" start="startup" />
-
-    <extension point="xbmc.addon.metadata">
-        <platform>all</platform>
-        <summary>Free Internet Radio that plays music you'll love!</summary>
-        <description>Free internet radio. Listen to hundreds of genre stations or create your own with your favorite music.</description>
-    </extension>
-
-</addon>
-
 <addon
   id="plugin.audio.kodcast"
   name="Kodcast"
@@ -1624,20 +1573,6 @@ this is an unofficial addon. please don't ask for support in openelec forum / ir
         <website>http://nirelbaz.com/</website>
         <email>nir@nirelbaz.com</email>
     </extension>
-</addon>
-
-<addon id="plugin.audio.moskva.fm" name="MOSKVA.FM" version="1.1.0" provider-name="TDW">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>audio</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <summary>MOSKVA.FM - песни на радио Москвы</summary>
-    <description>Слушайте радио Москвы. На сегодня в активе проекта MOSKVA.FM 53 радиостанций Москвы!</description>
-  </extension>
 </addon>
 
 <addon id="plugin.audio.mp3streams" name="MP3 Streams" version="1.1.9" provider-name="kinkin, spoyser, art by Marquerite">
@@ -1679,39 +1614,6 @@ this is an unofficial addon. please don't ask for support in openelec forum / ir
     <summary lang="en">Music Box</summary>
     <description lang="en">Music box is a new way to listen and discover music thought KODI.</description>
     <platform>all</platform>
-  </extension>
-</addon>
-
-<addon id="plugin.audio.oldskool" version="1.0.2" name="Old Skool" provider-name="Mucky Duck">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-    <import addon="script.module.t0mm0.common" version="2.0.0" />
-    <import addon="repository.mdrepo" />
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>audio</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Old Tape Packs And Various Other Music Found On The Web</summary>
-    <description lang="en">oldskool tape packs</description>
-    <disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon</disclaimer>
-    <platform>all</platform>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
-    <language>en</language>
-  </extension>
-</addon>
-
-<addon id="plugin.audio.online.fm" name="online.fm" version="1.0.8" provider-name="HD-Lab Team">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>audio</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <summary>Слушай радио Online.FM: rock, jazz, house music, rnb, relax music, шансон, trance. FM радио: ХитФМ, Kiss fm, Radio Rocks, NRJ радио - online.fm</summary>
-    <description>Online.FM - слушай радио онлайн. Русский рок, Украинский поп и рок, Trance, Party, Disco, RnB, Latino, Classic rock, House, Relax, Jazz, Шансон, музыка фестиваля Sziget и еще 40 радио каналов. Слушай FM радио: ХитФМ, Kiss fm, Radio Rocks, NRJ радио</description>
   </extension>
 </addon>
 
@@ -1823,93 +1725,6 @@ this is an unofficial addon. please don't ask for support in openelec forum / ir
   </extension>
 </addon>
 
-<addon id="plugin.program.configinstaller" name="ProZone" version="1.1.0" provider-name="MetalKettle">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-    <import addon="plugin.video.youtube" version="3.0.0" />
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>executable video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">
-    </summary>
-    <description lang="en">
-    </description>
-    <platform>all</platform>
-  </extension>
-</addon>
-
-<addon id="plugin.program.dssinstaller" name="DSS Installer" version="1.0.1" provider-name="DSS">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-    <import addon="script.module.addon.common" />
-    <import addon="repository.dss" />
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>executable</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">DSS Installer</summary>
-    <description lang="en">Installeer de build van DSS</description>
-    <platform>all</platform>
-  </extension>
-</addon>
-
-<addon id="plugin.program.ecoupd" name="Eco Update" version="1.5" provider-name="IPTVxtra">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <!--<extension point="xbmc.service" library="default.py" start="[login|startup]">-->
-    <provides>executable</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <summary lang="en">EcoStream Updater</summary>
-    <language>
-    </language>
-    <description>Updateroutine für ecostream.py im UrlResolver
-
-	Dieses Addon ist für Benutzer von XStream ein 'must have', denn KKiste wechselt ca. wöchentlich den Zugang zu EcoStream.
-	Wir User vom XStream-Forum haben uns zusammengetan und fixen den UrlResolver regelmäßig.
-	Dieses Addon durchsucht verschiedene Serverplätze der beteiligten User und updated den UrlResolver automatisch mit der neueste Version die gefunden wird.
-
-	momentan beteiligte User: Schwaller, Gerhard.S
-	bitte meldet euch wenn ihr mitmachen möchtet im Forum !
-
-	ein besonderer Dank geht ans XStream Team  http://xstream-addon.square7.ch</description>
-    <website>http://www.iptvxtra.net</website>
-    <platform>all</platform>
-  </extension>
-</addon>
-
-<addon id="plugin.program.iptvxtra" name="IPTVxtra AutoStart" version="2.2.1" provider-name="IPTVxtra">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>executable</provides>
-  </extension>
-  <extension point="xbmc.service" library="starter.py" start="[login|startup]">
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <summary lang="en">IPTVxtra Team</summary>
-    <language>
-    </language>
-    <description>Autostarter für verschiedene IPTVxtra Addons beim XBMC-Start
-
-der EcoUpdater Service (XStream) ist integriert
-downloaded direkt die neuen XMLTV-EPG Dateien
-Stream Reloader, abgebrochene Streams werden neu gestartet
-
-konfigurierbar unter Programme</description>
-    <website>http://www.iptvxtra.net</website>
-    <platform>all</platform>
-  </extension>
-</addon>
-
 <addon id="plugin.program.KodiBuildsIL" name="Kodi Builds IL wizard" version="1.0.0" provider-name="kodi senyor">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
@@ -1999,41 +1814,6 @@ konfigurierbar unter Programme</description>
         <visible>true</visible>
       </item>
     </extension>
-</addon>
-
-<addon id="plugin.program.thaifont" name="Thaifont to XBMC and Kodi" version="1.0" provider-name="IPTVxtra">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>executable</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <summary lang="en">Copy Thaifont</summary>
-    <language>
-    </language>
-    <description>How To - Thaifont
-
-nach der Installation klicke auf das Addon,
-eine neue arial.ttf wird in das User-Verzeichnis:
-.xbmc/media/font kopiert
-
-danach gehst du auf: SYSTEM - DARSTELLUNG - SKIN
-hier findest du die Einstellung Schriftarten
-und dies änderst du auf "Arial basiert"
-
-jetzt ist die Schriftart Systemweit etwas anders,
-aber beim Aufrufen von einem Addon das Thaischrift verwendet,
-ist diese auch (ohne Hieroglyphen) zu sehen.
-
-Theoretisch kannst du dieses Addon auch wieder deinstallieren
-und die Thaischrift bleibt erhalten.
-
-</description>
-    <website>http://www.iptvxtra.net</website>
-    <platform>all</platform>
-  </extension>
 </addon>
 
 <addon id="plugin.program.totalinstaller" name=" [COLOR=orange]C[/COLOR]ommunity [COLOR=orange]P[/COLOR]ortal" version="3.1.1" provider-name="noobsandnerds.com">
@@ -2242,29 +2022,6 @@ Highly configurable: Set your PIN, set your watershed time, exclude addons if re
   </extension>
 </addon>
 
-<addon id="plugin.video.eztv" name="[COLOR FF0F559D]EZTV[/COLOR] Viewer" version="1.0.2" provider-name="mancuniancol">
-	<requires>
-		<import addon="xbmc.python" version="2.12.0"/>
-		<import addon="script.module.mctools" optional="false"/>
-	</requires>
-    <extension point="xbmc.python.pluginsource" library="main.py">
-        <provides>video</provides>
-	</extension>
-	<extension point="xbmc.service" library="service.py" start="login">
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">the best site to find TV Shows</summary>
-		<summary lang="es">el mejor sitio para encontrar Series</summary>
-		<description lang="en">This Add-on allows to view EZTV links be play for Pulsar, XBMCtorrent, KmediaTorrent, Torrenter V2 or YATP with additional local library integration option</description>
-		<description lang="es">Este Add-on permite ver los enlaces de horribleSubs para ser reproducidas por medio de Pulsar, XBMCtorrent, KmediaTorrent, Torrenter V2 o YATP con opción adicional de integración a la librería local</description>
-		<language></language>
-		<platform>all</platform>
-		<forum></forum>
-		<disclaimer lang="en">It is just for educational purpose[CR]Check if it is illegal in your country to use.</disclaimer>
-		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-	</extension>
-</addon>
-
 <addon id="plugin.video.F.T.V"
        name="FilmOn.TV"
        version="1.3.7a"
@@ -2283,23 +2040,6 @@ Highly configurable: Set your PIN, set your watershed time, exclude addons if re
         <description>Stream Live TV from FilmOn or watch FilmOn Demand. Login with your FilmOn user-name to access recording features.</description>
     </extension>
 
-</addon>
-
-<addon id="plugin.video.favorites" name="** My Favorites **" version="0.0.4" provider-name="[COLOR blue]X[/COLOR]unity[COLOR blue]T[/COLOR]alk">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-    <import addon="script.module.t0mm0.common" version="0.0.1" />
-    <import addon="script.module.universal" version="0.0.1" />
-    <import addon="script.module.metahandler" version="1.0.2" />
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">My Favorites</summary>
-    <description lang="en">Favorites across all addons.[CR][CR][COLOR orange]Support[/COLOR] @ [COLOR blue]www.[B]XUNITYTALK[/B].com[/COLOR][CR][CR][COLOR orange][B]Credits[/B][/COLOR][CR]     [COLOR blue]The_Silencer:[/COLOR] Testing and Quality Assurance</description>
-    <platform>all</platform>
-  </extension>
 </addon>
 
 <addon id="plugin.video.featherence.docu" name="Featherence Docu" version="0.1.7" provider-name="finalmakerr, yoel guy">
@@ -2645,27 +2385,6 @@ Donatello donations: http://donatellokodi.blogspot.co.il/2015/10/blog-post.html
       <content>movies</content>
     </supportedcontent>
   </extension>
-</addon>
-
-<addon id="plugin.video.ilLive.video" name="בשידור חי" version="1.0.2" provider-name="sbentin">
-    <requires>
-        <import addon="xbmc.python" version="1.0"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="live.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <platform>all</platform>
-        <minversion>31632</minversion>
-        <summary lang="en">Watch Live video contents from several Israeli TV Channels.</summary>
-        <summary lang="he">צפה בוידאו חי מערוצי טלויזיה ישראליים</summary>
-        <description lang="en">Watch channel 2, Channel 10, IBA, Music 24 live streaming data</description>
-        <description lang="he">צפה בוידאו חי מערוץ 2, ערוץ 10, מוסיקה 24 וערוץ 1</description>
-        <disclaimer>This addon parse Several different sites which may or may not be up all the time. The live video and contents of the video is the property of these channels and their responsibility. This plugin simply channels the data through to xbmc as is.</disclaimer>
-        <supportedcontent>
-          <content>movies</content>
-        </supportedcontent>
-    </extension>
 </addon>
 
 <addon id="plugin.video.israelive" name="[COLOR white]Israe[/COLOR][COLOR blue]L[/COLOR][COLOR white]IVE[/COLOR]" version="4.7.2" provider-name="Benny123, Avigdor (xbmc-israel repo)">
@@ -4481,19 +4200,6 @@ http://www.hometheater.co.il</description>
     <platform>all</platform>
     <website>http://www.the-vibe.co.il</website>
   </extension>
-</addon>
-
-<addon id="repository.totalinstaller" version="1.0.2" name=" [COLOR lime][B]T[/B][/COLOR][COLOR white]otal[/COLOR][COLOR lime][B]R[/B][/COLOR][COLOR white]evolution[/COLOR]" provider-name="totalxbmc.tv">
-	<extension point="xbmc.addon.repository" name="Total Installer Repo">
-		<info compressed="false">https://github.com/totalxbmc/totalinstaller/raw/master/zips/addons.xml</info>
-		<checksum>https://github.com/totalxbmc/totalinstaller/raw/master/zips/addons.xml.md5</checksum>
-		<datadir zip="true">https://raw.github.com/totalxbmc/totalinstaller/master/zips/</datadir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>Total Installer</summary>
-		<description>[COLOR blue]Join the Revolution[/COLOR] @ [COLOR lime][B]www.totalxbmc.tv[/B][/COLOR][CR][CR]Total Revolution is the home of Total Installer and the project is designed to get the great XBMC/Kodi community together as one. Have your say on what goes on and help design your very own skin.</description>
-		<platform>all</platform>
-	</extension>
 </addon>
 
 <addon id="repository.unofficial.addon.pro"

@@ -1,5 +1,0 @@
-[B]Version 1.0.1[/B]
--  Added bip live
-
-[B]Version 1.0.1[/B]
--  Added channel 2 news live
