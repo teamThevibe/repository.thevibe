@@ -1,9 +1,0 @@
-[B]Version 9.4.8[/B]
-- fixed kool fm links
-
-[B]Version 9.4.7[/B]
-- 
-
-[B]Version 9.4.6[/B]
-- Big update to Kool London addon
-

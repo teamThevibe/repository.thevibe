@@ -1,7 +1,0 @@
-[B]Version 0.0.2[/B]
-- code clean up
-- new icons
-
-[B]Version 0.0.1[/B]
-- testing
-
