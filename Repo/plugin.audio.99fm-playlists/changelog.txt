@@ -1,3 +1,7 @@
+v0.2.9
+- Fix favorites
+- Fix Azam
+
 v0.2.7
 - Songs list
 - Play specific song

@@ -1,3 +1,15 @@
+1.4.8
+
+Fix Bundle zip file loading...
+
+1.4.7
+
+config XML changes
+
+add Qusar & Exodus Support
+
+changes in Movieinfo - takes only relevant fields 
+
 
 1.4.6
 

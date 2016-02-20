@@ -1459,7 +1459,7 @@ this is an unofficial addon. please don't ask for support in openelec forum / ir
   </extension>
 </addon>
 
-<addon id="Ninbora.Movies_Feeder" name="Ninbora.Movies_Feeder" version="1.4.6" provider-name="Donatello">
+<addon id="Ninbora.Movies_Feeder" name="Ninbora.Movies_Feeder" version="1.4.8" provider-name="Donatello Hybrid Blade Tholin">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
   </requires>
@@ -1470,13 +1470,13 @@ this is an unofficial addon. please don't ask for support in openelec forum / ir
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary lang="en">Feed movies to Kodi from several sources</summary>
-    <summary lang="he">מזין סרטים לקודי ממספר ממקורות נערך ע"י דונטלו Donatello and Hybridmag  תודה רבה רבה להיברידמאג שעזר לי לפתור את הבעיה של משיכת הסרטים אתה תותח על !!"</summary>
+    <summary lang="he">קיר הסרטים של דונטלו היבריד בלייד וטהולין</summary>
     <website>http://donatellokodi.blogspot.co.il</website>
     <platform>all</platform>
   </extension>
 </addon>
 
-<addon id="Ninbora.Series_Feeder" name="Ninbora.Series_Feeder" version="1.4.6" provider-name="Donatello">
+<addon id="Ninbora.Series_Feeder" name="Ninbora.Series_Feeder" version="1.4.8" provider-name="Donatello Hybrid Blade Tholin">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
   </requires>
@@ -1487,7 +1487,7 @@ this is an unofficial addon. please don't ask for support in openelec forum / ir
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary lang="en">Feed series to Kodi from several sources</summary>
-    <summary lang="he">מזין סדרות לקודי ממספר מקורות נערך ע"י דונטלו המון תודה להיבריד מאג על העזרה בתיקון הבעיה Donatello and Hybridmag"</summary>
+    <summary lang="he">קיר הסדרות של דונטלו היבריד בלייד וטהולין</summary>
     <website>https://donatelokodi.blogspot.co.il</website>
     <platform>all</platform>
   </extension>
@@ -1518,7 +1518,7 @@ this is an unofficial addon. please don't ask for support in openelec forum / ir
   </extension>
 </addon>
 
-<addon id="plugin.audio.99fm-playlists" name="99FM Playlists" version="0.2.7" provider-name="nirelbaz">
+<addon id="plugin.audio.99fm-playlists" name="99FM Playlists" version="0.2.9" provider-name="nirelbaz">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
     <import addon="script.module.requests" version="2.8.1" />
@@ -1972,7 +1972,7 @@ Highly configurable: Set your PIN, set your watershed time, exclude addons if re
     </extension>
 </addon>
 
-<addon id="plugin.video.ccloudtv" name="cCloud TV" version="1.4.2" provider-name="podgod">
+<addon id="plugin.video.ccloudtv" name="cCloud TV" version="1.4.3" provider-name="podgod">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
     <import addon="script.module.beautifulsoup" version="3.2.1" />
@@ -1998,7 +1998,8 @@ Highly configurable: Set your PIN, set your watershed time, exclude addons if re
     <website>http://ccloudtv.org</website>
     <website>http://facebook.com/ccloudapp</website>
     <website>http://twitter.com/ccloudapp</website>
-    <email />
+    <email>
+    </email>
     <platform>all</platform>
   </extension>
 </addon>
@@ -2163,17 +2164,17 @@ Highly configurable: Set your PIN, set your watershed time, exclude addons if re
   </extension>
 </addon>
 
-<addon id="plugin.video.featherence.music" name="Featherence Music" version="0.2.3" provider-name="finalmakerr, amir elgazar">
+<addon id="plugin.video.featherence.music" name="Featherence Music" version="0.2.4" provider-name="finalmakerr, amir elgazar">
   <requires>
-	<import addon="xbmc.python" version="2.1.0"/>
+    <import addon="xbmc.python" version="2.1.0" />
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
     <provides>video audio</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-	<platform>all</platform>
+    <platform>all</platform>
     <summary lang="en">_</summary>
-	<summary lang="he">_</summary>
+    <summary lang="he">_</summary>
     <description lang="en">Features:
 - Customized Menus: Support customized Fanart for each button.
 - Favourite Items: Add any valid existed item to My Kids button.
@@ -2185,7 +2186,7 @@ Highly configurable: Set your PIN, set your watershed time, exclude addons if re
 - Varied and unlimited contents: Support unlimited URLs per content from varied sources such as Youtube, Dailymotion, Dropbox, Kodi's addons, supported websites..
 - YouTube search: Search any contents from YouTube, history included.
     </description>
-	<description lang="he">מאפיינים:
+    <description lang="he">מאפיינים:
 - המוזיקה שלי: צור כפתורים משלך ע"י הזנת קישורים מיו-טיוב.
   בנוסף ניתן להוסיף לכפתורים: שם, תאור, תמונה, פאנארט ואפילו לשתף עם אנשים אחרים.
 - חיפוש יו-טיוב: מאפשר חיפוש תכנים מיו-טיוב, כולל רשימת היסטוריה.
@@ -2197,10 +2198,11 @@ Highly configurable: Set your PIN, set your watershed time, exclude addons if re
 - תפריטים אישיים: אפשרות ליצור פאנארט אישי לכל כפתור.
 	</description>
     <disclaimer>The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
-	<forum></forum>
-	<email>featherence@groups.facebook.com</email>
-	<source>https://github.com/finalmakerr/featherence/tree/master/master/plugin.video.featherence.music</source>
-	<website>https://www.facebook.com/groups/featherence/</website>
+    <forum>
+    </forum>
+    <email>featherence@groups.facebook.com</email>
+    <source>https://github.com/finalmakerr/featherence/tree/master/master/plugin.video.featherence.music</source>
+    <website>https://www.facebook.com/groups/featherence/</website>
   </extension>
 </addon>
 
@@ -2431,9 +2433,10 @@ Donatello donations: http://donatellokodi.blogspot.co.il/2015/10/blog-post.html
     </extension>
 </addon>
 
-<addon id="plugin.video.KIDSIL" name="KIDSIL" version="1.3.7" provider-name="o2ri">
+<addon id="plugin.video.KIDSIL" name="KIDSIL" version="1.3.8" provider-name="o2ri">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
+    <import addon="repository.xbmc-israel" />
     <import addon="plugin.video.youtube" version="2.1.3" />
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
@@ -2920,27 +2923,27 @@ http://www.hometheater.co.il</description>
   </extension>
 </addon>
 
-<addon id="plugin.video.quasar" name="Quasar" version="0.9.20" provider-name="scakemyer">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="navigation.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.service" library="service.py" start="startup"/>
-    <extension point="xbmc.python.module" library="resources/site-packages" />
-    <extension point="xbmc.subtitle.module" library="navigation.py" />
-    <extension point="xbmc.addon.metadata">
-        <platform>all</platform>
-        <language>en</language>
-        <website><![CDATA[https://github.com/scakemyer/plugin.video.quasar]]></website>
-        <forum><![CDATA[http://forum.kodi.tv/showthread.php?tid=257967]]></forum>
-        <source><![CDATA[https://github.com/scakemyer/plugin.video.quasar]]></source>
-        <language>en</language>
-        <license><![CDATA[Non commercial. See https://github.com/scakemyer/plugin.video.quasar/blob/master/LICENSE]]></license>
-        <summary><![CDATA[Quasar: Torrent streaming]]></summary>
-        <description><![CDATA[Stream torrent files]]></description>
-    </extension>
+<addon id="plugin.video.quasar" name="Quasar" version="0.9.22" provider-name="scakemyer">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="navigation.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.service" library="service.py" start="startup" />
+  <extension point="xbmc.python.module" library="resources/site-packages" />
+  <extension point="xbmc.subtitle.module" library="navigation.py" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <language>en</language>
+    <website><![CDATA[https://github.com/scakemyer/plugin.video.quasar]]></website>
+    <forum><![CDATA[http://forum.kodi.tv/showthread.php?tid=257967]]></forum>
+    <source><![CDATA[https://github.com/scakemyer/plugin.video.quasar]]></source>
+    <language>en</language>
+    <license><![CDATA[Non commercial. See https://github.com/scakemyer/plugin.video.quasar/blob/master/LICENSE]]></license>
+    <summary><![CDATA[Quasar: Torrent streaming]]></summary>
+    <description><![CDATA[Stream torrent files]]></description>
+  </extension>
 </addon>
 
 <addon id="plugin.video.reshet.video" name="רשת" version="1.3.3" provider-name="sbentin">
@@ -2968,7 +2971,7 @@ http://www.hometheater.co.il</description>
 </addon>
 
 <!--suppress ALL -->
-<addon id="plugin.video.salts" version="2.0.5" name="Stream All The Sources" provider-name="tknorris">
+<addon id="plugin.video.salts" version="2.0.6" name="Stream All The Sources" provider-name="tknorris">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
     <import addon="script.module.urlresolver" version="2.2.0" />
@@ -3318,81 +3321,77 @@ http://www.hometheater.co.il</description>
   <extension point="xbmc.service" library="service.py" start="startup"/>
 </addon>
 
-<addon id="plugin.video.ustvnow" name="USTVnow" provider-name="Lunatixz, mhancoc7" version="12.0.21">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0" />
-    </requires>
-    <extension library="main.py" point="xbmc.python.pluginsource">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary>Watch All the Major American Television Networks Live in HD for Free!</summary>
-        <description>Watch All the Major American Television Networks Live in HD! Entirely Legal and Free! You can also record content through their web site, and there is an optional premium service available with all kinds of other channels. Signup for a free account through the following link today: http://watch.ustvnow.com</description>
-        <platform>all</platform>
-        <forum>http://forum.kodi.tv/showthread.php?tid=233135</forum>
-        <website>http://watch.ustvnow.com/</website>
-    </extension>
+<addon id="plugin.video.ustvnow" name="USTVnow" provider-name="Lunatixz" version="12.0.22">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+  </requires>
+  <extension library="main.py" point="xbmc.python.pluginsource">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Watch All the Major American Television Networks Live in HD for Free!</summary>
+    <description>Watch All the Major American Television Networks Live in HD! Entirely Legal and Free! You can also record content through their web site, and there is an optional premium service available with all kinds of other channels. Signup for a free account through the following link today: http://watch.ustvnow.com</description>
+    <platform>all</platform>
+    <forum>http://forum.kodi.tv/showthread.php?tid=233135</forum>
+    <website>http://watch.ustvnow.com/</website>
+  </extension>
 </addon>
 
-<addon id="plugin.video.ustvnow.tva" name="USTVnow Plus" provider-name="mhancoc7" version="14.1.6">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0" />
-    </requires>
-    <extension library="main.py" point="xbmc.python.pluginsource">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary>Watch All the Major American Television Networks Live in HD for Free!</summary>
-        <description>Watch All the Major American Television Networks Live in HD! Entirely Legal and Free! You can also record content through their web site, and there is an optional premium service available with all kinds of other channels. Signup for a free account through the following link today: http://watch.ustvnow.com</description>
-        <platform>all</platform>
-        <forum>https://forums.tvaddons.ag/ustvnow-plugin-for-kodi/</forum>
-        <website>http://watch.ustvnow.com/</website>
-    </extension>
+<addon id="plugin.video.ustvnow.tva" name="USTVnow Plus" provider-name="mhancoc7" version="14.1.9">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+  </requires>
+  <extension library="main.py" point="xbmc.python.pluginsource">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Watch All the Major American Television Networks Live in HD for Free!</summary>
+    <description>Watch All the Major American Television Networks Live in HD! Entirely Legal and Free! You can also record content through their web site, and there is an optional premium service available with all kinds of other channels. Signup for a free account through the following link today: http://watch.ustvnow.com</description>
+    <platform>all</platform>
+    <forum>https://forums.tvaddons.ag/ustvnow-plugin-for-kodi/</forum>
+    <website>http://watch.ustvnow.com/</website>
+  </extension>
 </addon>
 
-<addon id="plugin.video.uwc"
-       name="Ultimate Whitecream"
-       version="1.0.89"
-       provider-name="mortael">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource"
-               library="default.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <platform>all</platform>
-        <license>GPL 2.0</license>
-        <summary lang="en">Watch [COLOR red][B]ADULT[/B][/COLOR] Movies with Ultimate WhiteCream</summary>
-        <description lang="en">Watch [COLOR red][B]ADULT[/B][/COLOR] Movies with Ultimate WhiteCream</description>
-		<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
-    </extension>
+<addon id="plugin.video.uwc" name="Ultimate Whitecream" version="1.0.90" provider-name="mortael">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <license>GPL 2.0</license>
+    <summary lang="en">Watch [COLOR red][B]ADULT[/B][/COLOR] Movies with Ultimate WhiteCream</summary>
+    <description lang="en">Watch [COLOR red][B]ADULT[/B][/COLOR] Movies with Ultimate WhiteCream</description>
+    <disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
+  </extension>
 </addon>
 
-    <addon id="plugin.video.velocity" version="1.0.4" name="Velocity" provider-name="Blazetamer">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0"/>
-        <import addon="script.module.urlresolver"  version="2.1.2"/>
-        <import addon="script.module.t0mm0.common" version="2.0.0"/>
-        <import addon="script.module.autoupdate" version="2.0.0" />
-
-
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary>Stream Videos from multiple sources</summary>
-        <description>Stream Videos from multiple sources via Information obtained from Trakt.tv, and or your Trakt Account</description>
-        <disclaimer>The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
-        <language>en</language>
-        <platform>all</platform>
-        <forum>https://forums.tvaddons.ag/blazetamer-s-repository/39658-velocity-20.html</forum>
-        <website>https://offshoregit.com/Blazetamer/velocity.html</website>
-        <source></source>
-        <email></email>
-    </extension>
+<addon id="plugin.video.velocity" version="1.0.5" name="Velocity" provider-name="Blazetamer">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.urlresolver" version="2.1.2" />
+    <import addon="script.module.t0mm0.common" version="2.0.0" />
+    <import addon="script.module.autoupdate" version="2.0.0" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Stream Videos from multiple sources</summary>
+    <description>Stream Videos from multiple sources via Information obtained from Trakt.tv, and or your Trakt Account</description>
+    <disclaimer>The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
+    <language>en</language>
+    <platform>all</platform>
+    <forum>https://forums.tvaddons.ag/blazetamer-s-repository/39658-velocity-20.html</forum>
+    <website>https://offshoregit.com/Blazetamer/velocity.html</website>
+    <source>
+    </source>
+    <email>
+    </email>
+  </extension>
 </addon>
 
 <addon id="plugin.video.vod.9movies" name="9movies" version="1.0.2" provider-name="anhlon">
@@ -3459,42 +3458,26 @@ http://www.hometheater.co.il</description>
   </extension>
 </addon>
 
-<addon id="plugin.video.watch1080" name="Watch 1080p" version="1.0.4" provider-name="MetalKettle">
-
+<addon id="plugin.video.watch1080" name="Watch 1080p" version="1.0.5" provider-name="MetalKettle">
   <requires>
-
-    <import addon="script.module.simplejson" version="3.3.0"/>
-
-    <import addon="xbmc.python" version="2.1.0"/>
-
-    <import addon="script.module.t0mm0.common" version="2.0.0"/>
-
-    <import addon="plugin.video.youtube" version="3.0.0"/>
-
-    <import addon="script.module.urlresolver" version="2.1.2"/>
-
-    <import addon="script.common.plugin.cache" version="2.5.2"/>
-
-    <import addon="script.module.metahandler" version="2.5.1"/>
-
+    <import addon="script.module.simplejson" version="3.3.0" />
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.t0mm0.common" version="2.0.0" />
+    <import addon="plugin.video.youtube" version="3.0.0" />
+    <import addon="script.module.urlresolver" version="2.1.2" />
+    <import addon="script.common.plugin.cache" version="2.5.2" />
+    <import addon="script.module.metahandler" version="2.5.1" />
   </requires>
-
   <extension point="xbmc.python.pluginsource" library="default.py">
-
-        <provides>video</provides>
-
+    <provides>video</provides>
   </extension>
-
   <extension point="xbmc.addon.metadata">
-
-    <summary lang="en"/>
-
-    <description lang="en"/>
-
+    <summary lang="en">
+    </summary>
+    <description lang="en">
+    </description>
     <platform>all</platform>
-
   </extension>
-
 </addon>
 
 <addon id="plugin.video.watchhistory" name="** My Watch History **" version="0.0.8" provider-name="[COLOR blue]X[/COLOR]unity[COLOR blue]T[/COLOR]alk">
@@ -4948,23 +4931,25 @@ If for any reason the check of a successful wake-up via ping is not possible or 
 	</extension>
 </addon>
 
-<addon id="script.featherence.service" name="Featherence Service" version="0.2.1" provider-name="finalmakerr">
+<addon id="script.featherence.service" name="Featherence Service" version="0.2.2" provider-name="finalmakerr">
   <requires>
-	<import addon="xbmc.json" version="6.0.0"/>
-	<import addon="xbmc.python" version="2.1.0"/>
+    <import addon="xbmc.json" version="6.0.0" />
+    <import addon="xbmc.python" version="2.1.0" />
   </requires>
-  <extension point="xbmc.python.script" library="default.py"/>
-  <extension point="xbmc.service" library="service.py" start="startup"/>
+  <extension point="xbmc.python.script" library="default.py" />
+  <extension point="xbmc.service" library="service.py" start="startup" />
   <extension point="xbmc.addon.metadata">
-	<platform>all</platform>
+    <platform>all</platform>
     <summary>Add-on for skins and video plugins to provide simple development</summary>
     <description lang="en">_</description>
-	<description lang="he">_</description>
-    <disclaimer></disclaimer>
-	<email>featherence@groups.facebook.com</email>
-	<forum></forum>
-	<source>https://github.com/finalmakerr/featherence/tree/master/master/script.featherence.service</source>
-	<website>https://www.facebook.com/groups/featherence/</website>
+    <description lang="he">_</description>
+    <disclaimer>
+    </disclaimer>
+    <email>featherence@groups.facebook.com</email>
+    <forum>
+    </forum>
+    <source>https://github.com/finalmakerr/featherence/tree/master/master/script.featherence.service</source>
+    <website>https://www.facebook.com/groups/featherence/</website>
   </extension>
 </addon>
 
@@ -6486,45 +6471,46 @@ level.</description>
   </extension>
 </addon>
 
-	<addon id="script.skin.helper.service" name="Skin Helper Service" version="1.0.44" provider-name="marcelveldt">
-	<requires>
-		<import addon="xbmc.python" version="2.13.0"/>
-		<import addon="xbmc.addon" version="12.0.0"/>
-		<import addon="script.module.pil" version="1.1.7"/>
-		<import addon="script.module.requests" version="2.3.0"/>
-        <import addon="script.module.simplejson" version="3.3.0"/>
-        <import addon="script.module.beautifulsoup" version="3.0.8" />
-	</requires>
-
-    <extension point="xbmc.python.library" library="default.py" />
-	<extension point="xbmc.python.pluginsource" library="plugin.py">
-		<provides>video</provides>
-	</extension>
-	<extension library="service.py" point="xbmc.service" start="login" />
-	<extension point="kodi.context.item" library="contextmenu_serieslevel.py">
-		<item>
-			<label>32072</label>
-            <description>Display Series level button in next/recent/in progress episodes listings</description>
-			<visible>Container.Content(episodes) + !StringCompare(Container.ListItem(0).TvShowTitle,Container.ListItem(1).TvShowTitle)</visible>
-		</item>
-	</extension>
-    <extension point="kodi.context.item" library="contextmenu_artwork.py">
-		<item>
-			<label>32143</label>
-            <description>PVR and Music artwork Configuration</description>
-            <visible>[[Window.IsActive(MyPVRChannels.xml) | Window.IsActive(MyPVRGuide.xml) | Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRTimers.xml) | Window.IsActive(MyPVRSearch.xml)] + Skin.HasSetting(SkinHelper.EnablePVRThumbs)] | [Container.Content(albums) | Container.Content(artists) | Container.Content(songs)]</visible>
-		</item>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Helper service for Kodi skins</summary>
-        <description>Helper service for Kodi skins</description>
-		<language></language>
-		<platform>all</platform>
-		<license>GPL v2.0</license>
-		<forum>http://forum.kodi.tv/showthread.php?tid=235676</forum>
-		<website></website>
-		<source>https://github.com/marcelveldt/script.skin.helper.service</source>
-	</extension>
+<addon id="script.skin.helper.service" name="Skin Helper Service" version="1.0.46" provider-name="marcelveldt">
+  <requires>
+    <import addon="xbmc.python" version="2.13.0" />
+    <import addon="xbmc.addon" version="12.0.0" />
+    <import addon="script.module.pil" version="1.1.7" />
+    <import addon="script.module.requests" version="2.3.0" />
+    <import addon="script.module.simplejson" version="3.3.0" />
+    <import addon="script.module.beautifulsoup" version="3.0.8" />
+  </requires>
+  <extension point="xbmc.python.library" library="default.py" />
+  <extension point="xbmc.python.pluginsource" library="plugin.py">
+    <provides>video</provides>
+  </extension>
+  <extension library="service.py" point="xbmc.service" start="login" />
+  <extension point="kodi.context.item" library="contextmenu_serieslevel.py">
+    <item>
+      <label>32072</label>
+      <description>Display Series level button in next/recent/in progress episodes listings</description>
+      <visible>Container.Content(episodes) + !StringCompare(Container.ListItem(0).TvShowTitle,Container.ListItem(1).TvShowTitle)</visible>
+    </item>
+  </extension>
+  <extension point="kodi.context.item" library="contextmenu_artwork.py">
+    <item>
+      <label>32143</label>
+      <description>PVR and Music artwork Configuration</description>
+      <visible>[[Window.IsActive(MyPVRChannels.xml) | Window.IsActive(MyPVRGuide.xml) | Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRTimers.xml) | Window.IsActive(MyPVRSearch.xml)] + Skin.HasSetting(SkinHelper.EnablePVRThumbs)] | [Container.Content(albums) | Container.Content(artists) | Container.Content(songs)]</visible>
+    </item>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Helper service for Kodi skins</summary>
+    <description>Helper service for Kodi skins</description>
+    <language>
+    </language>
+    <platform>all</platform>
+    <license>GPL v2.0</license>
+    <forum>http://forum.kodi.tv/showthread.php?tid=235676</forum>
+    <website>
+    </website>
+    <source>https://github.com/marcelveldt/script.skin.helper.service</source>
+  </extension>
 </addon>
 
 <addon id="script.skin.info.service" name="Skin Info Service" version="1.0.1" provider-name="phil65">
@@ -6925,27 +6911,27 @@ level.</description>
   </extension>
 </addon>
 
-<addon id="service.library.data.provider" name="Library Data Provider" provider-name="BigNoid, Martijn" version="0.1.4">
-	<requires>
-		<import addon="xbmc.addon" version="12.0.0"/>
-		<import addon="xbmc.json" version="6.0.0"/>
-		<import addon="xbmc.python" version="2.1.0"/>
-		<import addon="script.module.simplejson" version="2.0.10"/>
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="default.py"/>
-	<extension library="service.py" point="xbmc.service" start="login"/>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Plugin for skins to provide library data throughout the skin.</summary>
-		<description lang="en">Plugin for skins to provide library data throughout the skin.</description>
-		<disclaimer lang="en">This plugin is not a standalone plugin, your skin must support it.</disclaimer>
-		<platform>all</platform>
-		<language/>
-		<license>GNU GENERAL PUBLIC LICENSE Version 2, June 1991</license>
-		<forum>http://forum.kodi.tv/showthread.php?tid=210063</forum>
-		<website>https://github.com/BigNoid/service.library.data.provider</website>
-		<email>big.noid@kodi.tv</email>
-		<source>https://github.com/BigNoid/service.library.data.provider</source>
-	</extension>
+<addon id="service.library.data.provider" name="Library Data Provider" provider-name="BigNoid, Martijn" version="0.1.5">
+  <requires>
+    <import addon="xbmc.addon" version="12.0.0" />
+    <import addon="xbmc.json" version="6.0.0" />
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.simplejson" version="2.0.10" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py" />
+  <extension library="service.py" point="xbmc.service" start="login" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Plugin for skins to provide library data throughout the skin.</summary>
+    <description lang="en">Plugin for skins to provide library data throughout the skin.</description>
+    <disclaimer lang="en">This plugin is not a standalone plugin, your skin must support it.</disclaimer>
+    <platform>all</platform>
+    <language />
+    <license>GNU GENERAL PUBLIC LICENSE Version 2, June 1991</license>
+    <forum>http://forum.kodi.tv/showthread.php?tid=210063</forum>
+    <website>https://github.com/BigNoid/service.library.data.provider</website>
+    <email>big.noid@kodi.tv</email>
+    <source>https://github.com/BigNoid/service.library.data.provider</source>
+  </extension>
 </addon>
 
 <addon id="service.libraryautoupdate"

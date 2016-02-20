@@ -1,7 +1,21 @@
+1.4.8
+
+Fix Bundle zip file loading...
+
+
+1.4.7
+
+config XML changes
+
+add Qusar & Exodus Support
+
+changes in Movieinfo - takes only relevant fields 
+
+
 1.4.6 
 Update Salts Fix
 
-Thx to Yilan for The help you are the best!!!
+Thx to tholin for The help you are the best!!!
 
 Donatello!!!
 

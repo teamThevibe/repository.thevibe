@@ -1,5 +1,11 @@
 Official Velocity addon For Kodi
 
+V1.0.5
+Better Error notification
+Adjusted cache to deal with Trakt Timeouts
+Added SantaSeries TV
+Added Putlocker Movies/TV
+Temporarily Removed TwoMovies From Functions
 
 V1.0.4
 Bug fixes galore

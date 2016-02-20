@@ -1,3 +1,15 @@
+[B]Version 14.1.9[/B]
+- updated login and alternate login methods to fix token issues seen by Free Account users
+
+[B]Version 14.1.8[/B]
+- added option to use "Alternate" stream option for Live TV (old stream method)
+- added option to use "Alternate" stream option for Recordings (old stream method)
+
+[B]Version 14.1.7[/B]
+- more streaming function fixes for live streams and recordings streams
+- there are multiple variations on what accounts return via the API
+- this release addresses all known cases
+
 [B]Version 14.1.6[/B]
 - added stream check to ensure that token can pull in streams
 - added alternate login method to use if stream check fails
@@ -51,6 +63,18 @@
 Below is the changelog from the BETA releases
 -----------------------------------------------------------
 -----------------------------------------------------------
+
+[B]Version 1.4.3[/B]
+- updated login and alternate login methods to fix token issues seen by Free Account users
+
+[B]Version 1.4.2[/B]
+- added option to use "Alternate" stream option for Live TV (old stream method)
+- added option to use "Alternate" stream option for Recordings (old stream method)
+
+[B]Version 1.4.1[/B]
+- more streaming function fixes for live streams and recordings streams
+- there are multiple variations on what accounts return via the API
+- this release addresses all known cases
 
 [B]Version 1.4.0[/B]
 - added stream check to ensure that token can pull in streams

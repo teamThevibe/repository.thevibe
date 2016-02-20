@@ -1,3 +1,8 @@
+[B]Version 1.0.90[/B]
+Fixed: Unplayable item bug
+Removed: javhdonline and jav720p because of questionable content
+
+
 [B]Version 1.0.89[/B]
 Fixed: Multiple keyword search for ParadiseHill
 Fixed: xxxstreams (org) videos wouldn't load on Android
