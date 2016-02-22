@@ -1972,7 +1972,7 @@ Highly configurable: Set your PIN, set your watershed time, exclude addons if re
     </extension>
 </addon>
 
-<addon id="plugin.video.ccloudtv" name="cCloud TV" version="1.4.3" provider-name="podgod">
+<addon id="plugin.video.ccloudtv" name="cCloud TV" version="1.4.4" provider-name="podgod, Coder Alpha">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
     <import addon="script.module.beautifulsoup" version="3.2.1" />
