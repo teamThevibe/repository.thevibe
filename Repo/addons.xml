@@ -1230,7 +1230,7 @@ Začeno iskanje je vedno na MusicBrainz. V primeru, da na MusicBrainz ni povezav
   </extension>
 </addon>
 
-<addon id="metadata.tvshows.themoviedb.org" name="The Movie Database" version="1.3.0" provider-name="Team Kodi">
+<addon id="metadata.tvshows.themoviedb.org" name="The Movie Database" version="1.3.1" provider-name="Team Kodi">
   <requires>
     <import addon="xbmc.metadata" version="2.1.0" />
   </requires>
@@ -1833,7 +1833,7 @@ this is an unofficial addon. please don't ask for support in openelec forum / ir
   </extension>
 </addon>
 
-<addon id="plugin.program.ump" name="UMP : Universal Media Provider" provider-name="boogiepop" version="0.0.46">
+<addon id="plugin.program.ump" name="UMP : Universal Media Provider" provider-name="boogiepop" version="0.0.50">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
   </requires>
@@ -2004,7 +2004,7 @@ Highly configurable: Set your PIN, set your watershed time, exclude addons if re
   </extension>
 </addon>
 
-<addon id="plugin.video.exodus" version="1.0.1" name="Exodus" provider-name="l*m*d*">
+<addon id="plugin.video.exodus" version="1.0.1.1" name="Exodus" provider-name="l*m*d*">
   <requires>
     <import addon="xbmc.python" version="2.19.0" />
     <import addon="script.exodus.artwork" version="1.0.0" />
@@ -2923,7 +2923,7 @@ http://www.hometheater.co.il</description>
   </extension>
 </addon>
 
-<addon id="plugin.video.quasar" name="Quasar" version="0.9.22" provider-name="scakemyer">
+<addon id="plugin.video.quasar" name="Quasar" version="0.9.23" provider-name="scakemyer">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
   </requires>
@@ -2971,7 +2971,7 @@ http://www.hometheater.co.il</description>
 </addon>
 
 <!--suppress ALL -->
-<addon id="plugin.video.salts" version="2.0.6" name="Stream All The Sources" provider-name="tknorris">
+<addon id="plugin.video.salts" version="2.0.7" name="Stream All The Sources" provider-name="tknorris">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
     <import addon="script.module.urlresolver" version="2.2.0" />
@@ -3337,7 +3337,7 @@ http://www.hometheater.co.il</description>
   </extension>
 </addon>
 
-<addon id="plugin.video.ustvnow.tva" name="USTVnow Plus" provider-name="mhancoc7" version="14.1.9">
+<addon id="plugin.video.ustvnow.tva" name="USTVnow Plus" provider-name="mhancoc7" version="14.2.0">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
   </requires>
@@ -4229,17 +4229,11 @@ http://www.hometheater.co.il</description>
 	</extension>
 </addon>
 
-<addon
-  id="resource.language.he_il"
-  version="1.0.5"
-  name="Hebrew"
-  provider-name="Team Kodi">
+<addon id="resource.language.he_il" version="2.0.2" name="Hebrew" provider-name="Team Kodi">
   <requires>
-    <import addon="kodi.resource" version="1.0.0"/>
+    <import addon="kodi.resource" version="1.0.0" />
   </requires>
-  <extension
-    point="kodi.resource.language"
-    locale="he_IL">
+  <extension point="kodi.resource.language" locale="he_IL">
     <charsets>
       <gui unicodefont="true">CP1255</gui>
       <subtitle>CP1255</subtitle>
@@ -4672,9 +4666,9 @@ If for any reason the check of a successful wake-up via ping is not possible or 
   </extension>
 </addon>
 
-<addon id="script.common.plugin.cache" name="Common plugin cache" provider-name="TheCollective" version="2.5.6">
+<addon id="script.common.plugin.cache" name="Common plugin cache" provider-name="TheCollective" version="2.5.8">
   <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="xbmc.python" version="2.24.0" />
   </requires>
   <extension library="default.py" point="xbmc.service" start="startup">
   </extension>
@@ -4682,7 +4676,7 @@ If for any reason the check of a successful wake-up via ping is not possible or 
     <platform>all</platform>
     <summary lang="en">Common caching api for xbmc plugins.</summary>
   </extension>
-  <extension library="lib" point="xbmc.python.module"/>
+  <extension library="lib" point="xbmc.python.module" />
 </addon>
 
 <addon id="script.cu.lrclyrics" name="CU LRC Lyrics" version="3.2.2" provider-name="Taxigps|ronie">
@@ -4821,35 +4815,35 @@ If for any reason the check of a successful wake-up via ping is not possible or 
 	</extension>
 </addon>
 
-<addon id="script.extendedinfo" name="ExtendedInfo Script" version="4.0.1" provider-name="phil65">
-	<requires>
-		<import addon="xbmc.python" version="2.24.0"/>
-		<import addon="script.module.simplejson" version="2.0.10"/>
-		<import addon="script.module.youtube.dl" version="14.519.1"/>
-		<import addon="resource.images.studios.white" version="0.0.5"/>
-		<import addon="script.module.autocompletion" version="1.0.0"/>
-		<import addon="script.module.actionhandler" version="1.0.1"/>
-		<import addon="script.module.t9.search" version="1.0.0"/>
-		<!-- 		<import addon="script.module.buggalo" version="1.1.6"/>-->
-		<import addon="script.module.pil" version="1.1.7"/>
-	</requires>
-	<extension point="xbmc.python.script" library="default.py">
-		<provides>executable</provides>
-	</extension>
-	<extension point="xbmc.python.library" library="default.py" />
-	<extension point="xbmc.python.pluginsource" library="plugin.py">
-		<provides>video</provides>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<language/>
-		<summary lang="en">ExtendedInfo Script</summary>
-		<description lang="en">This script offers various possibilities to display online content inside skins as well as a complete MovieDB browser including info dialogs for various media types. Used services are themoviedb.org, theaudiodb.org, rottentomatoes.com, Trakt.TV, omdbapi.com and a lot more. Needs skin implementation for lot of functions.</description>
-		<platform>all</platform>
-		<license>GNU GENERAL PUBLIC LICENSE Version 2, June 1991</license>
-		<forum>http://forum.kodi.tv/showthread.php?tid=160558</forum>
-		<source>https://github.com/phil65/script.extendedinfo</source>
-		<email>phil65@kodi.tv</email>
-	</extension>
+<addon id="script.extendedinfo" name="ExtendedInfo Script" version="4.5.1" provider-name="phil65">
+  <requires>
+    <import addon="xbmc.python" version="2.24.0" />
+    <import addon="script.module.simplejson" version="2.0.10" />
+    <import addon="script.module.youtube.dl" version="14.519.1" />
+    <import addon="resource.images.studios.white" version="0.0.5" />
+    <import addon="script.module.autocompletion" version="1.0.0" />
+    <import addon="script.module.actionhandler" version="1.0.1" />
+    <import addon="script.module.t9.search" version="1.0.0" />
+    <!-- 		<import addon="script.module.buggalo" version="1.1.6"/>-->
+    <import addon="script.module.pil" version="1.1.7" />
+  </requires>
+  <extension point="xbmc.python.script" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.python.library" library="default.py" />
+  <extension point="xbmc.python.pluginsource" library="plugin.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <language />
+    <summary lang="en">ExtendedInfo Script</summary>
+    <description lang="en">This script offers various possibilities to display online content inside skins as well as a complete MovieDB browser including info dialogs for various media types. Used services are themoviedb.org, theaudiodb.org, rottentomatoes.com, Trakt.TV, omdbapi.com and a lot more. Needs skin implementation for lot of functions.</description>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE Version 2, June 1991</license>
+    <forum>http://forum.kodi.tv/showthread.php?tid=160558</forum>
+    <source>https://github.com/phil65/script.extendedinfo</source>
+    <email>phil65@kodi.tv</email>
+  </extension>
 </addon>
 
 <addon id="script.eztv2kd" name="[COLOR FFC0392B]EZTV2[/COLOR]KD" version="1.1.2" provider-name="mancuniancol">
@@ -4953,83 +4947,83 @@ If for any reason the check of a successful wake-up via ping is not possible or 
   </extension>
 </addon>
 
-<addon id="script.globalsearch" name="Global Search" version="5.0.0" provider-name="ronie">
-	<requires>
-		<import addon="xbmc.python" version="2.20.0"/>
-		<import addon="script.module.simplejson" version="3.3.0"/>
-	</requires>
-	<extension point="xbmc.python.script" library="default.py">
-		<provides>executable</provides>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="bg">Търси в библиотеката Ви.</summary>
-		<summary lang="ca">Cerca a la teva biblioteca.</summary>
-		<summary lang="cs">Hledej v knihovně</summary>
-		<summary lang="de">Durchsuchen Sie Ihre Bibliothek.</summary>
-		<summary lang="el">Αναζήτηση στη Συλλογή σας.</summary>
-		<summary lang="en">Search your library.</summary>
-		<summary lang="en_NZ">Search your library.</summary>
-		<summary lang="en_US">Search your library.</summary>
-		<summary lang="es">Busca tu biblioteca.</summary>
-		<summary lang="fr">Chercher dans votre médiathèque.</summary>
-		<summary lang="fr_CA">Chercher dans votre bibliothèque</summary>
-		<summary lang="gl">Buscar a súa biblioteca.</summary>
-		<summary lang="he">חיפוש בספריית המדיה.</summary>
-		<summary lang="hr">Pretražite svoju zbirku.</summary>
-		<summary lang="hu">Keresés a médiatárban</summary>
-		<summary lang="id">Cari pustaka Anda.</summary>
-		<summary lang="it">Ricerca nella la tua libreria.</summary>
-		<summary lang="ko">라이브러리 찾기</summary>
-		<summary lang="lt">Ieškoti bibliotekoje.</summary>
-		<summary lang="nl">Zoek in je bibliotheek.</summary>
-		<summary lang="no">Søk i biblioteket ditt</summary>
-		<summary lang="pl">Przeszukaj swoją bibliotekę</summary>
-		<summary lang="pt">Faça buscas na sua biblioteca.</summary>
-		<summary lang="pt_BR">Pesquise sua coleção.</summary>
-		<summary lang="ro">Căutați în mediateca dumneavoastră.</summary>
-		<summary lang="ru">Поиск в вашей медиатеке.</summary>
-		<summary lang="sl">Iščite v svoji knjižnici.</summary>
-		<summary lang="sv">Sök i ditt bibliotek.</summary>
-		<summary lang="tr">Kitaplığını ara</summary>
-		<summary lang="zh">资料库搜索</summary>
-		<description lang="bg">Добавката може да намери всеки елемент във вашата видео и музикална библиотека.</description>
-		<description lang="ca">Aquest complement pot trobat qualsevol article en la teva biblioteca de vídeo i música</description>
-		<description lang="cs">Tento dopněk dokáže najít libovolnou položku ve vaší audio a video knihovně.</description>
-		<description lang="de">Dieses Add-on kann jeden Eintrag in Ihrer Video- und Musikbibliothek finden.</description>
-		<description lang="el">Αυτό το πρόσθετο μπορεί να βρει κάθε αντικείμενο στις συλλογές σας.</description>
-		<description lang="en">This addon can find any item in your video and music library.</description>
-		<description lang="en_NZ">This addon can find any item in your video and music library.</description>
-		<description lang="en_US">This addon can find any item in your video and music library.</description>
-		<description lang="es">Este complemento puede encontrar cualquier elemento en tu biblioteca de vídeo y música.</description>
-		<description lang="fr">Cette extension peut trouver n'importe quel élément de votre médiathèque vidéo et musicale.</description>
-		<description lang="fr_CA">Cet addiciel peut trouver tout élément dans votre vidéothèque et dans votre audiothèque.</description>
-		<description lang="gl">Este complemento pode atopar calquera elemento na súa biblioteca de medios.</description>
-		<description lang="he">הרחבה זו יכולה למצוא כל פריט בספריות הווידאו והמוזיקה.</description>
-		<description lang="hr">Ovaj dodatak može pronaći svaku stavku u vašoj videoteci ili fonoteci.</description>
-		<description lang="hu">Ez a kiegészítő bármely elemet megtalálja a videó és audió médiatárban.</description>
-		<description lang="id">Addon ini dapat mencari item apa saja di pustaka video dan musik Anda.</description>
-		<description lang="it">Questo addon può trovare ogni elemento nella tua libreria video ed in quella musicale.</description>
-		<description lang="ko">비디오와 음악 라이브러리의 모든 항목을 검색합니다.</description>
-		<description lang="lt">Šis priedas gali rasti bet kokį elementą jūsų vaizdo ir garso bibliotekoje.</description>
-		<description lang="nl">Deze addon kan elk item in je video- en muziekbibliotheken vinden.</description>
-		<description lang="no">Dette tillegget kan finne hva som helst i ditt film eller musikk bibliotek.</description>
-		<description lang="pl">Ten plugin może odnaleźć dowolną pozycję w twojej bibliotece wideo oraz muzycznej.</description>
-		<description lang="pt">Este addon pode encontrar qualquer item na sua biblioteca de vídeos e de músicas.</description>
-		<description lang="pt_BR">Este addon pode encontrar qualquer item na sua coleção de vídeos e música.</description>
-		<description lang="ro">Acest supliment poate găsi orice element în mediateca dumneavoastră video și audio.</description>
-		<description lang="ru">Это дополнение поможет найти любую запись в вашей медиатеке.</description>
-		<description lang="sl">Ta dodatek lahko poišče katerokoli podatek v vaši knjižnici filmov in glasbe.</description>
-		<description lang="sv">Detta tillägg kan hitta vilket objekt som helst i ditt video och musikbibliotek.</description>
-		<description lang="tr">Bu eklenti video ve müzik kitaplığınızdaki herhangi bir öğeyi bulabilir.</description>
-		<description lang="zh">此插件搜索你的视频和音乐资料库项目。</description>
-		<language></language>
-		<platform>all</platform>
-		<license>GNU GENERAL PUBLIC LICENSE Version 2</license>
-		<forum>http://forum.kodi.tv/showthread.php?tid=109301</forum>
-		<website></website>
-		<email></email>
-		<source>https://github.com/ronie/script.globalsearch/</source>
-	</extension>
+<addon id="script.globalsearch" name="Global Search" version="6.0.6" provider-name="ronie">
+  <requires>
+    <import addon="xbmc.python" version="2.24.0" />
+    <import addon="script.module.simplejson" version="3.3.0" />
+  </requires>
+  <extension point="xbmc.python.script" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="bg">Търси в библиотеката Ви.</summary>
+    <summary lang="ca">Cerca a la teva biblioteca.</summary>
+    <summary lang="cs">Hledej v knihovně</summary>
+    <summary lang="de">Durchsuchen Sie Ihre Bibliothek.</summary>
+    <summary lang="el">Αναζήτηση στη Συλλογή σας.</summary>
+    <summary lang="en">Search your library.</summary>
+    <summary lang="en_NZ">Search your library.</summary>
+    <summary lang="en_US">Search your library.</summary>
+    <summary lang="es">Busca tu biblioteca.</summary>
+    <summary lang="fr">Chercher dans la médiathèque.</summary>
+    <summary lang="fr_CA">Chercher dans votre bibliothèque</summary>
+    <summary lang="gl">Buscar a súa biblioteca.</summary>
+    <summary lang="he">חיפוש בספריית המדיה.</summary>
+    <summary lang="hr">Pretražite svoju zbirku.</summary>
+    <summary lang="hu">Keresés a médiatárban</summary>
+    <summary lang="id">Cari pustaka Anda.</summary>
+    <summary lang="it">Ricerca nella la tua libreria.</summary>
+    <summary lang="ko">라이브러리 찾기</summary>
+    <summary lang="lt">Ieškoti bibliotekoje.</summary>
+    <summary lang="nl">Zoek in je bibliotheek.</summary>
+    <summary lang="no">Søk i biblioteket ditt</summary>
+    <summary lang="pl">Przeszukaj swoją bibliotekę</summary>
+    <summary lang="pt">Faça buscas na sua biblioteca.</summary>
+    <summary lang="pt_BR">Pesquise sua coleção.</summary>
+    <summary lang="ro">Căutați în mediateca dumneavoastră.</summary>
+    <summary lang="ru">Поиск в вашей медиатеке.</summary>
+    <summary lang="sl">Iščite v svoji knjižnici.</summary>
+    <summary lang="sv">Sök i ditt bibliotek.</summary>
+    <summary lang="tr">Kitaplığını ara</summary>
+    <summary lang="zh">资料库搜索</summary>
+    <description lang="bg">Добавката може да намери всеки елемент във вашата видео и музикална библиотека.</description>
+    <description lang="ca">Aquest complement pot trobat qualsevol article en la teva biblioteca de vídeo i música</description>
+    <description lang="cs">Tento dopněk dokáže najít libovolnou položku ve vaší audio a video knihovně.</description>
+    <description lang="de">Dieses Add-on kann jeden Eintrag in Ihrer Video- und Musikbibliothek finden.</description>
+    <description lang="el">Αυτό το πρόσθετο μπορεί να βρει κάθε αντικείμενο στις συλλογές σας.</description>
+    <description lang="en">This addon can find any item in your video and music library.</description>
+    <description lang="en_NZ">This addon can find any item in your video and music library.</description>
+    <description lang="en_US">This addon can find any item in your video and music library.</description>
+    <description lang="es">Este complemento puede encontrar cualquier elemento en tu biblioteca de vídeo y música.</description>
+    <description lang="fr">Cette extension peut trouver tout élément dans la vidéothèque et l'audiothèque.</description>
+    <description lang="fr_CA">Cet addiciel peut trouver tout élément dans votre vidéothèque et dans votre audiothèque.</description>
+    <description lang="gl">Este complemento pode atopar calquera elemento na súa biblioteca de medios.</description>
+    <description lang="he">הרחבה זו יכולה למצוא כל פריט בספריות הווידאו והמוזיקה.</description>
+    <description lang="hr">Ovaj dodatak može pronaći svaku stavku u vašoj videoteci ili fonoteci.</description>
+    <description lang="hu">Ez a kiegészítő bármely elemet megtalálja a videó és audió médiatárban.</description>
+    <description lang="id">Addon ini dapat mencari item apa saja di pustaka video dan musik Anda.</description>
+    <description lang="it">Questo addon può trovare ogni elemento nella tua libreria video ed in quella musicale.</description>
+    <description lang="ko">비디오와 음악 라이브러리의 모든 항목을 검색합니다.</description>
+    <description lang="lt">Šis priedas gali rasti bet kokį elementą jūsų vaizdo ir garso bibliotekoje.</description>
+    <description lang="nl">Deze addon kan elk item in je video- en muziekbibliotheken vinden.</description>
+    <description lang="no">Dette tillegget kan finne hva som helst i ditt film eller musikk bibliotek.</description>
+    <description lang="pl">Ten plugin może odnaleźć dowolną pozycję w twojej bibliotece wideo oraz muzycznej.</description>
+    <description lang="pt">Este addon pode encontrar qualquer item na sua biblioteca de vídeos e de músicas.</description>
+    <description lang="pt_BR">Este addon pode encontrar qualquer item na sua coleção de vídeos e música.</description>
+    <description lang="ro">Acest supliment poate găsi orice element în mediateca dumneavoastră video și audio.</description>
+    <description lang="ru">Это дополнение поможет найти любую запись в вашей медиатеке.</description>
+    <description lang="sl">Ta dodatek lahko poišče katerokoli podatek v vaši knjižnici filmov in glasbe.</description>
+    <description lang="sv">Detta tillägg kan hitta vilket objekt som helst i ditt video och musikbibliotek.</description>
+    <description lang="tr">Bu eklenti video ve müzik kitaplığınızdaki herhangi bir öğeyi bulabilir.</description>
+    <description lang="zh">此插件搜索你的视频和音乐资料库项目。</description>
+    <language />
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE Version 2</license>
+    <forum>http://forum.kodi.tv/showthread.php?tid=109301</forum>
+    <website />
+    <email />
+    <source>https://github.com/ronie/script.globalsearch/</source>
+  </extension>
 </addon>
 
 <addon id="script.hdfull2kd" name="[COLOR FFC0392B]HDFULL[/COLOR]2KD - TVGUIA" version="1.2.0" provider-name="mancuniancol">
@@ -5221,7 +5215,7 @@ If for any reason the check of a successful wake-up via ping is not possible or 
     </extension>
 </addon>
 
-<addon id="script.icechannel.extn.xunitytalk" version="0.4.75" name=".[COLOR blue]X[/COLOR]unity Talk iStream Extensions" provider-name="[COLOR blue]X[/COLOR]unity[COLOR blue]T[/COLOR]alk">
+<addon id="script.icechannel.extn.xunitytalk" version="0.4.78" name=".[COLOR blue]X[/COLOR]unity Talk iStream Extensions" provider-name="[COLOR blue]X[/COLOR]unity[COLOR blue]T[/COLOR]alk">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
     <import addon="repository.istream" version="1.0" />
@@ -6175,24 +6169,24 @@ level.</description>
     </extension>
 </addon>
 
-<addon id="script.module.trakt" name="trakt.py" version="2.5.1" provider-name="Fuzeman, Razzeee">
+<addon id="script.module.trakt" name="trakt.py" version="2.5.2" provider-name="Fuzeman, Razzeee">
   <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-	<import addon="script.module.requests" version="2.7.0"/>
-	<import addon="script.module.six" version="1.9.0"/>
-	<import addon="script.module.arrow" version="0.6.0"/>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.requests" version="2.7.0" />
+    <import addon="script.module.six" version="1.9.0" />
+    <import addon="script.module.arrow" version="0.6.0" />
   </requires>
-  <extension point="xbmc.python.module" library="lib"/>
+  <extension point="xbmc.python.module" library="lib" />
   <extension point="xbmc.addon.metadata">
     <summary>Python interface for the trakt.tv API</summary>
     <description>Packed for Kodi from https://github.com/fuzeman/trakt.py</description>
     <platform>all</platform>
-    <language/>
+    <language />
     <license>MIT</license>
-    <forum/>
+    <forum />
     <website>https://github.com/fuzeman/trakt.py</website>
     <source>https://github.com/Razzeee/script.module.trakt</source>
-    <email/>
+    <email />
   </extension>
 </addon>
 
@@ -6471,7 +6465,7 @@ level.</description>
   </extension>
 </addon>
 
-<addon id="script.skin.helper.service" name="Skin Helper Service" version="1.0.46" provider-name="marcelveldt">
+<addon id="script.skin.helper.service" name="Skin Helper Service" version="1.0.47" provider-name="marcelveldt">
   <requires>
     <import addon="xbmc.python" version="2.13.0" />
     <import addon="xbmc.addon" version="12.0.0" />

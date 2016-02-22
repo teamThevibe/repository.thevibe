@@ -1,3 +1,9 @@
+2016-02-21: version bump
+2016-02-21: 0.0.49 Version Release
+2016-02-21: afdah: clean prints, 720pizle: fix int(imdbid)
+2016-02-20: imdb: exception work
+2016-02-13: fix search: imdb
+2016-02-13: rottentomatoes: new video indexer
 2016-02-03: moviesub: int(year), primewire: int(year), afdah: int(year),
 2016-02-03: 702pizle: dont run on series
 2016-01-31: ann: remove vote filter on browse by themes, latinise -, fix typo orginaltitle

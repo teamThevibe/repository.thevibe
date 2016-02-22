@@ -1,3 +1,8 @@
+[B]Version 14.2.0[/B]
+- forgot to clear out the invalid tokens in the last update.
+- added code to clear out all previous tokens to ensure that a fresh one is grabbed
+- code clean-up
+
 [B]Version 14.1.9[/B]
 - updated login and alternate login methods to fix token issues seen by Free Account users
 
@@ -63,6 +68,11 @@
 Below is the changelog from the BETA releases
 -----------------------------------------------------------
 -----------------------------------------------------------
+
+[B]Version 1.4.4[/B]
+- forgot to clear out the invalid tokens in the last update.
+- added code to clear out all previous tokens to ensure that a fresh one is grabbed
+- code clean-up
 
 [B]Version 1.4.3[/B]
 - updated login and alternate login methods to fix token issues seen by Free Account users

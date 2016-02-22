@@ -1,15 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<addon
-  id="resource.language.he_il"
-  version="1.0.5"
-  name="Hebrew"
-  provider-name="Team Kodi">
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<addon id="resource.language.he_il" version="2.0.2" name="Hebrew" provider-name="Team Kodi">
   <requires>
-    <import addon="kodi.resource" version="1.0.0"/>
+    <import addon="kodi.resource" version="1.0.0" />
   </requires>
-  <extension
-    point="kodi.resource.language"
-    locale="he_IL">
+  <extension point="kodi.resource.language" locale="he_IL">
     <charsets>
       <gui unicodefont="true">CP1255</gui>
       <subtitle>CP1255</subtitle>

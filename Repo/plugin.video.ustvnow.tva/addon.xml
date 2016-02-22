@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<addon id="plugin.video.ustvnow.tva" name="USTVnow Plus" provider-name="mhancoc7" version="14.1.9">
+<addon id="plugin.video.ustvnow.tva" name="USTVnow Plus" provider-name="mhancoc7" version="14.2.0">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
   </requires>
