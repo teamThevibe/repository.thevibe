@@ -1972,6 +1972,27 @@ Highly configurable: Set your PIN, set your watershed time, exclude addons if re
     </extension>
 </addon>
 
+<addon id="plugin.video.anarchitv"
+       name="[COLOR yellow]AnarchiTV[/COLOR]"
+       version="1.0.5"
+       provider-name="kodi senyor">
+  <requires>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>AnarchiTV</summary>
+    <description>
+	[COLOR yellow]kodi-senyor.co.il and anarchitv.co[/COLOR] AnarchiTV Live tv channels
+    </description>
+	<license>http://www.gnu.org/licenses/</license>
+    <website>http://kodi-senyor.co.il</website>
+    <email></email>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="plugin.video.ccloudtv" name="cCloud TV" version="1.4.4" provider-name="podgod, Coder Alpha">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
