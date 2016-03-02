@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon
     id="script.artwork.downloader"
     name="Artwork Downloader"
-    version="13.1.0"
+    version="12.0.29.1"
     provider-name="Martijn"
     >
   <requires>
