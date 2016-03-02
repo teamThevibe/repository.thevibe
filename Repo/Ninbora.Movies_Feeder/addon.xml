@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="Ninbora.Movies_Feeder" name="Ninbora.Movies_Feeder" version="1.4.8" provider-name="Donatello Hybrid Blade Tholin">
+<addon id="Ninbora.Movies_Feeder" name="Ninbora.Movies_Feeder" version="1.4.9" provider-name="Donatello Hybrid Blade Tholin">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
   </requires>
@@ -10,7 +10,7 @@
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary lang="en">Feed movies to Kodi from several sources</summary>
-    <summary lang="he">קיר הסרטים של דונטלו היבריד בלייד וטהולין</summary>
+    <summary lang="he">קיר הסרטים של דונטלו היבריד בלייד ותולין</summary>
     <website>http://donatellokodi.blogspot.co.il</website>
     <platform>all</platform>
   </extension>

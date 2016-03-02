@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="Ninbora.Series_Feeder" name="Ninbora.Series_Feeder" version="1.4.8" provider-name="Donatello Hybrid Blade Tholin">
+<addon id="Ninbora.Series_Feeder" name="Ninbora.Series_Feeder" version="1.4.9" provider-name="Donatello Hybrid Blade Tholin">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
   </requires>
@@ -10,7 +10,7 @@
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary lang="en">Feed series to Kodi from several sources</summary>
-    <summary lang="he">קיר הסדרות של דונטלו היבריד בלייד וטהולין</summary>
+    <summary lang="he">קיר הסדרות של דונטלו היבריד בלייד ותולין</summary>
     <website>https://donatelokodi.blogspot.co.il</website>
     <platform>all</platform>
   </extension>

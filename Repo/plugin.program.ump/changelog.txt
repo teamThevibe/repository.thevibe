@@ -1,5 +1,4 @@
-2016-02-21: version bump
-2016-02-21: 0.0.49 Version Release
+2016-02-29: imdb: genres, awards, worldcinema, rt: remove some unusefule searches, dizigold:fix languages, sezonlukdizi: fix for new design, afdah: fix for new obfuscration, primewire: fix for codification, openload: fix onfuscration, api: global db initial commit not yet ready
 2016-02-21: afdah: clean prints, 720pizle: fix int(imdbid)
 2016-02-20: imdb: exception work
 2016-02-13: fix search: imdb

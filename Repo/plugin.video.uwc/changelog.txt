@@ -1,3 +1,13 @@
+[B]Version 1.0.92[/B]
+Fixed: Nudeflix
+Fixed: Porn00
+Fixed: HQporner
+
+
+[B]Version 1.0.91[/B]
+Added: Eroticage
+
+
 [B]Version 1.0.90[/B]
 Fixed: Unplayable item bug
 Removed: javhdonline and jav720p because of questionable content
