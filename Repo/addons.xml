@@ -4267,6 +4267,132 @@ http://www.hometheater.co.il</description>
 	</extension>
 </addon>
 
+<addon id="resource.images.skinbackgrounds.clear.he" name="Skin Backgrounds - Clear Design (Hebrew)" version="1.0" provider-name="Orna Post, Benny Buchnik">
+	<extension point="kodi.resource.images" compile="false" type="skinbackgrounds" />
+	<requires>
+		<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Skin backgrounds Pack - Clear Design</summary>
+		<description lang="en">Skin backgrounds Pack - Clear Design</description>
+		<summary lang="he">חבילת רקעים - סגנון נקי</summary>
+		<description lang="he">חבילת רקעים - סגנון נקי</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="resource.images.skinbackgrounds.diamond.he" name="Skin Backgrounds - Diamond Design (Hebrew)" version="1.0" provider-name="Orna Post, Benny Buchnik">
+	<extension point="kodi.resource.images" compile="false" type="skinbackgrounds" />
+	<requires>
+		<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Skin Backgrounds Pack - Diamond Design</summary>
+		<description lang="en">Skin Backgrounds Pack - Diamond Design</description>
+		<summary lang="he">חבילת רקעים - סגנון יהלום</summary>
+		<description lang="he">חבילת רקעים - סגנון יהלום</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="resource.images.skinbackgrounds.wallsquare.he" name="Skin Backgrounds - Wall Square (Hebrew)" version="1.0" provider-name="Orna Post, Benny Buchnik">
+	<extension point="kodi.resource.images" compile="false" type="skinbackgrounds" />
+	<requires>
+		<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Skin Backgrounds Pack - Wall Square Design</summary>
+		<description lang="en">Skin Backgrounds Pack - Wall Square Design</description>
+		<summary lang="he">חבילת רקעים - סגנון מרובע</summary>
+		<description lang="he">חבילת רקעים - סגנון מרובע</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="resource.images.skinbackgrounds.zigzag.he" name="Skin Backgrounds - ZigZag Design (Hebrew)" version="1.0" provider-name="Orna Post, Benny Buchnik">
+	<extension point="kodi.resource.images" compile="false" type="skinbackgrounds" />
+	<requires>
+		<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Skin Backgrounds Pack - ZigZag Design</summary>
+		<description lang="en">Skin Backgrounds Pack - ZigZag Design</description>
+		<summary lang="he">חבילת רקעים - סגנון זיגזג</summary>
+		<description lang="he">חבילת רקעים - סגנון זיגזג</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="resource.images.skinicons.boss.he" name="Skin Icons - Boss Design (Hebrew)" version="1.0" provider-name="Orna Post, Benny Buchnik">
+	<extension point="kodi.resource.images" compile="false" type="skinicons" />
+	<requires>
+		<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Skin Icons Pack - Boss Design</summary>
+		<description lang="en">Skin Icons Pack - Boss Design</description>
+		<summary lang="he">חבילת אייקונים - בוס</summary>
+		<description lang="he">חבילת אייקונים - בוס</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="resource.images.skinicons.cd.he" name="Skin Icons - CD Design (Hebrew)" version="1.0" provider-name="Orna Post, Benny Buchnik">
+	<extension point="kodi.resource.images" compile="false" type="skinicons" />
+	<requires>
+		<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Skin Icons Pack - CD Design</summary>
+		<description lang="en">Skin Icons Pack - CD Design</description>
+		<summary lang="he">חבילת אייקונים - סגנון סי-די</summary>
+		<description lang="he">חבילת אייקונים - סגנון סי-די</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="resource.images.skinicons.ring.he" name="Skin Icons - Ring Design (Hebrew)" version="1.0" provider-name="Orna Post, Benny Buchnik">
+	<extension point="kodi.resource.images" compile="false" type="skinicons" />
+	<requires>
+		<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Skin Icons Pack - Ring Design</summary>
+		<description lang="en">Skin Icons Pack - Ring Design</description>
+		<summary lang="he">חבילת אייקונים - סגנון טבעת</summary>
+		<description lang="he">חבילת אייקונים - סגנון טבעת</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="resource.images.skinicons.skyrim.he" name="Skin Icons - Skyrim Design (Hebrew)" version="1.0" provider-name="Orna Post, Benny Buchnik">
+	<extension point="kodi.resource.images" compile="false" type="skinicons" />
+	<requires>
+		<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Skin Icons Pack - Skyrim Design</summary>
+		<description lang="en">Skin Icons Pack - Skyrim Design</description>
+		<summary lang="he">חבילת אייקונים - סגנון סקיי-רים</summary>
+		<description lang="he">חבילת אייקונים - סגנון סקיי-רים</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="resource.images.skinicons.squares.he" name="Skin Icons - Squares (Hebrew)" version="1.0" provider-name="Orna Post, Benny Buchnik">
+	<extension point="kodi.resource.images" compile="false" type="skinicons" />
+	<requires>
+		<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Skin Icons Pack - Squares</summary>
+		<description lang="en">Skin Icons Pack - Squares</description>
+		<summary lang="he">חבילת אייקונים - מרובעים</summary>
+		<description lang="he">חבילת אייקונים - מרובעים</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
 <addon id="resource.language.he_il" version="2.0.2" name="Hebrew" provider-name="Team Kodi">
   <requires>
     <import addon="kodi.resource" version="1.0.0" />
