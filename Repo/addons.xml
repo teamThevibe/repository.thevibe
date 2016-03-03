@@ -6840,7 +6840,7 @@ level.</description>
 	</extension>
 </addon>
 
-<addon id="script.skinshortcuts" name="Skin Shortcuts" version="1.0.7" provider-name="BigNoid,marcelveldt">
+<addon id="script.skinshortcuts" name="Skin Shortcuts" version="1.0.8" provider-name="BigNoid,marcelveldt">
 	<requires>
 		<import addon="xbmc.python" version="2.20.0"/>
 		<import addon="script.module.simplejson" version="3.3.0"/>
@@ -6870,12 +6870,12 @@ level.</description>
 		<description lang="ru">Дополнение для обложек, предоставляющее простой способ управления и список пользовательских ярлыков (требуется поддержка обложкой)</description>
 		<description lang="sv">Skinntillägg som tillhandahåller enkel hantering och översikt av användargenvägar (om skinnet stöder det)</description>
 		<description lang="zh">插件为皮肤提供了简单的管理和用户连接方式列表 (需要皮肤支持)</description>
-		<language/>
+		<language></language>
 		<platform>all</platform>
 		<license>GNU General Public License, v2</license>
 		<forum>http://forum.xbmc.org/showthread.php?tid=178294</forum>
-		<website/>
-		<email/>
+		<website></website>
+		<email></email>
 		<source>https://github.com/BigNoid/script.skinshortcuts</source>
 	</extension>
 </addon>
