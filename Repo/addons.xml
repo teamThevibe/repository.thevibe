@@ -1961,7 +1961,10 @@ Highly configurable: Set your PIN, set your watershed time, exclude addons if re
     </extension>
 </addon>
 
-<addon id="plugin.video.anarchitv" name="[COLOR yellow]AnarchiTV[/COLOR]" version="1.0.6" provider-name="AnarchiTV">
+<addon id="plugin.video.anarchitv"
+       name="[COLOR yellow]AnarchiTV[/COLOR]"
+       version="1.0.8"
+       provider-name="kodi senyor">
   <requires>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
@@ -1972,12 +1975,12 @@ Highly configurable: Set your PIN, set your watershed time, exclude addons if re
     <description>
 	AnarchiTV Live tv channels
     </description>
-    <license>
-    </license>
-    <website>
-    </website>
-    <email>
-    </email>
+	<disclaimer lang="en">
+	The author does not host or distribute any of the content displayed by this addon or have any affiliation with the website owners
+	</disclaimer>
+	<license></license>
+    <website>anarchitv.co</website>
+    <email></email>
     <platform>all</platform>
   </extension>
 </addon>

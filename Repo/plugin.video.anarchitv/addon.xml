@@ -1,5 +1,8 @@
-﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.anarchitv" name="[COLOR yellow]AnarchiTV[/COLOR]" version="1.0.6" provider-name="AnarchiTV">
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.anarchitv"
+       name="[COLOR yellow]AnarchiTV[/COLOR]"
+       version="1.0.8"
+       provider-name="kodi senyor">
   <requires>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
@@ -10,12 +13,12 @@
     <description>
 	AnarchiTV Live tv channels
     </description>
-    <license>
-    </license>
-    <website>
-    </website>
-    <email>
-    </email>
+	<disclaimer lang="en">
+	The author does not host or distribute any of the content displayed by this addon or have any affiliation with the website owners
+	</disclaimer>
+	<license></license>
+    <website>anarchitv.co</website>
+    <email></email>
     <platform>all</platform>
   </extension>
 </addon>
