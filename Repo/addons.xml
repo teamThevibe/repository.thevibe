@@ -4445,7 +4445,7 @@ http://www.hometheater.co.il</description>
 	</extension>
 </addon>
 
-<addon id="resource.images.skinbackgrounds.zigzag.he" name="Skin Backgrounds - ZigZag Design (Hebrew)" version="1.0.1" provider-name="Orna Post, Benny Buchnik">
+<addon id="resource.images.skinbackgrounds.zigzag.he" name="Skin Backgrounds - ZigZag Design (Hebrew)" version="1.0.2" provider-name="Orna Post, Benny Buchnik">
 	<extension point="kodi.resource.images" compile="false" type="skinbackgrounds" />
 	<requires>
 		<import addon="kodi.resource" version="1.0.0"/>

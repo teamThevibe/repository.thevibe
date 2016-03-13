@@ -1,2 +1,5 @@
 1.0.1
 Added addon fanart
+
+1.0.2
+refresh design for addons, favorites, power and settings. 
