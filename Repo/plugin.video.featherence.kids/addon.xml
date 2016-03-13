@@ -1,16 +1,16 @@
-﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.featherence.kids" name="Featherence Kids" version="0.2.3" provider-name="finalmakerr">
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.featherence.kids" name="Featherence Kids" version="0.2.4" provider-name="finalmakerr">
   <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-    <import addon="plugin.video.youtube" version="5.1.0" />
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="plugin.video.youtube" version="5.1.0"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
+	<platform>all</platform>
     <summary lang="en">Worldwide kids addon</summary>
-    <summary lang="he">הרחבת ילדים בינלאומית</summary>
+	<summary lang="he">הרחבת ילדים בינלאומית</summary>
     <description lang="en">Features:
 - Contents by country: Choose up to 30 different kids contents by your up to 3 prefered countries.
 - Customized Menus: Support customized Fanart for each button.
@@ -23,7 +23,7 @@
 - Varied and unlimited contents: Support unlimited URLs per content from varied sources such as Youtube, Dailymotion, Dropbox, Kodi's addons, supported websites..
 - YouTube search: Search any safe contents from YouTube, history included.
     </description>
-    <description lang="he">מאפיינים:
+	<description lang="he">מאפיינים:
 - הילדים שלי: צור כפתורים משלך ע"י הזנת קישורים מיו-טיוב.
   בנוסף ניתן להוסיף לכפתורים: שם, תאור, תמונה, פאנארט ואפילו לשתף עם אנשים אחרים.
 - חיפוש יו-טיוב: מאפשר חיפוש תכנים בטוחים מיו-טיוב, כולל רשימת היסטוריה.
@@ -36,9 +36,9 @@
 - תפריטים אישיים: אפשרות ליצור פאנארט אישי לכל כפתור.
 	</description>
     <disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
-    <forum>http://forum.kodi.tv/showthread.php?tid=252567</forum>
-    <email>featherence@groups.facebook.com</email>
-    <source>https://github.com/finalmakerr/featherence/tree/master/master/plugin.video.featherence.kids</source>
-    <website>https://www.facebook.com/groups/featherence/</website>
+	<forum>http://forum.kodi.tv/showthread.php?tid=252567</forum>
+	<email>featherence@groups.facebook.com</email>
+	<source>https://github.com/finalmakerr/featherence/tree/master/master/plugin.video.featherence.kids</source>
+	<website>https://www.facebook.com/groups/featherence/</website>
   </extension>
 </addon>

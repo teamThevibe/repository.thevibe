@@ -790,7 +790,10 @@ Začeno iskanje je vedno na MusicBrainz. V primeru, da na MusicBrainz ni povezav
   </extension>
 </addon>
 
-<addon id="metadata.musicvideos.theaudiodb.com" name="TheAudioDb.com for Music Videos" version="1.2.9" provider-name="XBMC Foundation">
+<addon id="metadata.musicvideos.theaudiodb.com"
+       name="TheAudioDb.com for Music Videos"
+       version="1.3.0"
+       provider-name="Team Kodi">
   <requires>
     <import addon="xbmc.metadata" version="2.1.0"/>
     <import addon="metadata.common.fanart.tv" version="3.1.0"/>
@@ -1518,32 +1521,35 @@ this is an unofficial addon. please don't ask for support in openelec forum / ir
   </extension>
 </addon>
 
-<addon id="plugin.audio.99fm-playlists" name="99FM Playlists" version="0.2.9" provider-name="nirelbaz">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-    <import addon="script.module.requests" version="2.8.1" />
-    <import addon="script.module.xbmcswift2" version="2.4.0" />
-    <import addon="script.module.beautifulsoup4" version="4.3.2" />
-    <import addon="script.module.html5lib" version="0.999.0" />
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="addon.py">
-    <provides>audio</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">99FM - The greatest songs</summary>
-    <summary lang="he">99FM - השירים הטובים ביותר</summary>
-    <description lang="en">Great collection of songs created by the gifted 99FM radio station music editors
+<addon id="plugin.audio.99fm-playlists"
+       name="99FM Playlists"
+       version="0.3.0"
+       provider-name="nirelbaz">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.module.requests" version="2.8.1"/>
+        <import addon="script.module.xbmcswift2" version="2.4.0"/>
+        <import addon="script.module.beautifulsoup4" version="4.3.2"/>
+        <import addon="script.module.html5lib" version="0.999.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>audio</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">99FM - The greatest songs</summary>
+        <summary lang="he">99FM - השירים הטובים ביותר</summary>
+        <description lang="en">Great collection of songs created by the gifted 99FM radio station music editors
         </description>
-    <description lang="he">אוסף מעולה של שירים שנערכו על-ידי העורכים המוכשרים של תחנת הרדיו 99FM</description>
-    <disclaimer lang="en">This is an unofficial addon which created to make 99FM website playlists accessible to
+        <description lang="he">אוסף מעולה של שירים שנערכו על-ידי העורכים המוכשרים של תחנת הרדיו 99FM</description>
+        <disclaimer lang="en">This is an unofficial addon which created to make 99FM website playlists accessible to
             Kodi users
         </disclaimer>
-    <language>he</language>
-    <platform>all</platform>
-    <license>GNU GENERAL PUBLIC LICENSE Version 2, June 1991</license>
-    <website>http://nirelbaz.com/</website>
-    <email>nir@nirelbaz.com</email>
-  </extension>
+        <language>he</language>
+        <platform>all</platform>
+        <license>GNU GENERAL PUBLIC LICENSE Version 2, June 1991</license>
+        <website>http://nirelbaz.com/</website>
+        <email>nir@nirelbaz.com</email>
+    </extension>
 </addon>
 
 <addon
@@ -1833,24 +1839,23 @@ this is an unofficial addon. please don't ask for support in openelec forum / ir
   </extension>
 </addon>
 
-<addon id="plugin.program.ump" name="UMP : Universal Media Provider" provider-name="boogiepop" version="0.0.51">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-  </requires>
-  <extension library="addon.py" point="xbmc.python.pluginsource">
-    <provides>video audio image</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <summary lang="en">UMP : Universal Media Provider</summary>
-    <description lang="en">Universal Media Provider is a framework designed to provide MOVIES, SERIES, ANIMES, MUSIC, ALBUMS, DISCOGRAPHIES, COMICS, MANGA and all various internet media in one addon from various blackholes of the internet</description>
-    <license>GNU General Public License, v2</license>
-    <language />
-    <forum>https://github.com/boogiekodi/plugin.program.ump/issues</forum>
-    <source />
-    <website>http://ump.us.to</website>
-    <email>boogiepop@gmx.com</email>
-  </extension>
+    <requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+	</requires>
+	<extension library="addon.py" point="xbmc.python.pluginsource">
+		<provides>video audio image</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">UMP : Universal Media Provider</summary>
+		<description lang="en">Universal Media Provider is a framework designed to provide MOVIES, SERIES, ANIMES, MUSIC, ALBUMS, DISCOGRAPHIES, COMICS, MANGA and all various internet media in one addon from various blackholes of the internet</description>
+		<license>GNU General Public License, v2</license>
+		<language/>
+		<forum>https://github.com/boogiekodi/plugin.program.ump/issues</forum>
+		<source/>
+		<website>http://ump.us.to</website>
+		<email>boogiepop@gmx.com</email>
+	</extension>
 </addon>
 
 <addon id="plugin.program.universalparentalcontrol" version="0.8.4" name="Universal Parental Control" provider-name="kinkin">
@@ -1963,8 +1968,8 @@ Highly configurable: Set your PIN, set your watershed time, exclude addons if re
 
 <addon id="plugin.video.anarchitv"
        name="[COLOR yellow]AnarchiTV[/COLOR]"
-       version="1.0.8"
-       provider-name="kodi senyor">
+       version="1.1.0"
+       provider-name="Kodi Senyor">
   <requires>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
@@ -1985,18 +1990,21 @@ Highly configurable: Set your PIN, set your watershed time, exclude addons if re
   </extension>
 </addon>
 
-<addon id="plugin.video.ccloudtv" name="cCloud TV" version="1.4.5" provider-name="podgod, Coder Alpha">
+<addon id="plugin.video.ccloudtv"
+       name="cCloud TV"
+       version="1.4.6"
+       provider-name="podgod, Coder Alpha">
   <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-    <import addon="script.module.beautifulsoup" version="3.2.1" />
-    <import addon="script.module.simple.downloader" version="0.9.4" />
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
     <import addon="script.module.beautifulsoup4" />
-    <import addon="script.module.simple.downloader" version="0.9.4" />
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
     <import addon="script.module.requests" />
     <import addon="script.module.httplib2" />
-    <import addon="script.module.youtube.dl" optional="true" />
+    <import addon="script.module.youtube.dl" optional="true"/>
     <import addon="plugin.video.youtube" />
-    <import addon="script.module.urlresolver" optional="true" />
+    <import addon="script.module.urlresolver" optional="true"/>
     <import addon="script.module.simplejson" />
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
@@ -2006,34 +2014,34 @@ Highly configurable: Set your PIN, set your watershed time, exclude addons if re
     <summary>All the best from cCloud TV</summary>
     <description>cCloud is an open source cloud based social IPTV service. It is built by the community for the community, where streaming is just a click away. Just click, play and stream. Yes, it's that simple. Just go to http://ccloudtv.org  and enjoy:) Please report any channels that are down here http://www.tiny.cc/reportchs Users can now check servers status which can be found at http://ccloudtv.org/status
     </description>
-    <license>http://www.gnu.org/licenses/</license>
+	<license>http://www.gnu.org/licenses/</license>
     <forum>http://ccloudtv.org/forum</forum>
     <website>http://ccloudtv.org</website>
     <website>http://facebook.com/ccloudapp</website>
     <website>http://twitter.com/ccloudapp</website>
-    <email>
-    </email>
+    <email></email>
     <platform>all</platform>
   </extension>
 </addon>
 
-<addon id="plugin.video.exodus" version="1.0.1" name="Exodus" provider-name="l*m*d*">
-  <requires>
-    <import addon="xbmc.python" version="2.19.0" />
-    <import addon="script.exodus.artwork" version="1.0.0" />
-    <import addon="script.module.urlresolver" version="2.10.11" />
-    <import addon="script.module.metahandler" version="1.0.0" />
-    <import addon="plugin.video.youtube" optional="true" />
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Exodus</summary>
-    <description lang="en">Please visit www.tvaddons.ag for Exodus support and assistance! Kindly note that Exodus is not an official part of the media player you are running, and therefore not to be mentioned within official support channels, this addon has nothing to do with the media player itself, nor it’s intended use, it is simply a third party plugin which has been added to your system.</description>
-    <disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
-    <platform>all</platform>
-  </extension>
+<addon id="plugin.video.exodus" version="1.1.1" name="Exodus" provider-name="Exodus">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0" />
+		<import addon="repository.exodus" version="1.0.0" />
+		<import addon="script.exodus.artwork" version="1.0.0" />
+		<import addon="script.module.urlresolver" version="2.10.11"/>
+		<import addon="script.module.metahandler" version="1.0.0" />
+		<import addon="plugin.video.youtube" optional="true" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Exodus</summary>
+		<description lang="en">Please visit www.tvaddons.ag for Exodus support and assistance! Kindly note that Exodus is not an official part of the media player you are running, and therefore not to be mentioned within official support channels, this addon has nothing to do with the media player itself, nor it’s intended use, it is simply a third party plugin which has been added to your system.</description>
+		<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
+		<platform>all</platform>
+	</extension>
 </addon>
 
 <addon id="plugin.video.F.T.V"
@@ -2056,17 +2064,17 @@ Highly configurable: Set your PIN, set your watershed time, exclude addons if re
 
 </addon>
 
-<addon id="plugin.video.featherence.docu" name="Featherence Docu" version="0.1.7" provider-name="finalmakerr, yoel guy">
+<addon id="plugin.video.featherence.docu" name="Featherence Docu" version="0.1.8" provider-name="finalmakerr, yoel guy">
   <requires>
-    <import addon="xbmc.python" version="2.1.0" />
+	<import addon="xbmc.python" version="2.1.0"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
+	<platform>all</platform>
     <summary lang="en">Knowledge is power!</summary>
-    <summary lang="he">ידע הוא כוח!</summary>
+	<summary lang="he">ידע הוא כוח!</summary>
     <description lang="en">Features:
 - Customized Menus: Support customized Fanart for each button.
 - Favourite Items: Add any valid existed item to My Kids button.
@@ -2078,7 +2086,7 @@ Highly configurable: Set your PIN, set your watershed time, exclude addons if re
 - Varied and unlimited contents: Support unlimited URLs per content from varied sources such as Youtube, Dailymotion, Dropbox, Kodi's addons, supported websites..
 - YouTube search: Search any contents from YouTube, history included.
     </description>
-    <description lang="he">מאפיינים:
+	<description lang="he">מאפיינים:
 - הדוקו שלי: צור כפתורים משלך ע"י הזנת קישורים מיו-טיוב.
   בנוסף ניתן להוסיף לכפתורים: שם, תאור, תמונה, פאנארט ואפילו לשתף עם אנשים אחרים.
 - חיפוש יו-טיוב: מאפשר חיפוש תכנים מיו-טיוב, כולל רשימת היסטוריה.
@@ -2090,11 +2098,10 @@ Highly configurable: Set your PIN, set your watershed time, exclude addons if re
 - תפריטים אישיים: אפשרות ליצור פאנארט אישי לכל כפתור.
 	</description>
     <disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
-    <forum>
-    </forum>
-    <email>featherence@groups.facebook.com</email>
-    <source>https://github.com/finalmakerr/featherence/tree/master/master/plugin.video.featherence.docu</source>
-    <website>https://www.facebook.com/groups/featherence/</website>
+	<forum></forum>
+	<email>featherence@groups.facebook.com</email>
+	<source>https://github.com/finalmakerr/featherence/tree/master/master/plugin.video.featherence.docu</source>
+	<website>https://www.facebook.com/groups/featherence/</website>
   </extension>
 </addon>
 
@@ -2133,18 +2140,18 @@ Highly configurable: Set your PIN, set your watershed time, exclude addons if re
   </extension>
 </addon>
 
-<addon id="plugin.video.featherence.kids" name="Featherence Kids" version="0.2.3" provider-name="finalmakerr">
+<addon id="plugin.video.featherence.kids" name="Featherence Kids" version="0.2.4" provider-name="finalmakerr">
   <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-    <import addon="plugin.video.youtube" version="5.1.0" />
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="plugin.video.youtube" version="5.1.0"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
+	<platform>all</platform>
     <summary lang="en">Worldwide kids addon</summary>
-    <summary lang="he">הרחבת ילדים בינלאומית</summary>
+	<summary lang="he">הרחבת ילדים בינלאומית</summary>
     <description lang="en">Features:
 - Contents by country: Choose up to 30 different kids contents by your up to 3 prefered countries.
 - Customized Menus: Support customized Fanart for each button.
@@ -2157,7 +2164,7 @@ Highly configurable: Set your PIN, set your watershed time, exclude addons if re
 - Varied and unlimited contents: Support unlimited URLs per content from varied sources such as Youtube, Dailymotion, Dropbox, Kodi's addons, supported websites..
 - YouTube search: Search any safe contents from YouTube, history included.
     </description>
-    <description lang="he">מאפיינים:
+	<description lang="he">מאפיינים:
 - הילדים שלי: צור כפתורים משלך ע"י הזנת קישורים מיו-טיוב.
   בנוסף ניתן להוסיף לכפתורים: שם, תאור, תמונה, פאנארט ואפילו לשתף עם אנשים אחרים.
 - חיפוש יו-טיוב: מאפשר חיפוש תכנים בטוחים מיו-טיוב, כולל רשימת היסטוריה.
@@ -2170,24 +2177,24 @@ Highly configurable: Set your PIN, set your watershed time, exclude addons if re
 - תפריטים אישיים: אפשרות ליצור פאנארט אישי לכל כפתור.
 	</description>
     <disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
-    <forum>http://forum.kodi.tv/showthread.php?tid=252567</forum>
-    <email>featherence@groups.facebook.com</email>
-    <source>https://github.com/finalmakerr/featherence/tree/master/master/plugin.video.featherence.kids</source>
-    <website>https://www.facebook.com/groups/featherence/</website>
+	<forum>http://forum.kodi.tv/showthread.php?tid=252567</forum>
+	<email>featherence@groups.facebook.com</email>
+	<source>https://github.com/finalmakerr/featherence/tree/master/master/plugin.video.featherence.kids</source>
+	<website>https://www.facebook.com/groups/featherence/</website>
   </extension>
 </addon>
 
-<addon id="plugin.video.featherence.music" name="Featherence Music" version="0.2.4" provider-name="finalmakerr, amir elgazar">
+<addon id="plugin.video.featherence.music" name="Featherence Music" version="0.2.6" provider-name="finalmakerr, amir elgazar">
   <requires>
-    <import addon="xbmc.python" version="2.1.0" />
+	<import addon="xbmc.python" version="2.1.0"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
     <provides>video audio</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
+	<platform>all</platform>
     <summary lang="en">_</summary>
-    <summary lang="he">_</summary>
+	<summary lang="he">_</summary>
     <description lang="en">Features:
 - Customized Menus: Support customized Fanart for each button.
 - Favourite Items: Add any valid existed item to My Kids button.
@@ -2199,7 +2206,7 @@ Highly configurable: Set your PIN, set your watershed time, exclude addons if re
 - Varied and unlimited contents: Support unlimited URLs per content from varied sources such as Youtube, Dailymotion, Dropbox, Kodi's addons, supported websites..
 - YouTube search: Search any contents from YouTube, history included.
     </description>
-    <description lang="he">מאפיינים:
+	<description lang="he">מאפיינים:
 - המוזיקה שלי: צור כפתורים משלך ע"י הזנת קישורים מיו-טיוב.
   בנוסף ניתן להוסיף לכפתורים: שם, תאור, תמונה, פאנארט ואפילו לשתף עם אנשים אחרים.
 - חיפוש יו-טיוב: מאפשר חיפוש תכנים מיו-טיוב, כולל רשימת היסטוריה.
@@ -2211,11 +2218,10 @@ Highly configurable: Set your PIN, set your watershed time, exclude addons if re
 - תפריטים אישיים: אפשרות ליצור פאנארט אישי לכל כפתור.
 	</description>
     <disclaimer>The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
-    <forum>
-    </forum>
-    <email>featherence@groups.facebook.com</email>
-    <source>https://github.com/finalmakerr/featherence/tree/master/master/plugin.video.featherence.music</source>
-    <website>https://www.facebook.com/groups/featherence/</website>
+	<forum></forum>
+	<email>featherence@groups.facebook.com</email>
+	<source>https://github.com/finalmakerr/featherence/tree/master/master/plugin.video.featherence.music</source>
+	<website>https://www.facebook.com/groups/featherence/</website>
   </extension>
 </addon>
 
@@ -2725,21 +2731,21 @@ Donatello donations: http://donatellokodi.blogspot.co.il/2015/10/blog-post.html
   </extension>
 </addon>
 
-<addon id="plugin.video.md9movies" name="9Movies" version="1.0.7" provider-name="Mucky Duck">
+<addon id="plugin.video.md9movies" name="9Movies" version="1.0.8" provider-name="Mucky Duck">
   <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-    <import addon="script.module.addon.common" />
-    <import addon="script.module.metahandler" version="2.5.1" />
-    <import addon="script.module.requests" />
-    <import addon="repository.mdrepo" />
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.addon.common" />
+	<import addon="script.module.metahandler" version="2.5.1"/>
+	<import addon="script.module.requests" />
+	<import addon="repository.mdrepo" />
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
+        <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary lang="en">Stream Movies From The 9movies.to WebSite</summary>
     <description lang="en">Stream Movies From The 9movies.to WebSite</description>
-    <disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon or have any affiliation with the website owners</disclaimer>
+	<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon or have any affiliation with the website owners</disclaimer>
     <platform>all</platform>
   </extension>
 </addon>
@@ -2779,22 +2785,21 @@ Donatello donations: http://donatellokodi.blogspot.co.il/2015/10/blog-post.html
   </extension>
 </addon>
 
-<addon id="plugin.video.movixws" name="Movix.me" version="1.2.6" provider-name="IsraeLive Team ([COLOR white]x[/COLOR][COLOR blue]b[/COLOR][COLOR white]m[/COLOR][COLOR blue]c[/COLOR]-[COLOR white]i[/COLOR][COLOR blue]s[/COLOR][COLOR white]r[/COLOR][COLOR blue]a[/COLOR][COLOR white]e[/COLOR][COLOR blue]l[/COLOR] repo)">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-    <import addon="repository.xbmc-israel" />
-    <import addon="script.module.urlresolver" />
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="main.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <supportedcontent>
-      <content>tvshows</content>
-    </supportedcontent>
-  </extension>
-</addon>
+<addon id="plugin.video.movixws" name="Movix.me" version="1.2.7" provider-name="Freestyle">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.module.urlresolver"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="main.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <supportedcontent>
+          <content>tvshows</content>
+        </supportedcontent>
+    </extension>
+ </addon>
 
 <addon id="plugin.video.nana10.video" name="נענע 10" version="1.0.10" provider-name="sbentin">
   <requires>
@@ -2974,7 +2979,7 @@ http://www.hometheater.co.il</description>
   </extension>
 </addon>
 
-<addon id="plugin.video.quasar" name="Quasar" version="0.9.24" provider-name="scakemyer">
+<addon id="plugin.video.quasar" name="Quasar" version="0.9.29" provider-name="scakemyer">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
     </requires>
@@ -3022,29 +3027,28 @@ http://www.hometheater.co.il</description>
 </addon>
 
 <!--suppress ALL -->
-<addon id="plugin.video.salts" version="2.0.9" name="Stream All The Sources" provider-name="tknorris">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-    <import addon="script.module.urlresolver" version="2.2.0" />
-    <import addon="script.module.myconnpy" version="1.1.6" />
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.service" library="service.py" start="startup" />
-  <extension point="xbmc.addon.metadata">
-    <summary>Stream video from many difference sources</summary>
-    <description>This addon uses trakt.tv for most show and movie meta data and uses a variety of websites for hoster sources</description>
-    <platform>all</platform>
-    <website>http://tvaddons.ag/</website>
-    <forum>http://forums.tvaddons.ag/forums/180-TKNORRIS-RELEASE-REPOSITORY</forum>
-  </extension>
-</addon>
-
-<addon id="plugin.video.sdarot.tv" name="Sdarot.tv Video" version="2.3.3" provider-name="cubicle">
+<addon id="plugin.video.salts" version="2.0.16" name="Stream All The Sources" provider-name="tknorris">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
-        <import addon="repository.xbmc-israel" />
+        <import addon="script.module.urlresolver" version="2.2.0"/>
+        <import addon="script.module.myconnpy" version="1.1.6" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+     <extension point="xbmc.service" library="service.py" start="startup"/>
+    <extension point="xbmc.addon.metadata">
+        <summary>Stream video from many difference sources</summary>
+        <description>This addon uses trakt.tv for most show and movie meta data and uses a variety of websites for hoster sources</description>
+        <platform>all</platform>
+        <website>http://tvaddons.ag/</website>
+		<forum>http://forums.tvaddons.ag/forums/180-TKNORRIS-RELEASE-REPOSITORY</forum>
+	</extension>
+</addon>
+
+<addon id="plugin.video.sdarot.tv" name="Sdarot.tv Video" version="2.3.4" provider-name="cubicle">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
     </requires>
     <extension point="xbmc.python.pluginsource" library="sdarottv.py">
         <provides>video</provides>
@@ -3407,7 +3411,7 @@ http://www.hometheater.co.il</description>
 
 <addon id="plugin.video.uwc"
        name="Ultimate Whitecream"
-       version="1.0.92"
+       version="1.0.95"
        provider-name="mortael">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
@@ -3466,11 +3470,11 @@ http://www.hometheater.co.il</description>
 	</extension>
 </addon>
 
-<addon id="plugin.video.wallaNew.video" name="וואלה" version="2.2.2" provider-name="sbentin shlomico">
+<addon id="plugin.video.wallaNew.video" name="וואלה" version="2.2.3" provider-name="sbentin shlomico">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
         <import addon="script.common.plugin.cache" version="0.9.1"/>
-
+        <import addon="repository.xbmc-israel" />
     </requires>
     <extension point="xbmc.python.pluginsource" library="walla.py">
         <provides>video</provides>
@@ -3630,7 +3634,7 @@ http://www.hometheater.co.il</description>
   </extension>
 </addon>
 
-<addon id="plugin.video.youtube" name="YouTube" version="5.1.20.1" provider-name="bromix">
+<addon id="plugin.video.youtube" name="YouTube" version="5.1.20.4" provider-name="bromix">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>
 	</requires>
@@ -3707,10 +3711,10 @@ http://www.hometheater.co.il</description>
   </extension>
 </addon>
 
-<addon id="plugin.video.YouTube_Vault" name="YouTube Vault" version="1.0.7" provider-name="Tvaddons">
+<addon id="plugin.video.YouTube_Vault" name="YouTube Vault" version="1.0.8" provider-name="Tvaddons">
   <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-    <import addon="plugin.video.youtube" />
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="plugin.video.youtube"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="addon.py">
     <provides>video</provides>
@@ -5007,10 +5011,10 @@ If for any reason the check of a successful wake-up via ping is not possible or 
   <extension library="lib" point="xbmc.python.module" />
 </addon>
 
-<addon id="script.cu.lrclyrics" name="CU LRC Lyrics" version="3.2.2" provider-name="Taxigps|ronie">
+<addon id="script.cu.lrclyrics" name="CU LRC Lyrics" version="4.1.9" provider-name="Taxigps, ronie">
 	<requires>
-		<import addon="xbmc.python" version="2.19.0"/>
-		<import addon="script.module.chardet" version="2.1.2"/>
+		<import addon="xbmc.python" version="2.24.0"/>
+		<import addon="script.module.chardet" version="2.2.1"/>
 		<import addon="script.module.simplejson" version="3.3.0"/>
 	</requires>
 	<extension point="xbmc.python.lyrics" library="default.py"/>
@@ -5037,6 +5041,7 @@ If for any reason the check of a successful wake-up via ping is not possible or 
 		<summary lang="ko">CU LRC Lyrics</summary>
 		<summary lang="lt">CU LRC dainų žodžiai</summary>
 		<summary lang="nl">CU LRC songteksten</summary>
+		<summary lang="no">CU LRC sangtekster</summary>
 		<summary lang="pl">CU LRC Lyrics</summary>
 		<summary lang="pt">CU LRC Lyrics</summary>
 		<summary lang="pt_BR">CU LRC Letras</summary>
@@ -5046,7 +5051,7 @@ If for any reason the check of a successful wake-up via ping is not possible or 
 		<summary lang="sv">CU LRC Lyrics</summary>
 		<summary lang="zh">CU LRC 歌词</summary>
 		<description lang="be">CU LRC Lyrics is a lyrics script for Kodi. It supports regular as well as LRC Lyrics. The script can search synchronized/unsynchronized lyrics embedded, from file or by scrapers. It can read .lrc/.txt lyrics file saved at the same path by same file name with .mp3(or other type of music).</description>
-		<description lang="bg">CU LRC Лирики е доабвка за лирики. Поддържа обикновени текстови файлове и .lrc файлове. Може да търси за синхронизирани/несинхронизирани лирики вградени в аудиофайловете или да ги извлича от различни източници. Може да прочита .lrc и .txt файлове съхраняващи лирики, които се намират в папката на дадения аудио файл (с разширение .mp3 например) и носят неговото име .</description>
+		<description lang="bg">CU LRC Лирики е добавка за лирики. Поддържа обикновени текстови файлове и .lrc файлове. Може да търси за синхронизирани/несинхронизирани лирики вградени в аудиофайловете или да ги извлича от различни източници. Може да прочита .lrc и .txt файлове съхраняващи лирики, които се намират в папката на дадения аудио файл (с разширение .mp3 например) и носят неговото име.</description>
 		<description lang="ca">CU LRC Lyrics es un script de lletres de cançons per a Kodi. Suporta lletres normal tan com LRC Lyrics. El script busca lletres sincronitzades o no, incrustades al fitxer d'àudio, des de un altre fitxer o per scrapers. Pot llegir fitxers .lrc/.txt guardats al mateix directori i nom de fitxer amb .mp3(o un altre tipus de música).</description>
 		<description lang="da">CU LRC Lyrics er et script til sangtekster til Kodi. Det understøtter almindelige såvel som LRC sangtekster. Script'et kan søge i synkroniserede/usynkroniserede sangtekster som er inkodede i filer eller ved hjælp af scrapere. Det kan læse .lrc/.txt sangtekstfiler som er gemt i den samme mappe og med samme filnavn som mp3'en (eller andre typer af musikfiler).</description>
 		<description lang="de">CU LRC-Songtext ist ein Songtextskript für Kodi, das sowohl normale als auch LRC-Songtexte unterstützt. Das Skript kann nach synchronisierten/unsynchronisierten eingebetteten Songtexten von Datei oder Scraper suchen. Es kann .lrc/.txt-Songtextdateien lesen, die im gleichen Pfad und mit dem gleichen Dateinamen mit .mp3 (oder eine anderen Musikart) gespeichert wurden.</description>
@@ -5055,7 +5060,7 @@ If for any reason the check of a successful wake-up via ping is not possible or 
 		<description lang="en_NZ">CU LRC Lyrics is a lyrics script for Kodi. It supports regular as well as LRC Lyrics. The script can search synchronised/unsynchronised lyrics embedded, from file or by scrapers. It can read .lrc/.txt lyrics file saved at the same path by same file name with .mp3(or other type of music).</description>
 		<description lang="en_US">CU LRC Lyrics is a lyrics script for Kodi. It supports regular as well as LRC Lyrics. The script can search synchronized/unsynchronized lyrics embedded, from file or by scrapers. It can read .lrc/.txt lyrics file saved at the same path by same file name with .mp3(or other type of music).</description>
 		<description lang="es">Letras de CRI de CU es un script de letras para Kodi. El soporte es regular como el de Lyrics LRC. La secuencia de comandos puede buscar letras sincronizadas/de sincronizadas incrustadas, por archivo o por scrapers. Puede leer .lrc/.txt de archivo de letras guardado en la misma carpeta con el mismo nombre del archivo con. mp3 (u otro tipo de música).</description>
-		<description lang="fr">CU LRC Lyrics est un script pour gérer les paroles dans Kodi. Il supporte les formats de paroles habituels aussi bien que LRC. Le script peut chercher des paroles synchronisées/désynchronisées intégrées dans les fichier ou par scrapers. Il peut lire les fichiers paroles .lrc/.txt stockés dans le même répertoire et avec le même nom que le fichier .mp3 (ou autre type de format musical).</description>
+		<description lang="fr">CU LRC Lyrics est un script pour gérer les paroles dans Kodi. Il supporte les formats de paroles habituels aussi bien que LRC. Le script peut chercher des paroles synchronisées/désynchronisées intégrées dans les fichier ou par collecteurs. Il peut lire les fichiers paroles .lrc/.txt stockés dans le même dossier et avec le même nom que le fichier .mp3 (ou autre type de format musical).</description>
 		<description lang="fr_CA">Paroles CU LRC est un script de paroles pour Kodi. Il prend en charge les paroles régulières et LRC. Le script peut rechercher des paroles synchronisées/désynchronisées intégrées, d'un fichier ou de récupérateurs. Il peut lire les fichiers de paroles .lrc/.txt enregistrés dans le même chemin et avec le me nom que le .mp3 (ou autres types de musique).</description>
 		<description lang="gl">Letras CU LRC é un script de letras para Kodi. Soporta letras normais como as LRC. O script pode buscar letras sincronizadas/non sincronizadas incrustadas, ou buscar a partir dun ficheiro ou de scrapers. Pode ler letras de ficheiros .lrc/.txt gardados na mesma ruta do ficheiro .mp3 (ou outro tipo de música).</description>
 		<description lang="he">CU LRC Lyrics הינו סקריפט מילות שירים עבור Kodi התומך בפורמט LRC והן בטקסט רגיל. הסקריפט מסוגל לחפש מילות שיר מסונכרות/לא מסונכרות המוטמעות בשיר, מקובץ מקומי או בעזרת סקרייפר. הסקריפט מסוגל לקרוא קובץ מילות שיר txt/lrc השמור באותו נתיב עם שם זהה לקובץ ה-mp3 (או סוג אחר של קובץ מוזיקה).</description>
@@ -5066,6 +5071,7 @@ If for any reason the check of a successful wake-up via ping is not possible or 
 		<description lang="ko">CU LRC Lyrics는 Kodi를 위한 가사 수집기입니다. 일반 가사와 LRC 가사를 지원하며, 내장 가동기/비동기 가사를 검색하거나 파일 내장 가사를 찾습니다. mp3(또는 다른 형식의 음악 파일)와 같은 경로에 저장되어 있는 .lrc/.txt 형식의 가사를 읽어옵니다.</description>
 		<description lang="lt">CU LRC Lyrics yra dainų žodžių atsiuntimo skriptas, skirtas Kodi. Palaikomi tiek įprasti, tiek LRC dainų žodžiai. Skriptas gali ieškoti sinchronizuotų / nesinchronizuotų dainų žodžių, integruotų failuose arba naudojant skreperius. Jis gali nuskaityti .lrc/.txt dainų žodžių failus, išsaugotus toje pačioje vietoje ir tokiu pačiu pavadinimu kaip ir .mp3 failas (ar kitokio muzikinio failo tipo).</description>
 		<description lang="nl">CU LRC Lyrics is een script voor songteksten in Kodi. Het ondersteunt zowel reguliere als LRC songteksten. Het script ondersteunt gesynchroniseerde of ongesynchroniseerde songteksten die ingebed zijn in een bestand, in een los bestand staan of van een scraper. Het kan .lrc/.txt songtekst-bestanden lezen die opgeslagen zijn op hetzelfde pad en dezelfde bestandsnaam hebben als de .mp3 (of ander type bestand).</description>
+		<description lang="no">CU LRC Lyrics er et skript for å vise sangtekster i Kodi. Den støtter vanlige samt LRC sangtekster. Skriptet kan søke synkroniserte / usynkroniserte sangtekster innebygd, fra en fil eller via skrapere. Den kan lese .lrc / .txt filer som er lagret på den samme banen og med samme filnavn (.mp3 eller annen type musikk).</description>
 		<description lang="pl">CU LRC Lyrics jest dodatkiem obsługującym teksty utworów dla Kodi. Obsługuje teksty utworów zarówno zwykłe jak i zsynchronizowane. Dodatek potrafi wyszukać teksty zapisane lokalnie, wbudowane w pliki utworów, a także pobierać je z Internetu. Potrafi wczytać teksty w formatach .lrc/.txt zapisane w tym samym folderze co pliku utworu .mp3 (lub innym wspierany formacie).</description>
 		<description lang="pt">CU LRC Lyrics é um script de letras para o Kodi. Suporta letras normais e LRC. O script pode encontrar letras sincronizadas/dessincronizadas embutidas, ou procurar a partir de ficheiro ou de colectores. Pode ler letras de ficheiros .lrc/.txt guardados na mesma localização do ficheiro .mp3 (ou outro tipo de música).</description>
 		<description lang="pt_BR">CU LRC Lyrics é script de letras de músicas para Kodi. Ele suporta regular bem como Letras LRC. O script pode procurar por letras embutidas sincronizadas/dessincronizadas, de arquivos ou usando scrapers. Ele pode ler arquivos de letras .lrc/txt salvos no mesmo caminho com o mesmo nome do arquivo .mp3 (ou outro formato de música).</description>
@@ -5253,7 +5259,7 @@ If for any reason the check of a successful wake-up via ping is not possible or 
 	</extension>
 </addon>
 
-<addon id="script.featherence.service" name="Featherence Service" version="0.2.7" provider-name="finalmakerr">
+<addon id="script.featherence.service" name="Featherence Service" version="0.2.18" provider-name="finalmakerr">
   <requires>
 	<import addon="xbmc.json" version="6.0.0"/>
 	<import addon="xbmc.python" version="2.1.0"/>
@@ -5599,7 +5605,7 @@ If for any reason the check of a successful wake-up via ping is not possible or 
 
 <addon id="script.keymap"
        name="Keymap Editor"
-       version="1.0.9"
+       version="1.0.10"
        provider-name="takoi">
     <requires>
         <import addon="xbmc.python" version="2.19.0"/>
@@ -6087,7 +6093,7 @@ provider-name="Roman_V_M">
 
 <addon id="script.module.liveresolver"
      name="LiveResolver"
-     version="0.1.23"
+     version="0.1.25"
      provider-name="natko1412">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
@@ -6760,7 +6766,7 @@ level.</description>
 
 <addon id="script.rawmaintenance"
        name="Raw Maintenance"
-       version="0.1.8"
+       version="0.1.10"
        provider-name="Foreverska|Gombeek|Raw Media">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -6780,7 +6786,7 @@ level.</description>
     <license></license>
     <source></source>
     <forum></forum>
-    <website></website>
+    <website>www.no-issue.ca</website>
   </extension>
 </addon>
 

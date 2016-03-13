@@ -1,3 +1,8 @@
+2016-03-11: pubfilm: fix for multiple mirrors
+2016-03-11: dizimag: fix for new json page, afdah: fix for encryption, primewire: fix for new goto.php unpack: fix for unicode regex, api: log control on settings, ui: automatic mirror selection, dizibox: new link provider, alphavid,picasa,vidme,vimeo: new url providers
+2016-03-07: api: auto select best mirror for each part when autoplay is active
+2016-03-05: openload: fix new obfus. vid.ag: fix for not used subtitles
+2016-03-04: imdb: tmdb fanart scraping, pagination on search results, people search on imdb, re-organize all listitems.
 2016-02-29: imdb: genres, awards, worldcinema, rt: remove some unusefule searches, dizigold:fix languages, sezonlukdizi: fix for new design, afdah: fix for new obfuscration, primewire: fix for codification, openload: fix onfuscration, api: global db initial commit not yet ready
 2016-02-21: afdah: clean prints, 720pizle: fix int(imdbid)
 2016-02-20: imdb: exception work

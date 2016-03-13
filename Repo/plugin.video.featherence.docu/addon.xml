@@ -1,15 +1,15 @@
-﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.featherence.docu" name="Featherence Docu" version="0.1.7" provider-name="finalmakerr, yoel guy">
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.featherence.docu" name="Featherence Docu" version="0.1.8" provider-name="finalmakerr, yoel guy">
   <requires>
-    <import addon="xbmc.python" version="2.1.0" />
+	<import addon="xbmc.python" version="2.1.0"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
+	<platform>all</platform>
     <summary lang="en">Knowledge is power!</summary>
-    <summary lang="he">ידע הוא כוח!</summary>
+	<summary lang="he">ידע הוא כוח!</summary>
     <description lang="en">Features:
 - Customized Menus: Support customized Fanart for each button.
 - Favourite Items: Add any valid existed item to My Kids button.
@@ -21,7 +21,7 @@
 - Varied and unlimited contents: Support unlimited URLs per content from varied sources such as Youtube, Dailymotion, Dropbox, Kodi's addons, supported websites..
 - YouTube search: Search any contents from YouTube, history included.
     </description>
-    <description lang="he">מאפיינים:
+	<description lang="he">מאפיינים:
 - הדוקו שלי: צור כפתורים משלך ע"י הזנת קישורים מיו-טיוב.
   בנוסף ניתן להוסיף לכפתורים: שם, תאור, תמונה, פאנארט ואפילו לשתף עם אנשים אחרים.
 - חיפוש יו-טיוב: מאפשר חיפוש תכנים מיו-טיוב, כולל רשימת היסטוריה.
@@ -33,10 +33,9 @@
 - תפריטים אישיים: אפשרות ליצור פאנארט אישי לכל כפתור.
 	</description>
     <disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
-    <forum>
-    </forum>
-    <email>featherence@groups.facebook.com</email>
-    <source>https://github.com/finalmakerr/featherence/tree/master/master/plugin.video.featherence.docu</source>
-    <website>https://www.facebook.com/groups/featherence/</website>
+	<forum></forum>
+	<email>featherence@groups.facebook.com</email>
+	<source>https://github.com/finalmakerr/featherence/tree/master/master/plugin.video.featherence.docu</source>
+	<website>https://www.facebook.com/groups/featherence/</website>
   </extension>
 </addon>

@@ -1,3 +1,48 @@
+[B]Version 2.0.16[/B]
+- Add tvonline scraper
+- Improve Premiumize.V2 scraper
+- Improve HDMovies14 scraper
+- Fix TVWTS scraper
+
+[B]Version 2.0.15[/B]
+- Fix tvwts scraper
+- Fix tunemovie scraper
+- Fix vidics scraper
+- Fix MovieHut scraper
+- Fix MoviesHD scraper
+- Improve OnlineMoviesPro scraper
+- Remove ayyex scraper
+- Remove MWM scraper
+
+[B]Version 2.0.14[/B]
+- Improve 123Movies scraper
+- Improve PremiumizeV2 scraper
+- Improve Furk.net scraper
+- Prepare for smu rewrite
+
+[B]Version 2.0.13[/B]
+- Add tvonline.tw scraper
+- Fix ororo log in
+- Remove mtvs scraper
+- Add recaptchav2 to watchhd
+- Filter videos that are too short from furk
+- Minor improvement in episode matching
+
+[B]Version 2.0.12[/B]
+- Fix premiumize exception
+- Fix moviesub scraper
+- Fix unicode errors
+- Optimize vkflix
+
+[B]Version 2.0.11[/B]
+- Add movcav scraper
+- Improve 2ddl scraper
+- Improve WatchHD scraper
+- Fix MWM scraper
+- Fix unicode errors from trakt
+- Add Premiumize.V2 scraper
+- Fail gracefully when section list does not exist
+
 [B]Version 2.0.9[/B]
 - Add 2DDL Scraper
 - Require uid/pw for alluc

@@ -1,3 +1,6 @@
+v0.3.0
+- Fix bug on Openelec & Android - plays only the first 2 seconds
+
 v0.2.9
 - Fix favorites
 - Fix Azam

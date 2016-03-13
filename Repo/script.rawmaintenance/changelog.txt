@@ -5,6 +5,16 @@ When the Raw Maintenance service is enabled it will warn you to use the tool whe
 
 It is safe to delete all 3 items, the thumbnails will regenerate. 
 
+Don’t forget to subscribe to our youtube channel youtube.com/gombeek
+
+0.1.10
+-News update
+
+0.1.9
+-St. Patricks 2016 Theme
+-News updated
+
+
 0.1.8
 
 - Valentines 2016 Theme

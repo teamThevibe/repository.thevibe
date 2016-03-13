@@ -1,3 +1,5 @@
+[B]v1.2.7[/B]
+- Not requires xbmc-israel repo anymore.
 [B]v1.2.6[/B]
 - Hide none-playable (members only) movies/series from list.
 - You may use "Clear cache" button from addon-setting.
