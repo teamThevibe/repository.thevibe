@@ -2132,7 +2132,30 @@ Highly configurable: Set your PIN, set your watershed time, exclude addons if re
 
 </addon>
 
-<addon id="plugin.video.featherence.docu" name="Featherence Docu" version="0.1.8" provider-name="finalmakerr, yoel guy">
+<addon id="plugin.video.featherence.be_creative" name="Featherence ?" version="0.0.1" provider-name="finalmakerr">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+	<platform>all</platform>
+    <summary lang="en">Easily create new addon</summary>
+	<summary lang="he">צור הרחבה חדשה בקלי קלות</summary>
+    <description lang="en">
+    </description>
+	<description lang="he">
+	</description>
+    <disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
+	<forum></forum>
+	<email>featherence@groups.facebook.com</email>
+	<source>https://github.com/finalmakerr/featherence/tree/master/master/plugin.video.featherence.be_creative</source>
+	<website>https://www.facebook.com/groups/featherence/</website>
+  </extension>
+</addon>
+
+<addon id="plugin.video.featherence.docu" name="Featherence Docu" version="0.1.9" provider-name="finalmakerr, yoel guy">
   <requires>
 	<import addon="xbmc.python" version="2.1.0"/>
   </requires>
@@ -2175,15 +2198,15 @@ Highly configurable: Set your PIN, set your watershed time, exclude addons if re
 
 <addon id="plugin.video.featherence.extreme" version="0.1.6" name="Featherence Extreme" provider-name="finalmakerr">
   <requires>
-    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="xbmc.python" version="2.1.0"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <summary lang="en">Watch sport extreme videos.</summary>
-    <summary lang="he">צפה בסרטוני ספורט אקסטרים.</summary>
+	<platform>all</platform>
+	<summary lang="en">Watch sport extreme videos.</summary>
+	<summary lang="he">צפה בסרטוני ספורט אקסטרים.</summary>
     <description lang="en">Features:
 - Customized Menus: Support customized Fanart for each button.
 - Random Play: Auto play any visible button in a random super long playlist.
@@ -2192,7 +2215,7 @@ Highly configurable: Set your PIN, set your watershed time, exclude addons if re
 - Varied and unlimited contents: Support unlimited URLs per content from varied sources such as Youtube, Dailymotion, Dropbox, Kodi's addons, supported websites..
 - YouTube search: Search any contents from YouTube, history included.
     </description>
-    <description lang="he">מאפיינים:
+	<description lang="he">מאפיינים:
 - חיפוש יו-טיוב: מאפשר חיפוש תכנים מיו-טיוב, כולל רשימת היסטוריה.
 - מצב טלוויזיה חכם: ניגון אוטומטי של התכנים בכפתור הנבחר, עד 40 פריטים  שונים בפלייליסט אחד, אפשרות לאקראי.
 - מיון: תכנים ממויינים ומאורגנים לפי גיל, כולל מיון לפי שפה.
@@ -2200,15 +2223,14 @@ Highly configurable: Set your PIN, set your watershed time, exclude addons if re
 - תכנים מגוונים ואין סופיים: תמיכה במגוון עצום של מקורות לתוכן בודד.
 	</description>
     <disclaimer>The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
-    <email>featherence@groups.facebook.com</email>
-    <forum>
-    </forum>
-    <source>https://github.com/finalmakerr/featherence/tree/master/master/plugin.video.featherence.extreme</source>
-    <website>https://www.facebook.com/groups/featherence/</website>
+	<email>featherence@groups.facebook.com</email>
+	<forum></forum>
+	<source>https://github.com/finalmakerr/featherence/tree/master/master/plugin.video.featherence.extreme</source>
+	<website>https://www.facebook.com/groups/featherence/</website>
   </extension>
 </addon>
 
-<addon id="plugin.video.featherence.kids" name="Featherence Kids" version="0.2.4" provider-name="finalmakerr">
+<addon id="plugin.video.featherence.kids" name="Featherence Kids" version="0.2.5" provider-name="finalmakerr">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
 	<import addon="plugin.video.youtube" version="5.1.0"/>
@@ -5565,7 +5587,25 @@ If for any reason the check of a successful wake-up via ping is not possible or 
 	</extension>
 </addon>
 
-<addon id="script.featherence.service" name="Featherence Service" version="0.2.18" provider-name="finalmakerr">
+<addon id="script.featherence.remote" name="Featherence Remote" version="0.1.0" provider-name="finalmakerr">
+  <requires>
+	<import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="default.py"/>
+  <extension point="xbmc.service" library="service.py" start="startup"/>
+  <extension point="xbmc.addon.metadata">
+	<platform>all</platform>
+    <summary>Control your OpenELEC with any standard Remote Control</summary>
+    <description></description>
+    <disclaimer></disclaimer>
+	<email>featherence@groups.facebook.com</email>
+	<forum></forum>
+	<source>https://github.com/finalmakerr/featherence/tree/master/master/script.featherence.remote</source>
+	<website>https://www.facebook.com/groups/featherence/</website>
+  </extension>
+</addon>
+
+<addon id="script.featherence.service" name="Featherence Service" version="0.2.7" provider-name="finalmakerr">
   <requires>
 	<import addon="xbmc.json" version="6.0.0"/>
 	<import addon="xbmc.python" version="2.1.0"/>
