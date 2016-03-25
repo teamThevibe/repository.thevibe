@@ -1575,6 +1575,20 @@ this is an unofficial addon. please don't ask for support in openelec forum / ir
     </extension>
 </addon>
 
+<addon id="plugin.audio.housemixes" name="House Mixes" version="1.1.6" provider-name="MetalKettle">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>audio</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en"></summary>
+    <description lang="en"></description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon
   id="plugin.audio.kodcast"
   name="Kodcast"
@@ -1791,6 +1805,21 @@ this is an unofficial addon. please don't ask for support in openelec forum / ir
     </source>
     <email>
     </email>
+  </extension>
+</addon>
+
+<addon id="plugin.program.senyortools" name="[COLOR green]senyor tools[/COLOR]" version="1.1.7" provider-name="kodi senyor">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.addon.common" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">kodi-senyor.co.il kodi tools and tweaks</summary>
+    <description lang="he">הרחבה ייחודית של קודי סניור המאפשרת התקנת הרחבות והגדרות מערכת בקליק אחד</description>
+    <platform>all</platform>
   </extension>
 </addon>
 
@@ -4361,11 +4390,11 @@ http://www.hometheater.co.il</description>
     </extension>
 </addon>
 
-<addon id="repository.kodi-senyor" name="kodi senyor repository" version="1.1.0" provider-name="kodi senyor">
+<addon id="repository.kodi-senyor" name="kodi senyor repository" version="1.2.0" provider-name="kodi senyor">
 	<extension point="xbmc.addon.repository" name="kodi senyor repository">
-			<info compressed="false">http://kodi-senyor.co.il/Zips/addons.xml</info>
-			<checksum>http://kodi-senyor.co.il/Zips/addons.xml.md5</checksum>
-			<datadir zip="true">http://kodi-senyor.co.il/Zips/</datadir>
+			<info compressed="false">https://github.com/kobiko3030/repository.kodisenyor/raw/master/addons.xml</info>
+			<checksum>https://github.com/kobiko3030/repository.kodisenyor/raw/master/addons.xml.md5</checksum>
+			<datadir zip="true">https://github.com/kobiko3030/repository.kodisenyor/raw/master/Zips/</datadir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">kodi-senyor.co.il repo</summary>
