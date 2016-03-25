@@ -3164,7 +3164,7 @@ http://www.hometheater.co.il</description>
   </extension>
 </addon>
 
-<addon id="plugin.video.quasar" name="Quasar" version="0.9.29" provider-name="scakemyer">
+<addon id="plugin.video.quasar" name="Quasar" version="0.9.33" provider-name="scakemyer">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
     </requires>
