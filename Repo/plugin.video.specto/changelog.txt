@@ -1,14 +1,19 @@
 ------------------------
-Specto v2016.02.06
+Specto v2016.03.12.3
 ------------------------
-
-- Add polish trnaslation, thx Darek
-- change openload, no captcha
-- add watch1080p.com
+Cache repair
+Movies repair - done in 90%
+TV Shows repair  - done in 80%
 
 ------------------------
-Specto v2016.01.30 (2016-01-30)
+Specto v2016.03.11.3
 ------------------------
+Cache repair
+Movies repair - done in 90%
+TV Shows repair  - done in 2%
 
-- Fork of *****
+------------------------
+Specto v2016.03.06
+------------------------
+Openload   decodeOpenLoad made by mortael
 

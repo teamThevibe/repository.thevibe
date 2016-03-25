@@ -1,3 +1,55 @@
+[B]Version 2.0.23[/B]
+ - Fix sezon scraper
+ - Fix tvwts scraper
+ - More IPAuthDialog work
+ 
+[B]Version 2.0.22[/B]
+- Increase zorder on IPAuthDialog
+- Minor Furk Improvement
+
+[B]Version 2.0.21[/B]
+- Add torba scraper back
+- Improve PremiumizeV2 scraper
+- Improve TV-Release.net scraper
+- Improve TuneMovie scraper
+- Improve VKFlix scraper
+- Remove CouchTunerV2 scraper
+- Fix episode SRU bug for blog scrapers
+
+[B]Version 2.0.20[/B]
+- Add dizifilmhd scraper
+- Add dl-pars scraper
+- Fix 9Movies scraper
+- Fix Movie25 scraper
+- Fix tv-relesae scraper
+- Improve Furk scraper
+- Improve Sezon scraper
+- Remove MysticLand scraper
+- Remove Izlemeyedeger scraper
+- Fix download notification
+
+[B]Version 2.0.19[/B]
+- Add MysticLand scraper
+- Replace onlinemovies.is with emovies.pro
+- Replace viewmovies.is with ganool.ag
+- Improve/Fix WatchHD scraper
+- Improve Furk scraper
+- Fix Farda scraper
+- Fix flixanity scraper
+- Fix 9Movies scraper
+- Fix TVWTS scraper
+- Fix StreamLord scraper
+- Fix PubFilm scraper
+
+[B]Version 2.0.17[/B]
+- Add m4ufree scraper
+- Improve Premiumize.V2 scraper
+- Improve tv-release scraper
+- Update flixanity scraper
+- Improve furk matching
+- Fix alluc scraper
+- Improve HDMovie14 scraper searching
+
 [B]Version 2.0.16[/B]
 - Add tvonline scraper
 - Improve Premiumize.V2 scraper

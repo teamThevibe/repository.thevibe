@@ -42,6 +42,29 @@
   </extension>
 </addon>
 
+<addon id="context.meta" name="Meta Context Menu" version="1.0.2" provider-name="MetaTeam">
+  <requires>
+    <import addon="xbmc.python" version="2.20.0"/>
+    <import addon="script.module.requests"/>
+    <import addon="plugin.video.meta"/>
+  </requires>
+
+  <extension point="kodi.context.item" library="context_playable.py">
+    <provides>executable</provides>
+      <item>
+        <label>$ADDON[plugin.video.meta 31002]</label>
+        <visible>[StringCompare(ListItem.dbtype,movie) | StringCompare(ListItem.dbtype,episode)]</visible>
+      </item>
+  </extension>
+
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <language></language>
+    <summary>Library context menu item by Meta</summary>
+    <description>Adds select stream entry to library movies and episodes</description>
+  </extension>
+</addon>
+
 <addon id="context.mysubscriptions" name="My Subscriptions" version="1.0.6" provider-name="kinkin">
   <requires>
     <import addon="xbmc.python" version="2.20.0" />
@@ -1991,6 +2014,21 @@ Highly configurable: Set your PIN, set your watershed time, exclude addons if re
   </extension>
 </addon>
 
+<addon id= "plugin.video.baby" name="Baby TV" version="1.0.0" provider-name="Donatello- http://Donatellokodi.blogspot.co.il">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="plugin.video.youtube" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Baby TV By Donatello Hybrid Blade</summary>
+    <description lang="en">Awesome BabyTV videos from YouTube - By Donatello Hybrid Blade.</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="plugin.video.ccloudtv"
        name="cCloud TV"
        version="1.4.6"
@@ -2025,7 +2063,7 @@ Highly configurable: Set your PIN, set your watershed time, exclude addons if re
   </extension>
 </addon>
 
-<addon id="plugin.video.exodus" version="1.1.1" name="Exodus" provider-name="Exodus">
+<addon id="plugin.video.exodus" version="1.2.0" name="Exodus" provider-name="Exodus">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="repository.exodus" version="1.0.0" />
@@ -2292,13 +2330,13 @@ Highly configurable: Set your PIN, set your watershed time, exclude addons if re
 
 <addon id="plugin.video.hop" name="הופ!" version="1.0.2" provider-name="Hybrid\Donatello\Blade">
   <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-    <import addon="script.module.beautifulsoup4" version="4.3.1" />
-    <import addon="script.module.requests" version="2.3.0" />
-    <import addon="script.module.html5lib" version="0.999.0" />s
+ <import addon="xbmc.python" version="2.1.0"/>
+ <import addon="script.module.beautifulsoup4" version="4.3.1" />
+ <import addon="script.module.requests" version="2.3.0" />
+ <import addon="script.module.html5lib" version="0.999.0" />s
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
+        <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary lang="en">This plugin let you watch hop channel's VOD.</summary>
@@ -2308,8 +2346,8 @@ Hybrid donations: https://goo.gl/5MLzGS
 Donatello donations: http://donatellokodi.blogspot.co.il/2015/10/blog-post.html
 	</description>
     <platform>all</platform>
-    <language>en</language>
-    <disclaimer> report any issues with this addon to Hybridmag12@gmail.com</disclaimer>
+ <language>en</language>
+ <disclaimer> report any issues with this addon to Hybridmag12@gmail.com</disclaimer>
   </extension>
 </addon>
 
@@ -2469,6 +2507,30 @@ Donatello donations: http://donatellokodi.blogspot.co.il/2015/10/blog-post.html
   </extension>
 </addon>
 
+<addon id="plugin.video.karaoketv" name="KaraokeTV" version="1.0.0" provider-name="Hybrid\Blade\Donatello">
+  <requires>
+ <import addon="xbmc.python" version="2.1.0"/>
+ <import addon="script.module.beautifulsoup4" version="4.3.1" />
+ <import addon="script.module.requests" version="2.3.0" />
+ <import addon="script.module.html5lib" version="0.999.0" />
+
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">This plugin let you watch karaoke.</summary>
+    <description lang="en">
+    Watch karaoke.
+    For donations: https://goo.gl/5MLzGS
+	Donatello donations: http://donatellokodi.blogspot.co.il/2015/10/blog-post.html
+	</description>
+    <platform>all</platform>
+ <language>en</language>
+ <disclaimer> report any issues with this addon to Hybridmag12@gmail.com</disclaimer>
+  </extension>
+</addon>
+
 <addon id="plugin.video.kickass" name="[COLOR FFFEDF64]KickAss[/COLOR] viewer" version="1.2.7"
        provider-name="mancuniancol">
     <requires>
@@ -2507,6 +2569,30 @@ Donatello donations: http://donatellokodi.blogspot.co.il/2015/10/blog-post.html
     <summary lang="en">Browse children sections in other addons</summary>
     <description lang="en">links to other  childern addons .</description>
     <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.kidstv" name="KidsTV" version="1.0.0" provider-name="Hybrid\Donatello">
+  <requires>
+ <import addon="xbmc.python" version="2.1.0"/>
+ <import addon="script.module.beautifulsoup4" version="4.3.1" />
+ <import addon="script.module.requests" version="2.3.0" />
+ <import addon="script.module.html5lib" version="0.999.0" />
+ <import addon="script.video.F4mProxy" version="2.1.7"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">This plugin let you watch kids channels VOD.</summary>
+    <description lang="en">
+    Watch kids channel VOD.
+Hybrid donations: https://goo.gl/5MLzGS
+Donatello donations: http://donatellokodi.blogspot.co.il/2015/10/blog-post.html
+	</description>
+    <platform>all</platform>
+ <language>en</language>
+ <disclaimer> report any issues with this addon to Hybridmag12@gmail.com</disclaimer>
   </extension>
 </addon>
 
@@ -2732,6 +2818,24 @@ Donatello donations: http://donatellokodi.blogspot.co.il/2015/10/blog-post.html
   </extension>
 </addon>
 
+<addon id="plugin.video.md123movies" name="123Movies" version="1.1.3" provider-name="Mucky Duck">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.addon.common" />
+	<import addon="script.module.requests" />
+	<import addon="repository.mdrepo" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Stream Movies From The 123movies.to WebSite</summary>
+    <description lang="en">Special thanks to [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] for the iSearch compatibility modifications</description>
+	<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon</disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="plugin.video.md9movies" name="9Movies" version="1.0.8" provider-name="Mucky Duck">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -2748,6 +2852,49 @@ Donatello donations: http://donatellokodi.blogspot.co.il/2015/10/blog-post.html
     <description lang="en">Stream Movies From The 9movies.to WebSite</description>
 	<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon or have any affiliation with the website owners</disclaimer>
     <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.meta" name="Meta" version="1.1.0" provider-name="MetaTeam">
+  <requires>
+    <import addon="xbmc.python" version="2.20.0"/>
+    <import addon="script.module.requests"/>
+    <import addon="script.module.futures" version="2.2.0"/>
+  </requires>
+
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>video</provides>
+  </extension>
+
+  <extension point="xbmc.service" library="service.py" start="[login|startup]">
+  </extension>
+
+  <extension point="kodi.context.item" library="context_playable.py">
+    <provides>executable</provides>
+      <item>
+        <label>$ADDON[plugin.video.meta 31002]</label>
+        <visible>!System.HasAddon(context.meta) + [StringCompare(ListItem.dbtype,movie) | StringCompare(ListItem.dbtype,episode)] + SubString(ListItem.FileNameAndPath, plugin.video.meta)</visible>
+      </item>
+  </extension>
+
+  <extension point="kodi.context.item" library="context_tvshow.py">
+    <provides>executable</provides>
+      <item>
+        <label>$ADDON[plugin.video.meta 31022]</label>
+        <visible>StringCompare(ListItem.dbtype,tvshow) + SubString(ListItem.Path, plugin.video.meta)</visible>
+      </item>
+  </extension>
+
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <language></language>
+    <summary>TMDB and TVDB media listing</summary>
+    <description>Browse TMDB and TVDB media</description>
+    <supportedcontent>
+      <content>movies</content>
+      <content>tvshows</content>
+      <content>episodes</content>
+    </supportedcontent>
   </extension>
 </addon>
 
@@ -2783,6 +2930,43 @@ Donatello donations: http://donatellokodi.blogspot.co.il/2015/10/blog-post.html
     <platform>all</platform>
     <forum>http://forums.tvaddons.ag/forums/152-ELEAZAR-S-XBMC-ADD-ON-REPOSITORY</forum>
     <website>http://www.tvaddons.ag</website>
+  </extension>
+</addon>
+
+<addon id="plugin.video.moviemix" name="Movie Mix" version="1.0.0" provider-name="MetalKettle">
+  <requires>
+    <import addon="script.module.simplejson" version="3.3.0"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.t0mm0.common" version="2.0.0"/>
+    <import addon="script.module.metahandler" version="2.5.1"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en"></summary>
+    <description lang="en"></description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.moviesil" name="[COLOR blue]MoviesIL[/COLOR]" version="1.0.1" provider-name="ToMeR">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.addon.common" version="2.0.0"/>
+    <import addon="plugin.video.youtube" version="5.1.7"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">ToMeR</summary>
+    <summary lang="he">הרחבה מדהימה לצפייה בסרטים ישראליים, תוכלו למצוא פה מגוון סרטים החל מקומדיה ועד לדרמה וסרטי בורקס ,תהנו</summary>
+    <description lang="en">MoviesIL </description>
+    <description lang="he">הרחבה מדהימה לצפייה בסרטים ישראליים, תוכלו למצוא פה מגוון סרטים החל מקומדיה ועד לדרמה וסרטי בורקס ,תהנו</description>
+    <platform>all</platform>
+    <forum>n/a</forum>
+    <website>n/a</website>
   </extension>
 </addon>
 
@@ -3028,7 +3212,7 @@ http://www.hometheater.co.il</description>
 </addon>
 
 <!--suppress ALL -->
-<addon id="plugin.video.salts" version="2.0.16" name="Stream All The Sources" provider-name="tknorris">
+<addon id="plugin.video.salts" version="2.0.23" name="Stream All The Sources" provider-name="tknorris">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
         <import addon="script.module.urlresolver" version="2.2.0"/>
@@ -3131,27 +3315,28 @@ http://www.hometheater.co.il</description>
   </extension>
 </addon>
 
-<addon id="plugin.video.specto" name="Specto - ... Fork" version="2016.02.06.3" provider-name="mrknow">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-    <import addon="script.module.requests" version="1.0.0" />
-    <import addon="script.module.metahandler" optional="true" />
-    <import addon="plugin.video.youtube" optional="true" />
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.service" library="service.py" start="startup" />
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Mrknow fork of ...</summary>
-    <description lang="en">Mrknow fork of ..., support https://github.com/mrknow/filmkodi/issues.</description>
-    <disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.
+<addon id="plugin.video.specto" name="Specto - ... Fork"  version="2016.03.12.2" provider-name="mrknow" >
+	<requires>
+		<import addon="xbmc.python" version="2.1.0" />
+		<import addon="script.module.requests" version="1.0.0" />
+		<import addon="script.module.metahandler" />
+		<import addon="plugin.video.youtube" optional="true" />
+
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="startup" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Mrknow fork of ...</summary>
+		<description lang="en">Mrknow fork of ..., support https://github.com/mrknow/filmkodi/issues.</description>
+		<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.
 		</disclaimer>
-    <forum>https://github.com/mrknow/filmkodi/issues</forum>
-    <source>http://filmkodi.com/repository/</source>
-    <website>http://filmkodi.com/en/wtyczka-specto-fork-genesis/</website>
-    <platform>all</platform>
-  </extension>
+		<forum>https://github.com/mrknow/filmkodi/issues</forum>
+		<source>http://filmkodi.com/repository/</source>
+		<website>http://filmkodi.com/en/wtyczka-specto-fork-genesis/</website>
+		<platform>all</platform>
+	</extension>
 </addon>
 
 <addon id="plugin.video.SportsDevil" version="2016.02.01" name="SportsDevil" provider-name="SportsDevil">
@@ -3205,6 +3390,20 @@ http://www.hometheater.co.il</description>
         <email>AddonScriptorDE at yahoo dot de</email>
         <website/>
     </extension>
+</addon>
+
+<addon id="plugin.video.supercartoons" name="Super Cartoons" version="1.0.15" provider-name="spoyser">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Watch cartoons online</summary>
+    <description lang="en">Watch cartoons online, search by most popular, characters and studio</description>
+     <platform>all</platform>
+  </extension>
 </addon>
 
 <addon id="plugin.video.teevee" name="TeeVee" version="1.0.1" provider-name="natko1412">
@@ -3263,6 +3462,28 @@ http://www.hometheater.co.il</description>
     <disclaimer>
     </disclaimer>
   </extension>
+</addon>
+
+<addon id="plugin.video.titan" name="[COLOR blue]T[/COLOR]itan" version="2.0.1" provider-name="Titan">
+	<requires>
+		<import addon="script.module.simplejson" version="3.3.0"/>
+		<import addon="xbmc.python" version="2.1.0"/>
+		<import addon="script.module.t0mm0.common" version="2.0.0"/>
+		<import addon="plugin.video.youtube" version="3.0.0"/>
+		<import addon="script.module.urlresolver"  version="2.10.10"/>
+		<import addon="script.common.plugin.cache" version="2.5.2"/>
+		<import addon="script.module.metahandler" version="2.5.1"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+			<summary lang="en"></summary>
+			<description lang="en">Watch from a huge selection of Movies Tv Shows and Collections... Credits to Lambda for some resolvers used in this addon</description>
+			<disclaimer lang="en">The author does not host or distribute any of the content displayed by this add-on</disclaimer>
+
+			<platform>all</platform>
+	</extension>
 </addon>
 
 <addon id="plugin.video.trakt.viewer" name="[COLOR FFFF9900]TRAKT[/COLOR] viewer" version="0.0.2"
@@ -3378,6 +3599,26 @@ http://www.hometheater.co.il</description>
   <extension point="xbmc.service" library="service.py" start="startup"/>
 </addon>
 
+<addon id="plugin.video.ukturk" name="UK Turk Playlists" version="2.0.9" provider-name="MetalKettle">
+  <requires>
+    <import addon="script.module.simplejson" version="3.3.0"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.t0mm0.common" version="2.0.0"/>
+    <import addon="plugin.video.youtube" version="3.0.0"/>
+    <import addon="script.module.urlresolver"  version="2.1.2"/>
+    <import addon="script.common.plugin.cache" version="2.5.2"/>
+    <import addon="script.module.metahandler" version="2.5.1"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Free Playlists courtesy of @uk_turk</summary>
+    <description lang="en">Free Playlists courtesy of @uk_turk</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="plugin.video.ustvnow" name="USTVnow" provider-name="Lunatixz" version="12.0.22">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
@@ -3471,6 +3712,23 @@ http://www.hometheater.co.il</description>
 	</extension>
 </addon>
 
+<addon id="plugin.video.Vodil" name="V.O.D IL" version="1.0.9" provider-name="kodi senyor">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="plugin.video.youtube"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <language>he</language>
+    <summary lang="he">הרחבה לצפיה בסרטונים מיוטיוב</summary>
+    <description lang="he">הרחבה לצפיה בתכנים מיוטיוב</description>
+    <disclaimer lang="en">kodi senyor Is Not Affiliated With The Content In This Addon</disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="plugin.video.wallaNew.video" name="וואלה" version="2.2.3" provider-name="sbentin shlomico">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
@@ -3519,7 +3777,7 @@ http://www.hometheater.co.il</description>
   </extension>
 </addon>
 
-<addon id="plugin.video.watch1080" name="Watch 1080p" version="1.0.8" provider-name="MetalKettle">
+<addon id="plugin.video.watch1080" name="Watch 1080p" version="1.0.11" provider-name="MetalKettle">
   <requires>
     <import addon="script.module.simplejson" version="3.3.0"/>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -3635,7 +3893,7 @@ http://www.hometheater.co.il</description>
   </extension>
 </addon>
 
-<addon id="plugin.video.youtube" name="YouTube" version="5.1.20.4" provider-name="bromix">
+<addon id="plugin.video.youtube" name="YouTube" version="5.1.20.1" provider-name="bromix">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>
 	</requires>
@@ -4745,12 +5003,7 @@ If for any reason the check of a successful wake-up via ping is not possible or 
 	</extension>
 </addon>
 
-<addon
-    id="script.artwork.downloader"
-    name="Artwork Downloader"
-    version="12.0.29.1"
-    provider-name="Martijn"
-    >
+  <addon id="script.artwork.downloader" name="Artwork Downloader" version="14.1.0.0" provider-name="Martijn">
   <requires>
     <import addon="xbmc.python"                 version="2.1.0"/>
     <import addon="xbmc.json"                   version="6.0.0"/>
@@ -5136,7 +5389,7 @@ If for any reason the check of a successful wake-up via ping is not possible or 
   </extension>
 </addon>
 
-<addon id="script.exodus.artwork" version="1.0.0" name="Exodus Artwork" provider-name="l*m*d*">
+<addon id="script.exodus.artwork" version="1.0.1" name="Exodus Artwork" provider-name="Exodus">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 	</requires>
@@ -6791,7 +7044,7 @@ level.</description>
   </extension>
 </addon>
 
-	<addon id="script.skin.helper.service" name="Skin Helper Service" version="1.0.56" provider-name="marcelveldt">
+	<addon id="script.skin.helper.service" name="Skin Helper Service" version="1.0.68" provider-name="marcelveldt">
 	<requires>
 		<import addon="xbmc.python" version="2.13.0"/>
 		<import addon="xbmc.addon" version="12.0.0"/>
@@ -6803,7 +7056,7 @@ level.</description>
 
     <extension point="xbmc.python.library" library="default.py" />
 	<extension point="xbmc.python.pluginsource" library="plugin.py">
-		<provides>video</provides>
+		<provides>video audio</provides>
 	</extension>
 	<extension library="service.py" point="xbmc.service" start="login" />
 	<extension point="kodi.context.item" library="contextmenu_serieslevel.py">
