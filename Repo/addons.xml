@@ -8012,7 +8012,7 @@ level.</description>
 
 <addon
     id="skin.eminence.zeev"
-    version="2.5.3"
+    version="2.5.2"
     name="Eminence Zeev"
     provider-name="jurialmunkey">
   <requires>
