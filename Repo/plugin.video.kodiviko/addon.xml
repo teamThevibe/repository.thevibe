@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.kodiviko" name="[COLOR white]*Viko Super Wizard*[/COLOR]" version="2.0.3" provider-name="Viko Farber">
+<addon id="plugin.video.kodiviko" name="[COLOR white]*Viko Super Wizard*[/COLOR]" version="2.0.3" provider-name="Kobi Senyor, Viko Farber">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
 	<import addon="script.module.addon.common" />
@@ -9,9 +9,9 @@
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary lang="en">Viko Super Wizard</summary>
-    <description lang="he">В данном дополнение Вы найдёте всё что надо для настройки Коди, а так же можно установить полностью рабочую и настроенную Коди[CR]Первый и единственный русский пакет установки[CR]Пакет был собран и настроен для пользователей группы facebook - THE-VIBE.CO.IL/RU[CR][COLOR red]https://www.facebook.com/groups/vibe.ru/[/COLOR]</description>
-    <description lang="en">В данном дополнение Вы найдёте всё что надо для настройки Коди, а так же можно установить полностью рабочую и настроенную Коди[CR]Первый и единственный русский пакет установки[CR]Пакет был собран и настроен для пользователей группы facebook - THE-VIBE.CO.IL/RU[CR][COLOR red]https://www.facebook.com/groups/vibe.ru/[/COLOR]</description>
-    <description lang="ru">В данном дополнение Вы найдёте всё что надо для настройки Коди, а так же можно установить полностью рабочую и настроенную Коди[CR]Первый и единственный русский пакет установки[CR]Пакет был собран и настроен для пользователей группы facebook - THE-VIBE.CO.IL/RU[CR][COLOR red]https://www.facebook.com/groups/vibe.ru/[/COLOR]</description>
+    <description lang="he">В данном дополнение Вы найдёте всё что надо для настройки Коди, а так же можно установить полностью рабочую и настроенную Коди[CR]Первый и единственный русский пакет установки[CR]Пакет был собран и настроен для пользователей группы facebook - THE-VIBE.CO.IL/RU[CR][COLOR red]https://www.facebook.com/groups/vibe.ru/[/COLOR][CR]Огромное спасибо Kobi Senyor за его платформу которая теперь доступна для русских пользователей</description>
+    <description lang="he">В данном дополнение Вы найдёте всё что надо для настройки Коди, а так же можно установить полностью рабочую и настроенную Коди[CR]Первый и единственный русский пакет установки[CR]Пакет был собран и настроен для пользователей группы facebook - THE-VIBE.CO.IL/RU[CR][COLOR red]https://www.facebook.com/groups/vibe.ru/[/COLOR][CR]Огромное спасибо Kobi Senyor за его платформу которая теперь доступна для русских пользователей</description>
+    <description lang="he">В данном дополнение Вы найдёте всё что надо для настройки Коди, а так же можно установить полностью рабочую и настроенную Коди[CR]Первый и единственный русский пакет установки[CR]Пакет был собран и настроен для пользователей группы facebook - THE-VIBE.CO.IL/RU[CR][COLOR red]https://www.facebook.com/groups/vibe.ru/[/COLOR][CR]Огромное спасибо Kobi Senyor за его платформу которая теперь доступна для русских пользователей</description>
     <platform>all</platform>
   </extension>
 </addon>
