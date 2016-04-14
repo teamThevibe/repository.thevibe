@@ -4766,7 +4766,7 @@ http://www.hometheater.co.il</description>
 	</extension>
 </addon>
 
-<addon id="resource.images.skinbackgrounds.clear.he" name="Skin Backgrounds - Clear Design (Hebrew)" version="1.0.3" provider-name="Orna Post, Benny Buchnik">
+<addon id="resource.images.skinbackgrounds.clear.he" name="Skin Backgrounds - Clear Design (Hebrew)" version="1.0.4" provider-name="Orna Post, Benny Buchnik">
 	<extension point="kodi.resource.images" compile="false" type="skinbackgrounds" />
 	<requires>
 		<import addon="kodi.resource" version="1.0.0"/>
@@ -4776,6 +4776,34 @@ http://www.hometheater.co.il</description>
 		<description lang="en">Skin backgrounds Pack - Clear Design</description>
 		<summary lang="he">חבילת רקעים - סגנון נקי</summary>
 		<description lang="he">חבילת רקעים - סגנון נקי</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="resource.images.skinbackgrounds.clearun.he" name="Skin Backgrounds - Clear UN (Hebrew)" version="1.0.4" provider-name="Orna Post, Benny Buchnik">
+	<extension point="kodi.resource.images" compile="false" type="skinbackgrounds" />
+	<requires>
+		<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Skin Backgrounds Pack - ClearUN Design</summary>
+		<description lang="en">Skin Backgrounds Pack - ClearUN Design</description>
+		<summary lang="he">חבילת רקעים - סגנון נקי בינלאומי</summary>
+		<description lang="he">חבילת רקעים - סגנון בינלאומי</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="resource.images.skinbackgrounds.comic.he" name="Skin Backgrounds - Comic Design (Hebrew)" version="1.0.0" provider-name="Ron Bublitsky, Benny Buchnik">
+	<extension point="kodi.resource.images" compile="false" type="skinbackgrounds" />
+	<requires>
+		<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Skin Backgrounds Pack - Comic Design</summary>
+		<description lang="en">Skin Backgrounds Pack - Comic Design</description>
+		<summary lang="he">חבילת רקעים - סגנון קומיקס</summary>
+		<description lang="he">חבילת רקעים - סגנון קומיקס</description>
 		<platform>all</platform>
 	</extension>
 </addon>
@@ -4794,6 +4822,20 @@ http://www.hometheater.co.il</description>
 	</extension>
 </addon>
 
+<addon id="resource.images.skinbackgrounds.quadrat.he" name="Skin Backgrounds - Quadrat (Hebrew)" version="1.0.4" provider-name="Orna Post, Benny Buchnik">
+	<extension point="kodi.resource.images" compile="false" type="skinbackgrounds" />
+	<requires>
+		<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Skin Backgrounds Pack - Quadrat Design</summary>
+		<description lang="en">Skin Backgrounds Pack - Quadrat Design</description>
+		<summary lang="he">חבילת רקעים - סגנון קוודרט</summary>
+		<description lang="he">חבילת רקעים - סגנון קוודרט</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
 <addon id="resource.images.skinbackgrounds.vibe2.he" name="Skin Backgrounds - The Vibe2 backgrounds (Hebrew)" version="1.0.0" provider-name="Adir Abutbul, Benny Buchnik">
 	<extension point="kodi.resource.images" compile="false" type="skinbackgrounds" />
 	<requires>
@@ -4808,7 +4850,7 @@ http://www.hometheater.co.il</description>
 	</extension>
 </addon>
 
-<addon id="resource.images.skinbackgrounds.wallsquare.he" name="Skin Backgrounds - Wall Square (Hebrew)" version="1.0.1" provider-name="Orna Post, Benny Buchnik">
+<addon id="resource.images.skinbackgrounds.wallsquare.he" name="Skin Backgrounds - Wall Square (Hebrew)" version="1.0.4" provider-name="Orna Post, Benny Buchnik">
 	<extension point="kodi.resource.images" compile="false" type="skinbackgrounds" />
 	<requires>
 		<import addon="kodi.resource" version="1.0.0"/>
@@ -4836,7 +4878,7 @@ http://www.hometheater.co.il</description>
 	</extension>
 </addon>
 
-<addon id="resource.images.skinicons.boss.he" name="Skin Icons - Boss Design (Hebrew)" version="1.0.3" provider-name="Orna Post, Benny Buchnik">
+<addon id="resource.images.skinicons.boss.he" name="Skin Icons - Boss Design (Hebrew)" version="1.0.4" provider-name="Orna Post, Benny Buchnik">
 	<extension point="kodi.resource.images" compile="false" type="skinicons" />
 	<requires>
 		<import addon="kodi.resource" version="1.0.0"/>
@@ -4850,7 +4892,7 @@ http://www.hometheater.co.il</description>
 	</extension>
 </addon>
 
-<addon id="resource.images.skinicons.cd.he" name="Skin Icons - CD Design (Hebrew)" version="1.0.3" provider-name="Orna Post, Benny Buchnik">
+<addon id="resource.images.skinicons.cd.he" name="Skin Icons - CD Design (Hebrew)" version="1.0.4" provider-name="Orna Post, Benny Buchnik">
 	<extension point="kodi.resource.images" compile="false" type="skinicons" />
 	<requires>
 		<import addon="kodi.resource" version="1.0.0"/>
@@ -4864,7 +4906,7 @@ http://www.hometheater.co.il</description>
 	</extension>
 </addon>
 
-<addon id="resource.images.skinicons.classicwhite.he" name="Skin Icons - Classic White Design (Hebrew)" version="1.0.3" provider-name="Orna Post, Benny Buchnik">
+<addon id="resource.images.skinicons.classicwhite.he" name="Skin Icons - Classic White Design (Hebrew)" version="1.0.4" provider-name="Orna Post, Benny Buchnik">
 	<extension point="kodi.resource.images" compile="false" type="skinicons" />
 	<requires>
 		<import addon="kodi.resource" version="1.0.0"/>
@@ -4878,7 +4920,35 @@ http://www.hometheater.co.il</description>
 	</extension>
 </addon>
 
-<addon id="resource.images.skinicons.lightwhite.he" name="Skin Icons - Light White Design (Hebrew)" version="1.0.3" provider-name="Orna Post, Benny Buchnik">
+<addon id="resource.images.skinicons.comic.he" name="Skin Icons - Comic Design (Hebrew)" version="1.0.0" provider-name="Ron Bublitsky, Benny Buchnik">
+	<extension point="kodi.resource.images" compile="false" type="skinicons" />
+	<requires>
+		<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Skin Icons Pack - Comic Design</summary>
+		<description lang="en">Skin Icons Pack - Comic White Design</description>
+		<summary lang="he">חבילת אייקונים - קומיק</summary>
+		<description lang="he"> חבילת אייקונים - קומיק</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="resource.images.skinicons.darkwood.he" name="Skin Icons - Darkwood (Hebrew)" version="1.0.4" provider-name="Orna Post, Benny Buchnik">
+	<extension point="kodi.resource.images" compile="false" type="skinicons" />
+	<requires>
+		<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Skin Icons Pack - Darkwoord Design (Hebrew)</summary>
+		<description lang="en">Skin Icons Pack - Darkwood Design (Hebrew)</description>
+		<summary lang="he">חבילת אייקונים - עץ עתיק</summary>
+		<description lang="he"> חבילת אייקונים - עץ עתיק</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="resource.images.skinicons.lightwhite.he" name="Skin Icons - Light White Design (Hebrew)" version="1.0.4" provider-name="Orna Post, Benny Buchnik">
 	<extension point="kodi.resource.images" compile="false" type="skinicons" />
 	<requires>
 		<import addon="kodi.resource" version="1.0.0"/>
@@ -4892,7 +4962,7 @@ http://www.hometheater.co.il</description>
 	</extension>
 </addon>
 
-<addon id="resource.images.skinicons.ring.he" name="Skin Icons - Ring Design (Hebrew)" version="1.0.3" provider-name="Orna Post, Benny Buchnik">
+<addon id="resource.images.skinicons.ring.he" name="Skin Icons - Ring Design (Hebrew)" version="1.0.4" provider-name="Orna Post, Benny Buchnik">
 	<extension point="kodi.resource.images" compile="false" type="skinicons" />
 	<requires>
 		<import addon="kodi.resource" version="1.0.0"/>
@@ -4906,7 +4976,21 @@ http://www.hometheater.co.il</description>
 	</extension>
 </addon>
 
-<addon id="resource.images.skinicons.skyrim.he" name="Skin Icons - Skyrim Design (Hebrew)" version="1.0.3" provider-name="Orna Post, Benny Buchnik">
+<addon id="resource.images.skinicons.silver.he" name="Skin Icons - Silver (Hebrew)" version="1.0.4" provider-name="Orna Post, Benny Buchnik">
+	<extension point="kodi.resource.images" compile="false" type="skinicons" />
+	<requires>
+		<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Skin Icons Pack - Silver Design (Hebrew)</summary>
+		<description lang="en">Skin Icons Pack - Silver Design (Hebrew)</description>
+		<summary lang="he">חבילת אייקונים - סילבר</summary>
+		<description lang="he"> חבילת אייקונים - סילבר</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="resource.images.skinicons.skyrim.he" name="Skin Icons - Skyrim Design (Hebrew)" version="1.0.4" provider-name="Orna Post, Benny Buchnik">
 	<extension point="kodi.resource.images" compile="false" type="skinicons" />
 	<requires>
 		<import addon="kodi.resource" version="1.0.0"/>
@@ -4920,7 +5004,7 @@ http://www.hometheater.co.il</description>
 	</extension>
 </addon>
 
-<addon id="resource.images.skinicons.squares.he" name="Skin Icons - Squares (Hebrew)" version="1.0.3" provider-name="Orna Post, Benny Buchnik">
+<addon id="resource.images.skinicons.squares.he" name="Skin Icons - Squares (Hebrew)" version="1.0.4" provider-name="Orna Post, Benny Buchnik">
 	<extension point="kodi.resource.images" compile="false" type="skinicons" />
 	<requires>
 		<import addon="kodi.resource" version="1.0.0"/>
