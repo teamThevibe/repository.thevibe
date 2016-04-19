@@ -1618,7 +1618,10 @@ this is an unofficial addon. please don't ask for support in openelec forum / ir
     </extension>
 </addon>
 
-<addon id="plugin.audio.mp3streams" name="MP3 Streams" version="1.1.9" provider-name="kinkin, spoyser, art by Marquerite">
+<addon id="plugin.audio.mp3streams"
+       name="MP3 Streams"
+       version="1.2.0"
+       provider-name="kinkin, spoyser, art by Marquerite">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
         <import addon="script.module.t0mm0.common" version="1.1.0"/>
@@ -1626,11 +1629,12 @@ this is an unofficial addon. please don't ask for support in openelec forum / ir
         <import addon="script.module.requests" version="1.1.0"/>
     </requires>
 
-    <extension point="xbmc.python.pluginsource" library="default.py">
+    <extension point="xbmc.python.pluginsource"
+               	library="default.py">
         <provides>audio</provides>
     </extension>
 
-	<extension point="xbmc.service" library="playerMP3.py" start="startup"/>
+	<extension point="xbmc.service" library="playerMP3.py" start="startup" />
 
     <extension point="xbmc.addon.metadata">
         <platform>all</platform>
@@ -1685,7 +1689,7 @@ this is an unofficial addon. please don't ask for support in openelec forum / ir
   </extension>
 </addon>
 
-    <addon id="plugin.program.addoninstaller" version="1.2.5"
+    <addon id="plugin.program.addoninstaller" version="1.2.6"
     	name="Addon Installer" provider-name="tvaddons.ag, Blazetamer">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
@@ -1910,7 +1914,7 @@ this is an unofficial addon. please don't ask for support in openelec forum / ir
   </extension>
 </addon>
 
-<addon id="plugin.program.ump" name="UMP : Universal Media Provider" provider-name="boogiepop" version="0.0.55">
+<addon id="plugin.program.ump" name="UMP : Universal Media Provider" provider-name="boogiepop" version="0.0.58">
     <requires>
 		<import addon="xbmc.python" version="2.1.0"/>
 	</requires>
@@ -1991,13 +1995,13 @@ Highly configurable: Set your PIN, set your watershed time, exclude addons if re
 </addon>
 
 <!--suppress ALL -->
-<addon id="plugin.video.1channel" version="2.5.68" name="1Channel" provider-name="Bstrdsmkr, tuxen, tknorris">
+<addon id="plugin.video.1channel" version="2.5.69" name="1Channel" provider-name="Bstrdsmkr, tuxen, tknorris">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
-        <import addon="script.module.urlresolver" version="2.2.0"/>
-        <import addon="script.module.addon.common" version="2.0.0"/>
-        <import addon="script.module.metahandler" version="2.6.0"/>
-        <import addon="script.module.myconnpy" version="1.1.6"/>
+        <import addon="script.module.urlresolver" version="3.0"/>
+        <import addon="script.module.addon.common" version="2.0.0" />
+        <import addon="script.module.metahandler" version="2.6.0" />
+        <import addon="script.module.myconnpy" version="1.1.6" />
         <import addon="script.module.axel.downloader" version="0.2.0" optional="true"/>
     </requires>
     <extension point="xbmc.python.pluginsource" library="default.py">
@@ -2055,6 +2059,29 @@ Highly configurable: Set your PIN, set your watershed time, exclude addons if re
   </extension>
 </addon>
 
+<addon id="plugin.video.CanTVLive" name="CanTVLive" version="2.0.3" provider-name="podgod">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+	<import addon="script.module.beautifulsoup" version="3.2.1"/>
+	<import addon="script.module.simple.downloader" version="0.9.4"/>
+	<import addon="script.module.beautifulsoup4"/>
+	<import addon="script.module.requests"/>
+	<import addon="script.module.httplib2"/>
+	<import addon="script.module.youtube.dl" optional="true"/>
+	<import addon="plugin.video.youtube"/>
+	<import addon="script.module.urlresolver" optional="true"/>
+	<import addon="script.module.simplejson"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+	<provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary>Live Canadian TV channels</summary>
+    <description>Live Canadian TV channels all in one place. General disclaimer: These are just random feeds found on the net. Like all things internet, links go up and down. Also, some channels do not broadcast 24/7. I take no responsibility for the content or reliability of the feeds. Enjoy while you can. [B]Filmon.TV[/B] addon from kinkin required for CTV channels. F4M Tester addon from Shani rrequired for some channels</description>
+  </extension>
+</addon>
+
 <addon id="plugin.video.ccloudtv"
        name="cCloud TV"
        version="1.4.6"
@@ -2089,12 +2116,12 @@ Highly configurable: Set your PIN, set your watershed time, exclude addons if re
   </extension>
 </addon>
 
-<addon id="plugin.video.exodus" version="1.2.0" name="Exodus" provider-name="Exodus">
+<addon id="plugin.video.exodus" version="1.3.1" name="Exodus" provider-name="Exodus">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="repository.exodus" version="1.0.0" />
-		<import addon="script.exodus.artwork" version="1.0.0" />
-		<import addon="script.module.urlresolver" version="2.10.11"/>
+		<import addon="script.exodus.artwork" version="1.0.1" />
+		<import addon="script.module.urlresolver" version="3.0.0"/>
 		<import addon="script.module.metahandler" version="1.0.0" />
 		<import addon="plugin.video.youtube" optional="true" />
 	</requires>
@@ -2536,6 +2563,26 @@ Donatello donations: http://donatellokodi.blogspot.co.il/2015/10/blog-post.html
     </extension>
 </addon>
 
+<addon id="plugin.video.iltwenty"
+       name="ערוץ 20"
+       version="1.0.4"
+       provider-name="xbmc-israel team ([COLOR white]x[/COLOR][COLOR blue]b[/COLOR][COLOR white]m[/COLOR][COLOR blue]c[/COLOR]-[COLOR white]i[/COLOR][COLOR blue]s[/COLOR][COLOR white]r[/COLOR][COLOR blue]a[/COLOR][COLOR white]e[/COLOR][COLOR blue]l[/COLOR] repo)">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+		<import addon="repository.xbmc-israel" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Watch Channel 20 Videos</summary>
+		<description lang="en">Watch Channel 20 Video content from Channel 20 website.</description>
+		<summary lang="he">צפיה בתכנים מאתר ערוץ 20</summary>
+		<description lang="he">צפיה בתכנים מאתר ערוץ 20.</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
 <addon id="plugin.video.israelive" name="[COLOR white]Israe[/COLOR][COLOR blue]L[/COLOR][COLOR white]IVE[/COLOR]" version="4.7.2" provider-name="Benny123, Avigdor (xbmc-israel repo)">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
@@ -2854,21 +2901,24 @@ Donatello donations: http://donatellokodi.blogspot.co.il/2015/10/blog-post.html
   </extension>
 </addon>
 
-<addon id="plugin.video.MakoTV" name="MakoTV (web)" version="1.1.4" provider-name="xbmc-israel team ([COLOR white]x[/COLOR][COLOR blue]b[/COLOR][COLOR white]m[/COLOR][COLOR blue]c[/COLOR]-[COLOR white]i[/COLOR][COLOR blue]s[/COLOR][COLOR white]r[/COLOR][COLOR blue]a[/COLOR][COLOR white]e[/COLOR][COLOR blue]l[/COLOR] repo)">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-    <import addon="repository.xbmc-israel" />
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Watch MakoTV Videos</summary>
-    <description lang="en">Watch Mako Video content from MakoTV website.</description>
-    <summary lang="he">צפיה בתכנים מאתר MakoTV</summary>
-    <description lang="he">צפיה בתכנים מאתר MakoTV.</description>
-    <platform>all</platform>
-  </extension>
+<addon id="plugin.video.MakoTV"
+       name="MakoTV (web)"
+       version="1.1.5"
+       provider-name="xbmc-israel team ([COLOR white]x[/COLOR][COLOR blue]b[/COLOR][COLOR white]m[/COLOR][COLOR blue]c[/COLOR]-[COLOR white]i[/COLOR][COLOR blue]s[/COLOR][COLOR white]r[/COLOR][COLOR blue]a[/COLOR][COLOR white]e[/COLOR][COLOR blue]l[/COLOR] repo)">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+		<import addon="repository.xbmc-israel" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Watch MakoTV Videos</summary>
+		<description lang="en">Watch Mako Video content from MakoTV website.</description>
+		<summary lang="he">צפיה בתכנים מאתר MakoTV</summary>
+		<description lang="he">צפיה בתכנים מאתר MakoTV.</description>
+		<platform>all</platform>
+	</extension>
 </addon>
 
 <addon id="plugin.video.makoTV.video" name="Mako TV" version="1.35.1" provider-name="sbentin \V Master">
@@ -3162,6 +3212,26 @@ Donatello donations: http://donatellokodi.blogspot.co.il/2015/10/blog-post.html
   </extension>
 </addon>
 
+<addon id="plugin.video.phstreams" name="Phoenix" version="3.0.4" provider-name="tvaddons.ag">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0" />
+		<import addon="script.module.pyxbmct" version="1.1.4" />
+		<import addon="script.module.urlresolver" version="3.0.0"/>
+		<import addon="script.module.liveresolver" version="0.1.24"/>
+		<import addon="plugin.video.youtube" optional="true" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Phoenix</summary>
+		<description lang="en">Discover Great Streaming Playlists, Please visit www.tvaddons.ag for help and support!</description>
+		<platform>all</platform>
+		<forum>http://forums.tvaddons.ag/forums/220-PHOENIX-LIVE-STREAMS</forum>
+		<website>http://www.tvaddons.ag/</website>
+	</extension>
+</addon>
+
 <addon id="plugin.video.playlistLoader" name="Playlist Loader" version="1.0.9" provider-name="Avigdor">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
@@ -3312,10 +3382,10 @@ http://www.hometheater.co.il</description>
 </addon>
 
 <!--suppress ALL -->
-<addon id="plugin.video.salts" version="2.0.23" name="Stream All The Sources" provider-name="tknorris">
+<addon id="plugin.video.salts" version="2.0.35" name="Stream All The Sources" provider-name="tknorris">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
-        <import addon="script.module.urlresolver" version="2.2.0"/>
+        <import addon="script.module.urlresolver" version="3.0.0"/>
         <import addon="script.module.myconnpy" version="1.1.6" />
     </requires>
     <extension point="xbmc.python.pluginsource" library="default.py">
@@ -3415,7 +3485,7 @@ http://www.hometheater.co.il</description>
   </extension>
 </addon>
 
-<addon id="plugin.video.specto" name="Specto - ... Fork"  version="2016.03.12.2" provider-name="mrknow" >
+<addon id="plugin.video.specto" name="Specto - ... Fork"  version="2016.04.11.1" provider-name="mrknow" >
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="script.module.requests" version="1.0.0" />
@@ -3439,14 +3509,16 @@ http://www.hometheater.co.il</description>
 	</extension>
 </addon>
 
-<addon id="plugin.video.SportsDevil" version="2016.02.01" name="SportsDevil" provider-name="SportsDevil">
+<addon id="plugin.video.SportsDevil" version="2016.03.21" name="SportsDevil" provider-name="SportsDevil">
   <requires>
-    <import addon="xbmc.python" version="2.14.0" />
-    <import addon="script.module.requests" />
-    <import addon="script.module.pydevd" version="4.4.0" optional="true" />
+   <import addon="xbmc.python" version="2.14.0"/>
+   <import addon="script.module.requests" />
+   <import addon="script.module.pydevd" version="4.4.0" optional="true"/>
   </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
+  <extension
+    point="xbmc.python.pluginsource"
+    library="default.py">
+   <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary>Play videos of different sports streaming sites</summary>
@@ -3526,6 +3598,31 @@ http://www.hometheater.co.il</description>
   </extension>
 </addon>
 
+<addon id="plugin.video.theroyalwe" name="The Royal We" provider-name="DudeHere" version="0.9.16">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0" />
+        <import addon="script.module.simplejson" />
+        <import addon="script.module.beautifulsoup" />
+        <import addon="script.module.addon.common" />
+        <import addon="script.module.dudehere.routines" />
+        <import addon="script.module.metahandler" />
+        <import addon="script.module.myconnpy" />
+        <import addon="script.module.urlresolver" />
+    </requires>
+    <extension library="default.py" point="xbmc.python.pluginsource">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <language />
+        <summary>The Royal We is about simplicity and sources.</summary>
+        <description>The Royal We is getting better then ever. It&apos;s all about simplicity and lots of sources. No settings. No configuration (except for a Trakt.tv account if you have one).</description>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+        <forum>http://forums.tvaddons.ag/dudehere-addons/</forum>
+        <website>http://www.tvaddons.ag/</website>
+    </extension>
+</addon>
+
 <addon id="plugin.video.thewiz.kids" name="TheWiz Kids Area" version="1.0.1" provider-name="TheWiz">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
@@ -3564,7 +3661,7 @@ http://www.hometheater.co.il</description>
   </extension>
 </addon>
 
-<addon id="plugin.video.titan" name="[COLOR blue]T[/COLOR]itan" version="2.0.1" provider-name="Titan">
+<addon id="plugin.video.titan" name="[COLOR blue]T[/COLOR]itan" version="2.1.0" provider-name="Titan">
 	<requires>
 		<import addon="script.module.simplejson" version="3.3.0"/>
 		<import addon="xbmc.python" version="2.1.0"/>
@@ -3914,7 +4011,7 @@ http://www.hometheater.co.il</description>
   </extension>
 </addon>
 
-<addon id="plugin.video.xmovies8" name="XMovies8" version="1.1.3" provider-name="MetalKettle">
+<addon id="plugin.video.xmovies8" name="XMovies8" version="1.1.4" provider-name="MetalKettle">
   <requires>
     <import addon="script.module.simplejson" version="3.3.0"/>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -6822,17 +6919,20 @@ level.</description>
 	</extension>
 </addon>
 
-<addon id="script.module.pyxbmct" name="PyXBMCt" version="1.1.5" provider-name="Roman_V_M">
+<addon id="script.module.pyxbmct"
+   name="PyXBMCt"
+   version="1.1.7"
+   provider-name="Roman_V_M">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
   </requires>
-  <extension point="xbmc.python.module" library="lib"/>
+  <extension point="xbmc.python.module" library="lib" />
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
     <summary lang="en">PyXBMCt UI framework</summary>
     <description lang="en">PyXBMCt is a mini-framework for simple XBMC addon UI buliding. It is similar to PyQt and provides parent windows, a number of UI controls (widgets) and a grid layout manager to place controls.</description>
-    <disclaimer lang="en"/>
-    <language/>
+    <disclaimer lang="en"></disclaimer>
+    <language></language>
     <license>GNU GPL v.3</license>
     <forum>http://forum.xbmc.org/showthread.php?tid=174859</forum>
     <website>http://romanvm.github.io/PyXBMCt</website>

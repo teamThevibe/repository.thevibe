@@ -1,3 +1,93 @@
+[B]Version 2.0.35[/B]
+- Add Fmovie
+- Fix Flixanity
+- Fix TVWTS
+- Fix PelisPedia
+- Fix MVL
+- Add fix to stop plugin:// error in log
+- Reduce load in some scrapers if not configured
+
+[B]Version 2.0.34[/B]
+- Add DDLSeries
+- Improve flixanity
+- Improve vivo.to
+- Fix TVWTS
+- Fix MWM
+- Minor Code Fixes
+
+[B]Version 2.0.33[/B]
+- Require debrid accounts for some scrapers
+- Add more Rewatch function
+
+[B]Version 2.0.32[/B]
+- Add HEVCBluRay
+- Add CloudMovie
+- Add Watch It Again
+- Improve Flixanity
+- Improve IceFilms
+
+[B]Version 2.0.31[/B]
+- Add filmovizjia
+- Improve WatchHD
+- Fix vivo.to
+- Fix 9Movies
+- Fix DDLValley
+- Fix Uflix
+- Remove MerDB
+- Remove MovieHDMax
+- Remove DiziFilm
+- Add manual semaphore value setting
+
+[B]Version 2.0.30[/B]
+- Add Stage66 Scraper
+- Remove Zumvo Scraper
+- Fix download dir check & header parsing
+- Improve caching in several scrapers
+- Optimize dom_parser
+
+[B]Version 2.0.29[/B]
+- Add SeriesWatch scraper
+- Fix StreamLord
+- Fix 9Movies
+- Fix PubFilm
+- Improve DDLValley
+- Improve PelisPedia
+- Improve WatchHD scraper
+- Depend on SMU 3.0
+- Update Translations
+- Add semaphore on DB writes
+- Code cleanup
+
+[B]Version 2.0.28[/B]
+- Add NaCl Theme (from Jokster)
+- Fix m4ufree scraper
+- Fix PutMV scraper
+- Fix Miradetodo scraper
+- Fix DiziFilmHD scraper
+- Fix MovieSub episodes
+
+[B]Version 2.0.25[/B]
+- Fix IWatch scraper scraper
+- Fix StreamLord scraper
+- Fix PubFilm scraper
+- Fix Miradetodo scraper
+- Fix Ganool scraper
+- Fix m4ufree scraper
+- Fix Dizibox scraper
+- Fix Diziay scraper
+- Fix TVWTS scraper
+- Fix DDLValley scraper
+- Fix 2dDL scraper
+- Remove beinmovie
+
+[B]Version 2.0.24[/B]
+- Add PelisPedia
+- Improve DiziBox
+- Fix WatchHD
+- Fix StreamLord
+- Fix TVWTS
+- Remove MovCav
+
 [B]Version 2.0.23[/B]
  - Fix sezon scraper
  - Fix tvwts scraper

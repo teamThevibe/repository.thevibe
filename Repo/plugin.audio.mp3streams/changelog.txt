@@ -1,3 +1,7 @@
+1.2.0
+Fixed playback
+Fixed downloads
+
 1.1.9
 Fixed compilations
 

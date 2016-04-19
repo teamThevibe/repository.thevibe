@@ -1,3 +1,32 @@
+2016-04-17: prefs: handle situation when open mode is "r" but file does not exist
+2016-04-17: cookie: remove old data file
+2016-04-17: buffering: fix unlink, api: recommit, prefs: fix read/write modes for unix likes
+2016-04-17: primewire: dont use head requests, recapctha: fix domain position, api: fix tmode on head reuests, cloudfare: ingone subdomain in cookie search
+2016-04-17: cloudfare: implement recaptcha solver, api: recaptcha solver inside tunnels, remember logged in cloudfare user agent, webtunnel health checks before url selection, postrun scripts, redmp3: handle copyrighted materials, prefs: store preferences in a local json file, select.xml: fix mouse offset
+2016-04-11: redmp3: link provider for audio, settings: auto check wentunnels
+2016-04-10: api: implement dont foolow 302 specific uris, imeplemented abs uri method to ease life with web tunnels, http: seperate opener handlers, prefs: check setting values are visible and already in settings xml eventhough they exist in addon_data folder, webtunnels: "buka":("cookie"), "multiweb":("cookie"), "muchbest":("cookie"), "muchfr":("cookie"), "muchus":("cookie"), "muchsg":("cookie"), "muchid":("cookie"), grooveshark: tunnelled, musicmp3: tunneled.
+2016-04-10: youtube_dl: fix encoding
+2016-04-10: youtube_dl: fix encoding
+2016-04-08: addon: handle provider exceptions, lastfm: ump.keyboard_get, baka:ump.keyboard_get, ann:ump.keyboard_get, imdb:ump.keyboard_get, tvdb: ump.keyboard_get, api: shutdown tm gracefully, webtunnel: fix for disbaled routed to proxy
+2016-04-08: preferences: finish set_view
+2016-04-08: prefs: implemented set_view
+2016-04-08: preferences: initial imlementation
+2016-04-06: api: allow non artful/info lis on index_item, rt: implemented index_item
+2016-04-06: code clean up/organisation
+2016-04-04: Update video_index_tvdb.py
+2016-04-03: ann: implemented ump.index_item, imdb: implemented: ump.index_item
+2016-04-03: ann: implemented index_item, api: allow user to select view mode from settings, prerun: update providers only on index/root
+2016-04-03: bokmmark: clean code
+2016-04-03: grooveshark: new link provider, youtube: new url provider
+2016-04-03: addon: implement prerun scripts, lastfm: implement new index_item method, implemented charts, styles, and geo charts, musicmp3: new audio link/url provider, api: new feature: web tunnels. now providers can scrape the pages through a webtunnel, no need to connect proxies for privacy,implemented workaround for libcurl buffering issues, youtube_dl: new third party library to scrape from youtube
+2016-03-28: ump: use more proper directory structure
+2016-03-27: bookmark: new function. now users can create their own bookmark. it uses kodis own favorites model, once an item is bookmarked it will show up in the favorites section on kodi but also it will also appear in bookmark indexer inside the addon. those bookmarks are separeted with content types, also it is possible to rename and delete them inside the addon. addon: new typeof provider "ump". if ump prefix is present on providers they will run on each kind of content types, baka: rewritten with ump.index_item, mangafox: slowed down to 200ms per request, mangahere: slowed down to 1300ms, mangareader: slow down to 200ms, imdb: removed tmdb fanart, never combine two services at once again it is a very bad idea, rt: let the user choose his/her own search engine using context menus api: new function "index_item". a generic funtion to create li's fast and rapid with the new view modes and context menu organisations. provider: updated because of new provider type : "ump"
+2016-03-26: addon: show all inxers when content cat is not provided
+2016-03-26: baka: implemented latest releases, implemented charts
+2016-03-25: baka: search mangas, manhuas, manwas, mangakas, novels, artbooks, doujinshi, drama cd, oel, implemented genres, categories and mangakas, mangareader: new link provider, mangareader: new url provider
+2016-03-19: baka: fix bug #35, lastfm: fix bug #35 mangafox: slow the validators as the server does not allow more than 1 request in 1 sec., mangahere: new link/url provider for manga, api: handle issue #38
+2016-03-19: rt: scrape editorial information, fix navigation issues, api: fix bug #35, set_content function will also handle the view type, view_text to support backwards compatability for dialog.textarea before jarvis, allow max_meta to determine wighted key according to filesize not resolation, ann: fix bug #35, imdb: ann: fix bug #35, tvdb: ann: fix bug #35, providers: sync xml dynamically with /provider dir but economically
+2016-03-14: api: remove task manager shut down progress, allow url providers to define their own timeout, dynamically update settings.xml aacording to installed providers, redmp3: disabled site is geo blocked, musicmp3: new audio link&url providers
 2016-03-11: pubfilm: fix for multiple mirrors
 2016-03-11: dizimag: fix for new json page, afdah: fix for encryption, primewire: fix for new goto.php unpack: fix for unicode regex, api: log control on settings, ui: automatic mirror selection, dizibox: new link provider, alphavid,picasa,vidme,vimeo: new url providers
 2016-03-07: api: auto select best mirror for each part when autoplay is active
