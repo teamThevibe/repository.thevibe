@@ -2079,7 +2079,7 @@ Highly configurable: Set your PIN, set your watershed time, exclude addons if re
 
 <addon id="plugin.video.ccloudtv"
        name="cCloud TV"
-       version="1.4.6"
+       version="1.4.7"
        provider-name="podgod, Coder Alpha">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -3441,7 +3441,7 @@ http://www.hometheater.co.il</description>
   </extension>
 </addon>
 
-<addon id="plugin.video.seretil" name="seretil" version="2.1.8" provider-name="YALLA BEITAR NORDIA">
+<addon id="plugin.video.seretil" name="Seretil" version="2.1.9" provider-name="YALLA BEITAR NORDIA">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
         <import addon="script.module.urlresolver" version="1.0.0"/>/>
@@ -3904,7 +3904,7 @@ http://www.hometheater.co.il</description>
 	</extension>
 </addon>
 
-<addon id="plugin.video.Vodil" name="V.O.D IL" version="1.0.9" provider-name="kodi senyor">
+<addon id="plugin.video.Vodil" name="V.O.D IL" version="1.1.9" provider-name="kodi senyor">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="plugin.video.youtube"/>
