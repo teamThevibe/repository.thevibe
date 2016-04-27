@@ -1,19 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.program.senyorwizard" name="senyor wizard" version="1.0.5" provider-name="Kodi Senyor">
+<addon id="plugin.program.senyorwizard" name="senyor wizard" version="1.0.8" provider-name="senyor wizard">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video executable</provides>
+        <provides>executable</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="en">senyor wizard</summary>
-    <description lang="en">Easy Install Full KODI Build.</description>
-    <description lang="he">התקנת קודי עם כל ההרחבות הכי טובות בקליק אחד</description>
-    <disclaimer lang="en">Visit Abeksis.com for more info.</disclaimer>
-    <disclaimer lang="he">בקרו באתר http://kodi-senyor.co.il</disclaimer>
-    <source>http://kodi-senyor.co.il</source>
-    <website>http://kodi-senyor.co.il</website>
+    <summary lang="en">senyor Wizard</summary>
+    <description lang="en">kodi-senyor.co.il kodi builds</description>
+	<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon or have any affiliation with the website owners</disclaimer>
     <platform>all</platform>
   </extension>
 </addon>
