@@ -1,3 +1,27 @@
+[B]Version 2.0.38[/B]
+- Add kiwihd
+- Add PirateJunkies
+- Add Watch5s
+- Improve 123Movies
+- Fix PelisPedia
+- Fix M4uFree
+- Fix WatchFree
+- Fix MovieSub
+- Remove tv-release.net
+
+[B]Version 2.0.37[/B]
+- Fix torba
+- Fix Mira
+- Improve MoviesPlanet
+- Fix dizilab
+
+[B]Version 2.0.36[/B]
+- Improve MovieWatcher
+- Fix DDLValley
+- Fix 2DDL
+- Fix Flixanity
+- Remove TVWTVS
+
 [B]Version 2.0.35[/B]
 - Add Fmovie
 - Fix Flixanity

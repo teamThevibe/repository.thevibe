@@ -1,5 +1,19 @@
 Official Velocity addon For Kodi
 
+V1.0.7
+Added Add to Collection from TV Search
+Small bug fixes
+This is a partial update only
+
+
+
+V1.0.6
+Added Basic Sorting
+Added logic to fix quotes causing Download error (aksaks)
+Updated Network Shows List
+Collected Episodes not Watched Bug Fix
+Other code fixes
+
 V1.0.5
 Better Error notification
 Adjusted cache to deal with Trakt Timeouts

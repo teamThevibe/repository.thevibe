@@ -1644,9 +1644,9 @@ this is an unofficial addon. please don't ask for support in openelec forum / ir
 
 </addon>
 
-<addon id="plugin.audio.musicbox" name="Music Box" version="0.1.2i" provider-name="techdealer">
+<addon id="plugin.audio.musicbox" name="Music Box" version="0.1.3" provider-name="techdealer">
   <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="xbmc.python" version="2.20.0"/>
 	<import addon="script.module.simple.downloader" version="1.9.4"/>
 	<import addon="plugin.video.youtube" version="2.9.2"/>
 	<import addon="script.module.mutagen"/>
@@ -1656,10 +1656,9 @@ this is an unofficial addon. please don't ask for support in openelec forum / ir
     <provides>audio</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <language>en</language>
-    <platform>all</platform>
     <summary lang="en">Music Box</summary>
     <description lang="en">Music box is a new way to listen and discover music thought KODI.</description>
+    <language>en</language>
     <platform>all</platform>
   </extension>
 </addon>
@@ -1914,7 +1913,7 @@ this is an unofficial addon. please don't ask for support in openelec forum / ir
   </extension>
 </addon>
 
-<addon id="plugin.program.ump" name="UMP : Universal Media Provider" provider-name="boogiepop" version="0.0.58">
+<addon id="plugin.program.ump" name="UMP : Universal Media Provider" provider-name="boogiepop" version="0.0.68">
     <requires>
 		<import addon="xbmc.python" version="2.1.0"/>
 	</requires>
@@ -2116,7 +2115,7 @@ Highly configurable: Set your PIN, set your watershed time, exclude addons if re
   </extension>
 </addon>
 
-<addon id="plugin.video.exodus" version="1.3.1" name="Exodus" provider-name="Exodus">
+<addon id="plugin.video.exodus" version="1.3.2" name="Exodus" provider-name="Exodus">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="repository.exodus" version="1.0.0" />
@@ -3212,7 +3211,7 @@ Donatello donations: http://donatellokodi.blogspot.co.il/2015/10/blog-post.html
   </extension>
 </addon>
 
-<addon id="plugin.video.phstreams" name="Phoenix" version="3.0.4" provider-name="tvaddons.ag">
+<addon id="plugin.video.phstreams" name="Phoenix" version="3.0.5" provider-name="tvaddons.ag">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="script.module.pyxbmct" version="1.1.4" />
@@ -3382,7 +3381,7 @@ http://www.hometheater.co.il</description>
 </addon>
 
 <!--suppress ALL -->
-<addon id="plugin.video.salts" version="2.0.35" name="Stream All The Sources" provider-name="tknorris">
+<addon id="plugin.video.salts" version="2.0.38" name="Stream All The Sources" provider-name="tknorris">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
         <import addon="script.module.urlresolver" version="3.0.0"/>
@@ -3868,29 +3867,29 @@ http://www.hometheater.co.il</description>
     </extension>
 </addon>
 
-<addon id="plugin.video.velocity" version="1.0.5" name="Velocity" provider-name="Blazetamer">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-    <import addon="script.module.urlresolver" version="2.1.2" />
-    <import addon="script.module.t0mm0.common" version="2.0.0" />
-    <import addon="script.module.autoupdate" version="2.0.0" />
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary>Stream Videos from multiple sources</summary>
-    <description>Stream Videos from multiple sources via Information obtained from Trakt.tv, and or your Trakt Account</description>
-    <disclaimer>The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
-    <language>en</language>
-    <platform>all</platform>
-    <forum>https://forums.tvaddons.ag/blazetamer-s-repository/39658-velocity-20.html</forum>
-    <website>https://offshoregit.com/Blazetamer/velocity.html</website>
-    <source>
-    </source>
-    <email>
-    </email>
-  </extension>
+    <addon id="plugin.video.velocity" version="1.0.7" name="Velocity" provider-name="Blazetamer">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.module.urlresolver"  version="2.1.2"/>
+        <import addon="script.module.t0mm0.common" version="2.0.0"/>
+        <import addon="script.module.autoupdate" version="2.0.0" />
+
+
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Stream Videos from multiple sources</summary>
+        <description>Stream Videos from multiple sources via Information obtained from Trakt.tv, and or your Trakt Account</description>
+        <disclaimer>The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
+        <language>en</language>
+        <platform>all</platform>
+        <forum>https://forums.tvaddons.ag/blazetamer-s-repository/39658-velocity-20.html</forum>
+        <website>https://offshoregit.com/Blazetamer/velocity.html</website>
+        <source></source>
+        <email></email>
+    </extension>
 </addon>
 
 <addon id="plugin.video.vod.9movies" name="9movies" version="1.0.2" provider-name="anhlon">
@@ -4817,6 +4816,19 @@ http://www.hometheater.co.il</description>
     <platform>all</platform>
     <website>http://www.the-vibe.co.il</website>
   </extension>
+</addon>
+
+<addon id="repository.tva.common" name="TVADDONS.ag Libraries Repository" version="1.0.1" provider-name="tvaddons.ag">
+    <extension point="xbmc.addon.repository" name="TVADDONS.ag Libraries Repository">
+        <info compressed="false">https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/addons.xml</info>
+        <checksum>https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/zips/</datadir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Faster Updating of Common Libraries for Kodi</summary>
+        <description>This repository contains intermediate builds of libraries commonly used by TVAddons Kodi addons, Brought to you by TVADDONS.ag</description>
+        <platform>all</platform>
+    </extension>
 </addon>
 
 <addon id="repository.unofficial.addon.pro"
@@ -6686,7 +6698,7 @@ provider-name="Roman_V_M">
 
 <addon id="script.module.liveresolver"
      name="LiveResolver"
-     version="0.1.25"
+     version="0.1.30"
      provider-name="natko1412">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
@@ -7090,24 +7102,28 @@ level.</description>
     </extension>
 </addon>
 
-<addon id="script.module.trakt" name="trakt.py" version="2.5.2" provider-name="Fuzeman, Razzeee">
+<addon id="script.module.trakt"
+       name="trakt.py"
+       version="2.6.0"
+       provider-name="Fuzeman, Razzeee">
   <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-    <import addon="script.module.requests" version="2.7.0" />
-    <import addon="script.module.six" version="1.9.0" />
-    <import addon="script.module.arrow" version="0.6.0" />
+    <import addon="xbmc.python" version="2.24.0"/>
+	<import addon="script.module.requests" version="2.7.0"/>
+	<import addon="script.module.six" version="1.9.0"/>
+	<import addon="script.module.arrow" version="0.6.0"/>
   </requires>
-  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.python.module"
+             library="lib" />
   <extension point="xbmc.addon.metadata">
     <summary>Python interface for the trakt.tv API</summary>
     <description>Packed for Kodi from https://github.com/fuzeman/trakt.py</description>
     <platform>all</platform>
-    <language />
+    <language></language>
     <license>MIT</license>
-    <forum />
+    <forum></forum>
     <website>https://github.com/fuzeman/trakt.py</website>
     <source>https://github.com/Razzeee/script.module.trakt</source>
-    <email />
+    <email></email>
   </extension>
 </addon>
 
@@ -7160,20 +7176,17 @@ level.</description>
   </extension>
 </addon>
 
-<addon id="script.module.urlresolver"
-     name="URLResolver"
-     version="2.10.12"
-     provider-name="Eldorado">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-    <import addon="script.module.t0mm0.common" version="2.0.0"/>
-  </requires>
-  <extension point="xbmc.python.module" library="lib" />
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <summary lang="en">Resolve common video host URL's to be playable in XBMC/Kodi.</summary>
-    <description lang="en">Resolve common video host URL's to be playable in XBMC/Kodi, simplify addon development of video plugins requiring multi video hosts.</description>
-  </extension>
+<addon id="script.module.urlresolver" name="URLResolver" version="3.0.3" provider-name="Eldorado">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0" />
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.python.pluginsource" library="lib/default.py" />
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">Resolve common video host URL's to be playable in XBMC/Kodi.</summary>
+		<description lang="en">Resolve common video host URL's to be playable in XBMC/Kodi, simplify addon development of video plugins requiring multi video hosts.</description>
+	</extension>
 </addon>
 
 <addon id='script.module.xbmc.helpers' version='2.0.0' name='Xbmc helpers module based on Parsedom module' provider-name='mrstealth'>
@@ -7528,12 +7541,13 @@ level.</description>
 	</extension>
 </addon>
 
-<addon id="script.trakt" name="Trakt" version="3.1.2" provider-name="Trakt.tv, Razzeee">
+<addon id="script.trakt" name="Trakt" version="3.1.5" provider-name="Trakt.tv, Razzeee">
 	<requires>
         <import addon="xbmc.python" version="2.24.0"/>
         <import addon="script.module.simplejson" version="3.3.0"/>
-        <import addon="script.module.trakt" version="2.5.2"/>
+        <import addon="script.module.trakt" version="2.6.0"/>
         <import addon="script.module.dateutil" version="2.4.2"/>
+        <import addon="script.module.addon.signals" version="0.0.1"/>
 	</requires>
 	<extension point="xbmc.python.script" library="script.py">
 		<provides>executable</provides>

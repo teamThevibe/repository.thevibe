@@ -1,3 +1,9 @@
+Version 0.1.3 - (31/03/2016)
+* vkAuth: 2 factor authentication
+* Update xbmc.python version
+* Improvements in local music id3 handling
+* Fix Digster
+
 Version 0.1.2 - (24/09/2015)
 * Fixed beatport top100
 * Removed omgcatz resolver method (8tracks)
