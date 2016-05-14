@@ -1946,6 +1946,22 @@ Highly configurable: Set your PIN, set your watershed time, exclude addons if re
   </extension>
 </addon>
 
+<addon id="plugin.program.wizardil" name="[COLOR gold]Wizard[/COLOR] [COLOR white]IL[/COLOR]" version="1.0.1" provider-name="[COLOR red]ToMeR[/COLOR]">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>program executable</provides>
+  </extension>
+  <extension point="xbmc.service" library="kodibuildsil.py" start="startup" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">ToMeR For Addons</summary>
+    <description lang="he">מערכת מושלמת עבור הקודי שלכם</description>
+    <description lang="he">וויזארד כללי להתקנות מוכנות מהירות ובממשק מדהים ובעברית</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="plugin.video.10net.video" name="סרטים בצפיה ישירה" version="1.0.3" provider-name="sbentin">
   <requires>
     <import addon="xbmc.python" version="2.0" />
@@ -4894,6 +4910,19 @@ http://www.hometheater.co.il</description>
     <platform>all</platform>
     <website>http://www.the-vibe.co.il</website>
   </extension>
+</addon>
+
+<addon id="repository.ToMeRepo" name=".[COLOR blue]..~ToMeRepo~[/COLOR] [COLOR yellow]Repository.®[/COLOR]" version="1.0.4" provider-name="ToMeR">
+	<extension point="xbmc.addon.repository" name="ToMeRepo">
+		<info compressed="false">http://tomerepo.comli.com/Zips/addons.xml</info>
+		<checksum>http://tomerepo.comli.com/Zips/addons.xml.md5</checksum>
+		<datadir zip="true">http://tomerepo.comli.com/Zips</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>מאגר הרחבות קטן ומדוייק.</summary>
+		<description>פה תמצאו הרחבות לקודי שעברו בדיקה מדוקדקת , מכל הרפויים הקיימים שיש ,מאגר קטן זמין ומתעדכן באופן שוטף</description>
+		<platform>all</platform>
+	</extension>
 </addon>
 
 <addon id="repository.tva.common" name="TVADDONS.ag Libraries Repository" version="1.0.1" provider-name="tvaddons.ag">
