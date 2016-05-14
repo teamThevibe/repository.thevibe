@@ -4,8 +4,7 @@
     <import addon="xbmc.python" version="2.20.0"/>
     <import addon="script.module.requests"/>
     <import addon="plugin.video.meta"/>
-  </requires>
-  
+  </requires>  
   <extension point="kodi.context.item" library="context_playable.py">
     <provides>executable</provides>	
       <item>
@@ -13,7 +12,6 @@
         <visible>[StringCompare(ListItem.dbtype,movie) | StringCompare(ListItem.dbtype,episode)]</visible>        
       </item>
   </extension>
-
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
     <language></language>

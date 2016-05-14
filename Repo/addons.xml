@@ -48,7 +48,6 @@
     <import addon="script.module.requests"/>
     <import addon="plugin.video.meta"/>
   </requires>
-
   <extension point="kodi.context.item" library="context_playable.py">
     <provides>executable</provides>
       <item>
@@ -56,7 +55,6 @@
         <visible>[StringCompare(ListItem.dbtype,movie) | StringCompare(ListItem.dbtype,episode)]</visible>
       </item>
   </extension>
-
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
     <language></language>
@@ -2351,6 +2349,20 @@ Highly configurable: Set your PIN, set your watershed time, exclude addons if re
   </extension>
 </addon>
 
+<addon id="plugin.video.gdrive" version="0.7.17" name="gdrive" provider-name="ddurdle">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video audio image programs</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Listen to music, watch videos and view photos from your Google Drive account</summary>
+        <description>Plays music and video from your Google Drive account.  Not affiliated with Google.</description>
+        <platform>all</platform>
+    </extension>
+</addon>
+
 <addon id="plugin.video.genesis" name="Genesis" version="2016.02.06.3" provider-name="mrknow">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
@@ -3329,6 +3341,24 @@ http://www.hometheater.co.il</description>
   </extension>
 </addon>
 
+<addon id="plugin.video.pulsefitness" name="pulse fitness" version="2.0.0" provider-name="pulsemediahubuk add us on facebook pulse media hub">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.addon.common" version="2.0.0"/>
+    <import addon="plugin.video.youtube" version="5.0.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">pulse fitness addon</summary>
+    <description lang="en">fitness content  to help you back into shape .</description>
+    <platform>all</platform>
+    <forum>n/a</forum>
+    <website>n/a</website>
+  </extension>
+</addon>
+
 <addon id="plugin.video.quasar" name="Quasar" version="0.9.33" provider-name="scakemyer">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
@@ -3353,31 +3383,31 @@ http://www.hometheater.co.il</description>
 </addon>
 
 <addon id="plugin.video.reshet.video" name="רשת" version="1.3.3" provider-name="sbentin">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-    <import addon="repository.xbmc-israel" />
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="reshet.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <minversion>31632</minversion>
-    <summary lang="en">Watch Reshet video contents.</summary>
-    <summary lang="he">צפה בתוכניות מאפליקציית אנדרויד של רשת</summary>
-    <description lang="en">Watch contents from Reshet's android application.</description>
-    <description lang="he">צפה במגוון התוכניות והסדרות הניתנות לצפיה מהפלאגין של רשת לאנדרויד</description>
-    <disclaimer>This addon parse Reshets's android application, you should check Reshet's TOS before you using. It's as is</disclaimer>
-    <supportedcontent>
-      <content>tvshows</content>
-      <content>episodes</content>
-      <content>movies</content>
-    </supportedcontent>
-  </extension>
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="repository.xbmc-israel" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="reshet.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <minversion>31632</minversion>
+        <summary lang="en">Watch Reshet video contents.</summary>
+        <summary lang="he">צפה בתוכניות מאפליקציית אנדרויד של רשת</summary>
+        <description lang="en">Watch contents from Reshet's android application.</description>
+        <description lang="he">צפה במגוון התוכניות והסדרות הניתנות לצפיה מהפלאגין של רשת לאנדרויד</description>
+        <disclaimer>This addon parse Reshets's android application, you should check Reshet's TOS before you using. It's as is</disclaimer>
+        <supportedcontent>
+          <content>tvshows</content>
+          <content>episodes</content>
+          <content>movies</content>
+        </supportedcontent>
+    </extension>
 </addon>
 
 <!--suppress ALL -->
-<addon id="plugin.video.salts" version="2.0.38" name="Stream All The Sources" provider-name="tknorris">
+<addon id="plugin.video.salts" version="2.0.41" name="Stream All The Sources" provider-name="tknorris">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
         <import addon="script.module.urlresolver" version="3.0.0"/>
@@ -3559,7 +3589,7 @@ http://www.hometheater.co.il</description>
     </extension>
 </addon>
 
-<addon id="plugin.video.supercartoons" name="Super Cartoons" version="1.0.15" provider-name="spoyser">
+<addon id="plugin.video.supercartoons" name="Super Cartoons" version="1.0.18" provider-name="spoyser">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
@@ -3765,6 +3795,32 @@ http://www.hometheater.co.il</description>
     </extension>
 </addon>
 
+<addon id="plugin.video.travel"
+       name="Travel Channel"
+       version="3.0.1"
+       provider-name="t1m">
+  <requires>
+    <import addon="xbmc.python" version="2.20.0"/>
+    <import addon="script.module.t1mlib" version="1.0.14"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Travel Channel</summary>
+    <description lang="en">Check out travel videos, shows, and guides on top travel destinations on Travel Channel</description>
+    <disclaimer lang="en">Feel free to use this script. For information visit the wiki.</disclaimer>
+    <platform>all</platform>
+    <language>en</language>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <forum>http://forum.kodi.tv/showthread.php?tid=222429</forum>
+    <website>http://www.travelchannel.com/</website>
+    <email></email>
+    <source>https://github.com/learningit/plugin.video.travel/</source>
+  </extension>
+</addon>
+
 <addon id="plugin.video.tv2go"
        name="TV2GO"
        version="1.0.3"
@@ -3791,7 +3847,7 @@ http://www.hometheater.co.il</description>
   <extension point="xbmc.service" library="service.py" start="startup"/>
 </addon>
 
-<addon id="plugin.video.ukturk" name="UK Turk Playlists" version="2.0.9" provider-name="MetalKettle">
+<addon id="plugin.video.ukturk" name="UK Turk Playlists" version="3.0.0" provider-name="MetalKettle">
   <requires>
     <import addon="script.module.simplejson" version="3.3.0"/>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -3845,7 +3901,7 @@ http://www.hometheater.co.il</description>
 
 <addon id="plugin.video.uwc"
        name="Ultimate Whitecream"
-       version="1.0.95"
+       version="1.1.6"
        provider-name="mortael">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
@@ -4176,6 +4232,32 @@ http://www.hometheater.co.il</description>
     <description lang="en">Watch Movies/Tv Shows/Cartoons/Music Videos/And The Latest News And Sports Clips From Tvaddons YouTube Vault addon.
 	</description>
     <disclaimer lang="en">Tvaddons Is Not Affiliated With The Content In This Addon</disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.ZemTV-shani"
+       name="ZemTV.com"
+       version="4.8.1"
+       provider-name="shani">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.urlresolver" version="1.0.0"/>
+	<import addon="plugin.video.youtube" version="2.9.2" optional="true"/>
+    <import addon="script.module.simplejson" version="3.3.0"/>
+    <import addon="script.module.elementtree" version="1.2.8"/>
+    <import addon="plugin.video.f4mTester" version="2.2.3" optional="true" />
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>ZemTV.tv Kodi Client. Visit TVADDONS.ag for support</summary>
+    <description>Watch ZemTV.com on your XBMC. This plugin fetches the video sources from ZemTV.com and play on XBMC compatible plateforms</description>
+    <disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
+    <forum>https://forums.tvaddons.ag/shanis-addon-repository/</forum>
+    <email>@shani_08_kodi</email>
     <platform>all</platform>
   </extension>
 </addon>
@@ -6694,14 +6776,13 @@ provider-name="Roman_V_M">
 
 <addon id="script.module.liveresolver"
      name="LiveResolver"
-     version="0.1.30"
+     version="0.1.34"
      provider-name="natko1412">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
     <import addon="script.module.beautifulsoup" version="3.2.1"/>
     <import addon="script.module.requests"/>
     <import addon="script.module.addon.common" version="2.0.0" />
-
   </requires>
   <extension point="xbmc.python.module" library="lib" />
   <extension point="xbmc.addon.metadata">
@@ -7172,7 +7253,7 @@ level.</description>
   </extension>
 </addon>
 
-<addon id="script.module.urlresolver" name="URLResolver" version="3.0.3" provider-name="Eldorado">
+<addon id="script.module.urlresolver" name="URLResolver" version="3.0.5" provider-name="Eldorado">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 	</requires>
@@ -7803,6 +7884,18 @@ level.</description>
   </extension>
 </addon>
 
+<addon id="service.gdrive.3david" name="GDrive David3 Movies" version="1.0.0" provider-name="3David, TheWiz">
+    <requires>
+        <import addon="plugin.video.gdrive"/>
+        <import addon="xbmc.python" version="2.1.0"/>
+    </requires>
+	<extension point="xbmc.service" library="service.py" start="startup" />
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <disclaimer></disclaimer>
+    </extension>
+ </addon>
+
 <addon id="service.htpt" name="HTPT Service" version="0.1.85" provider-name="HTPT Team">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -8134,7 +8227,7 @@ level.</description>
 <addon id="service.subtitles.subscenter" name="Subscenter.org" version="3.3.6" provider-name="CaTz">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
-	<import addon="script.common.plugin.cache" version="0.9.1"/>
+    <import addon="script.common.plugin.cache" version="0.9.1"/>
   </requires>
   <extension point="xbmc.subtitle.module" library="service.py"/>
   <extension point="xbmc.addon.metadata">
@@ -8142,14 +8235,14 @@ level.</description>
     <description lang="en">Search and Download subtitles from subscenter.org. Contributors: rabak, Ori Varon, sagiben</description>
     <source>https://github.com/XBMCil/service.subtitles.subscenter</source>
     <language>en</language>
-	<email> </email>
-	<forum> </forum>
-	<website> </website>
+    <email> </email>
+    <forum> </forum>
+    <website> </website>
     <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
   </extension>
 </addon>
 
-<addon id="service.subtitles.subtitle" name="Ktuvit.com" version="4.4.0" provider-name="CaTz">
+<addon id="service.subtitles.subtitle" name="Ktuvit.com" version="4.4.1" provider-name="CaTz">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
     <import addon="script.common.plugin.cache" version="0.9.1"/>
@@ -8172,7 +8265,7 @@ level.</description>
 
 <addon id="service.subtitles.torec"
        name="Torec"
-       version="1.0.5"
+       version="1.0.8.2"
        provider-name="slmosl">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -8182,7 +8275,7 @@ level.</description>
   <extension point="xbmc.subtitle.module"
              library="service.py" />
   <extension point="xbmc.addon.metadata">
-    <summary lang="en">XBMC Torec Subtitles allows for downloading hebrew subtitles from the Israeli site Torec.net</summary>
+    <summary lang="en">Kodi/XBMC Torec Subtitles allows for downloading hebrew subtitles from the Israeli site Torec.net</summary>
     <description lang="en">Search and download various hebrew subtitles from the Israeli subtitles site Torec.net.</description>
     <source>https://github.com/slmosl/service.subtitles.Torec</source>
     <email></email>
