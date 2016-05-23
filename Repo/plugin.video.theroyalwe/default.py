@@ -792,8 +792,8 @@ def calendar():
 	for record in results:
 		record = trakt.process_record(record, media='episode')
 		if record['season'] == 0 or record['episode'] == 0: continue
-		if validate_trakt():
-			if record['imdb_id'] in watched.keys():
+		if validate_trakt() and watched:
+			if record['imdb_id'] in watched:
 				if record['season'] in watched[record['imdb_id']]:
 					record['playcount'] = 1 if record['episode'] in watched[record['imdb_id']][record['season']] else 0
 					if ADDON.get_setting('hide_watched_episodes') == "true" and record['playcount'] == 1: continue
@@ -965,7 +965,7 @@ def calendar_browser():
 						season = show['episode']['season']
 						episode = show['episode']['number']
 						if season == 0 or episode == 0: continue
-						if imdb in watched.keys():
+						if watched and imdb in watched:
 							if season in watched[imdb]:
 								w = 1 if episode in watched[imdb][season] else 0
 						show['show']['playcount'] = w
@@ -1246,7 +1246,7 @@ def movie_list():
 		menu.add("Watch Trailer", {"mode": "movie_trailers", "tmdb_id": record['tmdb_id']}, script=True, priority=CONTEXT_PRIORITIES.TRAILER, visible=validate_tmdb)
 		menu.add('Find Similar Movies', {"mode": "movie_similar", "imdb_id": record['imdb_id']}, priority=CONTEXT_PRIORITIES.SIMILAR)
 		movie_title = record['title']
-		if validate_trakt():
+		if validate_trakt() and watched:
 			if 'imdb' in watched and record['imdb_id'] in watched['imdb']:
 				record['playcount'] = 1
 				record['overlay'] = 7

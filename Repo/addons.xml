@@ -2091,6 +2091,31 @@ Highly configurable: Set your PIN, set your watershed time, exclude addons if re
   </extension>
 </addon>
 
+<addon id="plugin.video.castaway" name="Castaway" version="0.1.7.1" provider-name="natko1412">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+		<import addon="script.module.beautifulsoup" version="3.2.1"/>
+		<import addon="script.module.requests"  />
+		<import addon="script.module.mechanize"  />
+    	<import addon="script.module.addon.common" />
+		<import addon="script.module.urlresolver" />
+		<import addon="script.module.liveresolver"  />
+
+
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Just a castaway.</summary>
+		<description lang="en">Visit TVADDONS.ag for support.
+		</description>
+		<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
+
+		<platform>all</platform>
+	</extension>
+</addon>
+
 <addon id="plugin.video.ccloudtv"
        name="cCloud TV"
        version="1.4.7"
@@ -3423,7 +3448,7 @@ http://www.hometheater.co.il</description>
 </addon>
 
 <!--suppress ALL -->
-<addon id="plugin.video.salts" version="2.0.41" name="Stream All The Sources" provider-name="tknorris">
+<addon id="plugin.video.salts" version="2.0.43" name="Stream All The Sources" provider-name="tknorris">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
         <import addon="script.module.urlresolver" version="3.0.0"/>
@@ -3442,7 +3467,7 @@ http://www.hometheater.co.il</description>
 	</extension>
 </addon>
 
-<addon id="plugin.video.sdarot.tv" name="Sdarot.tv Video" version="2.3.4" provider-name="cubicle">
+<addon id="plugin.video.sdarot.tv" name="Sdarot.tv Video" version="2.3.5" provider-name="cubicle">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
     </requires>
@@ -3526,7 +3551,7 @@ http://www.hometheater.co.il</description>
   </extension>
 </addon>
 
-<addon id="plugin.video.specto" name="Specto - ... Fork"  version="2016.04.11.1" provider-name="mrknow" >
+<addon id="plugin.video.specto" name="Specto - ... Fork"  version="2016.05.10.7" provider-name="mrknow" >
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="script.module.requests" version="1.0.0" />
@@ -3639,7 +3664,7 @@ http://www.hometheater.co.il</description>
   </extension>
 </addon>
 
-<addon id="plugin.video.theroyalwe" name="The Royal We" provider-name="DudeHere" version="0.9.16">
+<addon id="plugin.video.theroyalwe" name="The Royal We" provider-name="DudeHere" version="0.9.17">
     <requires>
         <import addon="xbmc.python" version="2.1.0" />
         <import addon="script.module.simplejson" />
@@ -4252,10 +4277,7 @@ http://www.hometheater.co.il</description>
   </extension>
 </addon>
 
-<addon id="plugin.video.ZemTV-shani"
-       name="ZemTV.com"
-       version="4.8.1"
-       provider-name="shani">
+<addon id="plugin.video.ZemTV-shani" name="ZemTV.com" version="4.8.2" provider-name="shani">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
 	<import addon="script.module.urlresolver" version="1.0.0"/>
