@@ -3512,7 +3512,7 @@ http://www.hometheater.co.il</description>
   </extension>
 </addon>
 
-<addon id="plugin.video.seretil" name="Seretil" version="2.1.9" provider-name="YALLA BEITAR NORDIA">
+<addon id="plugin.video.seretil" name="Seretil" version="2.2.0" provider-name="Freestyle">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
         <import addon="script.module.urlresolver" version="1.0.0"/>/>
