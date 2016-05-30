@@ -1946,6 +1946,27 @@ Highly configurable: Set your PIN, set your watershed time, exclude addons if re
   </extension>
 </addon>
 
+<addon id="plugin.program.VibeW" name="Vibe Wizard" version="3.0" provider-name="The-vibe.co.il">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" optional="false"/>
+	<import addon="weather.yahoo" version="3.0.7" optional="false"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Vibe Wizard</summary>
+    <description lang="en">In this wizard you will find the latest Vibe build</description>
+	<description lang="he">קודי בלחיצה, כל מה שאתם צריכים נמצא כאן</description>
+    <disclaimer lang="en">Visit The-vibe.co.il for more info.</disclaimer>
+	<disclaimer lang="he">כנסו לאתר the-vibe.co.il </disclaimer>
+    <forum>http://the-vibe.co.il</forum>
+    <source>http://the-vibe.co.il</source>
+    <website>http://the-vibe.co.il</website>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="plugin.program.wizardil" name="[COLOR gold]Wizard[/COLOR] [COLOR white]IL[/COLOR]" version="1.0.1" provider-name="[COLOR red]ToMeR[/COLOR]">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
