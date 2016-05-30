@@ -42,19 +42,21 @@
   </extension>
 </addon>
 
-<addon id="context.meta" name="Meta Context Menu" version="1.0.2" provider-name="MetaTeam">
+<addon id="context.meta" name="Meta Context Menu" version="1.0.2.1" provider-name="MetaTeam">
   <requires>
     <import addon="xbmc.python" version="2.20.0"/>
     <import addon="script.module.requests"/>
     <import addon="plugin.video.meta"/>
   </requires>
+
   <extension point="kodi.context.item" library="context_playable.py">
     <provides>executable</provides>
       <item>
-        <label>$ADDON[plugin.video.meta 31002]</label>
+        <label>$ADDON[plugin.video.meta 30602]</label>
         <visible>[StringCompare(ListItem.dbtype,movie) | StringCompare(ListItem.dbtype,episode)]</visible>
       </item>
   </extension>
+
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
     <language></language>
@@ -1618,7 +1620,7 @@ this is an unofficial addon. please don't ask for support in openelec forum / ir
 
 <addon id="plugin.audio.mp3streams"
        name="MP3 Streams"
-       version="1.2.0"
+       version="1.2.1"
        provider-name="kinkin, spoyser, art by Marquerite">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
@@ -1907,7 +1909,7 @@ this is an unofficial addon. please don't ask for support in openelec forum / ir
   </extension>
 </addon>
 
-<addon id="plugin.program.ump" name="UMP : Universal Media Provider" provider-name="boogiepop" version="0.0.68">
+<addon id="plugin.program.ump" name="UMP : Universal Media Provider" provider-name="boogiepop" version="0.0.74">
     <requires>
 		<import addon="xbmc.python" version="2.1.0"/>
 	</requires>
@@ -2171,14 +2173,14 @@ Highly configurable: Set your PIN, set your watershed time, exclude addons if re
   </extension>
 </addon>
 
-<addon id="plugin.video.exodus" version="1.3.2" name="Exodus" provider-name="Exodus">
+<addon id="plugin.video.exodus" version="1.3.3" name="Exodus" provider-name="Exodus">
 	<requires>
-		<import addon="xbmc.python" version="2.19.0" />
-		<import addon="repository.exodus" version="1.0.0" />
-		<import addon="script.exodus.artwork" version="1.0.1" />
+		<import addon="xbmc.python" version="2.19.0"/>
+
+		<import addon="script.exodus.artwork" version="1.0.1"/>
 		<import addon="script.module.urlresolver" version="3.0.0"/>
-		<import addon="script.module.metahandler" version="1.0.0" />
-		<import addon="plugin.video.youtube" optional="true" />
+		<import addon="script.module.metahandler" version="1.0.0"/>
+		<import addon="plugin.video.youtube" optional="true"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
@@ -3074,7 +3076,7 @@ Donatello donations: http://donatellokodi.blogspot.co.il/2015/10/blog-post.html
   </extension>
 </addon>
 
-<addon id="plugin.video.meta" name="Meta" version="1.1.0" provider-name="MetaTeam">
+<addon id="plugin.video.meta" name="Meta" version="1.1.4.1" provider-name="MetaTeam">
   <requires>
     <import addon="xbmc.python" version="2.20.0"/>
     <import addon="script.module.requests"/>
@@ -3091,7 +3093,7 @@ Donatello donations: http://donatellokodi.blogspot.co.il/2015/10/blog-post.html
   <extension point="kodi.context.item" library="context_playable.py">
     <provides>executable</provides>
       <item>
-        <label>$ADDON[plugin.video.meta 31002]</label>
+        <label>$ADDON[plugin.video.meta 30602]</label>
         <visible>!System.HasAddon(context.meta) + [StringCompare(ListItem.dbtype,movie) | StringCompare(ListItem.dbtype,episode)] + SubString(ListItem.FileNameAndPath, plugin.video.meta)</visible>
       </item>
   </extension>
@@ -3099,7 +3101,7 @@ Donatello donations: http://donatellokodi.blogspot.co.il/2015/10/blog-post.html
   <extension point="kodi.context.item" library="context_tvshow.py">
     <provides>executable</provides>
       <item>
-        <label>$ADDON[plugin.video.meta 31022]</label>
+        <label>$ADDON[plugin.video.meta 30622]</label>
         <visible>StringCompare(ListItem.dbtype,tvshow) + SubString(ListItem.Path, plugin.video.meta)</visible>
       </item>
   </extension>
@@ -3281,7 +3283,7 @@ Donatello donations: http://donatellokodi.blogspot.co.il/2015/10/blog-post.html
   </extension>
 </addon>
 
-<addon id="plugin.video.phstreams" name="Phoenix" version="3.0.5" provider-name="tvaddons.ag">
+<addon id="plugin.video.phstreams" name="Phoenix" version="3.0.8" provider-name="tvaddons.ag">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="script.module.pyxbmct" version="1.1.4" />
@@ -4022,7 +4024,7 @@ http://www.hometheater.co.il</description>
 	</extension>
 </addon>
 
-<addon id="plugin.video.Vodil" name="V.O.D IL" version="1.1.9" provider-name="kodi senyor">
+<addon id="plugin.video.Vodil" name="Vod IL" version="1.2.0" provider-name="kodi senyor">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="plugin.video.youtube"/>
@@ -4805,7 +4807,7 @@ http://www.hometheater.co.il</description>
 
 <addon id="repository.search.db"
 		name="XBMC.ru search db"
-		version="1.1.6"
+		version="1.1.12"
 		provider-name="bigbax">
   <requires>
     <import addon="xbmc.addon" version="12.0.0"/>
@@ -4819,15 +4821,9 @@ http://www.hometheater.co.il</description>
 			<hashes>true</hashes>
 		</dir>
 		<dir minversion="13.0.0">
-			<info compressed="false">http://xbmc-vk-repo.googlecode.com/svn/trunk/addons/addons.xml</info>
-			<checksum>http://xbmc-vk-repo.googlecode.com/svn/trunk/addons/addons.xml.md5</checksum>
-			<datadir zip="false">http://xbmc-vk-repo.googlecode.com/svn/trunk/addons/</datadir>
-			<hashes>true</hashes>
-		</dir>
-	        <dir minversion="14.0.0">
-			<info compressed="false">http://ex-ua-viewer.googlecode.com/hg/addons.xml</info>
-			<checksum>http://ex-ua-viewer.googlecode.com/hg/addons.xml.md5</checksum>
-			<datadir zip="true">http://ex-ua-viewer.googlecode.com/hg/</datadir>
+			<info compressed="false">https://raw.github.com/mrstealth/xbmc-gotham/master/addons.xml</info>
+			<checksum>https://raw.github.com/mrstealth/xbmc-gotham/master/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.github.com/mrstealth/xbmc-gotham/master/zip/</datadir>
 			<hashes>true</hashes>
 		</dir>
 		<dir minversion="14.0.0">
@@ -4867,9 +4863,9 @@ http://www.hometheater.co.il</description>
 			<hashes>true</hashes>
 		</dir>
 	        <dir minversion="14.0.0">
-			<info compressed="false">https://github.com/xbmc-addon/repository.hal9000/raw/master/addons.xml</info>
-			<checksum>https://github.com/xbmc-addon/repository.hal9000/raw/master/addons.xml.md5</checksum>
-			<datadir zip="true">https://github.com/xbmc-addon/repository.hal9000/raw/master/repo</datadir>
+			<info compressed="false">https://raw.githubusercontent.com/xbmc-addon/repository.hal9000/master/addons.xml</info>
+                        <checksum>https://raw.githubusercontent.com/xbmc-addon/repository.hal9000/master/addons.xml.md5</checksum>
+                        <datadir zip="true">https://raw.githubusercontent.com/xbmc-addon/repository.hal9000/master/repo</datadir>
 			<hashes>true</hashes>
 		</dir>
 		<dir minversion="14.0.0">
@@ -4884,12 +4880,6 @@ http://www.hometheater.co.il</description>
 			<datadir zip="true">https://github.com/snakefishh/mnn-xbmc-repo/raw/master/</datadir>
 			<hashes>true</hashes>
 		</dir>
-		<dir minversion="13.0.0">
-			<info compressed="false">https://raw.github.com/mrstealth/xbmc-gotham/master/addons.xml</info>
-			<checksum>https://raw.github.com/mrstealth/xbmc-gotham/master/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.github.com/mrstealth/xbmc-gotham/master/zip/</datadir>
-			<hashes>true</hashes>
-		</dir>
 		<dir minversion="14.0.0">
 			<info compressed="false">http://api.bitbucket.org/1.0/repositories/DiMartino/myshows.me-kodi-repo/raw/default/addons.xml</info>
 			<checksum>http://api.bitbucket.org/1.0/repositories/DiMartino/myshows.me-kodi-repo/raw/default/addons.xml.md5</checksum>
@@ -4897,9 +4887,9 @@ http://www.hometheater.co.il</description>
 			<hashes>true</hashes>
 		</dir>
 		<dir minversion="14.0.0">
-			<info compressed="false">http://silhouette-xbmc-repo.googlecode.com/svn/trunk/addons/addons.xml</info>
-			<checksum>http://silhouette-xbmc-repo.googlecode.com/svn/trunk/addons/addons.xml.md5</checksum>
-			<datadir zip="false">http://silhouette-xbmc-repo.googlecode.com/svn/trunk/addons/</datadir>
+			<info compressed="false">https://github.com/1orgar/kodi/raw/master/addons.xml</info>
+			<checksum>https://github.com/1orgar/kodi/raw/master/addons.xml.md5</checksum>
+			<datadir zip="true">https://github.com/1orgar/kodi/raw/master/zips/</datadir>
 			<hashes>true</hashes>
 		</dir>
 		<dir minversion="14.0.0">
@@ -4909,21 +4899,21 @@ http://www.hometheater.co.il</description>
 			<hashes>true</hashes>
 		</dir>
 		<dir minversion="14.0.0">
-			<info compressed="false">http://tolin-xbmc-repo.googlecode.com/svn/trunk/addons/addons.xml</info>
-			<checksum>http://tolin-xbmc-repo.googlecode.com/svn/trunk/addons/addons.xml.md5</checksum>
-			<datadir zip="false">http://tolin-xbmc-repo.googlecode.com/svn/trunk/addons/</datadir>
-			<hashes>true</hashes>
-		</dir>
-		<dir minversion="14.0.0">
-			<info compressed="false">http://xbmc-vk-repo.googlecode.com/svn/trunk/addons/addons.xml</info>
-			<checksum>http://xbmc-vk-repo.googlecode.com/svn/trunk/addons/addons.xml.md5</checksum>
-			<datadir zip="false">http://xbmc-vk-repo.googlecode.com/svn/trunk/addons/</datadir>
+			<info compressed="false">https://github.com/taifxx/xxtrep/raw/master/addons.xml</info>
+			<checksum>https://github.com/taifxx/xxtrep/raw/master/addons.xml.md5</checksum>
+			<datadir zip="true">https://github.com/taifxx/xxtrep/raw/master/</datadir>
 			<hashes>true</hashes>
 		</dir>
 		<dir minversion="14.0.0">
 			<info compressed="false">http://afedchin.github.io/repository/addons.xml</info>
 			<checksum>http://afedchin.github.io/repository/addons.xml.md5</checksum>
 			<datadir zip="true">http://afedchin.github.io/repository/</datadir>
+			<hashes>true</hashes>
+		</dir>
+		<dir minversion="14.0.0">
+			<info compressed="false">http://vadyur.github.io/kodi_repo/repo/addons.xml</info>
+			<checksum>http://vadyur.github.io/kodi_repo/repo/addons.xml.md5</checksum>
+			<datadir zip="true">http://vadyur.github.io/kodi_repo/repo</datadir>
 			<hashes>true</hashes>
 		</dir>
 		<dir minversion="14.0.0">
@@ -8296,6 +8286,25 @@ level.</description>
     <email></email>
     <source>https://github.com/amet/service.subtitles.podnapisi</source>
   </extension>
+</addon>
+
+<addon id="service.subtitles.subcenterorg" name="סאבסנטר - SUBCENTER " version="0.7" provider-name="kodil">
+    <requires>
+        <import addon="xbmc.python" version="2.14.0"/>
+        <import addon="script.common.plugin.cache" version="0.9.1"/>
+    </requires>
+    <extension point="xbmc.subtitle.module" library="subcenter.py"/>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">subcenter by kodil</summary>
+        <description lang="en">Search and Download subtitles from subcenter. Contributors: kodil
+        </description>
+        <source>https://github.com</source>
+        <language>en</language>
+        <email> </email>
+        <forum> </forum>
+        <website> </website>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    </extension>
 </addon>
 
 <addon id="service.subtitles.subscenter" name="Subscenter.org" version="3.3.6" provider-name="CaTz">
