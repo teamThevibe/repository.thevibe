@@ -1,8 +1,28 @@
 ====================================================================
 Castaway sports addon by [COLOR yellow]@natko1412[/COLOR]
 ====================================================================
+v0.2.1 [2-Jun-2016]
+-add Reddit login
+-update modules
+
+
+v0.2.0 [2-Jun-2016]
+-add "Subreddits" section
+-add "My Lists" under "My Castaway"
+-add Live section to wizhdsports
+-fix Zunox (new domain)
+-improve fullmatchtv
+-add MLB,rugby and motorsports fullmatchtv in "on demand/other"
+-add ourmatch.net (football highlights)
+-add laola1.tv
+-remove sport2life
+-improve tvrex/nbafull link finding and resolving
+-improve antena sport + add base url setting for it + add schedule
+-add f1fullraces.com
+-fix fullmatchesandshows
+
 v0.1.7.1 [27-Apr-2016]
--fix fullmatchesandshpws
+-fix fullmatchesandshows
 -fix NBA GO
 
 v0.1.6 [27-Apr-2016]
