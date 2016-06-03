@@ -2114,7 +2114,7 @@ Highly configurable: Set your PIN, set your watershed time, exclude addons if re
   </extension>
 </addon>
 
-<addon id="plugin.video.castaway" name="Castaway" version="0.1.7.1" provider-name="natko1412">
+<addon id="plugin.video.castaway" name="Castaway" version="0.2.1" provider-name="natko1412">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>
 		<import addon="script.module.beautifulsoup" version="3.2.1"/>
@@ -2173,14 +2173,14 @@ Highly configurable: Set your PIN, set your watershed time, exclude addons if re
   </extension>
 </addon>
 
-<addon id="plugin.video.exodus" version="1.3.3" name="Exodus" provider-name="Exodus">
+<addon id="plugin.video.exodus" version="1.3.6" name="Exodus" provider-name="Exodus">
 	<requires>
-		<import addon="xbmc.python" version="2.19.0"/>
-
-		<import addon="script.exodus.artwork" version="1.0.1"/>
+		<import addon="xbmc.python" version="2.19.0" />
+		<import addon="repository.exodus" version="1.0.0" />
+		<import addon="script.exodus.artwork" version="1.0.1" />
 		<import addon="script.module.urlresolver" version="3.0.0"/>
-		<import addon="script.module.metahandler" version="1.0.0"/>
-		<import addon="plugin.video.youtube" optional="true"/>
+		<import addon="script.module.metahandler" version="1.0.0" />
+		<import addon="plugin.video.youtube" optional="true" />
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
@@ -2946,6 +2946,21 @@ Donatello donations: http://donatellokodi.blogspot.co.il/2015/10/blog-post.html
   </extension>
 </addon>
 
+<addon id="plugin.video.livemix" name="Live Mix" version="1.0.4" provider-name="MetalKettle">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.addon.common" version="2.0.0" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en"></summary>
+    <description lang="en"></description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="plugin.video.lulitv"
        name="לולי"
        version="1.0.0"
@@ -3076,7 +3091,7 @@ Donatello donations: http://donatellokodi.blogspot.co.il/2015/10/blog-post.html
   </extension>
 </addon>
 
-<addon id="plugin.video.meta" name="Meta" version="1.1.4.1" provider-name="MetaTeam">
+<addon id="plugin.video.meta" name="Meta" version="1.1.5" provider-name="MetaTeam">
   <requires>
     <import addon="xbmc.python" version="2.20.0"/>
     <import addon="script.module.requests"/>
@@ -3283,7 +3298,7 @@ Donatello donations: http://donatellokodi.blogspot.co.il/2015/10/blog-post.html
   </extension>
 </addon>
 
-<addon id="plugin.video.phstreams" name="Phoenix" version="3.0.8" provider-name="tvaddons.ag">
+<addon id="plugin.video.phstreams" name="Phoenix" version="3.1.0" provider-name="tvaddons.ag">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="script.module.pyxbmct" version="1.1.4" />
@@ -3471,7 +3486,7 @@ http://www.hometheater.co.il</description>
 </addon>
 
 <!--suppress ALL -->
-<addon id="plugin.video.salts" version="2.0.44" name="Stream All The Sources" provider-name="tknorris">
+<addon id="plugin.video.salts" version="2.0.50" name="Stream All The Sources" provider-name="tknorris">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
         <import addon="script.module.urlresolver" version="3.0.0"/>
@@ -3667,23 +3682,31 @@ http://www.hometheater.co.il</description>
   </extension>
 </addon>
 
-<addon id="plugin.video.teevee" name="TeeVee" version="1.0.1" provider-name="natko1412">
+<addon id="plugin.video.teevee"
+	name="TeeVee"
+	version="1.0.2"
+	provider-name="natko1412">
   <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-    <import addon="script.module.beautifulsoup" version="3.2.1" />
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
     <import addon="script.module.urlresolver" version="2.5.0" />
     <import addon="script.module.metahandler" />
-    <import addon="script.module.axel.downloader" version="0.2.0" optional="true" />
+    <import addon="script.module.axel.downloader" version="0.2.0" optional="true"/>
     <import addon="script.module.pyxbmct" version="1.1.4" />
+
+
+
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary>Watch your favourite TV Shows!</summary>
-    <description>Watch your favourite TV Shows!</description>
+        <description>Watch your favourite TV Shows!</description>
+
     <platform>all</platform>
     <forum>forums.tvaddons.ag</forum>
+
   </extension>
 </addon>
 
@@ -3911,7 +3934,7 @@ http://www.hometheater.co.il</description>
   <extension point="xbmc.service" library="service.py" start="startup"/>
 </addon>
 
-<addon id="plugin.video.ukturk" name="UK Turk Playlists" version="3.0.0" provider-name="MetalKettle">
+<addon id="plugin.video.ukturk" name="UK Turk Playlists" version="3.0.3" provider-name="MetalKettle">
   <requires>
     <import addon="script.module.simplejson" version="3.3.0"/>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -4302,14 +4325,20 @@ http://www.hometheater.co.il</description>
   </extension>
 </addon>
 
-<addon id="plugin.video.ZemTV-shani" name="ZemTV.com" version="4.8.2" provider-name="shani">
+<addon id="plugin.video.ZemTV-shani"
+       name="ZemTV.com"
+       version="4.8.6"
+       provider-name="shani">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
 	<import addon="script.module.urlresolver" version="1.0.0"/>
 	<import addon="plugin.video.youtube" version="2.9.2" optional="true"/>
     <import addon="script.module.simplejson" version="3.3.0"/>
-    <import addon="script.module.elementtree" version="1.2.8"/>
+       	<import addon="script.module.elementtree" version="1.2.8"/>
+
+
     <import addon="plugin.video.f4mTester" version="2.2.3" optional="true" />
+
   </requires>
   <extension point="xbmc.python.pluginsource"
             library="default.py">
@@ -4322,6 +4351,8 @@ http://www.hometheater.co.il</description>
     <forum>https://forums.tvaddons.ag/shanis-addon-repository/</forum>
     <email>@shani_08_kodi</email>
     <platform>all</platform>
+
+
   </extension>
 </addon>
 
@@ -6840,13 +6871,14 @@ provider-name="Roman_V_M">
 
 <addon id="script.module.liveresolver"
      name="LiveResolver"
-     version="0.1.34"
+     version="0.1.36"
      provider-name="natko1412">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
     <import addon="script.module.beautifulsoup" version="3.2.1"/>
     <import addon="script.module.requests"/>
     <import addon="script.module.addon.common" version="2.0.0" />
+
   </requires>
   <extension point="xbmc.python.module" library="lib" />
   <extension point="xbmc.addon.metadata">
@@ -7317,7 +7349,7 @@ level.</description>
   </extension>
 </addon>
 
-<addon id="script.module.urlresolver" name="URLResolver" version="3.0.5" provider-name="Eldorado">
+<addon id="script.module.urlresolver" name="URLResolver" version="3.0.11" provider-name="Eldorado">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 	</requires>
@@ -8288,7 +8320,7 @@ level.</description>
   </extension>
 </addon>
 
-<addon id="service.subtitles.subcenterorg" name="סאבסנטר - SUBCENTER " version="0.7" provider-name="kodil">
+<addon id="service.subtitles.subcenterorg" name="סאבסנטר - SUBCENTER " version="0.73" provider-name="kodil">
     <requires>
         <import addon="xbmc.python" version="2.14.0"/>
         <import addon="script.common.plugin.cache" version="0.9.1"/>
@@ -8298,11 +8330,11 @@ level.</description>
         <summary lang="en">subcenter by kodil</summary>
         <description lang="en">Search and Download subtitles from subcenter. Contributors: kodil
         </description>
-        <source>https://github.com</source>
+        <source>https://github.com/kodil/service.subtitles.subcenterorg</source>
         <language>en</language>
         <email> </email>
         <forum> </forum>
-        <website> </website>
+        <website>www.subscenter.org</website>
         <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
     </extension>
 </addon>
