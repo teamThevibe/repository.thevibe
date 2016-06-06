@@ -2114,7 +2114,7 @@ Highly configurable: Set your PIN, set your watershed time, exclude addons if re
   </extension>
 </addon>
 
-<addon id="plugin.video.castaway" name="Castaway" version="0.2.1" provider-name="natko1412">
+<addon id="plugin.video.castaway" name="Castaway" version="0.2.2" provider-name="natko1412">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>
 		<import addon="script.module.beautifulsoup" version="3.2.1"/>
@@ -2961,7 +2961,7 @@ Donatello donations: http://donatellokodi.blogspot.co.il/2015/10/blog-post.html
   </extension>
 </addon>
 
-<addon id="plugin.video.livemix" name="Live Mix" version="1.0.4" provider-name="MetalKettle">
+<addon id="plugin.video.livemix" name="Live Mix" version="1.0.5" provider-name="MetalKettle">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="script.module.addon.common" version="2.0.0" />
@@ -3526,7 +3526,7 @@ http://www.hometheater.co.il</description>
 </addon>
 
 <!--suppress ALL -->
-<addon id="plugin.video.salts" version="2.0.50" name="Stream All The Sources" provider-name="tknorris">
+<addon id="plugin.video.salts" version="2.0.51" name="Stream All The Sources" provider-name="tknorris">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
         <import addon="script.module.urlresolver" version="3.0.0"/>
@@ -4028,7 +4028,7 @@ http://www.hometheater.co.il</description>
 
 <addon id="plugin.video.uwc"
        name="Ultimate Whitecream"
-       version="1.1.6"
+       version="1.1.11"
        provider-name="mortael">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
@@ -4367,7 +4367,7 @@ http://www.hometheater.co.il</description>
 
 <addon id="plugin.video.ZemTV-shani"
        name="ZemTV.com"
-       version="4.8.6"
+       version="4.8.7"
        provider-name="shani">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -6911,7 +6911,7 @@ provider-name="Roman_V_M">
 
 <addon id="script.module.liveresolver"
      name="LiveResolver"
-     version="0.1.36"
+     version="0.1.37"
      provider-name="natko1412">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
@@ -8360,7 +8360,7 @@ level.</description>
   </extension>
 </addon>
 
-<addon id="service.subtitles.subcenterorg" name="סאבסנטר - SUBCENTER " version="0.73" provider-name="kodil">
+<addon id="service.subtitles.subcenterorg" name="סאבסנטר - SUBCENTER " version="0.74" provider-name="kodil">
     <requires>
         <import addon="xbmc.python" version="2.14.0"/>
         <import addon="script.common.plugin.cache" version="0.9.1"/>

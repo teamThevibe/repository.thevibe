@@ -1,6 +1,17 @@
 ====================================================================
 Castaway sports addon by [COLOR yellow]@natko1412[/COLOR]
 ====================================================================
+
+v0.2.2 [5-Jun-2016]
+-add Quasar to possible torrent players (change in settings)
+-add more torrent indexers in "Others sports" section
+-add parsing of alternative links in NBA GO
+-improve common links finding in demand section
+-fix fullmatchesandshows
+-add schedule to streamlive.to
+-add zoptv.com
+-remove tvone1 & iptvlinks
+
 v0.2.1 [2-Jun-2016]
 -add Reddit login
 -update modules
