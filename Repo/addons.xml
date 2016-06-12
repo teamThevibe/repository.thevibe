@@ -3510,7 +3510,7 @@ http://www.hometheater.co.il</description>
 </addon>
 
 <!--suppress ALL -->
-<addon id="plugin.video.salts" version="2.0.51" name="Stream All The Sources" provider-name="tknorris">
+<addon id="plugin.video.salts" version="2.0.55" name="Stream All The Sources" provider-name="tknorris">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
         <import addon="script.module.urlresolver" version="3.0.0"/>
@@ -4012,7 +4012,7 @@ http://www.hometheater.co.il</description>
 
 <addon id="plugin.video.uwc"
        name="Ultimate Whitecream"
-       version="1.1.11"
+       version="1.1.13"
        provider-name="mortael">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
@@ -4053,6 +4053,24 @@ http://www.hometheater.co.il</description>
         <source></source>
         <email></email>
     </extension>
+</addon>
+
+<addon id="plugin.video.viks.tv"
+       name="Viks.tv"
+       version="4.2.0"
+       provider-name="TDW">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Viks.tv</summary>
+    <description>Телевидение</description>
+    <platform>all</platform>
+  </extension>
 </addon>
 
 <addon id="plugin.video.vod.9movies" name="9movies" version="1.0.2" provider-name="anhlon">
@@ -6882,7 +6900,7 @@ provider-name="Roman_V_M">
 
 <addon id="script.module.liveresolver"
      name="LiveResolver"
-     version="0.1.37"
+     version="0.1.40"
      provider-name="natko1412">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
@@ -7360,7 +7378,7 @@ level.</description>
   </extension>
 </addon>
 
-<addon id="script.module.urlresolver" name="URLResolver" version="3.0.11" provider-name="Eldorado">
+<addon id="script.module.urlresolver" name="URLResolver" version="3.0.13" provider-name="Eldorado">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 	</requires>
